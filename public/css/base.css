@@ -1,0 +1,62 @@
+/* =================================================================== 
+ * Base Stylesheet
+ * ------------------------------------------------------------------
+ *
+ *  TOC:
+ *      # A. Custom Normalize
+ *      # B. Typography
+ *
+ * =================================================================== */
+/* ===================================================================
+ * # A. Custom Normalize
+ * ------------------------------------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: inherit;
+}
+
+main {
+  display: block;
+  height: 100%;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+/* # End of Normalize
+ * ----------------------- */
+/* ===================================================================
+ * # B. Typography
+ * ------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+}
+
+/* # End of Typography
+ * ----------------------- */
+/*# sourceMappingURL=base.css.map */
