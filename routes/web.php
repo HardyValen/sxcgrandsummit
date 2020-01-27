@@ -13,3 +13,5 @@
 
 Route::get('/', function() {return redirect()->to("/landing");});
 Route::get('/landing', 'PageRequestController@viewLanding');
+Route::post('/store', 'RegisController@store'); //storing page
+Route::get('/form', 'RegisController@view'); //view form
