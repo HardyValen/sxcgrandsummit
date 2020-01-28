@@ -78,3 +78,17 @@
   font-weight: normal;
   src: local('Myriad Pro Bold Condensed Italic'), url('module/fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
   }
+
+// -- Mixins
+
+  @mixin myriadProRegular(){
+    font-family: 'Myriad Pro Regular';
+  }
+
+  @mixin montserrat(){
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @mixin lato() {
+    font-family: 'Lato', sans-serif;
+  }

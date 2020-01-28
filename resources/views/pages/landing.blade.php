@@ -9,7 +9,7 @@
         <!DOCTYPE html>
 <html>
 
-    <h1>Generated from: http://www.cufonfonts.com</h1><br/>
+    <h1>Myriad Pro</h1>
     <h1 style="font-family:'Myriad Pro Regular';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
     <h1 style="font-family:'Myriad Pro Condensed';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
     <h1 style="font-family:'Myriad Pro Condensed Italic';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
