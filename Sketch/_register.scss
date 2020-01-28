@@ -1,4 +1,4 @@
-.register-block {
+@mixin register-block {
     background-image: url(/register-block.svg)
     display: flex;
     flex-direction: column;
