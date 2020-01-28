@@ -6,21 +6,18 @@
 
 @section('content')
     <main>
-        <!DOCTYPE html>
-<html>
-
-    <h1>Myriad Pro</h1>
-    <h1 style="font-family:'Myriad Pro Regular';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Condensed';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Condensed Italic';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Light';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Semibold';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Semibold Italic';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Bold Condensed';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Bold';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Bold Italic';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-    <h1 style="font-family:'Myriad Pro Bold Condensed Italic';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
-
+        <section class="landing-hero">
+            <div class="landing-hero-description">
+                <h1>What is SxC 9th Grand Summit ?</h1>
+                <p>The biggest annual event held by StudentsxCEOs Bandung Chapter, a platform for selected students across Indonesia to solve real problems related to Sustainable Development Goals (SDGs) and propose it to company & non-government organization.</p>
+                <a class="button" href="#">Scroll down</a>
+            </div>
+        </section>
+        <section class="landing-description"></section>
+        <section class="landing-event"></section>
+        <section class="landing-schedule"></section>
+        <section class="landing-registration"></section>
+        <section class="landing-sponsor"></section>
     </main>
 @endsection
 
