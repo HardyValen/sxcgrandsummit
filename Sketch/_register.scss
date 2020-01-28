@@ -1,0 +1,9 @@
+.register-block {
+    background-image: url(/register-block.svg)
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h1{
+        @include MyriadProRegu
+    }
+}
