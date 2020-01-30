@@ -1,5 +1,20 @@
+@import 'module/mixin-fluid';
 @import 'module/color';
 @import 'module/fonts';
-@import 'module/mixin-fluid';
+@import 'module/typography';
+@import 'module/imgcontrol';
+@import 'module/button';
+@import 'module/layout';
+
+@import 'blocks/section-title';
+@import 'blocks/section-cards';
+
+main{
+    overflow-x: hidden;
+    background-color: map-get($theme-colors, "white");
+}
 
 // 1. Landing
+@import 'blocks/landing/hero';
+@import 'blocks/landing/description';
+@import 'blocks/landing/event';

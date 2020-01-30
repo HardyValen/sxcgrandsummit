@@ -1,0 +1,48 @@
+@mixin button(
+    $color,
+    $color-hover,
+    $color-active
+){
+    @include fluidpaddingx(1rem, 2.75rem);
+    @include fluidpaddingy(0.9rem, 1.2rem);
+    border: 2px solid $color;
+    color: $color;
+    @include montserrat();
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include fluidfontsize(1.2rem, 1.6rem);
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover{
+        background-color:$color-hover;
+        color: $color;
+        border-color: $color-hover;
+        transition: 0.1s;
+    }
+    
+    &:active{
+        background-color:$color-active;
+        color: $color;
+        border-color: $color-active;
+        transition: 0.1s;
+    }
+}
+
+.button-white-transparent{
+    @include button(
+        white, 
+        map-get($theme-colors, "secondary-dark" ), 
+        map-get($theme-colors, "secondary" )
+    );
+}
+
+.button-primary-transparent{
+    @include button(
+        black,
+        map-get($theme-colors, "secondary-dark"),
+        map-get($theme-colors, "secondary")
+    )
+}
+

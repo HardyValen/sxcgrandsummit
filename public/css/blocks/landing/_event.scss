@@ -1,0 +1,10 @@
+.landing-event{
+    @include mobilePadding();
+    width: 100%;
+    min-height: 70%;
+    background-color: map-get($theme-colors, "white-alt");
+    display: flex;
+    flex-direction: column;
+
+    
+}

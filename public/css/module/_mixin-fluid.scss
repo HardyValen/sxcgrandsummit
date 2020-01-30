@@ -87,6 +87,23 @@
       }
     }
 
+    @mixin fluidmaxheight($floor, $ceiling) {
+      $u1: unit($floor);
+      $u2: unit($ceiling);
+      
+      @if $u1 == $u2 {
+          & {
+              max-height: $floor;
+              @media screen and (min-width: 320px) {
+                max-height: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 32rem) / (96 - 32)));
+              }
+              @media screen and (min-width: 960px) {
+                max-height: $ceiling;
+              }
+          }
+      }
+    }
+
 /* -- 02. Mixin untuk fluid padding -- */
     @mixin fluidpaddingtop($floor, $ceiling) {
       $u1: unit($floor);

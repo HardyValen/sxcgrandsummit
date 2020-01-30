@@ -25,7 +25,7 @@
     <title>@yield('title')</title>
     
     {{-- Style --}}
-    @yield('style')
+    @yield('style') 
 </head>
 
 <body>

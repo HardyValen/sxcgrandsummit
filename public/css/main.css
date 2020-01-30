@@ -1,5 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap");
+/* MIXIN FOR CUSTOM RANGE OF FLUID SIZES
+ *  -- Menerima masukan batas bawah font size 'floor' dan batas atas font size 'ceiling', satuan rem!
+ *  -- Mengeluarkan kode css yang membuat transisi antara floor dan ceiling 'fluid'     
+ *
+ *  -- TABLE OF CONTENT
+ *  -- 1. Width
+ *  -- 2. Padding
+ *  -- 3. Margin
+ *  -- 4. Font-Size
+ *  -- 5. Letter-Spacing  
+ *  -- 6. Responsive Border
+ *  -- 7. Responsive Padding Inline Start
+ */
+/* -- 01. Mixin untuk fluid width -- */
+/* -- 02. Mixin untuk fluid padding -- */
+/* -- 03. Mixin untuk fluid margin -- */
+/* -- 05. Mixin untuk fluid font size -- */
+/* -- 06. Mixin untuk fluid letter spacing -- */
+/* -- 07. Mixin untuk Responsive Border (Satu Sisi) -- */
+/* -- 08. Mixin untuk Padding-Inline-Start -- */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 @font-face {
   font-family: 'Myriad Pro Regular';
   font-style: normal;
@@ -43,17 +62,17 @@
 }
 
 @font-face {
-  font-family: 'Myriad Pro Bold Condensed';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Myriad Pro Bold Condensed"), url("module/fonts/MYRIADPRO-BOLDCOND.woff") format("woff");
-}
-
-@font-face {
   font-family: 'Myriad Pro Bold';
   font-style: normal;
   font-weight: normal;
   src: local("Myriad Pro Bold"), url("module/fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Myriad Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed"), url("module/fonts/MYRIADPRO-BOLDCOND.woff") format("woff");
 }
 
 @font-face {
@@ -70,24 +89,749 @@
   src: local("Myriad Pro Bold Condensed Italic"), url("module/fonts/MYRIADPRO-BOLDCONDIT.woff") format("woff");
 }
 
-/* MIXIN FOR CUSTOM RANGE OF FLUID SIZES
- *  -- Menerima masukan batas bawah font size 'floor' dan batas atas font size 'ceiling', satuan rem!
- *  -- Mengeluarkan kode css yang membuat transisi antara floor dan ceiling 'fluid'     
- *
- *  -- TABLE OF CONTENT
- *  -- 1. Width
- *  -- 2. Padding
- *  -- 3. Margin
- *  -- 4. Font-Size
- *  -- 5. Letter-Spacing  
- *  -- 6. Responsive Border
- *  -- 7. Responsive Padding Inline Start
- */
-/* -- 01. Mixin untuk fluid width -- */
-/* -- 02. Mixin untuk fluid padding -- */
-/* -- 03. Mixin untuk fluid margin -- */
-/* -- 05. Mixin untuk fluid font size -- */
-/* -- 06. Mixin untuk fluid letter spacing -- */
-/* -- 07. Mixin untuk Responsive Border (Satu Sisi) -- */
-/* -- 08. Mixin untuk Padding-Inline-Start -- */
+.button-white-transparent {
+  border: 2px solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-white-transparent {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-white-transparent {
+    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-white-transparent {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+
+.button-white-transparent {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-white-transparent {
+    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-white-transparent {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.button-white-transparent {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-white-transparent {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-white-transparent {
+    font-size: 1.6rem;
+  }
+}
+
+.button-white-transparent:hover {
+  background-color: #E5AC00;
+  color: white;
+  border-color: #E5AC00;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-white-transparent:active {
+  background-color: #FFC517;
+  color: white;
+  border-color: #FFC517;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-primary-transparent {
+  border: 2px solid black;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-primary-transparent {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-primary-transparent {
+    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-primary-transparent {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+
+.button-primary-transparent {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-primary-transparent {
+    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-primary-transparent {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.button-primary-transparent {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-primary-transparent {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-primary-transparent {
+    font-size: 1.6rem;
+  }
+}
+
+.button-primary-transparent:hover {
+  background-color: #E5AC00;
+  color: black;
+  border-color: #E5AC00;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-primary-transparent:active {
+  background-color: #FFC517;
+  color: black;
+  border-color: #FFC517;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.section-title .header-line {
+  margin-bottom: 0.8rem;
+  width: 10rem;
+  background: -webkit-gradient(linear, left top, right top, from(#FFC517), color-stop(110.95%, rgba(255, 197, 23, 0)));
+  background: linear-gradient(90deg, #FFC517 0%, rgba(255, 197, 23, 0) 110.95%);
+}
+
+.section-title .header-line {
+  height: 0.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .section-title .header-line {
+    height: calc(0.8rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .section-title .header-line {
+    height: 1.5rem;
+  }
+}
+
+.section-title h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #0252B3;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .section-title h2 {
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .section-title h2 {
+    font-size: 3.2rem;
+  }
+}
+
+.section-title h2 {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .section-title h2 {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .section-title h2 {
+    padding-bottom: 3rem;
+  }
+}
+
+.post-container {
+  width: 100%;
+  height: 35rem;
+  border: 1px solid black;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.post-container::-webkit-scrollbar {
+  display: none;
+}
+
+.post-container .post-card {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid blue;
+  width: 20rem;
+  height: 100%;
+}
+
+.post-container .post-card:last-child {
+  margin-left: 1rem;
+  margin-right: 0rem;
+}
+
+.post-container .post-card:first-child {
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+
+.post-container .post-card .post-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 960px) {
+  .post-container .post-card {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .post-container .post-card {
+    width: calc(24rem + 4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .post-container .post-card {
+    width: 28rem;
+  }
+}
+
+main {
+  overflow-x: hidden;
+  background-color: #F4F4F4;
+}
+
+.landing-hero {
+  background: url("../assets/landing/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  width: 100%;
+  min-height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 960px) {
+  .landing-hero {
+    background: url("../assets/landing/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.landing-hero .landing-hero-description {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing-hero .landing-hero-description {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description {
+    padding-bottom: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .landing-hero .landing-hero-description {
+    width: 100%;
+  }
+  .landing-hero .landing-hero-description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .landing-hero .landing-hero-description {
+    padding-left: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .landing-hero .landing-hero-description {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.landing-hero .landing-hero-description h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #F4F4F4;
+  font-weight: 700;
+}
+
+.landing-hero .landing-hero-description h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description h1 {
+    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description h1 {
+    font-size: 4rem;
+  }
+}
+
+.landing-hero .landing-hero-description h1 {
+  padding-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description h1 {
+    padding-bottom: calc(1.8rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description h1 {
+    padding-bottom: 2.5rem;
+  }
+}
+
+.landing-hero .landing-hero-description p {
+  font-family: 'Myriad Pro Regular';
+  color: #F4F4F4;
+  line-height: 1.5;
+}
+
+.landing-hero .landing-hero-description p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description p {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description p {
+    font-size: 1.4rem;
+  }
+}
+
+.landing-hero .landing-hero-description p {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description p {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description p {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .landing-hero .landing-hero-description p {
+    line-height: 1.7;
+  }
+}
+
+.landing-description {
+  width: 100%;
+  min-height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing-description .box1 {
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.landing-description .box1 div {
+  background: url("../assets/objects/circle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  position: relative;
+  top: -10rem;
+  left: 10rem;
+}
+
+.landing-description .box1 div {
+  width: 15rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .box1 div {
+    width: calc(15rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .box1 div {
+    width: 20rem;
+  }
+}
+
+.landing-description .box1 div {
+  height: 15rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .box1 div {
+    height: calc(15rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .box1 div {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .landing-description .box1 div {
+    top: -1rem;
+    left: 13rem;
+  }
+}
+
+.landing-description .box2 {
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.landing-description .box2 div {
+  background: url("../assets/objects/hexagon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  position: relative;
+  top: -10rem;
+  left: -15rem;
+}
+
+.landing-description .box2 div {
+  width: 20rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .box2 div {
+    width: calc(20rem + 10 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .box2 div {
+    width: 30rem;
+  }
+}
+
+.landing-description .box2 div {
+  height: 20rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .box2 div {
+    height: calc(20rem + 10 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .box2 div {
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .landing-description .box2 div {
+    left: -12rem;
+  }
+}
+
+.landing-description .landing-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.landing-description .landing-flex-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container {
+    padding-bottom: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.landing-description .landing-flex-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container {
+    padding-left: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text {
+    width: 100%;
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text p {
+  font-family: 'Myriad Pro Regular';
+  color: #0252B3;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.landing-description .landing-flex-container .landing-description-text p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text p {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text p {
+    font-size: 1.4rem;
+  }
+}
+
+.landing-event {
+  width: 100%;
+  min-height: 70%;
+  background-color: #E8E8E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing-event {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-event {
+    padding-bottom: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-event {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.landing-event {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-event {
+    padding-left: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-event {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
