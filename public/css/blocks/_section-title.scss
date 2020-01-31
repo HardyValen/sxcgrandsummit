@@ -1,0 +1,23 @@
+// ======================
+//  A. Section Title
+// ======================
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .header-line{
+        @include headerLine(0.8rem, 1.5rem);
+    }
+
+    h2{
+        @include montserrat();
+        @include header2();
+        @include fluidpaddingbottom(2rem, 3rem);
+        color: map-get($theme-colors, "primary");
+        text-align: center;
+    }       
+}

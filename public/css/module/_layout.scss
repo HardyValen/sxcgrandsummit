@@ -1,0 +1,26 @@
+@mixin mobilePadding(){
+    @include fluidpaddingy(3rem, 4rem);
+    @include fluidpaddingx(2rem, 5rem);
+}
+
+@mixin mobilePaddingx(){
+    @include fluidpaddingx(2rem, 5rem);
+}
+
+@mixin mobilePaddingy(){
+    @include fluidpaddingy(3rem, 4rem);
+}
+
+
+@mixin mobilePadding2(){
+    @include fluidpaddingy(3rem, 4rem);
+    @include fluidpaddingx(2rem, 8rem);
+}
+
+@mixin mobilePadding2x(){
+    @include fluidpaddingx(2rem, 8rem);
+}
+
+@mixin mobilePadding2y(){
+    @include fluidpaddingy(3rem, 4rem);
+}
