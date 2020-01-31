@@ -1,6 +1,22 @@
 .bc-hero {
     width : 100%;
     height : 100%;
-    background-color: map-get($theme-colors, 'SecondaryColor');
-    background-image: ;
+    background-color: map-get($theme-colors, 'SecondaryColor'), 80%;
+    background-image: url("..\assets\img\evangeline-shaw-xRlI-L-kvrw-unsplash.png");
+
+    .bc-hero-container {
+        @include fluidpadding(3rem, 5rem);
+        width: 80%;
+
+        .hero-title {
+            @include myriadProBoldCondesed();
+            @include fluidfontsize(1.5rem, 5rem);
+            @include fluidletterspacing(1.5px, 5px);
+            line-height: 1.4;
+
+            @media screen and (max-width:960px){
+                line-height: 1.5;
+            }
+        }
+    }
 }

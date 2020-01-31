@@ -1,5 +1,62 @@
-@import 'module/color';
-@import 'module/fonts';
-@import 'module/mixin-fluid';
+/* =================================================================== 
+ *
+ *  SXC Grand Summit Main Stylesheet
+ *  31-01-2020
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *      # A. Import Modules
+ *      # B. Default Colors
+ *      # C. Navigation Bar
+ *          -- 1. Navbar
+ *          -- 2. Sidebar
+ *      # D. Footer
+ *      # E. Main Sections
+ *          -- 1. Hero
+ *          -- 2. Remarks
+ *          -- 3. Date & Venue
+ *          -- 4. Councils
+ *          -- 5. Supports
+ *      # F. Remark Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # G. About Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # H. Council Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # I. Registration Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # J. Admin Sections
+ *          -- 1. Login
+ *
+ * =================================================================== */
 
+/* ===================================================================
+ * # A. Import Module
+ @import 'module/math';
+ @import 'module/variable';
+ @import 'module/elevation-shadow';
+ @import 'module/hamburger';
+ @import 'module/section';
+ @import 'module/button';
+ * ------------------------------------------------------------------- */
+ @import 'module/mixin-fluid';
+ @import 'module/fonts';
+ @import 'module/typography';
+
+/* # End of Import Module
+ * ----------------------- */
+
+/* ===================================================================
+ * # B. Default Colors & Utilities
+ * ------------------------------------------------------------------- */
+.body {
+    background-color: map-get($theme-colors, 'PrimaryColorDark')
+}
 // -- 1. Landing
+    @import "blocks/business-case/hero";
+
+// -- 2 . Business Case
