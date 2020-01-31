@@ -399,7 +399,7 @@
 /* -- 07. Mixin untuk Responsive Border (Satu Sisi) -- */
 @mixin responsiveborder($size, $color, $type) {
   & {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 960px) {
       @if $type == "left" {
         border-left: $size solid $color;
       } @else if $type == "right" {

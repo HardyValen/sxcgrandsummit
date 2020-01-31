@@ -1,0 +1,10 @@
+// use _section-registration.scss
+
+.landing-registration{
+    @include mobilePadding2();
+    width: 100%;
+    min-height: 20vh;
+    background-color: map-get($theme-colors, "white");
+    display: flex;
+    justify-content: center;
+}

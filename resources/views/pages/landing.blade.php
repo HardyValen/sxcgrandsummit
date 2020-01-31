@@ -16,6 +16,18 @@
             </div>
         </section>
 
+        <section class="landing-registration" id="registration">
+            <div class="card-registration">
+                <div class="card-registration-description">
+                    <h1>Registration</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-registration-link">
+                    <a href="#" class="button-secondary">Register</a>
+                </div>
+            </div>
+        </section>
+        
         <section class="landing-description" id="description">
             <div class="box1">
                 <div></div>
@@ -46,7 +58,7 @@
 
             <div class="post-container">
                 <div class="post-card">
-                    <div class="post-image-1"></div>
+                    <div class="post-image image-event-1"></div>
                     <div class="post-desc">
                         <div class="post-title">
                             <h3>
@@ -59,22 +71,51 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-primary-transparent" href="#description">Scroll down</a>
+                            <a class="button-primary" href="#">More Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="post-card">
-
+                    <div class="post-image image-event-3"></div>
+                    <div class="post-desc">
+                        <div class="post-title">
+                            <h3>
+                                Pre Event  
+                            </h3>
+                        </div>
+                        <div class="post-summary">
+                            <p>
+                                Pre Event is a series of events that are conducted and aimed to introduce the Grand Summit. Within these activities, we want to provide our target audience and Grand Summit participants the opportunity to gain various insights...
+                            </p>
+                        </div>
+                        <div class="post-link">
+                            <a class="button-primary" href="#">More Details</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="post-card">
-
+                    <div class="post-image image-event-2"></div>
+                    <div class="post-desc">
+                        <div class="post-title">
+                            <h3>
+                                Main Event   
+                            </h3>
+                        </div>
+                        <div class="post-summary">
+                            <p>
+                                The 9th Grand Summit will exhibit a conference as the peak event called The Summit. Invited experts to share their insights and experiences in specific fields to empower students. This event aims to train students to be potential entrepreneurs...
+                            </p>
+                        </div>
+                        <div class="post-link">
+                            <a class="button-primary" href="#">More Details</a>
+                        </div>
+                    </div>
                 </div>
             </div>
     
         </section>
 
         <section class="landing-schedule"></section>
-        <section class="landing-registration"></section>
         <section class="landing-sponsor"></section>
     </main>
 @endsection

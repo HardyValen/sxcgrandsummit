@@ -8,6 +8,7 @@
 
 @import 'blocks/section-title';
 @import 'blocks/section-cards';
+@import 'blocks/section-registration';
 
 main{
     overflow-x: hidden;
@@ -18,3 +19,4 @@ main{
 @import 'blocks/landing/hero';
 @import 'blocks/landing/description';
 @import 'blocks/landing/event';
+@import 'blocks/landing/registration';

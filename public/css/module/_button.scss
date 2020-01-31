@@ -1,17 +1,20 @@
 @mixin button(
-    $color,
+    $color, 
+    $color-bg,
+    $color-border,
     $color-hover,
     $color-active
 ){
     @include fluidpaddingx(1rem, 2.75rem);
     @include fluidpaddingy(0.9rem, 1.2rem);
-    border: 2px solid $color;
-    color: $color;
     @include montserrat();
+    @include fluidfontsize(1.2rem, 1.6rem);
+    background-color: $color-bg;
+    border: 2px solid $color-border;
+    color: $color;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
-    @include fluidfontsize(1.2rem, 1.6rem);
     transition: 0.2s;
     cursor: pointer;
 
@@ -32,17 +35,31 @@
 
 .button-white-transparent{
     @include button(
-        white, 
+        white,
+        transparent,
+        white,
         map-get($theme-colors, "secondary-dark" ), 
         map-get($theme-colors, "secondary" )
     );
 }
 
-.button-primary-transparent{
+.button-primary{
     @include button(
-        black,
-        map-get($theme-colors, "secondary-dark"),
-        map-get($theme-colors, "secondary")
+        white,
+        map-get($theme-colors, "secondary"),
+        map-get($theme-colors, "secondary"),
+        map-get($theme-colors, "secondary-light"),
+        map-get($theme-colors, "primary")
+    )
+}
+
+.button-secondary{
+    @include button(
+        map-get($theme-colors, "primary"),
+        white,
+        map-get($theme-colors, "secondary"),
+        map-get($theme-colors, "white-alt"),
+        map-get($theme-colors, "white")
     )
 }
 
