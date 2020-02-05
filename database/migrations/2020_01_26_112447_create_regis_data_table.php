@@ -14,10 +14,15 @@ class CreateRegisDataTable extends Migration
     public function up()
     {
         Schema::create('regis_data', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('nama');
-            $table->string('gender');
-            $table->string('email');
+            $table->bigIncrements('Id')->unsigned();
+            $table->string("nama", 256);
+			$table->string("gender", 16);
+			$table->string("email", 256); 
+			$table->string("usia", 2);
+			$table->string("line", 256);
+			$table->string("univ", 256);
+			$table->string("jurusan", 256);
+			$table->string("domisili", 256);
             $table->timestamps();
         });
     }

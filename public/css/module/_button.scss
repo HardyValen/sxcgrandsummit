@@ -46,6 +46,16 @@
 .button-primary{
     @include button(
         white,
+        map-get($theme-colors, "primary"),
+        map-get($theme-colors, "primary"),
+        map-get($theme-colors, "primary-light"),
+        map-get($theme-colors, "secondary")
+    )
+}
+
+.button-secondary{
+    @include button(
+        white,
         map-get($theme-colors, "secondary"),
         map-get($theme-colors, "secondary"),
         map-get($theme-colors, "secondary-light"),
@@ -53,7 +63,7 @@
     )
 }
 
-.button-secondary{
+.button-secondary-transparent{
     @include button(
         map-get($theme-colors, "primary"),
         white,

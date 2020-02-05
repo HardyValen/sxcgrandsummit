@@ -15,8 +15,21 @@ main{
     background-color: map-get($theme-colors, "white");
 }
 
+.display-inline-block{
+    display: inline-block !important;
+}
+
+.paragraph{
+    @include paragraph();
+}
+
 // 1. Landing
 @import 'blocks/landing/hero';
 @import 'blocks/landing/description';
 @import 'blocks/landing/event';
 @import 'blocks/landing/registration';
+
+// 2. Registration
+@import 'blocks/registration/registration-container';
+@import 'blocks/registration/registration-card';
+@import 'blocks/registration/registration-hero';
