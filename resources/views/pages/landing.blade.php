@@ -23,7 +23,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="card-registration-link">
-                    <a href="#" class="button-secondary">Register</a>
+                    <a href="/register" class="button-secondary-transparent">Register</a>
                 </div>
             </div>
         </section>
@@ -71,7 +71,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-primary" href="#">More Details</a>
+                            <a class="button-secondary" href="#">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-primary" href="#">More Details</a>
+                            <a class="button-secondary" href="#">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-primary" href="#">More Details</a>
+                            <a class="button-secondary" href="#">More Details</a>
                         </div>
                     </div>
                 </div>

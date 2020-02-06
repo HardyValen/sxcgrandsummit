@@ -1,0 +1,173 @@
+.registration-card {
+    @include fluidpaddingbottom(3rem, 5rem);
+    @include fluidpaddingx(1.5rem, 2.5rem); 
+    max-height: 100%;
+    flex: auto;
+    max-width: 100%;
+    display: flex;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25), 4px 0px 5px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+    flex-direction: column;
+
+    h1 { 
+        @include header1();
+        @include montserrat();
+    }
+
+    h2 { 
+        @include header2();
+        @include myriadProRegular();
+    }
+
+    h3 {
+        @include header3();
+        @include myriadProRegular();
+    }
+
+    p { 
+        @include paragraph();
+        @include myriadProRegular();
+    }
+
+    .registration-navigation{
+        @include fluidpaddingy(1.5rem, 2rem);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img {
+            @include fluidheight(2rem, 3rem);
+        }
+    }
+
+    .registration-title{
+        color: map-get($theme-colors, "black");
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            @include fluidwidth(12rem, 15rem);
+            margin-bottom: 1.2rem;
+            display: none;
+
+            @media screen and (max-width: 960px) {
+                display: block;
+            }
+        }
+    }
+
+    .registration-content {
+        display: flex;
+        flex-direction: column;
+        @include fluidpaddingtop(2rem, 3rem);
+        @include myriadProRegular();
+
+        .registration-input{
+            @include fluidmargin(2rem, 3rem);
+            display: block;
+            position: relative;
+
+            .text-label{
+                @include fluidfontsize(1.2rem, 1.6rem);
+                @include paragraph();
+                position: absolute;
+                top: -2px;
+                left: 0px;
+                z-index: 1;
+                color: map-get($theme-colors, "black");
+                transition:0.2s ease all;
+                margin-bottom: 0 !important;
+            }
+
+            input[type=text], input[type=email] {
+                width: 100%;
+            }
+    
+            input[type=text], input[type=email], input[type=number], .txta{
+                display: block;
+                position: relative;
+                z-index: 2;
+                background: none;
+                border: none;
+                border-bottom: 1px solid map-get($theme-colors, "black");
+                background-color: transparent;
+                @include paragraph();
+                margin-bottom: 0;
+                transition:0.2s ease all;
+    
+                &:focus, &:not(:placeholder-shown){
+                    outline: none;
+                    border-bottom: 1px solid map-get($theme-colors, "primary" )
+                }
+    
+                &:focus+.text-label, &:not(:placeholder-shown)+.text-label{
+                    top: -20px;
+                    color: map-get($theme-colors, "primary");
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .registration-radio-wrapper{
+            display: flex;
+            flex-direction: column;
+            @include fluidmarginx(2rem, 3rem);
+            
+            .radio-header{
+                @include paragraph();
+                margin-bottom: 1rem;
+            }
+
+            label{
+                @include paragraph();
+                @include fluidmarginbottom(.5rem, 1rem);
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+
+                .radio-button{
+                    @include fluidwidth(1.6rem, 2rem);
+                    @include fluidheight(1.6rem, 2rem);
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transition: all .2s;
+                }
+
+                input[type=radio]{
+                    display: none;
+
+                    & + .radio-button{
+                        border: 2px solid map-get($theme-colors, "black");
+                    }
+                    
+                    &:checked + .radio-button{
+                        border: 2px solid map-get($theme-colors, 'primary');
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & span{
+                            @include fluidwidth(.8rem, 1rem);
+                            @include fluidheight(.8rem, 1rem);
+                            display: inline-block;
+                            border-radius: 50%;
+                            background-color: map-get($theme-colors, 'primary');
+                            transition: all .2s;
+                        }
+                    }
+                }
+
+                .radio-description{
+                    margin-left: .6rem;
+                    display: inline;
+                }
+            }
+        }
+    }
+}

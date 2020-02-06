@@ -11,15 +11,20 @@ use App\Notifications;
 class RegisController extends Controller
 {
     public function view(){
-    	return view('form');
+    	return view('pages.registration.form');
     }
 
-    public function store(){
-    	$hold = new RegisData();
-
-    	$hold->nama = request('nama');
-    	$hold->gender = request('gender');
-    	$hold->email = request('email');
+    public function store(Request $request){
+    	$hold = new RegisData([
+			"nama" => $request->nama,
+			"gender" => $request->gender,
+			"email" => $request->email,
+			"usia" => $request->usia,
+			"line" => $request->line,
+			"univ" => $request->univ,
+			"jurusan" => $request->jurusan,
+			"domisili" => $request->domisili,
+		]);
 
     	$hold->save();
 
@@ -28,7 +33,7 @@ class RegisController extends Controller
     	$user->notify(new EmailNotif());
 
     	$email_name = request('email');
-    	return view('success')->with(
+    	return view('pages.registration.success')->with(
     		'email_name', $email_name
     	);
     }

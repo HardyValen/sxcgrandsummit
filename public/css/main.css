@@ -174,8 +174,8 @@
 
 .button-primary {
   font-family: 'Montserrat', sans-serif;
-  background-color: #FFC517;
-  border: 2px solid #FFC517;
+  background-color: #0252B3;
+  border: 2px solid #0252B3;
   color: white;
   font-weight: 800;
   text-transform: uppercase;
@@ -240,26 +240,26 @@
 }
 
 .button-primary:hover {
-  background-color: #FFD24C;
+  background-color: #0368E3;
   color: white;
-  border-color: #FFD24C;
+  border-color: #0368E3;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
 .button-primary:active {
-  background-color: #0252B3;
+  background-color: #FFC517;
   color: white;
-  border-color: #0252B3;
+  border-color: #FFC517;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
 .button-secondary {
   font-family: 'Montserrat', sans-serif;
-  background-color: white;
+  background-color: #FFC517;
   border: 2px solid #FFC517;
-  color: #0252B3;
+  color: white;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -323,6 +323,89 @@
 }
 
 .button-secondary:hover {
+  background-color: #FFD24C;
+  color: white;
+  border-color: #FFD24C;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-secondary:active {
+  background-color: #0252B3;
+  color: white;
+  border-color: #0252B3;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-secondary-transparent {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  border: 2px solid #FFC517;
+  color: #0252B3;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-secondary-transparent {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-secondary-transparent {
+    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-secondary-transparent {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+
+.button-secondary-transparent {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-secondary-transparent {
+    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-secondary-transparent {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.button-secondary-transparent {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-secondary-transparent {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-secondary-transparent {
+    font-size: 1.6rem;
+  }
+}
+
+.button-secondary-transparent:hover {
   background-color: #E8E8E8;
   color: #0252B3;
   border-color: #E8E8E8;
@@ -330,7 +413,7 @@
   transition: 0.1s;
 }
 
-.button-secondary:active {
+.button-secondary-transparent:active {
   background-color: #F4F4F4;
   color: #0252B3;
   border-color: #F4F4F4;
@@ -786,6 +869,26 @@
 main {
   overflow-x: hidden;
   background-color: #F4F4F4;
+}
+
+.display-inline-block {
+  display: inline-block !important;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .paragraph {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .paragraph {
+    font-size: 1.4rem;
+  }
 }
 
 .landing-hero {
@@ -1296,6 +1399,597 @@ main {
   .landing-registration {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+}
+
+.registration-container {
+  width: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration-card {
+  max-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25), 4px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25), 4px 0px 5px rgba(0, 0, 0, 0.25);
+  overflow-y: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-card {
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card {
+    padding-bottom: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card {
+    padding-bottom: 5rem;
+  }
+}
+
+.registration-card {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card {
+    padding-left: calc(1.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1.5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.registration-card h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.registration-card h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card h1 {
+    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card h1 {
+    font-size: 4rem;
+  }
+}
+
+.registration-card h2 {
+  font-family: 'Myriad Pro Regular';
+}
+
+.registration-card h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card h2 {
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card h2 {
+    font-size: 3.2rem;
+  }
+}
+
+.registration-card h3 {
+  font-family: 'Myriad Pro Regular';
+}
+
+.registration-card h3 {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card h3 {
+    font-size: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card h3 {
+    font-size: 2.4rem;
+  }
+}
+
+.registration-card p {
+  font-family: 'Myriad Pro Regular';
+}
+
+.registration-card p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card p {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card p {
+    font-size: 1.4rem;
+  }
+}
+
+.registration-card .registration-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration-card .registration-navigation {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-navigation {
+    padding-bottom: calc(1.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-navigation {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.registration-card .registration-navigation img {
+  height: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-navigation img {
+    height: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-navigation img {
+    height: 3rem;
+  }
+}
+
+.registration-card .registration-title {
+  color: #0c0c0c;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration-card .registration-title img {
+  margin-bottom: 1.2rem;
+  display: none;
+}
+
+.registration-card .registration-title img {
+  width: 12rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-title img {
+    width: calc(12rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-title img {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .registration-card .registration-title img {
+    display: block;
+  }
+}
+
+.registration-card .registration-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Myriad Pro Regular';
+}
+
+.registration-card .registration-content {
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content {
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content {
+    padding-top: 3rem;
+  }
+}
+
+.registration-card .registration-content .registration-input {
+  display: block;
+  position: relative;
+}
+
+.registration-card .registration-content .registration-input {
+  margin: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-input {
+    margin: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-input {
+    margin: 3rem;
+  }
+}
+
+.registration-card .registration-content .registration-input .text-label {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  z-index: 1;
+  color: #0c0c0c;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  margin-bottom: 0 !important;
+}
+
+.registration-card .registration-content .registration-input .text-label {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-input .text-label {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-input .text-label {
+    font-size: 1.6rem;
+  }
+}
+
+.registration-card .registration-content .registration-input .text-label {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-input .text-label {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-input .text-label {
+    font-size: 1.4rem;
+  }
+}
+
+.registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email] {
+  width: 100%;
+}
+
+.registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email], .registration-card .registration-content .registration-input input[type=number], .registration-card .registration-content .registration-input .txta {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #0c0c0c;
+  background-color: transparent;
+  margin-bottom: 0;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email], .registration-card .registration-content .registration-input input[type=number], .registration-card .registration-content .registration-input .txta {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email], .registration-card .registration-content .registration-input input[type=number], .registration-card .registration-content .registration-input .txta {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email], .registration-card .registration-content .registration-input input[type=number], .registration-card .registration-content .registration-input .txta {
+    font-size: 1.4rem;
+  }
+}
+
+.registration-card .registration-content .registration-input input[type=text]:focus, .registration-card .registration-content .registration-input input[type=text]:not(:placeholder-shown), .registration-card .registration-content .registration-input input[type=email]:focus, .registration-card .registration-content .registration-input input[type=email]:not(:placeholder-shown), .registration-card .registration-content .registration-input input[type=number]:focus, .registration-card .registration-content .registration-input input[type=number]:not(:placeholder-shown), .registration-card .registration-content .registration-input .txta:focus, .registration-card .registration-content .registration-input .txta:not(:placeholder-shown) {
+  outline: none;
+  border-bottom: 1px solid #0252B3;
+}
+
+.registration-card .registration-content .registration-input input[type=text]:focus + .text-label, .registration-card .registration-content .registration-input input[type=text]:not(:placeholder-shown) + .text-label, .registration-card .registration-content .registration-input input[type=email]:focus + .text-label, .registration-card .registration-content .registration-input input[type=email]:not(:placeholder-shown) + .text-label, .registration-card .registration-content .registration-input input[type=number]:focus + .text-label, .registration-card .registration-content .registration-input input[type=number]:not(:placeholder-shown) + .text-label, .registration-card .registration-content .registration-input .txta:focus + .text-label, .registration-card .registration-content .registration-input .txta:not(:placeholder-shown) + .text-label {
+  top: -20px;
+  color: #0252B3;
+  font-size: 11px;
+}
+
+.registration-card .registration-content .registration-radio-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-card .registration-content .registration-radio-wrapper {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper {
+    margin-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    margin-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper .radio-header {
+  margin-bottom: 1rem;
+}
+
+.registration-card .registration-content .registration-radio-wrapper .radio-header {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper .radio-header {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper .radio-header {
+    font-size: 1.4rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.registration-card .registration-content .registration-radio-wrapper label {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper label {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper label {
+    font-size: 1.4rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper label {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper label {
+    margin-bottom: calc(0.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper label {
+    margin-bottom: 1rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper label .radio-button {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.registration-card .registration-content .registration-radio-wrapper label .radio-button {
+  width: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper label .radio-button {
+    width: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper label .radio-button {
+    width: 2rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper label .radio-button {
+  height: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper label .radio-button {
+    height: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper label .radio-button {
+    height: 2rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper label input[type=radio] {
+  display: none;
+}
+
+.registration-card .registration-content .registration-radio-wrapper label input[type=radio] + .radio-button {
+  border: 2px solid #0c0c0c;
+}
+
+.registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button {
+  border: 2px solid #0252B3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button span {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #0252B3;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button span {
+  width: 0.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button span {
+    width: calc(0.8rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button span {
+    width: 1rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button span {
+  height: 0.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button span {
+    height: calc(0.8rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-card .registration-content .registration-radio-wrapper label input[type=radio]:checked + .radio-button span {
+    height: 1rem;
+  }
+}
+
+.registration-card .registration-content .registration-radio-wrapper label .radio-description {
+  margin-left: .6rem;
+  display: inline;
+}
+
+.registration-hero {
+  min-width: 60%;
+  min-height: 100%;
+  background: url("../assets/registration/RegistrationHero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .registration-hero {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
