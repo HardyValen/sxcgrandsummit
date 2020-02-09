@@ -87,9 +87,9 @@
                                             </tr>
                                             <tr>
                                                 <span style="color: #aaaaaa; font-weight: 700; font-size: 11px">
-                                                    REGISTRATION DETAILS
+                                                    REGISTRATION DATE
                                                 </span>
-                                                <p style="color: black; margin-top: 5sspx; font-size: 14px; font-weight: 700">
+                                                <p style="color: black; margin: 5px 0 30px; font-size: 14px; font-weight: 700">
                                                     Monday, 10 February 2020
                                                 </p>
                                             </tr>
