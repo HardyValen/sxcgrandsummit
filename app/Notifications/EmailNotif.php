@@ -40,7 +40,7 @@ class EmailNotif extends Notification
      */
     public function toMail($notifiable)
     {
-        return (new MailMessage);
+        return (new MailMessage)->view("emails.registrationSuccess");
     }
 
     /**

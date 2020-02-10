@@ -53,7 +53,7 @@
                                         <tr class="regis-header" style="box-sizing: border-box;background-color: #0252B3;">
                                             <th style="box-sizing: border-box;">
                                                 <h2 style="box-sizing: border-box;">
-                                                    <img src="https://drive.google.com/uc?id=1FX6Qs0XC39JSGiulrtvTWCEALSX3BG60" alt="STUDENTsxCEOs" style="width: 30%;box-sizing: border-box;">
+                                                    <img src="https://lh3.googleusercontent.com/OHih7yi0fLqDHPjFxpikeyb2pttjmSmVDKmKgyrYepR1n31Iz8C6hh96khhtwC18xXL4ZiRztzmLdSFmh6QyIEGjxdzyA6TX6aV7Vj8xV--hicEw2fwteOWAiHBiVR7kai8htd0xjw=w2400" alt="STUDENTsxCEOs" style="width: 30%;box-sizing: border-box;">
                                                 </h2>
                                             </th>
                                         </tr>
@@ -77,7 +77,7 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tbody style="box-sizing: border-box;">
                                             <tr style="box-sizing: border-box;">
-                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"> Hi <span style="font-weight: 700;box-sizing: border-box;">Hardy Valenthio,</span></h2>
+                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Hello There,</span></h2>
                                             </tr>
                                             <tr style="box-sizing: border-box;">
                                                 <p style="color: #636363;box-sizing: border-box;">
@@ -90,7 +90,7 @@
                                                     REGISTRATION DATE
                                                 </span>
                                                 <p style="color: black;margin: 5px 0 30px;font-size: 14px;font-weight: 700;box-sizing: border-box;">
-                                                    Monday, 10 February 2020
+                                                    {{ date('l, d F Y') }}
                                                 </p>
                                             </tr>
                                         </tbody>
@@ -110,13 +110,13 @@
                   <p style="font-size: 11px;color: #999;text-align: center;padding: 5px 0;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Bandung Institute of Technology</span><br style="box-sizing: border-box;">Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132</p>
                   <h2 style="margin: 0;text-align: center;padding: 8px 0 18px 0;box-sizing: border-box;">
                     <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://www.instagram.com/studentsxceosbdg/">
-                      <img src="https://drive.google.com/uc?id=1StIKkyp0rXzWDP8hoYWjUxgHbSIQNd7D" style="box-sizing: border-box;">
+                      <img src="https://lh3.googleusercontent.com/bmkzRCgxFh9GIavuIluT2WtHIJ533x_d4tRwD5Dc3JlI8oc6p2Jc36lss45DspPgfE7kj8pfpMpu_KrIwCZ0ivKEx_JkWMkyOOyH9aKcc1Bwxm_M5j0g2EI5rTxhtiFCfSSCE64_mA=s70-p-k" style="box-sizing: border-box;">
                     </a>
                     <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="#">
-                      <img src="https://drive.google.com/uc?id=1QKZZQ3Q5yrDSzdtxN3-FfMsQnXeglmWA" style="box-sizing: border-box;">
+                      <img src="https://lh3.googleusercontent.com/C-ZBQeVgFI3Lv-Vj7QavOhvBeCZR7uhjqLA2BRGPSPb4TnuFl8OsBF80P8KZdjtrlVNldHot1lK23e5uzA6VuNSIycSHBbWvivcdF0oRXxUueJc5bYZ89h_8quGxkAHlad1W983P7g=s70-p-k" style="box-sizing: border-box;">
                     </a>
                     <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://sxcgrandsummit.com/">
-                      <img src="https://drive.google.com/uc?id=1mjoDgWfL8u27ttdb_y3NByhULlVh22y4" style="box-sizing: border-box;">
+                      <img src="https://lh3.googleusercontent.com/gy4g-8fwj4agFrLutMBeEgyrT_L1jgTwIyp-iG5T5y6lALPDLmVlBliYW52hVDbRinycFUvaXXdjv_Kg16iNjP-HyKTBsqPzJ3pE9oC7V7TvJBDZCcO1N5xWFbX2A4fvUineHKnurg=s70-p-k" style="box-sizing: border-box;">
                     </a>
                   </h2>
                 </td>

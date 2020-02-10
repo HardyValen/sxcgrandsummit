@@ -1992,4 +1992,260 @@ main {
     display: none;
   }
 }
+
+.registration-success {
+  width: 100%;
+}
+
+.registration-success {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.registration-success p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success p {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success p {
+    font-size: 1.4rem;
+  }
+}
+
+.registration-success .registration-success-description {
+  margin-bottom: 1.5rem;
+}
+
+.registration-success .registration-success-link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registration-success .registration-success-link {
+  padding-top: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-link {
+    padding-top: calc(1.8rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-link {
+    padding-top: 2rem;
+  }
+}
+
+.registration-success .registration-success-summary {
+  width: 100%;
+}
+
+.registration-success .registration-success-summary {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary {
+    padding-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.registration-success .registration-success-summary .summary-title {
+  font-family: 'Myriad Pro Regular';
+  font-weight: 700;
+  color: #868686;
+}
+
+.registration-success .registration-success-summary .summary-title {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary .summary-title {
+    font-size: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary .summary-title {
+    font-size: 1.2rem;
+  }
+}
+
+.registration-success .registration-success-summary .summary-date {
+  font-family: 'Myriad Pro Bold';
+  color: #121212;
+}
+
+.registration-success .registration-success-summary .summary-date {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary .summary-date {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary .summary-date {
+    font-size: 1.4rem;
+  }
+}
+
+.registration-success .registration-success-summary .summary-data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-success .registration-success-summary .summary-data-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary .summary-data-container {
+    padding-bottom: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary .summary-data-container {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.registration-success .registration-success-summary .summary-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-success .registration-success-summary .summary-data {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary .summary-data {
+    padding-bottom: calc(1rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary .summary-data {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.registration-success .registration-success-summary .summary-data {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary .summary-data {
+    padding-left: calc(1.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary .summary-data {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.registration-success .registration-success-summary .summary-data .data-title {
+  font-family: 'Myriad Pro Bold';
+  color: #121212;
+}
+
+.registration-success .registration-success-summary .summary-data .data-title {
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary .summary-data .data-title {
+    font-size: calc(1.1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary .summary-data .data-title {
+    font-size: 1.3rem;
+  }
+}
+
+.registration-success .registration-success-summary .summary-data .data-value {
+  font-family: 'Myriad Pro Regular';
+  color: #545454;
+}
+
+.registration-success .registration-success-summary .summary-data .data-value {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-success .registration-success-summary .summary-data .data-value {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-success .registration-success-summary .summary-data .data-value {
+    font-size: 1.4rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

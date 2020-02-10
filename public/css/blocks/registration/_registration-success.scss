@@ -1,0 +1,64 @@
+.registration-success{
+    width: 100%;
+    @include fluidpaddingy(2rem, 3rem);
+
+    p {
+        @include paragraph();
+    }
+
+    .registration-success-description{
+        margin-bottom: 1.5rem;
+    }
+
+    .registration-success-link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @include fluidpaddingtop(1.8rem, 2rem);
+    }
+
+    .registration-success-summary{
+        width: 100%;
+        @include fluidpaddingy(2rem, 2rem);
+
+        .summary-title{
+            @include fluidfontsize(1.0rem, 1.2rem);
+            @include myriadProRegular();
+            font-weight: 700;
+            color: #868686;
+        }
+
+        .summary-date{
+            @include paragraph();
+            @include myriadProBold();
+            color: #121212;
+        }
+
+        .summary-data-container{
+            @include fluidpaddingy(1rem, 1.2rem);
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .summary-data{
+            @include fluidpaddingy(1rem, 1rem);
+            @include fluidpaddingx(1.5rem, 2rem);
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+            .data-title{
+                @include myriadProBold();
+                @include fluidfontsize(1.1rem, 1.3rem);
+                color: #121212;
+            }
+
+            .data-value{
+                @include myriadProRegular();
+                @include paragraph();
+                color: #545454;
+            }
+        }
+    }
+}

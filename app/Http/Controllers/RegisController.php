@@ -32,9 +32,7 @@ class RegisController extends Controller
     	$user->email = request('email');
     	$user->notify(new EmailNotif());
 
-    	$email_name = request('email');
-    	return view('pages.registration.success')->with(
-    		'email_name', $email_name
-    	);
+		return view('pages.registration.success')
+			->with('data', $hold);
     }
 }
