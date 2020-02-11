@@ -561,13 +561,13 @@
             flex: 0 0 auto;
   }
   .post-container .post-card {
-    width: 24rem;
+    width: 22rem;
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
   .post-container .post-card {
-    width: calc(24rem + 4 * ((100vw - 32rem) / (96 - 32)));
+    width: calc(22rem + 6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
@@ -863,6 +863,57 @@
 @media screen and (min-width: 960px) {
   .card-registration .card-registration-link {
     margin-top: 2rem;
+  }
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar {
+    padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar {
+    padding-bottom: calc(1.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 

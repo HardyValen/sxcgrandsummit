@@ -1,0 +1,8 @@
+.navbar{
+    @include fluidpaddingx(2rem, 3rem);
+    @include fluidpaddingy(1.5rem, 2rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}

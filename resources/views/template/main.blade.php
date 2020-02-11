@@ -33,4 +33,5 @@
 </body>
 
 @yield('script')
+<script src="{{URL::asset('js/smooth-scroll.js')}}"></script>
 </html>

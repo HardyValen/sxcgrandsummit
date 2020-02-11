@@ -11,7 +11,7 @@
                 <h1>What is SxC 9th Grand Summit ?</h1>
                 <p>The biggest annual event held by StudentsxCEOs Bandung Chapter, a platform for selected students across Indonesia to solve real problems related to Sustainable Development Goals (SDGs) and propose it to company & non-government organization.</p>
                 <div>
-                    <a class="button-white-transparent" href="#description">Scroll down</a>
+                    <a class="button-white-transparent" onClick="scrollto('#description')">Scroll down</a>
                 </div>
             </div>
         </section>
@@ -119,4 +119,3 @@
         <section class="landing-sponsor"></section>
     </main>
 @endsection
-

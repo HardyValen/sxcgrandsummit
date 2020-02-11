@@ -16,4 +16,4 @@ Route::get('/landing', 'PageRequestController@viewLanding');
 Route::post('/register', 'RegisController@store'); //storing page
 Route::get('/register', 'RegisController@view'); //view form
 
-Route::get('/success', function(){return view('pages.registration.success');});
+Route::get('/navbar', function(){return view("blocks.navbar");});
