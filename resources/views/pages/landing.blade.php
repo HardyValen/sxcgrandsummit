@@ -5,7 +5,11 @@
 @endsection
 
 @section('content')
+
+    @include("blocks.sidebar")
     <main>
+        @include("blocks.navbar")
+
         <section class="landing-hero">
             <div class="landing-hero-description">
                 <h1>What is SxC 9th Grand Summit ?</h1>
@@ -117,5 +121,7 @@
 
         <section class="landing-schedule"></section>
         <section class="landing-sponsor"></section>
+        
+        @include('blocks.footer')
     </main>
 @endsection

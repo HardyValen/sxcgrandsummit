@@ -112,7 +112,7 @@
                     <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://www.instagram.com/studentsxceosbdg/">
                       <img src="https://lh3.googleusercontent.com/bmkzRCgxFh9GIavuIluT2WtHIJ533x_d4tRwD5Dc3JlI8oc6p2Jc36lss45DspPgfE7kj8pfpMpu_KrIwCZ0ivKEx_JkWMkyOOyH9aKcc1Bwxm_M5j0g2EI5rTxhtiFCfSSCE64_mA=s70-p-k" style="box-sizing: border-box;">
                     </a>
-                    <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="#">
+                    <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://lin.ee/38yYPIT">
                       <img src="https://lh3.googleusercontent.com/C-ZBQeVgFI3Lv-Vj7QavOhvBeCZR7uhjqLA2BRGPSPb4TnuFl8OsBF80P8KZdjtrlVNldHot1lK23e5uzA6VuNSIycSHBbWvivcdF0oRXxUueJc5bYZ89h_8quGxkAHlad1W983P7g=s70-p-k" style="box-sizing: border-box;">
                     </a>
                     <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://sxcgrandsummit.com/">
