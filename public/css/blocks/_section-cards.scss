@@ -28,7 +28,7 @@
         }
 
         @media screen and (max-width: 960px){
-            @include fluidwidth(24rem, 28rem);
+            @include fluidwidth(22rem, 28rem);
             flex: 0 0 auto;
         }
 

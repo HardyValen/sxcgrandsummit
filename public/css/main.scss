@@ -6,9 +6,14 @@
 @import 'module/button';
 @import 'module/layout';
 
+
 @import 'blocks/section-title';
 @import 'blocks/section-cards';
 @import 'blocks/section-registration';
+
+@import 'blocks/navbar';
+@import 'blocks/sidebar';
+@import 'blocks/footer';
 
 main{
     overflow-x: hidden;
