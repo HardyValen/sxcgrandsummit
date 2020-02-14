@@ -1,4 +1,67 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap");
+/* =================================================================== 
+ *
+ *  SXC Grand Summit Main Stylesheet
+ *  31-01-2020
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *      # A. Import Modules
+ *      # B. Default Colors
+ *      # C. Navigation Bar
+ *          -- 1. Navbar
+ *          -- 2. Sidebar
+ *      # D. Footer
+ *      # E. Main Sections
+ *          -- 1. Hero
+ *          -- 2. Remarks
+ *          -- 3. Date & Venue
+ *          -- 4. Councils
+ *          -- 5. Supports
+ *      # F. Remark Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # G. About Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # H. Council Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # I. Registration Sections
+ *          -- 1. Hero
+ *          -- 2. Body
+ *      # J. Admin Sections
+ *          -- 1. Login
+ *
+ * =================================================================== */
+/* ===================================================================
+ * # A. Import Module
+ @import 'module/math';
+ @import 'module/variable';
+ @import 'module/elevation-shadow';
+ @import 'module/hamburger';
+ @import 'module/section';
+ @import 'module/button';
+ * ------------------------------------------------------------------- */
+/* MIXIN FOR CUSTOM RANGE OF FLUID SIZES
+ *  -- Menerima masukan batas bawah font size 'floor' dan batas atas font size 'ceiling', satuan rem!
+ *  -- Mengeluarkan kode css yang membuat transisi antara floor dan ceiling 'fluid'     
+ *
+ *  -- TABLE OF CONTENT
+ *  -- 1. Width
+ *  -- 2. Padding
+ *  -- 3. Margin
+ *  -- 4. Font-Size
+ *  -- 5. Letter-Spacing  
+ *  -- 6. Responsive Border
+ *  -- 7. Responsive Padding Inline Start
+ */
+/* -- 01. Mixin untuk fluid width -- */
+/* -- 02. Mixin untuk fluid padding -- */
+/* -- 03. Mixin untuk fluid margin -- */
+/* -- 05. Mixin untuk fluid font size -- */
+/* -- 06. Mixin untuk fluid letter spacing -- */
+/* -- 07. Mixin untuk Responsive Border (Satu Sisi) -- */
+/* -- 08. Mixin untuk Padding-Inline-Start -- */
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap");
 @font-face {
   font-family: 'Myriad Pro Regular';
@@ -43,17 +106,17 @@
 }
 
 @font-face {
-  font-family: 'Myriad Pro Bold Condensed';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Myriad Pro Bold Condensed"), url("module/fonts/MYRIADPRO-BOLDCOND.woff") format("woff");
-}
-
-@font-face {
   font-family: 'Myriad Pro Bold';
   font-style: normal;
   font-weight: normal;
   src: local("Myriad Pro Bold"), url("module/fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Myriad Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed"), url("module/fonts/MYRIADPRO-BOLDCOND.woff") format("woff");
 }
 
 @font-face {
@@ -70,24 +133,81 @@
   src: local("Myriad Pro Bold Condensed Italic"), url("module/fonts/MYRIADPRO-BOLDCONDIT.woff") format("woff");
 }
 
-/* MIXIN FOR CUSTOM RANGE OF FLUID SIZES
- *  -- Menerima masukan batas bawah font size 'floor' dan batas atas font size 'ceiling', satuan rem!
- *  -- Mengeluarkan kode css yang membuat transisi antara floor dan ceiling 'fluid'     
- *
- *  -- TABLE OF CONTENT
- *  -- 1. Width
- *  -- 2. Padding
- *  -- 3. Margin
- *  -- 4. Font-Size
- *  -- 5. Letter-Spacing  
- *  -- 6. Responsive Border
- *  -- 7. Responsive Padding Inline Start
- */
-/* -- 01. Mixin untuk fluid width -- */
-/* -- 02. Mixin untuk fluid padding -- */
-/* -- 03. Mixin untuk fluid margin -- */
-/* -- 05. Mixin untuk fluid font size -- */
-/* -- 06. Mixin untuk fluid letter spacing -- */
-/* -- 07. Mixin untuk Responsive Border (Satu Sisi) -- */
-/* -- 08. Mixin untuk Padding-Inline-Start -- */
+/* # End of Import Module
+ * ----------------------- */
+/* ===================================================================
+ * # B. Default Colors & Utilities
+ * ------------------------------------------------------------------- */
+.bc-hero {
+  width: 100%;
+  height: 100%;
+  background-color: 80%;
+  background-image: url("..\assetsimgvangeline-shaw-xRlI-L-kvrw-unsplash.png");
+}
+
+.bc-hero .bc-hero-container {
+  width: 80%;
+}
+
+.bc-hero .bc-hero-container {
+  padding: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .bc-hero .bc-hero-container {
+    padding: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bc-hero .bc-hero-container {
+    padding: 5rem;
+  }
+}
+
+.bc-hero .bc-hero-container .hero-title {
+  font-family: 'Myriad Pro Bold Condensed';
+  line-height: 1.4;
+}
+
+.bc-hero .bc-hero-container .hero-title {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .bc-hero .bc-hero-container .hero-title {
+    font-size: calc(1.5rem + 3.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bc-hero .bc-hero-container .hero-title {
+    font-size: 5rem;
+  }
+}
+
+.bc-hero .bc-hero-container .hero-title {
+  letter-spacing: 1.5px;
+  padding-left: 1.5px;
+}
+
+@media screen and (min-width: 320px) {
+  .bc-hero .bc-hero-container .hero-title {
+    letter-spacing: calc(1.5px + 3.5 * ((100vw - 320px) / (960 - 320)));
+    padding-left: calc(1.5px + 3.5 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bc-hero .bc-hero-container .hero-title {
+    letter-spacing: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bc-hero .bc-hero-container .hero-title {
+    line-height: 1.5;
+  }
+}
 /*# sourceMappingURL=main.css.map */

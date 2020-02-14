@@ -13,6 +13,6 @@
 
 Route::get('/', function() {return redirect()->to("/landing");});
 Route::get('/landing', 'PageRequestController@viewLanding');
-Route::get('/businesscase', 'PageRequestController@viewLBusinessCase');
+Route::get('/businesscase', 'PageRequestController@viewBusinessCase');
 Route::post('/store', 'RegisController@store'); //storing page
 Route::get('/form', 'RegisController@view'); //view form
