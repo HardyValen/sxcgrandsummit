@@ -1,0 +1,59 @@
+body{
+    counter-reset: section;
+}
+
+.flow-container{
+    width: 100%;
+    max-width: 56rem;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    h3{
+        @include header3();
+        @include montserrat();
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    .flow-card{
+        @include fluidpaddingx(2rem, 3rem);
+        @include fluidpaddingy(1.2rem, 1.8rem);
+        border: 1px solid black;
+        border-radius: 1rem;
+        width: 100%;
+
+        h3{
+            color: map-get($theme-colors, "primary");
+        }
+        
+        h3::before {
+            @include fluidpadding(2rem, 2rem);
+            display: inline-flex;
+            @include fluidwidth(3.5rem, 4.5rem);
+            @include fluidheight(3.5rem, 4.5rem);
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: map-get($theme-colors, "secondary");
+            color: map-get($theme-colors, "primary");
+            content: counter(section);
+            counter-increment: section;
+            margin-right: 2rem;
+        }
+    }
+
+    .flow-connector{
+        @include fluidwidth(.3rem, .8rem);
+        height: 4rem;
+        background-color: map-get($theme-colors, "secondary");
+    }
+}

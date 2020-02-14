@@ -5,7 +5,7 @@
 @import 'module/imgcontrol';
 @import 'module/button';
 @import 'module/layout';
-
+@import 'module/flow';
 
 @import 'blocks/section-title';
 @import 'blocks/section-cards';
@@ -28,6 +28,10 @@ main{
     @include paragraph();
 }
 
+.header-line{
+    @include headerLine(0.8rem, 1.5rem);
+}
+
 // 1. Landing
 @import 'blocks/landing/hero';
 @import 'blocks/landing/description';
@@ -39,3 +43,8 @@ main{
 @import 'blocks/registration/registration-card';
 @import 'blocks/registration/registration-hero';
 @import 'blocks/registration/registration-success';
+
+// 3. Business Case
+@import 'blocks/business-case/hero';
+@import 'blocks/business-case/description';
+@import 'blocks/business-case/flow';

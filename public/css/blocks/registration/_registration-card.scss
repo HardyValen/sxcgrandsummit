@@ -41,7 +41,7 @@
     }
 
     .registration-title{
-        color: map-get($theme-colors, "black");
+        color: map-get($theme-colors, "gray1");
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -63,6 +63,23 @@
         flex-direction: column;
         @include fluidpaddingtop(2rem, 3rem);
         @include myriadProRegular();
+        width: 100%;
+
+        .registration-input-group{
+            @include fluidpaddingy(1.2rem, 1.8rem); 
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .group-header{
+                @include fluidfontsize(1.2rem, 1.4rem);
+                @include montserrat();
+                color: map-get($theme-colors, "gray2");
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+        }
 
         .registration-input{
             @include fluidmargin(2rem, 3rem);
@@ -70,19 +87,19 @@
             position: relative;
 
             .text-label{
-                @include fluidfontsize(1.2rem, 1.6rem);
                 @include paragraph();
                 position: absolute;
                 top: -2px;
                 left: 0px;
                 z-index: 1;
-                color: map-get($theme-colors, "black");
+                color: map-get($theme-colors, "gray2");
                 transition:0.2s ease all;
                 margin-bottom: 0 !important;
             }
 
             input[type=text], input[type=email] {
                 width: 100%;
+                max-width: 36rem;
             }
     
             input[type=text], input[type=email], input[type=number], .txta{
@@ -91,7 +108,7 @@
                 z-index: 2;
                 background: none;
                 border: none;
-                border-bottom: 1px solid map-get($theme-colors, "black");
+                border-bottom: 1px solid map-get($theme-colors, "gray1");
                 background-color: transparent;
                 @include paragraph();
                 margin-bottom: 0;
@@ -113,10 +130,10 @@
         .registration-radio-wrapper{
             display: flex;
             flex-direction: column;
-            @include fluidmarginx(2rem, 3rem);
             
             .radio-header{
-                @include paragraph();
+                @include fluidfontsize(1.4rem, 1.7rem);
+                color: map-get($theme-colors, "gray1");
                 margin-bottom: 1rem;
             }
 
@@ -143,7 +160,7 @@
                     display: none;
 
                     & + .radio-button{
-                        border: 2px solid map-get($theme-colors, "black");
+                        border: 2px solid map-get($theme-colors, "gray1");
                     }
                     
                     &:checked + .radio-button{
@@ -164,10 +181,46 @@
                 }
 
                 .radio-description{
-                    margin-left: .6rem;
+                    margin-left: 1rem;
                     display: inline;
+                    color: map-get($theme-colors, "gray2");
                 }
             }
         }
     }
+}
+
+.registration-input-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    @include fluidpadding(2rem, 3rem);
+
+    .registration-input-col{
+        @include fluidpaddingx(2rem, 3rem);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+            &:first-child{
+                padding-left: 0;
+            }
+
+            &:last-child{
+                padding-right: 0;
+            }
+
+        .registration-input{
+            margin: 0;
+        }
+    }
+}
+
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.registration-submit{
+    @include fluidpaddingy(2rem, 3rem);
 }

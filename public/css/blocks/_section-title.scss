@@ -9,10 +9,6 @@
     justify-content: center;
     width: 100%;
 
-    .header-line{
-        @include headerLine(0.8rem, 1.5rem);
-    }
-
     h2{
         @include montserrat();
         @include header2();

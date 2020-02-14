@@ -27,7 +27,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="card-registration-link">
-                    <a href="/register" class="button-secondary-transparent">Register</a>
+                    <a href="/business-case/register" class="button-secondary-transparent">Register</a>
                 </div>
             </div>
         </section>
