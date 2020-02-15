@@ -26,6 +26,9 @@
 					<big><b>Dear Team "{{$data->team_name}}",</b></big><br>
 					Your Business Case Registration has been recorded successfully.
 				</p>
+				<p style="text-align: center">
+					We also have sent you the email for the next step of registration to {{ $data->email }}.
+				</p>
 			</div>
 
 			<hr style="background-color: #aaaaaa">
@@ -40,49 +43,20 @@
 						<p class='summary-title'>TEAM ID</p>
 						<p class='summary-date'>{{ $data->id }}</p>
 					</div>
+					<div class="summary-data">
+						<p class='summary-title'>PAYMENT</p>
+						<p class='summary-date'>
+							BCA 5221166435 Chyntia Angelina<br>
+							BNI  670350698 Zahra Fulli Fauza<br>
+						</p>
+					</div>
+					<div class="summary-data">
+						<p class='summary-title'>PAYMENT RECEIPT FORM</p>
+						<p class='summary-date'>
+							<a target="_blank" href="http://bit.ly/sxcbccpayment" style="color: blue">http://bit.ly/sxcbccpayment</a>
+						</p>
+					</div>
 				</div>
-
-				{{-- <div class="summary-data-container">
-					<div class="summary-data">
-						<p class='data-title'>Name</p>
-						<p class='data-value'>{{$data->nama}}</p>
-					</div>
-		
-					<div class="summary-data">
-						<p class='data-title'>Gender</p>
-						<p class='data-value'>{{$data->gender}}</p>
-					</div>
-		
-					<div class="summary-data">
-						<p class='data-title'>Email</p>
-						<p class='data-value'>{{$data->email}}</p>
-					</div>
-		
-					<div class="summary-data">
-						<p class='data-title'>Age</p>
-						<p class='data-value'>{{$data->usia}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>Line</p>
-						<p class='data-value'>{{$data->line}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>University</p>
-						<p class='data-value'>{{$data->univ}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>Major</p>
-						<p class='data-value'>{{$data->jurusan}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>Domicile</p>
-						<p class='data-value'>{{$data->domisili}}</p>
-					</div>
-				</div> --}}
 			</div>
 
 			<hr style="background-color: #aaaaaa">
