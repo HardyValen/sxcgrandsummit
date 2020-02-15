@@ -10,7 +10,7 @@
             <a href="https://sxcgrandsummit.com/" class="footer-link">
                 <img src="{{URL::asset('assets/icons/url.svg')}}">
             </a>
-            <a href="" class="footer-link">
+            <a href="mailto:grandsummitsxc@gmail.com" class="footer-link">
                 <img src="{{URL::asset('assets/icons/mail.svg')}}">
             </a>
         </div>

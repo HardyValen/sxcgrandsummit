@@ -63,8 +63,8 @@
                       <span class='radio-button'><span></span></span>
                   </label>
                   <label>
-                      <span class='radio-description'>Others</span>
-                      <input type="radio" class="individual-radio" name="gender1" value="Others">
+                      <span class='radio-description'>Other</span>
+                      <input type="radio" class="individual-radio" name="gender1" value="Other">
                       <span class='radio-button'><span></span></span>
                   </label>
                 </div>
@@ -145,8 +145,8 @@
                       <span class='radio-button'><span></span></span>
                   </label>
                   <label>
-                      <span class='radio-description'>Others</span>
-                      <input type="radio" class="individual-radio" name="gender2" value="Others">
+                      <span class='radio-description'>Other</span>
+                      <input type="radio" class="individual-radio" name="gender2" value="Other">
                       <span class='radio-button'><span></span></span>
                   </label>
                 </div>
@@ -227,8 +227,8 @@
                       <span class='radio-button'><span></span></span>
                   </label>
                   <label>
-                      <span class='radio-description'>Others</span>
-                      <input type="radio" class="individual-radio" name="gender3" value="Others">
+                      <span class='radio-description'>Other</span>
+                      <input type="radio" class="individual-radio" name="gender3" value="Other">
                       <span class='radio-button'><span></span></span>
                   </label>
                 </div>
