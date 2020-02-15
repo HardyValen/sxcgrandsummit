@@ -73,3 +73,36 @@
     )
 }
 
+.button-disabled{
+    @include button(
+        white,
+        map-get($theme-colors, "gray1"),
+        map-get($theme-colors, "gray1"),
+        map-get($theme-colors, "gray2"),
+        map-get($theme-colors, "gray3")
+    )
+}
+
+.button-section{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.2s;
+
+    h3{
+        @include header3();
+        @include montserrat();
+        font-weight: 400;
+    }
+
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 800;
+    }
+}
+

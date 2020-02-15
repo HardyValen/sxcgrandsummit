@@ -421,6 +421,152 @@
   transition: 0.1s;
 }
 
+.button-disabled {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333333;
+  border: 2px solid #333333;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-disabled {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-disabled {
+    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-disabled {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+
+.button-disabled {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-disabled {
+    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-disabled {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.button-disabled {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-disabled {
+    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-disabled {
+    font-size: 1.6rem;
+  }
+}
+
+.button-disabled:hover {
+  background-color: #4F4F4F;
+  color: white;
+  border-color: #4F4F4F;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-disabled:active {
+  background-color: #828282;
+  color: white;
+  border-color: #828282;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-section {
+  height: 20rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button-section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.button-section h3 {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-section h3 {
+    font-size: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-section h3 {
+    font-size: 2.4rem;
+  }
+}
+
+.button-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.button-section h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-section h2 {
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-section h2 {
+    font-size: 3.2rem;
+  }
+}
+
 body {
   counter-reset: section;
 }
@@ -2137,6 +2283,54 @@ body {
   }
 }
 
+.bg-business-case {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 197, 23, 0.6)), to(rgba(255, 197, 23, 0.6))), url("../assets/landing/event/post1.jpg");
+  background: linear-gradient(0deg, rgba(255, 197, 23, 0.6), rgba(255, 197, 23, 0.6)), url("../assets/landing/event/post1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg-business-case:hover {
+  color: #E0E0E0;
+  background-size: 110%;
+}
+
+.bg-pre-event {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../assets/landing/event/post3.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/landing/event/post3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg-pre-event:hover {
+  color: #FFD24C;
+  background-size: 110%;
+}
+
+.bg-main-event {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../assets/landing/event/post2.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/landing/event/post2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg-main-event:hover {
+  color: #E0E0E0;
+  background-size: 110%;
+}
+
 main {
   overflow-x: hidden;
   background-color: #F4F4F4;
@@ -2653,46 +2847,32 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.landing-registration {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.landing-schedule {
+  background-color: #0368E3;
+}
+
+.landing-schedule {
+  padding-top: 2rem;
 }
 
 @media screen and (min-width: 320px) {
-  .landing-registration {
-    padding-bottom: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  .landing-schedule {
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .landing-registration {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
-
-.landing-registration {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-@media screen and (min-width: 320px) {
-  .landing-registration {
-    padding-left: calc(2rem + 6 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(2rem + 6 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .landing-registration {
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .landing-schedule {
+    padding-top: 3rem;
   }
 }
 

@@ -4,9 +4,9 @@
     </div>
     <div class="navbar-links">
         <a href="/landing">HOME</a>
-        <a href="/about">ABOUT</a>
-        <a href="/event">EVENT</a>
-        <a href="/schedule">SCHEDULE</a>
+        {{-- <a href="/about">ABOUT</a> --}}
+        <a href="/landing#event" id="navEvent">EVENT</a>
+        <a href="/landing#schedule" id="navSchedule">SCHEDULE</a>
     </div>
     <div class="navbar-registration">
         <a class="button-primary" id="navRegist">REGISTRATION</a>
