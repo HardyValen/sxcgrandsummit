@@ -20,17 +20,6 @@
             </div>
         </section>
 
-        <section class="landing-registration" id="registration">
-            <div class="card-registration">
-                <div class="card-registration-description">
-                    <h1>Registration</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-registration-link">
-                    <a href="/register" class="button-secondary-transparent">Register</a>
-                </div>
-            </div>
-        </section>
         
         <section class="landing-description" id="description">
             <div class="box1">
@@ -51,7 +40,7 @@
                 <div></div>
             </div>
         </section>
-
+        
         <section class="landing-event">
             <div class="landing-event-title">
                 <div class='section-title'>
@@ -59,8 +48,8 @@
                     <h2>Event</h2>
                 </div>
             </div>
-
-            <div class="post-container">
+            
+            <div class="post-container" id="event">
                 <div class="post-card">
                     <div class="post-image image-event-1"></div>
                     <div class="post-desc">
@@ -75,7 +64,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-secondary" href="#">More Details</a>
+                            <a class="button-secondary" href="/business-case">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +82,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-secondary" href="#">More Details</a>
+                            <a class="button-disabled" href="#">Details Soon</a>
                         </div>
                     </div>
                 </div>
@@ -111,15 +100,37 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-secondary" href="#">More Details</a>
+                            <a class="button-disabled" href="#">Details Soon</a>
                         </div>
                     </div>
                 </div>
-            </div>
-    
+            </div>    
+        </section>
+        
+        <section class="landing-registration" id="registration">
+            <a href="/business-case/register" class="button-section bg-business-case">
+                <h3>REGISTER</h3>
+                <h2>BUSINESS CASE</h2>
+            </a>
+            <a href="#" class="button-section bg-pre-event">
+                <h3>COMING SOON</h3>
+                <h2>17 FEBRUARY 2020</h2>
+            </a>
+            <a href="#" class="button-section bg-main-event">
+                <h3>COMING SOON</h3>
+                <h2></h2>
+            </a>
+        </section>
+        
+        <section class="landing-schedule" id="schedule">
+            @component('blocks.title')
+                <h2 style="color: white">Schedule</h2>
+            @endcomponent
+            @include('blocks.schedule.businessCase')<hr>
+            @include('blocks.schedule.summit')<hr>
+            @include('blocks.schedule.preEvent')
         </section>
 
-        <section class="landing-schedule"></section>
         <section class="landing-sponsor"></section>
         
         @include('blocks.footer')

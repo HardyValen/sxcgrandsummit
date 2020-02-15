@@ -5,7 +5,7 @@
 @import 'module/imgcontrol';
 @import 'module/button';
 @import 'module/layout';
-
+@import 'module/flow';
 
 @import 'blocks/section-title';
 @import 'blocks/section-cards';
@@ -14,6 +14,8 @@
 @import 'blocks/navbar';
 @import 'blocks/sidebar';
 @import 'blocks/footer';
+@import 'blocks/schedule';
+@import 'blocks/background';
 
 main{
     overflow-x: hidden;
@@ -28,14 +30,24 @@ main{
     @include paragraph();
 }
 
+.header-line{
+    @include headerLine(0.8rem, 1.5rem);
+}
+
 // 1. Landing
 @import 'blocks/landing/hero';
 @import 'blocks/landing/description';
 @import 'blocks/landing/event';
 @import 'blocks/landing/registration';
+@import 'blocks/landing/schedule';
 
 // 2. Registration
 @import 'blocks/registration/registration-container';
 @import 'blocks/registration/registration-card';
 @import 'blocks/registration/registration-hero';
 @import 'blocks/registration/registration-success';
+
+// 3. Business Case
+@import 'blocks/business-case/hero';
+@import 'blocks/business-case/description';
+@import 'blocks/business-case/flow';

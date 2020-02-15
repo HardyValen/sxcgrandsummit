@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section('title')
-	Success | 9th Grand Summit &ndash; Student&#x2715;CEOs
+	Success | 9th Grand Summit &ndash; Students&#x2715;CEOs
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
     <section class="registration-hero"></section>
     <section class="registration-card">
 		<div class="registration-navigation">
-			<a href="/register">
+			<a href="/business-case/register">
 			<img src="{{URL::asset("assets/registration/BackIcon.svg")}}">
 			</a>
 			<img src="{{URL::asset("assets/registration/MoreIcon-Outline.svg")}}">
@@ -23,18 +23,26 @@
 		<div class="registration-success">
 			<div class="registration-success-description">
 				<p style='text-align: center'>
-					<big><b>Dear Customer,</b></big><br>
-					Your registration has been recorded successfully
+					<big><b>Dear Team "{{$data->team_name}}",</b></big><br>
+					Your Business Case Registration has been recorded successfully.
 				</p>
 			</div>
 
 			<hr style="background-color: #aaaaaa">
 
 			<div class="registration-success-summary">
-				<p class='summary-title'>SUMMARY</p>
-				<p class='summary-date'>{{ date('l, d F Y') }}</p>
-
 				<div class="summary-data-container">
+					<div class="summary-data">
+						<p class='summary-title'>REGISTER DATE</p>
+						<p class='summary-date'>{{ date('l, d F Y') }}</p>
+					</div>
+					<div class="summary-data">
+						<p class='summary-title'>TEAM ID</p>
+						<p class='summary-date'>{{ $data->id }}</p>
+					</div>
+				</div>
+
+				{{-- <div class="summary-data-container">
 					<div class="summary-data">
 						<p class='data-title'>Name</p>
 						<p class='data-value'>{{$data->nama}}</p>
@@ -74,7 +82,7 @@
 						<p class='data-title'>Domicile</p>
 						<p class='data-value'>{{$data->domisili}}</p>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 
 			<hr style="background-color: #aaaaaa">

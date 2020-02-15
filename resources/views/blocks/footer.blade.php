@@ -16,6 +16,6 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <p>&copy; STUDENTs x CEOs Bandung 9th Grand Summit, All Rights Reserved</p>
+        <p>&copy; StudentsxCEOs Bandung 9th Grand Summit, All Rights Reserved</p>
     </div>
 </footer>

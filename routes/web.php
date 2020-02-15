@@ -13,11 +13,15 @@
 
 Route::get('/', function() {return redirect()->to("/landing");});
 Route::get('/landing', 'PageRequestController@viewLanding');
-Route::post('/register', 'RegisController@store'); //storing page
-Route::get('/register', 'RegisController@view'); //view form
+
+Route::get('/business-case', 'PageRequestController@viewBusinessCase');
+Route::get('/business-case/register', 'BusinessCaseController@view');
+Route::post('/business-case/register', 'BusinessCaseController@store'); 
 
 
 // For debugging purpose only
-Route::get('/footer', function(){return view("blocks.footer");});
+Route::get('/registration-cards', function(){return view("blocks.registration");});
+// Route::get('/schedule', function(){return view("blocks.schedule.businessCase");});
+// Route::get('/footer', function(){return view("blocks.footer");});
 // Route::get('/navbar', function(){return view("blocks.navbar");});
 // Route::get('/sidebar', function(){return view("blocks.sidebar");});
