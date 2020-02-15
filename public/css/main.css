@@ -2856,6 +2856,15 @@ main {
           justify-content: center;
 }
 
+@media screen and (max-width: 960px) {
+  .landing-registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .landing-schedule {
   background-color: #0368E3;
 }
