@@ -691,8 +691,10 @@ body {
   padding: 1.5rem;
 }
 
-.post-container::-webkit-scrollbar {
-  display: none;
+@media screen and (max-width: 960px) {
+  .post-container::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .post-container .post-card {
@@ -1711,6 +1713,427 @@ body {
 @media screen and (min-width: 960px) {
   .footer .footer-copyright {
     font-size: 1.4rem;
+  }
+}
+
+.schedule-container {
+  width: 100%;
+  min-height: 20rem;
+  background-color: #0368E3;
+  color: #E8E8E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.schedule-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .schedule-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.schedule-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.schedule-container h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container h1 {
+    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container h1 {
+    font-size: 4rem;
+  }
+}
+
+.schedule-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.schedule-container h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container h2 {
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container h2 {
+    font-size: 3.2rem;
+  }
+}
+
+.schedule-container h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.schedule-container h3 {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container h3 {
+    font-size: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container h3 {
+    font-size: 2.4rem;
+  }
+}
+
+.schedule-container p {
+  font-family: 'Myriad Pro Regular';
+}
+
+.schedule-container p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container p {
+    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container p {
+    font-size: 1.4rem;
+  }
+}
+
+.schedule-container .schedule-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.schedule-container .schedule-title {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container .schedule-title {
+    padding-left: calc(2rem + 5 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container .schedule-title {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .schedule-container .schedule-title {
+    width: 100%;
+  }
+  .schedule-container .schedule-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .schedule-container .schedule-title {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .schedule-container .schedule-title {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.schedule-container .schedule-timeline-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  min-height: auto;
+  width: 70%;
+}
+
+.schedule-container .schedule-timeline-container::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+  background-color: none;
+  /* or add it to the track */
+}
+
+.schedule-container .schedule-timeline-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  .schedule-container .schedule-timeline-container {
+    width: 100%;
+  }
+  .schedule-container .schedule-timeline-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item {
+  min-width: 14rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item {
+    min-width: calc(14rem + 6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item {
+    min-width: 20rem;
+  }
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item:first-child {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item:first-child {
+    padding-left: calc(2rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item:first-child {
+    padding-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item:last-child {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item:last-child {
+    padding-right: calc(2rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item:last-child {
+    padding-right: 7rem;
+  }
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFC517;
+  padding-bottom: 1rem;
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date h1 {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date h1 {
+    margin-right: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date h1 {
+    margin-right: 1.2rem;
+  }
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date p {
+  font-family: 'Myriad Pro Bold';
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date p {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date p {
+    font-size: calc(1.3rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-date p {
+    font-size: 1.7rem;
+  }
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-line .timeline-donut {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-line .timeline-line {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #FFC517;
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-line .timeline-line {
+  height: 0.3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-line .timeline-line {
+    height: calc(0.3rem + 0.1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-line .timeline-line {
+    height: 0.4rem;
+  }
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-event {
+  padding-top: 1rem;
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-event p {
+  font-family: 'Myriad Pro Regular';
+  font-weight: 500;
+}
+
+.schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-event p {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-event p {
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .schedule-container .schedule-timeline-container .schedule-timeline-item .schedule-timeline-event p {
+    font-size: 1.8rem;
   }
 }
 

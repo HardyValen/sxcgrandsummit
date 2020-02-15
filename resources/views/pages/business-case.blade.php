@@ -17,7 +17,7 @@
         <section class="business-case-description">
             <div class="description-container">
                 <div class="header-line"></div>
-                <h2>A Brief  Description:</h2>
+                <h2>A Brief Description:</h2>
                 <p>
                     Business Case Competition is a business based problem-solving competition. Through this program, teams must identify the most prominent issues faced by the company and develop a strategy to provide a solution to help companies achieve their goals. They are expected to solve the problem in forms of paper. Winning strategies include being detail-oriented, creative, and business acumen when presenting recommendations.
                 </p>
@@ -47,7 +47,8 @@
                 </div>
             </div>
         </section>
-        
+
+        @include('blocks.schedule.businessCase') 
         @include('blocks.footer')
     </main>
 @endsection

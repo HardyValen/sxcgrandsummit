@@ -119,7 +119,12 @@
     
         </section>
 
-        <section class="landing-schedule"></section>
+        <section class="landing-schedule">
+            @include('blocks.schedule.businessCase')<hr>
+            @include('blocks.schedule.summit')<hr>
+            @include('blocks.schedule.preEvent')
+        </section>
+        
         <section class="landing-sponsor"></section>
         
         @include('blocks.footer')
