@@ -112,12 +112,13 @@
                 <h3>REGISTER</h3>
                 <h2>BUSINESS CASE</h2>
             </a>
-            <a href="#" class="button-section bg-pre-event">
-                <h3>COMING SOON</h3>
-                <h2>17 FEBRUARY 2020</h2>
+            <a href="http://bit.ly/PreEvent1SXCGrandSummit" class="button-section bg-pre-event">
+                <h3>REGISTER</h3>
+                <h2>PRE EVENT 1</h2>
             </a>
             <a href="#" class="button-section bg-main-event">
                 <h3>COMING SOON</h3>
+                <h2>MAIN EVENT</h2>
                 <h2></h2>
             </a>
         </section>
