@@ -130,7 +130,7 @@
             <tr bgcolor="#E8E8E8" style="box-sizing: border-box;">
                 <td style="padding: 0 20px;box-sizing: border-box;">
                   
-                  <p style="font-size: 11px;color: #999;text-align: center;padding: 5px 0;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Bandung Institute of Technology</span><br style="box-sizing: border-box;">Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132</p>
+                 
                   <h2 style="margin: 0;text-align: center;padding: 8px 0 18px 0;box-sizing: border-box;">
                     <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://www.instagram.com/studentsxceosbdg/">
                       <img src="https://lh3.googleusercontent.com/bmkzRCgxFh9GIavuIluT2WtHIJ533x_d4tRwD5Dc3JlI8oc6p2Jc36lss45DspPgfE7kj8pfpMpu_KrIwCZ0ivKEx_JkWMkyOOyH9aKcc1Bwxm_M5j0g2EI5rTxhtiFCfSSCE64_mA=s70-p-k" style="box-sizing: border-box;">
