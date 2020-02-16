@@ -45,7 +45,7 @@ class BusinessCaseController extends Controller
         $user->notify(new EmailNotif());
         
         $team->id = $id;
-
+        $team->email = $request->email1;
 		return view('pages.registration.success')
 			->with('data', $team);
     }

@@ -17,14 +17,21 @@
 
 		<div class="registration-title">
 			<img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
-			<h1>SUCCESS</h1>
+			<h1>SUCCESSFULLY REGISTERED</h1>
+			<h2>(EARLY BIRD)</h2>
 		</div>
 
 		<div class="registration-success">
 			<div class="registration-success-description">
 				<p style='text-align: center'>
 					<big><b>Dear Team "{{$data->team_name}}",</b></big><br>
-					Your Business Case Registration has been recorded successfully.
+					Your registration for the 9th StudentsxCEOs Grand Summit Business Case Competition has been recorded.
+				</p>
+				<p style="text-align: center">
+					We also have sent you the email for the next step of registration to {{ $data->email }}.
+				</p>
+				<p style="text-align: center">
+				    If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
 				</p>
 			</div>
 
@@ -40,49 +47,20 @@
 						<p class='summary-title'>TEAM ID</p>
 						<p class='summary-date'>{{ $data->id }}</p>
 					</div>
+					<div class="summary-data">
+						<p class='summary-title'>PAYMENT</p>
+						<p class='summary-date'>
+							BCA 5221166435 Chyntia Angelina<br>
+							BNI  670350698 Zahra Fulli Fauza<br>
+						</p>
+					</div>
+					<div class="summary-data">
+						<p class='summary-title'>PAYMENT RECEIPT FORM</p>
+						<p class='summary-date'>
+							<a target="_blank" href="http://bit.ly/sxcbccpayment" style="color: blue">http://bit.ly/sxcbccpayment</a>
+						</p>
+					</div>
 				</div>
-
-				{{-- <div class="summary-data-container">
-					<div class="summary-data">
-						<p class='data-title'>Name</p>
-						<p class='data-value'>{{$data->nama}}</p>
-					</div>
-		
-					<div class="summary-data">
-						<p class='data-title'>Gender</p>
-						<p class='data-value'>{{$data->gender}}</p>
-					</div>
-		
-					<div class="summary-data">
-						<p class='data-title'>Email</p>
-						<p class='data-value'>{{$data->email}}</p>
-					</div>
-		
-					<div class="summary-data">
-						<p class='data-title'>Age</p>
-						<p class='data-value'>{{$data->usia}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>Line</p>
-						<p class='data-value'>{{$data->line}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>University</p>
-						<p class='data-value'>{{$data->univ}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>Major</p>
-						<p class='data-value'>{{$data->jurusan}}</p>
-					</div>
-
-					<div class="summary-data">
-						<p class='data-title'>Domicile</p>
-						<p class='data-value'>{{$data->domisili}}</p>
-					</div>
-				</div> --}}
 			</div>
 
 			<hr style="background-color: #aaaaaa">

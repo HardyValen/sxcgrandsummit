@@ -2300,8 +2300,8 @@ body {
 }
 
 .bg-pre-event {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../assets/landing/event/post3.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/landing/event/post3.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 82, 179, 0.6)), to(rgba(2, 82, 179, 0.6))), url("../assets/landing/event/post3.jpg");
+  background: linear-gradient(0deg, rgba(2, 82, 179, 0.6), rgba(2, 82, 179, 0.6)), url("../assets/landing/event/post3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -2854,6 +2854,15 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .landing-registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .landing-schedule {

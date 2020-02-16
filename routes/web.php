@@ -20,8 +20,9 @@ Route::post('/business-case/register', 'BusinessCaseController@store');
 
 
 // For debugging purpose only
-Route::get('/registration-cards', function(){return view("blocks.registration");});
+// Route::get('/registration-cards', function(){return view("blocks.registration");});
 // Route::get('/schedule', function(){return view("blocks.schedule.businessCase");});
 // Route::get('/footer', function(){return view("blocks.footer");});
 // Route::get('/navbar', function(){return view("blocks.navbar");});
 // Route::get('/sidebar', function(){return view("blocks.sidebar");});
+// Route::get('/mail', function(){return view("emails.registrationSuccess");});

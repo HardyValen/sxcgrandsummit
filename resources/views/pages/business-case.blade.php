@@ -40,9 +40,30 @@
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>Final Competition</h3>
+                    <h3>Coaching Session</h3>
                     <p>
-                        The best 10 teams will be chosen and invited to the Summit Main event venue and present their ideas to the professionals and company representatives.
+                        The best 10 teams will be invited to the Summit Main event in Bandung for attending Coaching Session by business academics and professionals.
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>Company Sharing Session</h3>
+                    <p>
+                        The best 10 teams will be participating on the Company Visit Session provided by Business Case Competition partnering company in the Summit Main Event Venue in Bandung.
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>Grand Final</h3>
+                    <p>
+                        The best 10 teams have to execute the final presentation in front of the judges.
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>Awarding Night</h3>
+                    <p>
+                        There will be chosen the 1st, 2nd, and 3rd Winner under the discretion of the judges.
                     </p>
                 </div>
             </div>
