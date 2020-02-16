@@ -19,7 +19,6 @@
 			<img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
 			<h1>SUCCESSFULLY REGISTERED</h1>
 			<h2>(EARLY BIRD)</h2>
-			<
 		</div>
 
 		<div class="registration-success">
