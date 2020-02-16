@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: map-get($theme-colors: "grey4");
+    background-color: grey;
     
     h2{
         @include montserrat();

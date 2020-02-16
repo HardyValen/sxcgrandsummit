@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="box2">
-                <div></div>
+                <div>\</div>
             </div>
         </section>
         

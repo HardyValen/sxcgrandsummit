@@ -6,6 +6,7 @@
 @import 'module/button';
 @import 'module/layout';
 @import 'module/flow';
+@import 'module/shadow';
 
 @import 'blocks/section-title';
 @import 'blocks/section-cards';
@@ -56,3 +57,7 @@ main{
 @import 'blocks/pre-event/hero';
 @import 'blocks/pre-event/description';
 @import 'blocks/pre-event/topics';
+
+// 3. Summit
+@import 'blocks/event/hero';
+//@import 'blocks/event/description';
