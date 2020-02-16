@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSummitDataTable extends Migration
+class CreateSummitTeamsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateSummitDataTable extends Migration
      */
     public function up()
     {
-        Schema::create('summit_data', function (Blueprint $table) {
-            $table->bigIncrements('Id')->unsigned();
-            
-            $table->timestamps();
+        Schema::create('summit_teams', function (Blueprint $table) {
+            $table->bigIncrements('summit_team_id');
+            $table->string('team_name', 256);
+            $table->string('posted', 256);
         });
     }
 
@@ -27,6 +27,6 @@ class CreateSummitDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('summit_data');
+        Schema::dropIfExists('summit_teams');
     }
 }
