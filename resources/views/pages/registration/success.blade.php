@@ -17,7 +17,9 @@
 
 		<div class="registration-title">
 			<img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
-			<h1>SUCCESS</h1>
+			<h1>SUCCESSFULLY REGISTERED</h1>
+			<h2>(EARLY BIRD)</h2>
+			<
 		</div>
 
 		<div class="registration-success">
@@ -28,6 +30,9 @@
 				</p>
 				<p style="text-align: center">
 					We also have sent you the email for the next step of registration to {{ $data->email }}.
+				</p>
+				<p style="text-align: center">
+				    If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
 				</p>
 			</div>
 
