@@ -1,5 +1,5 @@
-.business-case-hero{
-    @include backgroundOverlaySecondaryGradient("../assets/business-case/hero.jpg");
+.pre-event-hero{
+    @include backgroundOverlaySecondaryGradient("../assets/pre-event/hero.jpg");
     @include backgroundPosition(30%, 50%);
     width: 100%;
     min-height: 50%;

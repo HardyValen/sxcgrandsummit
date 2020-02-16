@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section('title')
-    9th Grand Summit &ndash; Student&#x2715;CEOs
+    9th Grand Summit &ndash; Students&#x2715;CEOs
 @endsection
 
 @section('content')
@@ -82,7 +82,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-disabled" href="#">Details Soon</a>
+                            <a class="button-disabled" href="/pre-event">Details Soon</a>
                         </div>
                     </div>
                 </div>
