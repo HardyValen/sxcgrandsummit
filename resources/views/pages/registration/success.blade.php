@@ -25,7 +25,7 @@
 			<div class="registration-success-description">
 				<p style='text-align: center'>
 					<big><b>Dear Team "{{$data->team_name}}",</b></big><br>
-					Your Business Case Registration has been recorded successfully.
+					Your registration for the 9th StudentsxCEOs Grand Summit Business Case Competition has been recorded.
 				</p>
 				<p style="text-align: center">
 					We also have sent you the email for the next step of registration to {{ $data->email }}.
