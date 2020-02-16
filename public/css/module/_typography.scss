@@ -20,3 +20,7 @@
 @mixin paragraph() {
     @include fluidfontsize(1.2rem, 1.4rem);
 }
+
+@mixin paragraphSize($w, $h) {
+    @include fluidfontsize($w, $h);
+}

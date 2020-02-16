@@ -14,14 +14,14 @@
             <h1>Pre Event</h1>
         </section>
 
-        <section class="pre-event-description">
-            <div class="description-container">
-                <div class="header-line"></div>
-                <p>
+    <section class="pre-event-description">
+        <div class="description-container">
+            <div class="header-line"></div>
+            <p>
                 Pre Event is a series of events that are conducted and aimed to introduce the Grand Summit. Within these activities, we want to provide our target audience and Grand Summit participants the opportunity to gain various insights from speakers who are experts in their fields. The theme of the Pre Events itself will correlate with the big theme of The Summit, which revolves around "The Applications of SDGs in Building Sustainable Businesses."
-                </p>
-            </div>
-        </section>
+            </p>
+        </div>
+    </section>
 
         <section class="pre-event-topics">
             <div class="header-line"></div>

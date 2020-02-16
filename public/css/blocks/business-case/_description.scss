@@ -4,7 +4,9 @@
     width: 100%;
     min-height: 50%;
     display: flex;
-    background-color: grey;
+    //background-color: transparent;
+    @include shadowDesc();
+    background-color: map-get($theme-colors , "white-alt");
 
     h2{
         @include montserrat();

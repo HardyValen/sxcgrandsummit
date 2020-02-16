@@ -1,0 +1,50 @@
+.summit-theme{
+    @include fluidpaddingy(3.2rem, 4.4rem);
+    @include fluidpaddingx(2rem, 4rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: map-get($theme-colors, "white" );
+
+    .theme-container{
+        width: 90%;
+        @include fluidpaddingx(2rem, 3rem);
+        @include fluidpaddingy(1.2rem, 1.8rem);
+        display: flex;
+        border: 1px solid map-get($theme-colors, "black-alt" );
+        border-radius: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h2{
+            //@include fluidpaddingy(1rem, 1rem);
+            @include montserrat();
+            @include fluidfontsize(1.6rem, 2.4rem);
+            color: map-get($theme-colors, "primary");
+        }
+        
+        h3 {
+            margin-top: 0.75rem;
+            margin-bottom: 1.5rem;
+            @include fluidfontsize(1rem, 2rem);
+            @include montserrat();
+            color: map-get($theme-colors, "primary");
+        }
+
+        p {
+            @include paragraph();
+            @include myriadProRegular();
+            color: map-get($theme-colors, "primary-light");
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        
+        @media screen and (max-width: 960px){
+            width: 100%;
+        }
+    }
+}

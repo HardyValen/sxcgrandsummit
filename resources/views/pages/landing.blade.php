@@ -20,7 +20,6 @@
             </div>
         </section>
 
-        
         <section class="landing-description" id="description">
             <div class="box1">
                 <div></div>
@@ -100,7 +99,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-disabled" href="#">Details Soon</a>
+                            <a class="button-secondary" href="/summit">Details Soon</a>
                         </div>
                     </div>
                 </div>

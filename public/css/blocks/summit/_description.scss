@@ -1,34 +1,29 @@
-.pre-event-description{
-    @include mobilePadding();
+.summit-description{
+    @include fluidpaddingy(1rem, 2.2rem);
+    @include fluidpaddingx(2rem, 4rem);
     width: 100%;
+    min-height: 35%;
     display: flex;
     justify-content: center;
-    background-color: map-get($theme-colors, "white-alt");
+    align-items: center;
+    flex-direction: column;
+    background-color: map-get($theme-colors, "white-alt" );
     @include shadowDesc();
-/*
-    h2{
-        @include montserrat();
-        @include header2();
-        font-weight: 700;
-        color: map-get($theme-colors, "primary");
-        margin-bottom: 1rem;
-    }
-  */  
+
     
     .description-container{
-        width: 70%;
-        height: 40%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
         
         p {
             @include paragraph();
             @include myriadProRegular();
             color: map-get($theme-colors, "primary-light");
             line-height: 1.5;
+            text-align: justify;
         }
 
         @media screen and (max-width: 960px){

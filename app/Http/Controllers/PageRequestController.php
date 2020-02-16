@@ -16,7 +16,7 @@ class PageRequestController extends Controller
     public function viewPreEvent(){
         return view('pages.pre-event');
     }
-    public function viewEvent(){
-        return view('pages.event');
+    public function viewSummit(){
+        return view('pages.summit');
     }
 }

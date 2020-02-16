@@ -18,7 +18,7 @@ Route::get('/business-case', 'PageRequestController@viewBusinessCase');
 Route::get('/business-case/register', 'BusinessCaseController@view');
 Route::post('/business-case/register', 'BusinessCaseController@store'); 
 Route::get('/pre-event', 'PageRequestController@viewPreEvent');
-Route::get('/event', 'PageRequestController@viewEvent');
+Route::get('/summit', 'PageRequestController@viewSummit');
 
 
 // For debugging purpose only
