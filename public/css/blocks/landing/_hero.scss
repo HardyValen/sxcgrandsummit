@@ -5,6 +5,7 @@
     min-height: 80%;
     display: flex;
     justify-content: flex-end;
+    @include shadowHero();
 
     @media screen and (max-width: 960px){
         @include background("../assets/landing/hero-mobile.jpg");

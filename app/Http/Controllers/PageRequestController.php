@@ -13,4 +13,10 @@ class PageRequestController extends Controller
     public function viewBusinessCase(){
         return view('pages.business-case');
     }
+    public function viewPreEvent(){
+        return view('pages.pre-event');
+    }
+    public function viewSummit(){
+        return view('pages.summit');
+    }
 }

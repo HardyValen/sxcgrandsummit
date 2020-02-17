@@ -6,6 +6,7 @@
 @import 'module/button';
 @import 'module/layout';
 @import 'module/flow';
+@import 'module/shadow';
 
 @import 'blocks/section-title';
 @import 'blocks/section-cards';
@@ -51,3 +52,13 @@ main{
 @import 'blocks/business-case/hero';
 @import 'blocks/business-case/description';
 @import 'blocks/business-case/flow';
+
+// 3. Pre Event
+@import 'blocks/pre-event/hero';
+@import 'blocks/pre-event/description';
+@import 'blocks/pre-event/topics';
+
+// 3. Summit
+@import 'blocks/summit/hero';
+@import 'blocks/summit/description';
+@import 'blocks/summit/theme';

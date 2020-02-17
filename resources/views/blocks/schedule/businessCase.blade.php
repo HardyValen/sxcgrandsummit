@@ -78,6 +78,20 @@
 
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
+                <h1>18</h1>
+                <p>April<br>2020</p>
+            </div>
+            <div class="schedule-timeline-line">
+                <div class="timeline-donut"></div>
+                <div class="timeline-line"></div>
+            </div>
+            <div class="schedule-timeline-event">
+                <p>Coaching<br>Session</p>
+            </div>
+        </div>
+
+        <div class="schedule-timeline-item">
+            <div class="schedule-timeline-date">
                 <h1>19</h1>
                 <p>April<br>2020</p>
             </div>
@@ -85,7 +99,7 @@
                 <div class="timeline-donut"></div>
             </div>
             <div class="schedule-timeline-event">
-                <p>Grand<br>Summit</p>
+                <p>Final Presentation &<br>Awarding Night</p>
             </div>
         </div>
 
