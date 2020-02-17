@@ -24,7 +24,7 @@
 		<div class="registration-success">
 			<div class="registration-success-description">
 				<p style='text-align: center'>
-					Your registration for the 9th StudentsxCEOs Grand Summit Business Case Competition has been recorded.
+					Your registration for The Summmit of the 9th StudentsxCEOs Grand Summit has been recorded.
 				</p>
 				<p style="text-align: center">
 					We also have sent you the email for the next step of registration to {{ $data->email }}.
