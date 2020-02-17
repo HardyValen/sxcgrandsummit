@@ -26,7 +26,8 @@ class CreateSummitMembersTable extends Migration
             $table->string('phone', 256);
             $table->string('major', 256);
             $table->string('batch', 256);
-            $table->string('KTM', 256);
+            $table->string('university', 256);
+            $table->string('ch_selection', 256);
         });
     }
 

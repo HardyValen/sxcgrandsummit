@@ -75,6 +75,29 @@
               </div>
             </div>
 
+            <div class="registration-input-row">
+              <div class="registration-input-col">
+                <div class="registration-radio-wrapper">
+                  <p class='radio-header'>Chamber Selection</p>
+                  <label>
+                      <span class='radio-description'>Quality Education</span>
+                      <input type="radio" class="individual-radio" name="ch_selection1" value="QED" checked>
+                      <span class='radio-button'><span></span></span>
+                  </label>
+                  <label>
+                      <span class='radio-description'>Decent Work and Economic Growth</span>
+                      <input type="radio" class="individual-radio" name="ch_selection1" value="DWAndEG">
+                      <span class='radio-button'><span></span></span>
+                  </label>
+                  <label>
+                      <span class='radio-description'>Climate Action</span>
+                      <input type="radio" class="individual-radio" name="ch_selection1" value="CA">
+                      <span class='radio-button'><span></span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
             <div class="registration-input">
               <input type="email" class="form-input" name="email1" id="email1" placeholder=' ' required/>
               <label class="text-label" for="email1">Email</label>
@@ -109,8 +132,8 @@
               </div>
               <div class="registration-input-col">
                 <div class="registration-input">
-                  <input type="text" class="form-input" name="KTM1" id="KTM1" placeholder=' ' required/>
-                  <label class="text-label" for="KTM1">Student ID Number</label>
+                  <input type="text" class="form-input" name="university1" id="university1" placeholder=' ' required/>
+                  <label class="text-label" for="university1">University</label>
                 </div>
               </div>
             </div>
@@ -194,6 +217,29 @@
           `</div>` +
         `</div>` +
 
+       `<div class="registration-input-row">` +
+              `<div class="registration-input-col">` +
+                `<div class="registration-radio-wrapper">` +
+                  `<p class='radio-header'>Chamber Selection</p>` +
+                  `<label>` +
+                      `<span class='radio-description'>Quality Education</span>` +
+                      `<input type="radio" class="individual-radio" name="ch_selection${count}" value="QED" checked>` +
+                      `<span class='radio-button'><span></span></span>` +
+                  `</label>` +
+                  `<label>` +
+                      `<span class='radio-description'>Decent Work and Economic Growth</span>` +
+                      `<input type="radio" class="individual-radio" name="ch_selection${count}" value="DWAndEG">` +
+                      `<span class='radio-button'><span></span></span>` +
+                  `</label>` +
+                  `<label>` +
+                      `<span class='radio-description'>Climate Action</span>` +
+                      `<input type="radio" class="individual-radio" name="ch_selection${count}" value="CA">` +
+                      `<span class='radio-button'><span></span></span>` +
+                  `</label>` +
+                `</div>` +
+              `</div>` +
+            `</div>` +
+
         `<div class='registration-input'>` +
           `<input type='email' class='form-input' name='email${count}' id='email${count}' placeholder=' ' required/>` +
           `<label class='text-label' for='email${count}'>Email</label>` +
@@ -228,8 +274,8 @@
           `</div>` +
           `<div class='registration-input-col'>` +
             `<div class='registration-input'>` +
-              `<input type='text' class='form-input' name='KTM${count}' id='KTM${count}' placeholder=' ' required/>` +
-              `<label class='text-label' for='KTM${count}'>Student ID Number</label>` +
+              `<input type='text' class='form-input' name='university${count}' id='university${count}' placeholder=' ' required/>` +
+              `<label class='text-label' for='university${count}'>University</label>` +
             `</div>` +
           `</div>` +
         `</div>` +

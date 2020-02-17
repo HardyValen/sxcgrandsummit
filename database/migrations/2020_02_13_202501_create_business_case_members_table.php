@@ -27,6 +27,7 @@ class CreateBusinessCaseMembersTable extends Migration
             $table->string('KTM', 256);
             $table->string('email', 256);
             $table->string('line', 256);
+            $table->string('university', 256);
         });
     }
 
