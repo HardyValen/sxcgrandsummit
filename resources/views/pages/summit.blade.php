@@ -11,7 +11,7 @@
         @include("blocks.navbar")
 
         <section class="summit-hero">
-            <h1>Main Event</h1>
+            <h1>The Summit</h1>
         </section>
 
         <section class="summit-description">

@@ -115,9 +115,9 @@
                 <h3>REGISTER</h3>
                 <h2>PRE EVENT 1</h2>
             </a>
-            <a href="#" class="button-section bg-main-event">
-                <h3>COMING SOON</h3>
-                <h2>MAIN EVENT</h2>
+            <a href="/summit/register" class="button-section bg-main-event">
+                <h3>REGISTER</h3>
+                <h2>THE SUMMIT</h2>
                 <h2></h2>
             </a>
         </section>

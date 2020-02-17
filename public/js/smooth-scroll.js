@@ -2,8 +2,9 @@ function scrollto(link){
     document.querySelector(link).scrollIntoView({behavior: 'smooth'});
 }
 
-var url = window.location.href;
+var url = window.location.pathname;
 var locationRegexLanding = new RegExp("landing*");
+var locationRegexSummit = new RegExp("summit*");
 
 if (locationRegexLanding.test(url)){
     let navRegist = document.querySelectorAll("#navRegist");
@@ -25,4 +26,8 @@ if (locationRegexLanding.test(url)){
         elmt.addEventListener("click", function() {scrollto("#schedule")}
         )
     });
+}
+
+if (locationRegexSummit.test(url)){
+    document.querySelector("#navRegist").setAttribute('href', "/summit/register");
 }
