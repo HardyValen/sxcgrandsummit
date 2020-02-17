@@ -36,6 +36,7 @@ class SummitController extends Controller
                 "phone" => $request->input("phone".$i), 
                 "major" => $request->input("major".$i), 
                 "batch" => $request->input("batch".$i), 
+                "KTM" => $request->input("KTM".$i),
                 "university" => $request->input("university".$i), 
                 "ch_selection" => $request->input("ch_selection".$i),
             ]);

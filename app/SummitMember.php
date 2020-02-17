@@ -19,6 +19,7 @@ class SummitMember extends Model
         "phone",
         "major",
         "batch",
+        "KTM",
         "university",
         "ch_selection"
     ];

@@ -123,6 +123,11 @@
               <label class="text-label" for="major1">Major</label>
             </div>
 
+            <div class="registration-input">
+              <input type="text" class="form-input" name="university1" id="university1" placeholder=' ' required/>
+              <label class="text-label" for="university1">University</label>
+            </div>
+
             <div class="registration-input-row">
               <div class="registration-input-col">
                 <div class="registration-input">
@@ -132,8 +137,8 @@
               </div>
               <div class="registration-input-col">
                 <div class="registration-input">
-                  <input type="text" class="form-input" name="university1" id="university1" placeholder=' ' required/>
-                  <label class="text-label" for="university1">University</label>
+                  <input type="text" class="form-input" name="KTM1" id="KTM1" placeholder=' ' required/>
+                  <label class="text-label" for="KTM1">KTM</label>
                 </div>
               </div>
             </div>
@@ -265,6 +270,11 @@
           `<label class='text-label' for='major${count}'>Major</label>` +
         `</div>` +
 
+        `<div class="registration-input">` +
+          `<input type="text" class="form-input" name="university${count}" id="university${count}" placeholder=' ' required/>` +
+          `<label class="text-label" for="university${count}">University</label>` +
+        `</div>` +
+
         `<div class='registration-input-row'>` +
           `<div class='registration-input-col'>` +
             `<div class='registration-input'>` +
@@ -274,8 +284,8 @@
           `</div>` +
           `<div class='registration-input-col'>` +
             `<div class='registration-input'>` +
-              `<input type='text' class='form-input' name='university${count}' id='university${count}' placeholder=' ' required/>` +
-              `<label class='text-label' for='university${count}'>University</label>` +
+              `<input type='text' class='form-input' name='KTM${count}' id='KTM${count}' placeholder=' ' required/>` +
+              `<label class='text-label' for='KTM${count}'>KTM</label>` +
             `</div>` +
           `</div>` +
         `</div>` +
