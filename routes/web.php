@@ -16,9 +16,12 @@ Route::get('/landing', 'PageRequestController@viewLanding');
 
 Route::get('/business-case', 'PageRequestController@viewBusinessCase');
 Route::get('/business-case/register', 'BusinessCaseController@view');
-Route::post('/business-case/register', 'BusinessCaseController@store'); 
-Route::get('/pre-event', 'PageRequestController@viewPreEvent');
+Route::post('/business-case/register', 'BusinessCaseController@store');
+
 Route::get('/summit', 'PageRequestController@viewSummit');
+Route::get('/summit/register', 'SummitController@view');
+Route::post('/summit/register', 'SummitController@store');
+Route::get('/pre-event', 'PageRequestController@viewPreEvent');
 
 
 // For debugging purpose only
