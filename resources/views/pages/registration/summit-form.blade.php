@@ -96,7 +96,7 @@
             </div>
 
             <div class="registration-input">
-              <input type="text" class="form-input" name="team-name" id="team_name" placeholder=' ' value=""/>
+              <input type="text" class="form-input" name="team-name" id="team_name" placeholder=' ' required/>
               <label class="text-label" for="team-name">Team Name (if registering as a team)</label>
             </div>
 
