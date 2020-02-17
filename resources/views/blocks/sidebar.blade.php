@@ -15,14 +15,16 @@
             <img class="link-icon" src="{{URL::asset('assets/icons/Schedule.svg')}}" alt="ABOUT">
             <p class='link-description'>SCHEDULE</p>
         </a>
-        <a href="/event" class="sidebar-link">
+        <a href="/summit" class="sidebar-link">
             <img class="link-icon" src="{{URL::asset('assets/icons/Event.svg')}}" alt="ABOUT">
             <p class='link-description'>EVENT</p>
         </a>
     </div>
     <div class="sidebar-banner-container">
-        <div class="sidebar-banner">
-            <h2>REGISTRATION</h2>
-        </div>
+        <a href="/landing#registration" onclick="hidesidebar()">
+            <div class="sidebar-banner">
+                <h2>REGISTRATION</h2>
+            </div>
+        </a>
     </div>
 </aside>
