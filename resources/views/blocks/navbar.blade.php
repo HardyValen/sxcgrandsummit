@@ -9,15 +9,7 @@
         <a href="/landing#schedule" id="navSchedule">SCHEDULE</a>
     </div>
     <div class="navbar-registration">
-        <?php $protocol = ((!emptyempty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-        $CurPage = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>
-        <?php if $CurPage == 'http://sxcgrandsummit.com/business-case' : ?>
-            <a href="business-case/register" class="button-primary" id="navRegist">REGISTRATION</a>
-        <?php else if $CurPage == 'http://sxcgrandsummit.com/summit' : ?>
-            <a href="summit/register" class="button-primary" id="navRegist">REGISTRATION</a>
-        <?php else if $CurPage == 'http://sxcgrandsummit.com/pre-event' : ?>
-            <a href="http://bit.ly/PreEvent1SXCGrandSummit" class="button-primary" id="navRegist">REGISTRATION</a>
-        <?php endif; ?>
+        <a href="business-case/register" class="button-primary" id="navRegist">REGISTRATION</a>
     </div>
     <div class="navbar-mobile-nav">
         <a onclick="showsidebar()">
