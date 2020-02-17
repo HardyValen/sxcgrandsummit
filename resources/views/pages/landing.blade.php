@@ -81,7 +81,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-disabled" href="/pre-event">Details Soon</a>
+                            <a class="button-disabled" href="#">Details Soon</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                             </p>
                         </div>
                         <div class="post-link">
-                            <a class="button-secondary" href="/summit">Details Soon</a>
+                            <a class="button-secondary" href="/summit">More Details</a>
                         </div>
                     </div>
                 </div>

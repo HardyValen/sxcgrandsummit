@@ -7,7 +7,7 @@
 
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
-                <h1>14</h1>
+                <h1>15</h1>
                 <p>February <br> 2020</p>
             </div>
             <div class="schedule-timeline-line">

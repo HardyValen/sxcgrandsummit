@@ -37,7 +37,60 @@
             </div>
         </section>
 
-        
+        <section class="summit-activities">
+            <div class= "activity-container">
+                <h1>
+                    Main Activities:
+                </h1>
+                <div class="activity-block">
+                    <div class= "activity-description">
+                        <div class="activity-title">
+                            Coaching Session
+                        </div>
+                        <p>
+                            This session aims to provide insights and materials for the participants and generalize basic understanding regarding how to resolve each SDGs issue, which will be conducted by business experts and leaders. The topics during this session are "Problem Discovery" to help them find the root causes using a specific framework and "Applicable Solutions" to generate, evaluate, choose, and implement solutions.
+                        </p>
+                    </div>
+                    <div class="activity-image image-activity-1"></div>
+                </div>
+                
+                <div class= "activity-block">
+                    <div class="activity-image image-activity-2"></div>
+                    <div class= "activity-description">
+                        <div class="activity-title">
+                            Talk Shows Session
+                        </div>
+                        <p>
+                            The Talk Shows provide speakers from different NGOs who will be sharing their insights on the growing issues in the implementation of SDGs and also a Question and Answer session. This session aims to give the participants direct information from the NGOs regarding the issues that they will resolve within their chambers and generate the appropriate resolutions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class= "activity-block">
+                    <div class= "activity-description">
+                        <div class="activity-title">
+                            Chamber Session
+                        </div>
+                        <p>
+                            In The Summit, the Discussion session is where the participants can interact, collaborate, and cooperate to find a solution to the issue of the chambers. The discussions will be lead by conference leaders who will act as judges for the chambers. They will create the study guides, guides the discussions, and grade each participant from their performance and essay. From the             discussions, we expect a solution to be presented in the end in front of the NGOs.
+                        </p>
+                    </div>
+                    <div class="activity-image image-activity-3"></div>
+                </div>
+                
+                <div class= "activity-block">
+                    <div class="activity-image image-activity-4"></div>
+                    <div class= "activity-description">
+                        <div class="activity-title">
+                            Social Night & Gala Dinner
+                        </div>
+                        <p>
+                            In this session, we want to give a chance for participants to network with each other. We also want to provide participants with a positive impression and a memorable experience of The Summit. Hence, Social Night is designed to be an event where participants can enjoy and interact with each other informally. The event will be closed by Gala Dinner that consists of a final presentation from each chamber and also awarding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </section>
         @include('blocks.schedule.summit')
         @include('blocks.footer')
     </main>

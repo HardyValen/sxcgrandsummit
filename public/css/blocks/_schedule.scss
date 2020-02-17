@@ -39,6 +39,7 @@
         flex-direction: row;
         align-items: center;
         width: 30%;
+        color: map-get($theme-colors, "white");
         @include fluidpaddingx(2rem, 7rem);
         
         @media screen and (max-width: 960px) {
