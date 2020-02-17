@@ -1,6 +1,7 @@
 .summit-theme{
     @include fluidpaddingy(3.2rem, 4.4rem);
     @include fluidpaddingx(2rem, 4rem);
+    margin-bottom: 1.6rem;
     width: 100%;
     display: flex;
     justify-content: center;
