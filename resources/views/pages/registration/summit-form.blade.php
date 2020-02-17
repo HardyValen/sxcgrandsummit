@@ -96,8 +96,8 @@
             </div>
 
             <div class="registration-input">
-              <input type="text" class="form-input" name="team_name" id="team_name" placeholder=' ' required/>
-              <label class="text-label" for="team-name">Team Name</label>
+              <input type="text" class="form-input" name="team_name" id="team_name" placeholder=' ' value=" "/>
+              <label class="text-label" for="team_name">Team Name (if any)</label>
             </div>
 
             <div class="registration-input-row">
