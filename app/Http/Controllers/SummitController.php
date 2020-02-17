@@ -17,7 +17,7 @@ class SummitController extends Controller
 
     public function store(Request $request){
         $team = new SummitTeam([
-            "team_name" => $request->input("team_name"),
+            "team_name" => $request->team_name,
             "posted" => date("l, d F Y")
         ]);
         $team->save();
