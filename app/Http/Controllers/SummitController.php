@@ -46,6 +46,6 @@ class SummitController extends Controller
         
         $team->id = $id;
         $team->email = $request->email1;
-		return view('pages.registration.success')->with('data', $team);
+		return view('pages.registration.success_summit')->with('data', $team);
     }
 }
