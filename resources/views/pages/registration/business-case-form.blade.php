@@ -113,7 +113,7 @@
               <div class="registration-input-col">
                 <div class="registration-input">
                   <input type="text" class="form-input" name="KTM1" id="KTM1" placeholder=' ' required/>
-                  <label class="text-label" for="KTM1">KTM / NIM / ID Number</label>
+                  <label class="text-label" for="KTM1">Student ID Number</label>
                 </div>
               </div>
             </div>
@@ -195,7 +195,7 @@
               <div class="registration-input-col">
                 <div class="registration-input">
                   <input type="text" class="form-input" name="KTM2" id="KTM2" placeholder=' ' required/>
-                  <label class="text-label" for="KTM2">KTM / NIM / ID Number</label>
+                  <label class="text-label" for="KTM2">Student ID Number</label>
                 </div>
               </div>
             </div>
@@ -277,7 +277,7 @@
               <div class="registration-input-col">
                 <div class="registration-input">
                   <input type="text" class="form-input" name="KTM3" id="KTM3" placeholder=' ' required/>
-                  <label class="text-label" for="KTM3">KTM / NIM / ID Number</label>
+                  <label class="text-label" for="KTM3">Student ID Number</label>
                 </div>
               </div>
             </div>

@@ -12,12 +12,14 @@ class SummitMember extends Model
     protected $fillable = [
         "summit_team_id",
         "fullname",
-        "university",
+        "gender",
+        "age",
+        "email",
+        "line",
+        "phone",
         "major",
         "batch",
-        "phone",
-        "line",
-        "ch_select"
+        "KTM",
     ];
 
     protected $primaryKey = 'summit_member_id';

@@ -22,19 +22,20 @@ class SummitController extends Controller
         $team->save();
 
         $id = \App\SummitTeam::where('posted', $team->posted)->first()->summit_team_id;
-
         $threshold = $request->members; //nyimpen banyaknya member dari form
 
         for($i = 1; $i <= $threshold; $i++){
             $member = new SummitMember([
                 "summit_team_id" => $id,
-                "fullname" => $request->input("fullname".$i), 
-                "university" => $request->input("university".$i), 
-                "ch_select" => $request->input("ch_select".$i), 
-                "phone" => $request->input("phone".$i), 
+                "fullname" => $request->input("name".$i),
+                "gender" => $request->input("gender".$i), 
+                "age" => $request->input("age".$i), 
+                "email" => $request->input("email".$i), 
                 "line" => $request->input("line".$i),
+                "phone" => $request->input("phone".$i), 
                 "major" => $request->input("major".$i), 
                 "batch" => $request->input("batch".$i), 
+                "KTM" => $request->input("KTM".$i), 
             ]);
             $member->save();
         }

@@ -33,11 +33,11 @@
 
         <div class="registration-content">
           <div class="registration-input-group">
-            <p class="group-header">TEAM LEADER &mdash;</p>
+            <p class="group-header">APPLICANT 1</p>
             
             <div class="registration-input">
               <input type="text" class="form-input" name="name1" id="name1" placeholder=' ' required/>
-              <label class="text-label" for="name1">Leader Name</label>
+              <label class="text-label" for="name1">Applicant Name</label>
             </div>
 
             <div class="registration-input-row">
@@ -105,7 +105,7 @@
               <div class="registration-input-col">
                 <div class="registration-input">
                   <input type="text" class="form-input" name="KTM1" id="KTM1" placeholder=' ' required/>
-                  <label class="text-label" for="KTM1">NIM / ID Number</label>
+                  <label class="text-label" for="KTM1">Student ID Number</label>
                 </div>
               </div>
             </div>
@@ -153,10 +153,10 @@
       var node = document.createElement("div");
       node.innerHTML = `` + 
       `<div class='registration-input-group'>` +
-        `<p class='group-header'>APPLICANT ${count - 1}</p>` +
+        `<p class='group-header'>APPLICANT ${count}</p>` +
         `<div class='registration-input'>` +
           `<input type='text' class='form-input' name='name${count}' id='name${count}' placeholder=' ' required/>` +
-          `<label class='text-label' for='name${count}'>Leader Name</label>` +
+          `<label class='text-label' for='name${count}'>Applicant Name</label>` +
         `</div>` +
 
         `<div class='registration-input-row'>` +
@@ -224,7 +224,7 @@
           `<div class='registration-input-col'>` +
             `<div class='registration-input'>` +
               `<input type='text' class='form-input' name='KTM${count}' id='KTM${count}' placeholder=' ' required/>` +
-              `<label class='text-label' for='KTM${count}'>NIM / ID Number</label>` +
+              `<label class='text-label' for='KTM${count}'>Student ID Number</label>` +
             `</div>` +
           `</div>` +
         `</div>` +

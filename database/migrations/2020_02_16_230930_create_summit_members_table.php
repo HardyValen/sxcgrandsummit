@@ -19,12 +19,15 @@ class CreateSummitMembersTable extends Migration
             $table->foreign('summit_team_id')->references('summit_team_id')->on('summit_teams')->onDelete('cascade');
 
             $table->string('fullname', 256);
-            $table->string('university', 256);
+            $table->string('gender', 32);
+            $table->string('age', 2);
+            $table->string('email', 256);
+            $table->string('line', 256);
+            $table->string('phone', 256);
             $table->string('major', 256);
             $table->string('batch', 256);
-            $table->string('phone', 256);
-            $table->string('line', 256);
-            $table->string('ch_select', 128);        });
+            $table->string('KTM', 256);
+        });
     }
 
     /**
