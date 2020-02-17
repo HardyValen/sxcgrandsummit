@@ -138,7 +138,7 @@
               <div class="registration-input-col">
                 <div class="registration-input">
                   <input type="text" class="form-input" name="KTM1" id="KTM1" placeholder=' ' required/>
-                  <label class="text-label" for="KTM1">KTM</label>
+                  <label class="text-label" for="KTM1">Student ID Number</label>
                 </div>
               </div>
             </div>
@@ -285,7 +285,7 @@
           `<div class='registration-input-col'>` +
             `<div class='registration-input'>` +
               `<input type='text' class='form-input' name='KTM${count}' id='KTM${count}' placeholder=' ' required/>` +
-              `<label class='text-label' for='KTM${count}'>KTM</label>` +
+              `<label class='text-label' for='KTM${count}'>Student ID Number</label>` +
             `</div>` +
           `</div>` +
         `</div>` +
