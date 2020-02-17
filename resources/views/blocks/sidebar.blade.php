@@ -21,7 +21,11 @@
         </a>
     </div>
     <div class="sidebar-banner-container">
-        <a href="/landing#registration" onclick="hidesidebar()">
+        <?php $protocol = ((!emptyempty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+        $CurPage = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>
+        <?php if $CurPage == 'http://sxcgrandsummit.com/landing' : ?>
+            <a href="/landing#registration" onclick="hidesidebar()">
+        <?php endif; ?>
             <div class="sidebar-banner">
                 <h2>REGISTRATION</h2>
             </div>

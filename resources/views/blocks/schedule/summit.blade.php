@@ -48,20 +48,6 @@
 
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
-                <h1>25</h1>
-                <p>March<br>2020</p>
-            </div>
-            <div class="schedule-timeline-line">
-                <div class="timeline-donut"></div>
-                <div class="timeline-line"></div>
-            </div>
-            <div class="schedule-timeline-event">
-                <p>Checking<br>Papers</p>
-            </div>
-        </div>
-
-        <div class="schedule-timeline-item">
-            <div class="schedule-timeline-date">
                 <h1>5</h1>
                 <p>April<br>2020</p>
             </div>
