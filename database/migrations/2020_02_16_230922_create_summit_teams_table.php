@@ -15,6 +15,7 @@ class CreateSummitTeamsTable extends Migration
     {
         Schema::create('summit_teams', function (Blueprint $table) {
             $table->bigIncrements('summit_team_id');
+            $table->string('team_name', 256);
             $table->string('posted', 256);
         });
     }

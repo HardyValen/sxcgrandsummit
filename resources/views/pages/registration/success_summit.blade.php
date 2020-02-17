@@ -45,10 +45,10 @@
 						<p class='summary-title'>REGISTER DATE</p>
 						<p class='summary-date'>{{ date('l, d F Y') }}</p>
 					</div>
-					<div class="summary-data">
+<!-- 					<div class="summary-data">
 						<p class='summary-title'>TEAM ID</p>
 						<p class='summary-date'>{{ $data->id }}</p>
-					</div>
+					</div> -->
 					<div class="summary-data">
 						<p class='summary-title'>PAYMENT</p>
 						<p class='summary-date'>
@@ -56,12 +56,12 @@
 							BNI  670350698 Zahra Fulli Fauza<br>
 						</p>
 					</div>
-					<div class="summary-data">
+					<!-- <div class="summary-data">
 						<p class='summary-title'>PAYMENT RECEIPT FORM</p>
 						<p class='summary-date'>
 							<a target="_blank" href="http://bit.ly/sxcbccpayment" style="color: blue">http://bit.ly/sxcbccpayment</a>
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 

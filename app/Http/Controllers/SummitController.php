@@ -17,11 +17,12 @@ class SummitController extends Controller
 
     public function store(Request $request){
         $team = new SummitTeam([
-            "posted" => date("l, d F Y")
+            "posted" => date("l, d F Y"),
+            "team_name" => $request->team_name
         ]);
         $team->save();
 
-        $id = \App\SummitTeam::where('posted', $team->posted)->first()->summit_team_id;
+        $id = \App\SummitTeam::where('team_name', $team->team_name)->first()->summit_team_id;
         $threshold = $request->members; //nyimpen banyaknya member dari form
 
         for($i = 1; $i <= $threshold; $i++){

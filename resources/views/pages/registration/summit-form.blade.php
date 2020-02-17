@@ -95,6 +95,11 @@
               <label class="text-label" for="major1">Major</label>
             </div>
 
+            <div class="registration-input">
+              <input type="text" class="form-input" name="team-name" id="team_name" placeholder=' ' value=""/>
+              <label class="text-label" for="team-name">Team Name (if registering as a team)</label>
+            </div>
+
             <div class="registration-input-row">
               <div class="registration-input-col">
                 <div class="registration-input">
