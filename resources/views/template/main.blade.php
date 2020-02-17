@@ -32,7 +32,8 @@
     @yield('content')
 </body>
 
+</html>
+
 @yield('script')
 <script src="{{URL::asset('js/smooth-scroll.js')}}"></script>
 <script src="{{URL::asset('js/navigation.js')}}"></script>
-</html>

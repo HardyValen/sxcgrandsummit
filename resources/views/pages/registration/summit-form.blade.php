@@ -4,9 +4,6 @@
   Registration | 9th Grand Summit &ndash; Students&#x2715;CEOs
 @endsection
 
-@php
-  $i = 1
-@endphp
 
 @section('content')
   @include('blocks.sidebar')
@@ -32,10 +29,11 @@
 
       <form action="" method="post">
         @csrf
-        <div class="registration-content">
+        <input type="hidden" name="members" id="members" value=1>
 
+        <div class="registration-content">
           <div class="registration-input-group">
-            <p class="group-header">INDIVIDUAL/TEAM LEADER &mdash;</p>
+            <p class="group-header">TEAM LEADER &mdash;</p>
             
             <div class="registration-input">
               <input type="text" class="form-input" name="name1" id="name1" placeholder=' ' required/>
@@ -97,26 +95,6 @@
               <label class="text-label" for="major1">Major</label>
             </div>
 
-            <div class="registration-radio-wrapper">
-                  <p class='radio-header'>Team members</p>
-                  <label>
-                      <span class='radio-description'>Individual</span>
-                      <input type="radio" class="individual-radio" name="teamenum" value="Indv" checked>
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                  <label>
-                      <span class='radio-description'>One</span>
-                      <input type="radio" class="individual-radio" name="teamenum" value="One">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                  <label>
-                      <span class='radio-description'>Two</span>
-                      <input type="radio" class="individual-radio" name="teamenum" value="Two">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                </div>
-              </div>
-
             <div class="registration-input-row">
               <div class="registration-input-col">
                 <div class="registration-input">
@@ -127,188 +105,151 @@
               <div class="registration-input-col">
                 <div class="registration-input">
                   <input type="text" class="form-input" name="KTM1" id="KTM1" placeholder=' ' required/>
-                  <label class="text-label" for="KTM1">KTM / NIM / ID Number</label>
+                  <label class="text-label" for="KTM1">NIM / ID Number</label>
                 </div>
               </div>
             </div>
 
           </div>
-
-
-
-          <div class="registration-input-group">
-            <p class="group-header">TEAM MEMBER 1 (IF ANY)&mdash;</p>
-            
-            <div class="registration-input">
-              <input type="text" class="form-input" name="name2" id="name2" placeholder=' '/>
-              <label class="text-label" for="name2">Member Name</label>
-            </div>
-
-            <div class="registration-input-row">
-              <div class="registration-input-col">
-                <div class="registration-radio-wrapper">
-                  <p class='radio-header'>Gender</p>
-                  <label>
-                      <span class='radio-description'>Male</span>
-                      <input type="radio" class="individual-radio" name="gender2" value="Male">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                  <label>
-                      <span class='radio-description'>Female</span>
-                      <input type="radio" class="individual-radio" name="gender2" value="Female">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                  <label>
-                      <span class='radio-description'>Other</span>
-                      <input type="radio" class="individual-radio" name="gender2" value="Other">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                </div>
-              </div>
-              <div class="registration-input-col flex-justify-center">
-                <div class="registration-input">
-                  <input type="number" class="form-input display-inline-block" name="age2" id="age2" placeholder=' ' min="0" max="100"/> 
-                  <label class="text-label" for="age2">Age</label>
-                  <span class="paragraph">Years Old</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="registration-input">
-              <input type="email" class="form-input" name="email2" id="email2" placeholder=' '/>
-              <label class="text-label" for="email2">Email</label>
-            </div>
-
-            <div class="registration-input-row">
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="line2" id="line2" placeholder=' '/>
-                  <label class="text-label" for="line2">Line</label>
-                </div>
-              </div>
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="phone2" id="phone2" placeholder=' '/>
-                  <label class="text-label" for="phone2">Phone Number</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="registration-input">
-              <input type="text" class="form-input" name="major2" id="major2" placeholder=' '/>
-              <label class="text-label" for="major2">Major</label>
-            </div>
-
-            <div class="registration-input-row">
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="batch2" id="batch2" placeholder=' '/>
-                  <label class="text-label" for="batch2">Batch / Entry Year</label>
-                </div>
-              </div>
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="KTM2" id="KTM2" placeholder=' '/>
-                  <label class="text-label" for="KTM2">KTM / NIM / ID Number</label>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-
-          <div class="registration-input-group">
-            <p class="group-header">TEAM MEMBER 2 (IF ANY) &mdash;</p>
-            
-            <div class="registration-input">
-              <input type="text" class="form-input" name="name3" id="name3" placeholder=' '/>
-              <label class="text-label" for="name3">Member Name</label>
-            </div>
-
-            <div class="registration-input-row">
-              <div class="registration-input-col">
-                <div class="registration-radio-wrapper">
-                  <p class='radio-header'>Gender</p>
-                  <label>
-                      <span class='radio-description'>Male</span>
-                      <input type="radio" class="individual-radio" name="gender3" value="Male">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                  <label>
-                      <span class='radio-description'>Female</span>
-                      <input type="radio" class="individual-radio" name="gender3" value="Female">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                  <label>
-                      <span class='radio-description'>Other</span>
-                      <input type="radio" class="individual-radio" name="gender3" value="Other">
-                      <span class='radio-button'><span></span></span>
-                  </label>
-                </div>
-              </div>
-              <div class="registration-input-col flex-justify-center">
-                <div class="registration-input">
-                  <input type="number" class="form-input display-inline-block" name="age3" id="age3" placeholder=' ' min="0" max="100"/> 
-                  <label class="text-label" for="age3">Age</label>
-                  <span class="paragraph">Years Old</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="registration-input">
-              <input type="email" class="form-input" name="email3" id="email3" placeholder=' '/>
-              <label class="text-label" for="email3">Email</label>
-            </div>
-
-            <div class="registration-input-row">
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="line3" id="line3" placeholder=' '/>
-                  <label class="text-label" for="line3">Line</label>
-                </div>
-              </div>
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="phone3" id="phone3" placeholder=' '/>
-                  <label class="text-label" for="phone3">Phone Number</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="registration-input">
-              <input type="text" class="form-input" name="major3" id="major3" placeholder=' '/>
-              <label class="text-label" for="major3">Major</label>
-            </div>
-
-            <div class="registration-input-row">
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="batch3" id="batch3" placeholder=' '/>
-                  <label class="text-label" for="batch3">Batch / Entry Year</label>
-                </div>
-              </div>
-              <div class="registration-input-col">
-                <div class="registration-input">
-                  <input type="text" class="form-input" name="KTM3" id="KTM3" placeholder=' '/>
-                  <label class="text-label" for="KTM3">KTM / NIM / ID Number</label>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
+          <hr style="background-color: #aaaaaa">
         </div>
 
-        <hr style="background-color: #aaaaaa">
-
+        <div class="registration-submit flex-justify-center">
+          <a class="button-black-transparent" id="increment" onclick="increment()">ADD APPLICANT</a>
+          <a class="button-black-transparent" id="decrement" onclick="decrement()">REMOVE APPLICANT</a>
+        </div>
+        
         <div class="registration-submit flex-justify-center">
           <div class="registration-input">
             <input type="submit" class='button-primary' value="Register">
           </div>
         </div>
-
+        
       </form>
     </section>
   </main>
+@endsection
+
+@section('script')
+<script>
+  var count = 1;
+  var incButton = document.querySelector("#increment");
+  var decButton = document.querySelector("#decrement");
+  decButton.style.display = "none";
+
+  function increment() {
+    if(count < 3){
+      count++;
+      document.querySelector("#members").value = count;
+
+      if(count == 3){
+        incButton.style.display = "none";
+      }
+
+      if(count == 2){
+        decButton.style.display = "block";
+      }
+
+      var node = document.createElement("div");
+      node.innerHTML = `` + 
+      `<div class='registration-input-group'>` +
+        `<p class='group-header'>APPLICANT ${count - 1}</p>` +
+        `<div class='registration-input'>` +
+          `<input type='text' class='form-input' name='name${count}' id='name${count}' placeholder=' ' required/>` +
+          `<label class='text-label' for='name${count}'>Leader Name</label>` +
+        `</div>` +
+
+        `<div class='registration-input-row'>` +
+          `<div class='registration-input-col'>` +
+            `<div class='registration-radio-wrapper'>` +
+              `<p class='radio-header'>Gender</p>` +
+              `<label>` +
+                `<span class='radio-description'>Male</span>` +
+                `<input type='radio' class='individual-radio' name='gender${count}' value='Male' checked>` +
+                `<span class='radio-button'><span></span></span>` +
+              `</label>` +
+              `<label>` +
+                `<span class='radio-description'>Female</span>` +
+                `<input type='radio' class='individual-radio' name='gender${count}' value='Female'>` +
+                `<span class='radio-button'><span></span></span>` +
+              `</label>` +
+              `<label>` +
+                `<span class='radio-description'>Other</span>` +
+                `<input type='radio' class='individual-radio' name='gender${count}' value='Other'>` +
+                `<span class='radio-button'><span></span></span>` +
+              `</label>` +
+            `</div>` +
+          `</div>` +
+          `<div class='registration-input-col flex-justify-center'>` +
+            `<div class='registration-input'>` +
+              `<input type='number' class='form-input display-inline-block' name='age${count}' id='age${count}' placeholder=' ' min='0' max='${count}00' required/> ` +
+              `<label class='text-label' for='age${count}'>Age</label>` +
+              `<span class='paragraph'>Years Old</span>` +
+            `</div>` +
+          `</div>` +
+        `</div>` +
+
+        `<div class='registration-input'>` +
+          `<input type='email' class='form-input' name='email${count}' id='email${count}' placeholder=' ' required/>` +
+          `<label class='text-label' for='email${count}'>Email</label>` +
+        `</div>` +
+
+        `<div class='registration-input-row'>` +
+          `<div class='registration-input-col'>` +
+            `<div class='registration-input'>` +
+              `<input type='text' class='form-input' name='line${count}' id='line${count}' placeholder=' ' required/>` +
+              `<label class='text-label' for='line${count}'>Line</label>` +
+            `</div>` +
+          `</div>` +
+          `<div class='registration-input-col'>` +
+            `<div class='registration-input'>` +
+              `<input type='text' class='form-input' name='phone${count}' id='phone${count}' placeholder=' ' required/>` +
+              `<label class='text-label' for='phone${count}'>Phone Number</label>` +
+            `</div>` +
+          `</div>` +
+        `</div>` +
+
+        `<div class='registration-input'>` +
+          `<input type='text' class='form-input' name='major${count}' id='major${count}' placeholder=' ' required/>` +
+          `<label class='text-label' for='major${count}'>Major</label>` +
+        `</div>` +
+
+        `<div class='registration-input-row'>` +
+          `<div class='registration-input-col'>` +
+            `<div class='registration-input'>` +
+              `<input type='text' class='form-input' name='batch${count}' id='batch${count}' placeholder=' ' required/>` +
+              `<label class='text-label' for='batch${count}'>Batch / Entry Year</label>` +
+            `</div>` +
+          `</div>` +
+          `<div class='registration-input-col'>` +
+            `<div class='registration-input'>` +
+              `<input type='text' class='form-input' name='KTM${count}' id='KTM${count}' placeholder=' ' required/>` +
+              `<label class='text-label' for='KTM${count}'>NIM / ID Number</label>` +
+            `</div>` +
+          `</div>` +
+        `</div>` +
+
+      `</div>` +
+      `<hr style='background-color: #aaaaaa'>`;
+      document.querySelector(".registration-content").appendChild(node);
+    }
+  }
+  
+  function decrement(){
+    if(count > 1){
+      count--;
+      document.querySelector("#members").value = count;
+
+      if(count == 1){
+        decButton.style.display = "none";
+      }
+
+      if(count == 2){
+        incButton.style.display = "block";
+      }
+
+      document.querySelector(".registration-content").lastChild.remove();
+    }
+  }
+</script>
 @endsection

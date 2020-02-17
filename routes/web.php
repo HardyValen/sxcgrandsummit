@@ -25,6 +25,7 @@ Route::get('/pre-event', 'PageRequestController@viewPreEvent');
 
 
 // For debugging purpose only
+Route::get("/stackTest", function(){return view("blocks.stack");});
 // Route::get('/registration-cards', function(){return view("blocks.registration");});
 // Route::get('/schedule', function(){return view("blocks.schedule.businessCase");});
 // Route::get('/footer', function(){return view("blocks.footer");});

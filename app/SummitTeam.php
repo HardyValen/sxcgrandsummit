@@ -10,7 +10,6 @@ class SummitTeam extends Model
     protected $table = 'summit_teams';
 
     protected $fillable = [
-        'team_name',
         'posted'
     ];
 

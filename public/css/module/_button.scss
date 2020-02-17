@@ -43,6 +43,17 @@
     );
 }
 
+.button-black-transparent{
+    @include button(
+        black,
+        transparent,
+        black,
+        map-get($theme-colors, "secondary-dark" ), 
+        map-get($theme-colors, "secondary" )
+    );
+}
+
+
 .button-primary{
     @include button(
         white,
