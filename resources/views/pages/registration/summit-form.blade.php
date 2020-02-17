@@ -40,6 +40,11 @@
               <label class="text-label" for="name1">Applicant Name</label>
             </div>
 
+            <div class="registration-input">
+              <input type="text" class="form-input" name="team_name" id="team_name" placeholder=' ' required/>
+              <label class="text-label" for="team_name">Team Name</label>
+            </div>
+
             <div class="registration-input-row">
               <div class="registration-input-col">
                 <div class="registration-radio-wrapper">
@@ -93,11 +98,6 @@
             <div class="registration-input">
               <input type="text" class="form-input" name="major1" id="major1" placeholder=' ' required/>
               <label class="text-label" for="major1">Major</label>
-            </div>
-
-            <div class="registration-input">
-              <input type="text" class="form-input" name="team_name" id="team_name" placeholder=' ' value=" "/>
-              <label class="text-label" for="team_name">Team Name (if any)</label>
             </div>
 
             <div class="registration-input-row">
