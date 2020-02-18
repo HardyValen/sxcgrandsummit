@@ -4,6 +4,7 @@ function scrollto(link){
 
 var url = window.location.pathname;
 var locationRegexLanding = new RegExp("landing*");
+var locationRegexPreEvent= new RegExp("pre-event*");
 var locationRegexSummit = new RegExp("summit*");
 
 if (locationRegexLanding.test(url)){
@@ -26,6 +27,8 @@ if (locationRegexLanding.test(url)){
         elmt.addEventListener("click", function() {scrollto("#schedule")}
         )
     });
+
+    document.querySelector("#sideRegis").setAttribute('onclick', "hidesidebar()");
 }
 
 if (locationRegexSummit.test(url)){
