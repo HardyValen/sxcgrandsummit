@@ -2670,7 +2670,7 @@ main {
 
 .landing-description {
   width: 100%;
-  min-height: 20vh;
+  min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2678,6 +2678,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .landing-description .box1 {
