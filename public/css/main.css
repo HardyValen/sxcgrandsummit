@@ -1699,8 +1699,8 @@ body {
 }
 
 .sidebar .sidebar-banner:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0.25))), url("../assets/registrationCard/registrationCard1.jpg");
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../assets/registrationCard/registrationCard1.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.25))), url("../assets/registrationCard/registrationCard1.jpg");
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.25)), url("../assets/registrationCard/registrationCard1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

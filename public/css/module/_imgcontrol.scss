@@ -33,7 +33,7 @@
 }
 
 @mixin backgroundOverlayHover($url){
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url($url);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.25)), url($url);
     background-repeat: no-repeat;
     background-size: cover;
 }
