@@ -84,33 +84,40 @@
                                                     We have received your registration form.
                                                 </p>
                                                 <p>
-                                                    Thank you for participating in StudentsxCEOs 9th Grand Summit Business Case Competiton. To finish your registration, please follow these steps:
+                                                    Thank you for participating in StudentsxCEOs 9th Grand Summit The Summit Conference. To finish your registration, please follow these steps:
                                                 </p>
                                                 <p>
-                                                    1. <b>Finish payment by transfering Rp275.000,- (Early Bird Fee) to</b>
+                                                    1. <b>Finish payment by transfering Rp75.000,- (Early Bird Fee) to</b>
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
-                                                    BCA 5221166435 a/n Chyntia Angelina<br>
-                                                    OR<br>
-                                                    BNI  670350698 a/n Zahra Fulli Fauza
+                                                    BCA 5221166435 Chyntia Angelina<br>
+                                                    BNI  670350698 Zahra Fulli Fauza
                                                 </p>
                                                 <p>
                                                     Please keep your proof of payment.
                                                 </p>
                                                 <p>
                                                     2. <b>Scan Student Identity Card of every team member</b><br><br>
-                                                    This identity card scan is used to ensure each team member is an active undergraduate/diploma student.<br>
-                                                    Identity cards must be scanned on both sides (front and back). <br>
-                                                    The scan results should be compiled in one PDF document with the name<br><br>
-                                                    BCC REG_[TEAM NAME]<br><br>
-                                                    example: BCC REG_LUMOS.pdf
+                                                    This identity card scan is used to ensure each team member is an active undergraduate/diploma student.<br><br> 
+                                                    Identity cards must be scanned on both sides (front and back). <br><br>
+                                                    The scan results should be compiled in one PDF document with the name THE SUMMIT REG_[TEAM NAME] or THE SUMMIT REG_[FULL NAME] for individual registration. example:<br><br>
+                                                    THE SUMMIT REG_LUMOS.pdf<br>
+                                                    or<br>
+                                                    THE SUMMIT REG_FATHIMA AZZAHRA.pdf<br>
                                                 </p>
                                                 <p>
                                                     3. <b>Send proof of payment and scan result to <i>sxcgrandsummit@gmail.com</i></b><br><br>
 
                                                     with subject:<br><br>
-                                                    BCC REG_ [TEAM NAME]_[TEAM LEADER'S FIRST NAME]<br>
-                                                    example: BCC REG_LUMOS_FATHIMA<br>
+                                                    <i>For team registration</i><br>
+                                                    THE SUMMIT REG_ [TEAM NAME]_[TEAM LEADER'S FIRST NAME]<br>
+                                                    example:<br>
+                                                    THE SUMMIT REG_LUMOS_FATHIMA<br><br>
+
+                                                    <i>For individual registration</i><br>
+                                                    THE SUMMIT REG_ [FULL NAME]<br>
+                                                    example: <br>
+                                                    THE SUMMIT REG_FATHIMA AZZAHRA<br>
                                                 </p>
                                                 <p>
                                                     4. <b>You will receive a confirmation email after your payment and document is verified within 1 x 24 hours.</b>

@@ -45,7 +45,7 @@ class SummitController extends Controller
 
         $user = new User();
     	$user->email = request('email1');
-        $user->notify(new EmailNotif());
+        $user->notify(new EmailNotifSummit());
         
         $team->id = $id;
         $team->email = $request->email1;
