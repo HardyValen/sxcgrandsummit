@@ -52,11 +52,11 @@
                             This session will be conducted by business experts and leaders to provide insights and generalize basic understanding regarding how to resolve each SDGs issue. The topics are "Problem Discovery" that will help participants find the root causes using a specific framework and "Applicable Solutions" to generate, evaluate, choose, and implement solutions.
                         </p>
                     </div>
-                    <div class="activity-image image-activity-1"></div>
+                    <div class="activity-image img-coaching"></div>
                 </div>
                 
                 <div class= "activity-block">
-                    <div class="activity-image image-activity-2"></div>
+                    <div class="activity-image img-talkshow"></div>
                     <div class= "activity-description">
                         <div class="activity-title">
                             Talk Shows Session
@@ -76,11 +76,11 @@
                             The perfect time to interact, discuss, collaborate, and cooperate to find a solution for each chamber’s issue. The conference leaders will lead the discussion, create the study guides, and assess each participant from their performance and essay. From the discussions, we expect a feasible solution to be presented in the end in front of the NGOs.
                         </p>
                     </div>
-                    <div class="activity-image image-activity-3"></div>
+                    <div class="activity-image img-chamber"></div>
                 </div>
                 
                 <div class= "activity-block">
-                    <div class="activity-image image-activity-4"></div>
+                    <div class="activity-image img-gala"></div>
                     <div class= "activity-description">
                         <div class="activity-title">
                             Social Night & Gala Dinner

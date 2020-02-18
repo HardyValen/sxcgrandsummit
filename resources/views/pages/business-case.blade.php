@@ -19,7 +19,7 @@
                 <div class="header-line"></div>
                 <h2>A Brief Description:</h2>
                 <p>
-                    Business Case Competition is a business based problem-solving competition. Through this program, teams must identify the most prominent issues faced by the company and develop a strategy to provide a solution to help companies achieve their goals. They are expected to solve the problem in forms of paper. Winning strategies include being detail-oriented, creative, and business acumen when presenting recommendations.
+                    Business Case Competition is a business based problem-solving competition. Through this program, teams must identify the most prominent issues faced by a company and develop a strategy to provide a solution to help companies achieve their goals.
                 </p>
             </div>
             <div class="description-assets">
@@ -35,14 +35,14 @@
                 <div class="flow-card">
                     <h3>Elimination Phase</h3>
                     <p>
-                        Eligible Registered Participants will be distributed the Company Business Case and expected to solve that problem in forms of business paper.
+                        The Company Business Case will be distributed to qualified registered participants and it is expected to be solved in business paper form.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
                     <h3>Coaching Session</h3>
                     <p>
-                        The best 10 teams will be invited to the Summit Main event in Bandung for attending Coaching Session by business academics and professionals.
+                        The top 10 teams will be invited to the main event, The Summit, to present their solution and ideas in front of professionals and company representatives.
                     </p>
                 </div>
                 <div class="flow-connector"></div>

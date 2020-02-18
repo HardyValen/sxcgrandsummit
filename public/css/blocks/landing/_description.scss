@@ -57,7 +57,7 @@
         .landing-description-text{
             display: flex;
             justify-content: center;
-            width: 50%;
+            width: 60%;
     
             @media screen and (max-width: 960px) {
                 width: 100%;
@@ -65,7 +65,7 @@
     
             p {
                 @include myriadProRegular();
-                @include paragraph();
+                @include paragraph1();
                 color: map-get($theme-colors, "primary");
                 text-align: center;
                 line-height: 1.5;

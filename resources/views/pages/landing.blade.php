@@ -59,14 +59,15 @@
                         </div>
                         <div class="post-summary">
                             <p>
-                                Business Case Competition is a business based problem-solving competition. Through this program, teams must identify the most prominent issues faced by the company and develop a strategy to provide a solution to help companies achieve their goals...
+                                Business Case Competition is a business based problem-solving competition in Indonesia. Through this program, each team will identify prominent issues faced by a company and try to build a strategy to provide a solution in order to help the company reach their goals.
                             </p>
                         </div>
-                        <div class="post-link">
-                            <a class="button-secondary" href="/business-case">More Details</a>
-                        </div>
+                    </div>
+                    <div class="post-link">
+                        <a class="button-secondary" href="/business-case">More Details</a>
                     </div>
                 </div>
+                
                 <div class="post-card">
                     <div class="post-image image-event-3"></div>
                     <div class="post-desc">
@@ -77,14 +78,15 @@
                         </div>
                         <div class="post-summary">
                             <p>
-                                Pre Event is a series of events that are conducted and aimed to introduce the Grand Summit. Within these activities, we want to provide our target audience and Grand Summit participants the opportunity to gain various insights...
+                                Pre Event is a a series of events that are conducted to build awareness of the Grand Summit. We want to provide the opportunity to gain various insights from expert speakers and mini-workshops. 
                             </p>
                         </div>
-                        <div class="post-link">
-                            <a class="button-disabled" href="#">Details Soon</a>
-                        </div>
+                    </div>
+                    <div class="post-link">
+                        <a class="button-disabled" href="#">Details Soon</a>
                     </div>
                 </div>
+                
                 <div class="post-card">
                     <div class="post-image image-event-2"></div>
                     <div class="post-desc">
@@ -95,17 +97,17 @@
                         </div>
                         <div class="post-summary">
                             <p>
-                                The 9th Grand Summit will exhibit a conference as the peak event called The Summit. Invited experts to share their insights and experiences in specific fields to empower students. This event aims to train students to be potential entrepreneurs...
+                                The Summit is a national conference that invites experts to share their insights and experiences in specific fields regarding SDGs to empower students to be potential entrepreneurs. There will be coaching sessions that are led by experts from NGOs, group discussions, and presentations of the given solution in front of NGOs.
                             </p>
                         </div>
-                        <div class="post-link">
-                            <a class="button-secondary" href="/summit">More Details</a>
-                        </div>
+                    </div>
+                    <div class="post-link">
+                        <a class="button-secondary" href="/summit">More Details</a>
                     </div>
                 </div>
             </div>    
         </section>
-        
+            
         <section class="landing-registration" id="registration">
             <a href="/business-case/register" class="button-section bg-business-case">
                 <h3>REGISTER</h3>

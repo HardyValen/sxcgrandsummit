@@ -927,7 +927,15 @@ body {
 }
 
 .post-container .post-card {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 100%;
   height: 100%;
 }
@@ -986,6 +994,8 @@ body {
 
 .post-container .post-card .post-image {
   width: 100%;
+  background-position-x: 50%;
+  background-position-y: 10%;
   border-radius: .5rem;
 }
 
@@ -1011,25 +1021,26 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 3rem;
 }
 
-.post-container .post-card .post-desc .post-title, .post-container .post-card .post-desc .post-link {
+.post-container .post-card .post-desc .post-title {
   margin-top: 2rem;
 }
 
 .post-container .post-card .post-desc .post-summary {
+  text-align: justify;
   margin-top: 1rem;
 }
 
-.post-container .post-card .post-desc .post-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.post-container .post-card .post-link {
+  text-align: left;
+  margin-top: auto;
 }
 
 .post-container .post-card h3, .post-container .post-card h2, .post-container .post-card h1, .post-container .post-card p {
@@ -1081,18 +1092,18 @@ body {
 }
 
 .post-container .post-card h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 320px) {
   .post-container .post-card h1 {
-    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .post-container .post-card h1 {
-    font-size: 4rem;
+    font-size: 4.6rem;
   }
 }
 
@@ -1102,18 +1113,18 @@ body {
 }
 
 .post-container .post-card p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .post-container .post-card p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .post-container .post-card p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1187,18 +1198,18 @@ body {
 }
 
 .card-registration h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 320px) {
   .card-registration h1 {
-    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .card-registration h1 {
-    font-size: 4rem;
+    font-size: 4.6rem;
   }
 }
 
@@ -1225,18 +1236,18 @@ body {
 }
 
 .card-registration p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .card-registration p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .card-registration p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1383,18 +1394,18 @@ body {
 }
 
 .navbar .navbar-links a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .navbar .navbar-links a {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .navbar .navbar-links a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1603,18 +1614,18 @@ body {
 }
 
 .sidebar .sidebar-links .sidebar-link .link-description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .sidebar .sidebar-links .sidebar-link .link-description {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .sidebar .sidebar-links .sidebar-link .link-description {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1938,18 +1949,18 @@ body {
 }
 
 .footer .footer-copyright {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .footer .footer-copyright {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .footer .footer-copyright {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -2001,18 +2012,18 @@ body {
 }
 
 .schedule-container h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 320px) {
   .schedule-container h1 {
-    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .schedule-container h1 {
-    font-size: 4rem;
+    font-size: 4.6rem;
   }
 }
 
@@ -2063,18 +2074,18 @@ body {
 }
 
 .schedule-container p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .schedule-container p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .schedule-container p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -2433,18 +2444,18 @@ main {
 }
 
 .paragraph {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .paragraph {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .paragraph {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -2567,18 +2578,18 @@ main {
 }
 
 .landing-hero .landing-hero-description h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 320px) {
   .landing-hero .landing-hero-description h1 {
-    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-hero .landing-hero-description h1 {
-    font-size: 4rem;
+    font-size: 4.6rem;
   }
 }
 
@@ -2605,18 +2616,18 @@ main {
 }
 
 .landing-hero .landing-hero-description p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 320px) {
   .landing-hero .landing-hero-description p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-hero .landing-hero-description p {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -2638,7 +2649,22 @@ main {
 
 @media screen and (max-width: 960px) {
   .landing-hero .landing-hero-description p {
-    line-height: 1.7;
+    line-height: 1.6;
+  }
+  .landing-hero .landing-hero-description p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .landing-hero .landing-hero-description p {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .landing-hero .landing-hero-description p {
+    font-size: 1.6rem;
   }
 }
 
@@ -2833,7 +2859,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 60%;
 }
 
 @media screen and (max-width: 960px) {
@@ -2850,18 +2876,18 @@ main {
 }
 
 .landing-description .landing-flex-container .landing-description-text p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 320px) {
   .landing-description .landing-flex-container .landing-description-text p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-description .landing-flex-container .landing-description-text p {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -3045,18 +3071,18 @@ main {
 }
 
 .registration-card h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-card h1 {
-    font-size: calc(2.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-card h1 {
-    font-size: 4rem;
+    font-size: 4.6rem;
   }
 }
 
@@ -3105,18 +3131,18 @@ main {
 }
 
 .registration-card p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-card p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-card p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -3325,18 +3351,18 @@ main {
 }
 
 .registration-card .registration-content .registration-input .text-label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-card .registration-content .registration-input .text-label {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-card .registration-content .registration-input .text-label {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -3359,18 +3385,18 @@ main {
 }
 
 .registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email], .registration-card .registration-content .registration-input input[type=number], .registration-card .registration-content .registration-input .txta {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email], .registration-card .registration-content .registration-input input[type=number], .registration-card .registration-content .registration-input .txta {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-card .registration-content .registration-input input[type=text], .registration-card .registration-content .registration-input input[type=email], .registration-card .registration-content .registration-input input[type=number], .registration-card .registration-content .registration-input .txta {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -3433,18 +3459,18 @@ main {
 }
 
 .registration-card .registration-content .registration-radio-wrapper label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-card .registration-content .registration-radio-wrapper label {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-card .registration-content .registration-radio-wrapper label {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -3714,18 +3740,18 @@ main {
 }
 
 .registration-success p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-success p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-success p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -3810,18 +3836,18 @@ main {
 }
 
 .registration-success .registration-success-summary .summary-date {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-success .registration-success-summary .summary-date {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-success .registration-success-summary .summary-date {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -3931,18 +3957,18 @@ main {
 }
 
 .registration-success .registration-success-summary .summary-data .data-value {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .registration-success .registration-success-summary .summary-data .data-value {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .registration-success .registration-success-summary .summary-data .data-value {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -3969,7 +3995,7 @@ main {
 .business-case-hero h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #E8E8E8;
+  color: #F4F4F4;
 }
 
 .business-case-hero h1 {
@@ -4002,7 +4028,7 @@ main {
   display: flex;
   -webkit-box-shadow: inset 0rem 0rem 1.75rem 0rem rgba(0, 0, 0, 0.3);
   box-shadow: inset 0rem 0.5rem 1.75rem 0rem rgba(0, 0, 0, 0.3);
-  background-color: #E8E8E8;
+  background-color: #F4F4F4;
 }
 
 .business-case-description {
@@ -4073,18 +4099,18 @@ main {
 }
 
 .business-case-description p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 320px) {
   .business-case-description p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.8rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .business-case-description p {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -4211,18 +4237,18 @@ main {
 }
 
 .business-case-flow p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .business-case-flow p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .business-case-flow p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -4360,18 +4386,18 @@ main {
 }
 
 .pre-event-description .description-container p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .pre-event-description .description-container p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .pre-event-description .description-container p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -4464,18 +4490,18 @@ main {
 }
 
 .pre-event-topics p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .pre-event-topics p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .pre-event-topics p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -4517,12 +4543,12 @@ main {
 }
 
 .summit-hero h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 320px) {
   .summit-hero h1 {
-    font-size: calc(2rem + 2.6 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
@@ -4616,18 +4642,18 @@ main {
 }
 
 .summit-description .description-container p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 320px) {
   .summit-description .description-container p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.8rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .summit-description .description-container p {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -4695,7 +4721,7 @@ main {
 }
 
 .summit-theme .theme-container {
-  width: 90%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4757,18 +4783,18 @@ main {
 }
 
 .summit-theme .theme-container h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 320px) {
   .summit-theme .theme-container h2 {
-    font-size: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .summit-theme .theme-container h2 {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -4780,18 +4806,18 @@ main {
 }
 
 .summit-theme .theme-container h3 {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 320px) {
   .summit-theme .theme-container h3 {
-    font-size: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .summit-theme .theme-container h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -4803,18 +4829,18 @@ main {
 }
 
 .summit-theme .theme-container p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 320px) {
   .summit-theme .theme-container p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .summit-theme .theme-container p {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -4843,7 +4869,7 @@ main {
 }
 
 .summit-activities .activity-container {
-  width: 70%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4991,9 +5017,8 @@ main {
 .summit-activities .activity-container .activity-block .activity-image {
   width: 100%;
   min-width: 50%;
-  background-position-x: 50%;
-  background-position-y: 50%;
   border-radius: .5rem;
+  margin: 0 1rem 0 1rem;
 }
 
 .summit-activities .activity-container .activity-block .activity-image {
@@ -5018,28 +5043,36 @@ main {
   }
 }
 
-.summit-activities .activity-container .activity-block .image-activity-1 {
-  background: url("../assets/summit/activity1.jpg");
+.summit-activities .activity-container .activity-block .img-coaching {
+  background: url("../assets/summit/Coaching.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 60%;
 }
 
-.summit-activities .activity-container .activity-block .image-activity-2 {
-  background: url("../assets/summit/activity2.jpg");
+.summit-activities .activity-container .activity-block .img-talkshow {
+  background: url("../assets/summit/Talkshow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 85%;
 }
 
-.summit-activities .activity-container .activity-block .image-activity-3 {
-  background: url("../assets/summit/activity3.jpg");
+.summit-activities .activity-container .activity-block .img-chamber {
+  background: url("../assets/summit/Chamber.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 55%;
 }
 
-.summit-activities .activity-container .activity-block .image-activity-4 {
-  background: url("../assets/summit/activity4.jpg");
+.summit-activities .activity-container .activity-block .img-gala {
+  background: url("../assets/summit/Gala.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 40%;
+  background-position-y: 60%;
 }
 
 .summit-activities .activity-container .activity-block .activity-description {
@@ -5171,18 +5204,387 @@ main {
 }
 
 .summit-activities .activity-container .activity-block .activity-description p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .summit-activities .activity-container .activity-block .activity-description p {
-    font-size: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .summit-activities .activity-container .activity-block .activity-description p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+  }
+}
+
+.summit-chambers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFC517;
+}
+
+.summit-chambers .chambers-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E8E8E8;
+  -webkit-box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.summit-chambers .chambers-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container {
+    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.summit-chambers .chambers-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container {
+    padding-left: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .summit-chambers .chambers-container {
+    width: 100%;
+  }
+  .summit-chambers .chambers-container {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .summit-chambers .chambers-container {
+    padding-left: calc(1.6rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1.6rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .summit-chambers .chambers-container {
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+  }
+}
+
+.summit-chambers .chambers-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0252B3;
+}
+
+.summit-chambers .chambers-container h1 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container h1 {
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container h1 {
+    font-size: 3.2rem;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.summit-chambers .chambers-container .chamber-block {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block {
+    padding-bottom: calc(1.6rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1.6rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-image {
+  width: 100%;
+  min-width: 50%;
+  border-radius: .5rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-image {
+  height: 15rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block .activity-image {
+    height: calc(15rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-image {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-image {
+    display: none;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block .img-coaching {
+  background: url("../assets/summit/Coaching.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 60%;
+}
+
+.summit-chambers .chambers-container .chamber-block .img-talkshow {
+  background: url("../assets/summit/Talkshow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 85%;
+}
+
+.summit-chambers .chambers-container .chamber-block .img-chamber {
+  background: url("../assets/summit/Chamber.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 55%;
+}
+
+.summit-chambers .chambers-container .chamber-block .img-gala {
+  background: url("../assets/summit/Gala.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 40%;
+  background-position-y: 60%;
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description {
+  min-width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description {
+    padding-left: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description .activity-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #0252B3;
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description .activity-title {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title {
+    font-size: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title {
+    font-size: 2.4rem;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #FFC517;
+  color: #0252B3;
+  content: counter(section);
+  counter-increment: section;
+  margin-right: 1rem;
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+  padding: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+    padding: calc(1.6rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+    padding: 1.6rem;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+  width: 3.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+    width: calc(3.2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+    width: 4.2rem;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+  height: 3.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+    height: calc(3.2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description .activity-title::before {
+    height: 4.2rem;
+  }
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description p {
+  font-family: 'Myriad Pro Regular';
+  color: #0368E3;
+  margin-top: 1.6rem;
+  text-align: justify;
+}
+
+.summit-chambers .chambers-container .chamber-block .activity-description p {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description p {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-chambers .chambers-container .chamber-block .activity-description p {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
 $actimages: (
-    "../assets/summit/activity1.jpg",
-    "../assets/summit/activity2.jpg",
-    "../assets/summit/activity3.jpg",
-    "../assets/summit/activity4.jpg"
+    "coaching": "../assets/summit/Coaching.jpg",
+    "talkshow": "../assets/summit/Talkshow.jpg",
+    "chamber": "../assets/summit/Chamber.jpg",
+    "gala": "../assets/summit/Gala.jpg"
 );
   
 .summit-activities {
@@ -16,7 +16,7 @@ $actimages: (
     .activity-container {
         @include fluidpaddingy(2rem, 3rem);
         @include fluidpaddingx(2rem, 4rem);
-        width: 70%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -51,19 +51,28 @@ $actimages: (
                 width: 100%;
                 min-width: 50%;
                 @include fluidheight(15rem,20rem);
-                @include backgroundPosition(50%, 50%);
-                border-radius: .5rem;   
-
+                border-radius: .5rem;
+                margin: 0 1rem 0 1rem;
+                
                 @media screen and (max-width: 960px) {
                     display: none;
                 }
             }
-            
-            @each $image in $actimages {
-                $i: index($actimages, $image);
-                .image-activity-#{$i}{
-                    @include background($image);
-                }
+            .img-coaching{
+                @include background(map-get($actimages,"coaching"));
+                @include backgroundPosition(70%, 60%);
+            }
+            .img-talkshow{
+                @include background(map-get($actimages,"talkshow"));
+                @include backgroundPosition(70%, 85%);
+            }
+            .img-chamber{
+                @include background(map-get($actimages,"chamber"));
+                @include backgroundPosition(50%, 55%);
+            }
+            .img-gala{
+                @include background(map-get($actimages,"gala"));
+                @include backgroundPosition(40%, 60%);
             }
             
             .activity-description {
