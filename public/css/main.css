@@ -1687,6 +1687,13 @@ body {
   }
 }
 
+.sidebar .sidebar-banner:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0.25))), url("../assets/registrationCard/registrationCard1.jpg");
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../assets/registrationCard/registrationCard1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .sidebar .sidebar-banner h2 {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -2401,8 +2408,8 @@ body {
 }
 
 .bg-main-event {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../assets/landing/event/post2.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/landing/event/post2.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(150, 113, 4, 0.6)), to(rgba(150, 113, 4, 0.6))), url("../assets/landing/event/post2.jpg");
+  background: linear-gradient(0deg, rgba(150, 113, 4, 0.6), rgba(150, 113, 4, 0.6)), url("../assets/landing/event/post2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;

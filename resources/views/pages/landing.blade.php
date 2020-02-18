@@ -27,7 +27,7 @@
             <div class="landing-flex-container">
                 <div class='section-title'>
                     <div class='header-line'></div>
-                    <h2>Why join SxC 9th Grand summit?</h2>
+                    <h2>Why should you join the 9th Grand Summit?</h2>
                 </div>
                 <div class="landing-description-text">
                     <p>
@@ -90,7 +90,7 @@
                     <div class="post-desc">
                         <div class="post-title">
                             <h3>
-                                Main Event   
+                                The Summit
                             </h3>
                         </div>
                         <div class="post-summary">

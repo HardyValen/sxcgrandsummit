@@ -11,7 +11,7 @@
             <img class="link-icon" src="{{URL::asset('assets/icons/About.svg')}}" alt="ABOUT">
             <p class='link-description'>ABOUT</p>
         </a>
-        <a href="/schedule" class="sidebar-link">
+        <a href="/landing#schedule" class="sidebar-link">
             <img class="link-icon" src="{{URL::asset('assets/icons/Schedule.svg')}}" alt="ABOUT">
             <p class='link-description'>SCHEDULE</p>
         </a>

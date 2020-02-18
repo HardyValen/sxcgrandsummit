@@ -18,6 +18,7 @@
             <div class="description-container">
                 <div class="header-line"></div>
                 <p>
+                    
                     The 9th Grand Summit will exhibit a conference as the peak event called The Summit. Invited experts to share their insights and experiences in specific fields to empower students. This event aims to train students to be potential entrepreneurs that have high motivation and think critically. The participants will get a chance to network with other students from all over Indonesia. There will be coaching sessions to prepare them for discussions that lead by experts from NGOs in five chambers with five different SDGs issues as the main topic. Each participant will be assigned in a chosen chamber and are expected to generate suitable and feasible solutions towards the problem. In the end, each chamber will get a chance to present their solutions in front of NGOs who will consider whether their solutions can be implemented. We aim to give the participants a platform to go beyond and also encourage diverse forms of collaboration and innovation by providing room for discussions.
                 </p>
             </div>
@@ -32,7 +33,7 @@
                     "The Application of SDGs in Building Sustainable Businesses"
                 </h3>
                 <p>
-                    Discussing how a business can sustain, the theme objectively gives an impact to the company, stakeholders, society, and environment according to the United Nations Sustainable Development Goals from the NGOs’ perspective. We want the participants to be able to create feasible solutions that can be implemented by the NGOs. We also want to build a continuous discussion of SDGs in the field of business, not only as a way for students to develop their interest in sustainable businesses, but most importantly, to gain insights, experiences, and relations.
+                    Discussing about sustainable businesses and environmental matter, the theme’s objective is to give a real impact to the company, stakeholders, society, and environment according to the United Nations Sustainable Development Goals from the NGOs’ perspective. We encourage the participants to take part in caring about our social and environmental matter by building a continuous discussion and creating feasible solutions that can be implemented by the NGOs.
                 </p>
             </div>
         </section>
@@ -48,7 +49,7 @@
                             Coaching Session
                         </div>
                         <p>
-                            This session aims to provide insights and materials for the participants and generalize basic understanding regarding how to resolve each SDGs issue, which will be conducted by business experts and leaders. The topics during this session are "Problem Discovery" to help them find the root causes using a specific framework and "Applicable Solutions" to generate, evaluate, choose, and implement solutions.
+                            This session will be conducted by business experts and leaders to provide insights and generalize basic understanding regarding how to resolve each SDGs issue. The topics are "Problem Discovery" that will help participants find the root causes using a specific framework and "Applicable Solutions" to generate, evaluate, choose, and implement solutions.
                         </p>
                     </div>
                     <div class="activity-image image-activity-1"></div>
@@ -61,7 +62,7 @@
                             Talk Shows Session
                         </div>
                         <p>
-                            The Talk Shows provide speakers from different NGOs who will be sharing their insights on the growing issues in the implementation of SDGs and also a Question and Answer session. This session aims to give the participants direct information from the NGOs regarding the issues that they will resolve within their chambers and generate the appropriate resolutions.
+                            Providing speakers from different NGOs that will share insights on the growing issues of SDGs to give the participants specific information of the issues that will be solved within their chambers.
                         </p>
                     </div>
                 </div>
@@ -72,7 +73,7 @@
                             Chamber Session
                         </div>
                         <p>
-                            In The Summit, the Discussion session is where the participants can interact, collaborate, and cooperate to find a solution to the issue of the chambers. The discussions will be lead by conference leaders who will act as judges for the chambers. They will create the study guides, guides the discussions, and grade each participant from their performance and essay. From the             discussions, we expect a solution to be presented in the end in front of the NGOs.
+                            The perfect time to interact, discuss, collaborate, and cooperate to find a solution for each chamber’s issue. The conference leaders will lead the discussion, create the study guides, and assess each participant from their performance and essay. From the discussions, we expect a feasible solution to be presented in the end in front of the NGOs.
                         </p>
                     </div>
                     <div class="activity-image image-activity-3"></div>
@@ -85,7 +86,7 @@
                             Social Night & Gala Dinner
                         </div>
                         <p>
-                            In this session, we want to give a chance for participants to network with each other. We also want to provide participants with a positive impression and a memorable experience of The Summit. Hence, Social Night is designed to be an event where participants can enjoy and interact with each other informally. The event will be closed by Gala Dinner that consists of a final presentation from each chamber and also awarding.
+                            A big chance for participants to network, create positive impressions and a memorable experience of The Summit. Social Night is a platform where participants can enjoy and interact with each other informally and will be closed by Gala Dinner.
                         </p>
                     </div>
                 </div>
