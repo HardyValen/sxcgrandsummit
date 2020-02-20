@@ -68,6 +68,7 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tr style="box-sizing: border-box;">
                                             <th style="box-sizing: border-box;">
+                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">9TH GRAND SUMMIT BUSINESS CASE COMPETITION</h2>
                                                 <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">REGISTRATION CONFIRMATION</h2>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 0;font-size: 13px;box-sizing: border-box;"></p>
                                             </th>

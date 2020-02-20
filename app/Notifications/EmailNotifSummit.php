@@ -40,7 +40,7 @@ class EmailNotifSummit extends Notification
      */
     public function toMail($notifiable)
     {
-        return (new MailMessage)->view("emails.registrationSuccessSummit")->subject("Registration Confirmation")->line("...");
+        return (new MailMessage)->view("emails.registrationSuccessSummit")->subject("9th Grand Summit The Summit Registration Confirmation")->line("...");
     }
 
     /**
