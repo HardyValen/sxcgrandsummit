@@ -21,10 +21,18 @@ if (locationRegexLanding.test(url)){
         elmt.addEventListener("click", function() {scrollto("#event")}
         )
     });
-
+    
     let navSchedule = document.querySelectorAll("#navSchedule");
     navSchedule.forEach(elmt => {
         elmt.addEventListener("click", function() {scrollto("#schedule")}
+        )
+    });
+    
+    let sideButton = document.querySelector("#sideButton");
+    sideButton.forEach(elmt => {
+        //elmt.addEventListener("hover", function() {setAttribute('src', "{{URL::asset('assets/registration/MoreIcon-Fill.svg')}}")}
+        elmt.removeAttribute("onclick");
+        elmt.addEventListener("click", function() {scrollto("schedule")}
         )
     });
 
@@ -34,3 +42,5 @@ if (locationRegexLanding.test(url)){
 if (locationRegexSummit.test(url)){
     document.querySelector("#navRegist").setAttribute('href', "/summit/register");
 }
+
+

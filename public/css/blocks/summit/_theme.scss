@@ -38,7 +38,7 @@
         }
 
         p {
-            @include paragraph1();
+            @include paragraph();
             @include myriadProRegular();
             color: map-get($theme-colors, "primary-light");
             line-height: 1.5;

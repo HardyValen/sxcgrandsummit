@@ -13,7 +13,7 @@
     </div>
     <div class="navbar-mobile-nav">
         <a onclick="showsidebar()">
-            <img src="{{URL::asset('assets/registration/MoreIcon-Outline.svg')}}" alt="MORE OPTIONS">
+            <img src="{{URL::asset('assets/registration/MoreIcon-Outline.svg')}}" alt="MORE OPTIONS" id="sideButton">
         </a>
     </div>
 </nav>
