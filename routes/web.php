@@ -29,4 +29,4 @@ Route::get('/pre-event', 'PageRequestController@viewPreEvent');
 // Route::get('/footer', function(){return view("blocks.footer");});
 // Route::get('/navbar', function(){return view("blocks.navbar");});
 // Route::get('/sidebar', function(){return view("blocks.sidebar");});
-Route::get('/mail', function(){return view("emails.registrationSuccess");});
+/*Route::get('/mail', function(){return view("emails.registrationSuccess");});*/
