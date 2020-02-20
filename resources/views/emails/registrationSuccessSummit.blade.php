@@ -106,7 +106,7 @@
                                                     THE SUMMIT REG_FATHIMA AZZAHRA.pdf<br>
                                                 </p>
                                                 <p>
-                                                    3. <b>Send proof of payment and scan result to <i>sxcgrandsummit@gmail.com</i></b><br><br>
+                                                    3. <b>Send proof of payment and scan result to <i>grandsummitscc@gmail.com</i></b><br><br>
 
                                                     with subject:<br><br>
                                                     <i>For team registration</i><br>

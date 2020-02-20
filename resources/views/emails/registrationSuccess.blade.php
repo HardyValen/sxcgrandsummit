@@ -106,7 +106,7 @@
                                                     example: BCC REG_LUMOS.pdf
                                                 </p>
                                                 <p>
-                                                    3. <b>Send proof of payment and scan result to <i>sxcgrandsummit@gmail.com</i></b><br><br>
+                                                    3. <b>Send proof of payment and scan result to <i>grandsummitsxc@gmail.com</i></b><br><br>
 
                                                     with subject:<br><br>
                                                     BCC REG_ [TEAM NAME]_[TEAM LEADER'S FIRST NAME]<br>
