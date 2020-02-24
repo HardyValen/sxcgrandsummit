@@ -23,6 +23,9 @@ Route::get('/summit/register', 'SummitController@view');
 Route::post('/summit/register', 'SummitController@store');
 Route::get('/pre-event', 'PageRequestController@viewPreEvent');
 
+Route::get('/pre-event/register', 'PreeventController@view');
+Route::post('/pre-event/register', 'PreeventController@store');
+
 // For debugging purpose only
 // Route::get('/registration-cards', function(){return view("blocks.registration");});
 // Route::get('/schedule', function(){return view("blocks.schedule.businessCase");});
@@ -30,3 +33,4 @@ Route::get('/pre-event', 'PageRequestController@viewPreEvent');
 // Route::get('/navbar', function(){return view("blocks.navbar");});
 // Route::get('/sidebar', function(){return view("blocks.sidebar");});
 // Route::get('/mail', function(){return view("emails.registrationSuccess");});
+Route::get('/test', function(){return view("emails.registrationSuccessPreevent");});
