@@ -1,0 +1,78 @@
+.landing-description{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .box1{
+        height: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        div {
+            @include background("../assets/objects/circle.svg");
+            @include fluidwidth(15rem, 20rem);
+            @include fluidheight(15rem, 20rem);
+            background-size: contain;
+            position: relative;
+            top: -10rem;
+            left: 10rem;
+
+            @media screen and (max-width: 960px){
+                top: -1rem;
+                left: 13rem;
+            }
+        }
+    }
+
+    .box2{
+        height: 0;
+        display: flex;
+        justify-content: flex-start;
+
+        div{
+            @include background("../assets/objects/hexagon.svg");
+            @include fluidwidth(20rem, 30rem);
+            @include fluidheight(20rem, 30rem);
+            background-size: contain;
+            position: relative;
+            top: -10rem;
+            left: -15rem;
+
+            @media screen and (max-width: 960px){
+                left: -12rem;
+            }
+        }
+    }
+
+    .landing-flex-container{
+        @include mobilePadding();
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+        .landing-description-text{
+            display: flex;
+            justify-content: center;
+            width: 60%;
+    
+            @media screen and (max-width: 960px) {
+                width: 100%;
+            }
+    
+            p {
+                @include myriadProRegular();
+                @include paragraph1();
+                color: map-get($theme-colors, "primary");
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+    }
+
+
+}

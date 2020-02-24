@@ -1,0 +1,119 @@
+$chmimages: (
+    "sdg4": "../assets/summit/sdg4.jpg",
+    "sdg8": "../assets/summit/sdg8.jpg",
+    "sdg13": "../assets/summit/sdg13.jpg",
+    "sdg4logo": "../assets/summit/logo-projectChild.jpg",
+    "sdg8logo": "../assets/summit/logo-XSProject.svg",
+    "sdg13logo": "../assets/summit/logo-walhi.jpg"
+);
+  
+.summit-chambers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($theme-colors, "secondary" );
+    
+    .chambers-container {
+        @include fluidpaddingy(2rem, 3rem);
+        @include fluidpaddingx(2rem, 4rem);
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: map-get($theme-colors, "white-alt" );
+        @include shadowSides();
+        
+        @media screen and (max-width: 960px) {
+            @include fluidpaddingx(1.6rem, 3.6rem);
+            width: 100%;
+        }
+        
+        h1 {
+            @include header2();
+            @include montserrat();
+            font-weight: 700;
+            color: map-get($theme-colors, "primary" );
+        }
+        
+        .chamber-block {
+            @include fluidpaddingy(1.6rem, 2.8rem);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            @media screen and (max-width: 960px) {
+                flex-direction: column;
+            }
+            
+            .activity-image {
+                width: 100%;
+                min-width: 50%;
+                @include fluidheight(15rem,20rem);
+                border-radius: .5rem;
+                margin: 0 1rem 0 1rem;
+                
+                @media screen and (max-width: 960px) {
+                    display: none;
+                }
+            }
+            .img-coaching{
+                @include background(map-get($actimages,"coaching"));
+                @include backgroundPosition(70%, 60%);
+            }
+            .img-talkshow{
+                @include background(map-get($actimages,"talkshow"));
+                @include backgroundPosition(70%, 85%);
+            }
+            .img-chamber{
+                @include background(map-get($actimages,"chamber"));
+                @include backgroundPosition(50%, 55%);
+            }
+            .img-gala{
+                @include background(map-get($actimages,"gala"));
+                @include backgroundPosition(40%, 60%);
+            }
+            
+            .activity-description {
+                @include fluidpaddingx(1.6rem, 2.4rem);
+                min-width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                
+                .activity-title{
+                    @include header3();
+                    @include montserrat();
+                    font-weight: 600;
+                    color: map-get($theme-colors, "primary");
+                }
+                
+                .activity-title::before {
+                    @include fluidpadding(1.6rem, 1.6rem);
+                    display: inline-flex;
+                    @include fluidwidth(3.2rem, 4.2rem);
+                    @include fluidheight(3.2rem, 4.2rem);
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: map-get($theme-colors, "secondary");
+                    color: map-get($theme-colors, "primary");
+                    content: counter(section);
+                    counter-increment: section;
+                    margin-right: 1rem;
+                }
+                
+                p {
+                    @include paragraph();
+                    @include myriadProRegular();
+                    color: map-get($theme-colors, "primary-light" );
+                    margin-top: 1.6rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

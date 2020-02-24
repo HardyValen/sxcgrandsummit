@@ -1,0 +1,141 @@
+.schedule-container{
+    @include fluidpaddingy(2rem, 3rem);
+    width: 100%;
+    min-height: 20rem;
+    background-color: map-get($theme-colors, "primary-light");
+    color: map-get($theme-colors, "white");
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 960px) {
+        flex-direction: column;    
+    }
+
+    h1{
+        @include header1();
+        @include montserrat();
+        font-weight: 700;
+    }
+
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 700;
+    }
+    
+    h3{
+        @include header3();
+        @include montserrat();
+        font-weight: 700;
+    }
+
+    p{
+        @include paragraph();
+        @include myriadProRegular();
+    }
+
+    .schedule-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 30%;
+        color: map-get($theme-colors, "white");
+        @include fluidpaddingx(2rem, 7rem);
+        
+        @media screen and (max-width: 960px) {
+            @include fluidpaddingy(2rem, 3rem);
+            width: 100%;
+        }
+    }
+
+    .schedule-timeline-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        min-height: auto;
+        width: 70%;
+
+        &::-webkit-scrollbar{
+            width: 6px;
+            height: 8px;
+            background-color: none; /* or add it to the track */
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+
+        @media screen and (max-width: 960px) {
+            width: 100%;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+
+        .schedule-timeline-item{
+            @include fluidminwidth(14rem, 20rem);
+            @include fluidpaddingy(2rem, 3rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media screen and (max-width: 960px) {
+                &:first-child{
+                    @include fluidpaddingleft(2rem, 7rem);
+                }
+
+                &:last-child{
+                    @include fluidpaddingright(2rem, 7rem);
+                }
+            }
+
+            .schedule-timeline-date{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: map-get($theme-colors, "secondary");
+                padding-bottom: 1rem;
+
+                h1{
+                    @include fluidmarginright(1rem, 1.2rem);
+                }
+
+                p{
+                    @include fluidfontsize(1.3rem, 1.7rem);
+                    @include myriadProBold();
+                }
+            }
+
+            .schedule-timeline-line{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .timeline-donut{
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    border: 4px solid white;
+                    border-radius: 50%;
+                }
+
+                .timeline-line{
+                    flex-grow: 1;
+                    @include fluidheight(.3rem, .4rem);
+                    background-color: map-get($theme-colors, "secondary");
+                }
+            }
+
+            .schedule-timeline-event{
+                padding-top: 1rem;
+                p {
+                    @include fluidfontsize(1.4rem, 1.8rem);
+                    @include myriadProRegular();
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

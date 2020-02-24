@@ -1,0 +1,43 @@
+$bg-images: (
+    "business-case": "../assets/landing/event/post1.jpg",
+    "pre-event": "../assets/landing/event/post3.jpg",
+    "main-event": "../assets/landing/event/post2.jpg"
+);
+
+
+
+.bg-business-case{
+    @include backgroundOverlaySecondary(map-get($bg-images, "business-case"));
+    transition: all 0.2s;
+    background-size: 100%;
+    background-position: center;
+
+    &:hover{
+        color: map-get($theme-colors, "gray5");
+        background-size: 110%;
+    }
+}
+
+.bg-pre-event{
+    @include backgroundOverlayPrimary(map-get($bg-images, "pre-event"));
+    transition: all 0.2s;
+    background-size: 100%;
+    background-position: center;
+
+    &:hover{
+        color: map-get($theme-colors, "secondary-light");
+        background-size: 110%;
+    }
+}
+
+.bg-main-event{
+    @include backgroundOverlaySecondaryDark(map-get($bg-images, "main-event"));
+    transition: all 0.2s;
+    background-size: 100%;
+    background-position: center;
+
+    &:hover{
+        color: map-get($theme-colors, "gray5");
+        background-size: 110%;
+    }
+}

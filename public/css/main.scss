@@ -1,0 +1,67 @@
+@import 'module/mixin-fluid';
+@import 'module/color';
+@import 'module/fonts';
+@import 'module/typography';
+@import 'module/imgcontrol';
+@import 'module/button';
+@import 'module/layout';
+@import 'module/flow';
+@import 'module/shadow';
+
+@import 'blocks/section-title';
+@import 'blocks/section-cards';
+@import 'blocks/section-registration';
+@import 'blocks/section-dropdown-post';
+
+@import 'blocks/navbar';
+@import 'blocks/sidebar';
+@import 'blocks/footer';
+@import 'blocks/schedule';
+@import 'blocks/background';
+
+main{
+    overflow-x: hidden;
+    background-color: map-get($theme-colors, "white");
+}
+
+.display-inline-block{
+    display: inline-block !important;
+}
+
+.paragraph{
+    @include paragraph();
+}
+
+.header-line{
+    @include headerLine(0.8rem, 1.5rem);
+}
+
+// 1. Landing
+@import 'blocks/landing/hero';
+@import 'blocks/landing/description';
+@import 'blocks/landing/event';
+@import 'blocks/landing/registration';
+@import 'blocks/landing/schedule';
+
+// 2. Registration
+@import 'blocks/registration/registration-container';
+@import 'blocks/registration/registration-card';
+@import 'blocks/registration/registration-hero';
+@import 'blocks/registration/registration-success';
+
+// 3. Business Case
+@import 'blocks/business-case/hero';
+@import 'blocks/business-case/description';
+@import 'blocks/business-case/flow';
+
+// 3. Pre Event
+@import 'blocks/pre-event/hero';    
+@import 'blocks/pre-event/description';
+@import 'blocks/pre-event/topics';
+
+// 3. Summit
+@import 'blocks/summit/hero';
+@import 'blocks/summit/description';
+@import 'blocks/summit/theme';
+@import 'blocks/summit/activities';
+@import 'blocks/summit/chambers';

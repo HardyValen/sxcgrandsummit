@@ -1,0 +1,119 @@
+@mixin button(
+    $color, 
+    $color-bg,
+    $color-border,
+    $color-hover,
+    $color-active
+){
+    @include fluidpaddingx(1rem, 2.75rem);
+    @include fluidpaddingy(0.9rem, 1.2rem);
+    @include montserrat();
+    @include fluidfontsize(1.2rem, 1.6rem);
+    background-color: $color-bg;
+    border: 2px solid $color-border;
+    color: $color;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover{
+        background-color:$color-hover;
+        color: $color;
+        border-color: $color-hover;
+        transition: 0.1s;
+    }
+    
+    &:active{
+        background-color:$color-active;
+        color: $color;
+        border-color: $color-active;
+        transition: 0.1s;
+    }
+}
+
+.button-white-transparent{
+    @include button(
+        white,
+        transparent,
+        white,
+        map-get($theme-colors, "secondary-dark" ), 
+        map-get($theme-colors, "secondary" )
+    );
+}
+
+.button-black-transparent{
+    @include button(
+        black,
+        transparent,
+        black,
+        map-get($theme-colors, "secondary-dark" ), 
+        map-get($theme-colors, "secondary" )
+    );
+}
+
+
+.button-primary{
+    @include button(
+        white,
+        map-get($theme-colors, "primary"),
+        map-get($theme-colors, "primary"),
+        map-get($theme-colors, "primary-light"),
+        map-get($theme-colors, "secondary")
+    )
+}
+
+.button-secondary{
+    @include button(
+        white,
+        map-get($theme-colors, "secondary"),
+        map-get($theme-colors, "secondary"),
+        map-get($theme-colors, "secondary-light"),
+        map-get($theme-colors, "primary")
+    )
+}
+
+.button-secondary-transparent{
+    @include button(
+        map-get($theme-colors, "primary"),
+        white,
+        map-get($theme-colors, "secondary"),
+        map-get($theme-colors, "white-alt"),
+        map-get($theme-colors, "white")
+    )
+}
+
+.button-disabled{
+    @include button(
+        white,
+        map-get($theme-colors, "gray1"),
+        map-get($theme-colors, "gray1"),
+        map-get($theme-colors, "gray2"),
+        map-get($theme-colors, "gray3")
+    )
+}
+
+.button-section{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.2s;
+
+    h3{
+        @include header3();
+        @include montserrat();
+        font-weight: 400;
+    }
+
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 800;
+    }
+}
+
