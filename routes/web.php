@@ -33,4 +33,4 @@ Route::post('/pre-event/register', 'PreeventController@store');
 // Route::get('/navbar', function(){return view("blocks.navbar");});
 // Route::get('/sidebar', function(){return view("blocks.sidebar");});
 // Route::get('/mail', function(){return view("emails.registrationSuccess");});
-Route::get('/test', function(){return view("emails.registrationSuccessPreevent");});
+// Route::get('/test', function(){return view("emails.registrationSuccessPreevent");});
