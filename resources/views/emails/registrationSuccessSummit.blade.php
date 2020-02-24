@@ -78,7 +78,7 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tbody style="box-sizing: border-box;">
                                             <tr style="box-sizing: border-box;">
-                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Dear Participant,</span></h2>
+                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Hello There,</span></h2>
                                             </tr>
                                             <tr style="box-sizing: border-box;">
                                                 <p style="color: #636363;box-sizing: border-box;">
