@@ -18,7 +18,7 @@
 		<div class="registration-title">
 			<img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
 			<h1>SUCCESSFULLY REGISTERED</h1>
-			<h2>(EARLY BIRD)</h2>
+			<h2>(REGULAR WAVE)</h2>
 		</div>
 
 		<div class="registration-success">
