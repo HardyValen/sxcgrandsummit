@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="post-link">
-                        <a class="button-disabled" href="#">Details Soon</a>
+                        <a class="button-primary" href="/pre-event">More Details</a>
                     </div>
                 </div>
                 

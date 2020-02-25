@@ -6,19 +6,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.5s ease;
 
-    h2{
-        @include montserrat();
-        @include header2();
-        font-weight: 700;
-        color: map-get($theme-colors, "primary");
-        margin-bottom: 2rem;
+    .topic-title {
+        width: 60%;
+        @include fluidpaddingx(2rem, 3rem);
+        @include fluidpaddingy(1.2rem, 1.8rem);
+        display: flex;
+        border: 1px solid map-get($theme-colors, "black-alt" );
+        border-radius: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2{
+            @include montserrat();
+            @include header2();
+            font-weight: 700;
+            color: map-get($theme-colors, "primary");
+        }
+        h3 {
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+            @include header3();
+            @include montserrat();
+            color: map-get($theme-colors, "primary");
+        }
     }
-
-    p {
-        @include paragraph();
-        @include myriadProRegular();
-        color: map-get($theme-colors, "primary-light");
-        line-height: 1.5;
+    .topic-flow {
+        @include fluidpaddingx(2rem, 3rem);
+        @include fluidpaddingy(1.8rem, 2.2rem);
+        p {
+            @include paragraph();
+            @include myriadProRegular();
+            color: map-get($theme-colors, "primary-light");
+            line-height: 1.5;
+        }
     }
 }
