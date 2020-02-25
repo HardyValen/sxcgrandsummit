@@ -88,7 +88,7 @@
                                                     Thank you for participating in StudentsxCEOs 9th Grand Summit Business Case Competiton. To finish your registration, please follow these steps:
                                                 </p>
                                                 <p>
-                                                    1. <b>Finish payment by transfering Rp300.000,- (Early Bird Fee) to</b>
+                                                    1. <b>Finish payment by transfering Rp275.000,- (Early Bird Fee) to</b>
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
                                                     BCA 5221166435 a/n Chyntia Angelina<br>
