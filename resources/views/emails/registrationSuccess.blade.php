@@ -68,6 +68,7 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tr style="box-sizing: border-box;">
                                             <th style="box-sizing: border-box;">
+                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">9TH GRAND SUMMIT BUSINESS CASE COMPETITION</h2>
                                                 <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">REGISTRATION CONFIRMATION</h2>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 0;font-size: 13px;box-sizing: border-box;"></p>
                                             </th>
@@ -81,22 +82,42 @@
                                             </tr>
                                             <tr style="box-sizing: border-box;">
                                                 <p style="color: #636363;box-sizing: border-box;">
-                                                    We have already received your registration form. To be registered as our SxC Business Case Competiton participants, you need to finish your payment first with paying Rp275.000. You can transfer through this following bank accounts:
+                                                    We have received your registration form.
+                                                </p>
+                                                <p>
+                                                    Thank you for participating in StudentsxCEOs 9th Grand Summit Business Case Competiton. To finish your registration, please follow these steps:
+                                                </p>
+                                                <p>
+                                                    1. <b>Finish payment by transfering Rp300.000,- (Regular Wave Fee) to</b>
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
-                                                    BCA 5221166435 Chyntia Angelina<br>
-                                                    BNI  670350698 Zahra Fulli Fauza
+                                                    BCA 5221166435 a/n Chyntia Angelina<br>
+                                                    OR<br>
+                                                    BNI  670350698 a/n Zahra Fulli Fauza
+                                                </p>
+                                                <p>
+                                                    Please keep your proof of payment.
+                                                </p>
+                                                <p>
+                                                    2. <b>Scan Student Identity Card of every team member</b><br><br>
+                                                    This identity card scan is used to ensure each team member is an active undergraduate/diploma student.<br>
+                                                    Identity cards must be scanned on both sides (front and back). <br>
+                                                    The scan results should be compiled in one PDF document with the name<br><br>
+                                                    BCC REG_[TEAM NAME]<br><br>
+                                                    example: BCC REG_LUMOS.pdf
+                                                </p>
+                                                <p>
+                                                    3. <b>Send proof of payment and scan result to <i>grandsummitsxc@gmail.com</i></b><br><br>
+
+                                                    with subject:<br><br>
+                                                    BCC REG_ [TEAM NAME]_[TEAM LEADER'S FIRST NAME]<br>
+                                                    example: BCC REG_LUMOS_FATHIMA<br>
+                                                </p>
+                                                <p>
+                                                    4. <b>You will receive a confirmation email after your payment and document is verified within 1 x 24 hours.</b>
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
-                                                    Please upload your payment receipt to 
-                                                        <b style="color: blue"><u><a href="http://bit.ly/sxcbccpayment">http://bit.ly/sxcbccpayment.</a></u></b>
-                                                    You will receive a confirmation email after your payment was verified within 1 x 24 hours.
-                                                </p>
-                                                <p style="color: #636363;box-sizing: border-box;">
-                                                    Should you have any inquiries, feel free to contact us at 
-                                                    <b style="color: blue"><u><a href="mailto:grandsummitsxc@gmail.com">grandsummitsxc@gmail.com</a></u></b> 
-                                                    and keep in touch for our latest information in 
-                                                    <b style="color: blue"><u><a href="https://www.instagram.com/studentsxceosbdg/">instagram.com/sxcgrandsummit</a></u></b>.  
+                                                    Should you have any inquiries, feel free to contact us at <b>grandsummitsxc@gmail.com</b> and keep in touch for our latest information in <b>instagram.com/sxcgrandsummit</b>.
                                                 </p>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 30px 0 30px;font-size: 13px;box-sizing: border-box;"></p>
                                                 <p style="color: #636363;box-sizing: border-box;">

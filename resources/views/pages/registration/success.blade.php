@@ -18,7 +18,7 @@
 		<div class="registration-title">
 			<img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
 			<h1>SUCCESSFULLY REGISTERED</h1>
-			<h2>(EARLY BIRD)</h2>
+			<h2>(REGULAR WAVE)</h2>
 		</div>
 
 		<div class="registration-success">
@@ -55,12 +55,6 @@
 						<p class='summary-date'>
 							BCA 5221166435 Chyntia Angelina<br>
 							BNI  670350698 Zahra Fulli Fauza<br>
-						</p>
-					</div>
-					<div class="summary-data">
-						<p class='summary-title'>PAYMENT RECEIPT FORM</p>
-						<p class='summary-date'>
-							<a target="_blank" href="http://bit.ly/sxcbccpayment" style="color: blue">http://bit.ly/sxcbccpayment</a>
 						</p>
 					</div>
 				</div>

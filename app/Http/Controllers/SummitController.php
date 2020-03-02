@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\SummitTeam;
 use App\SummitMember;
 use App\User;
-use App\Notifications\EmailNotif;
+use App\Notifications\EmailNotifSummit;
 use App\Notifications;
 
 class SummitController extends Controller
@@ -17,11 +17,12 @@ class SummitController extends Controller
 
     public function store(Request $request){
         $team = new SummitTeam([
+            "team_name" => $request->team_name,
             "posted" => date("l, d F Y")
         ]);
         $team->save();
 
-        $id = \App\SummitTeam::where('posted', $team->posted)->first()->summit_team_id;
+        $id = \App\SummitTeam::where('team_name', $request->team_name)->first()->summit_team_id;
         $threshold = $request->members; //nyimpen banyaknya member dari form
 
         for($i = 1; $i <= $threshold; $i++){
@@ -35,17 +36,19 @@ class SummitController extends Controller
                 "phone" => $request->input("phone".$i), 
                 "major" => $request->input("major".$i), 
                 "batch" => $request->input("batch".$i), 
-                "KTM" => $request->input("KTM".$i), 
+                "KTM" => $request->input("KTM".$i),
+                "university" => $request->input("university".$i), 
+                "ch_selection" => $request->input("ch_selection".$i),
             ]);
             $member->save();
         }
 
         $user = new User();
     	$user->email = request('email1');
-        $user->notify(new EmailNotif());
+        $user->notify(new EmailNotifSummit());
         
         $team->id = $id;
         $team->email = $request->email1;
-		return view('pages.registration.success')->with('data', $team);
+		return view('pages.registration.success_summit')->with('data', $team);
     }
 }

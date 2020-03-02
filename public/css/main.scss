@@ -11,6 +11,7 @@
 @import 'blocks/section-title';
 @import 'blocks/section-cards';
 @import 'blocks/section-registration';
+@import 'blocks/section-dropdown-post';
 
 @import 'blocks/navbar';
 @import 'blocks/sidebar';
@@ -54,11 +55,14 @@ main{
 @import 'blocks/business-case/flow';
 
 // 3. Pre Event
-@import 'blocks/pre-event/hero';
+@import 'blocks/pre-event/hero';    
 @import 'blocks/pre-event/description';
 @import 'blocks/pre-event/topics';
+@import 'blocks/pre-event/slider';
 
 // 3. Summit
 @import 'blocks/summit/hero';
 @import 'blocks/summit/description';
 @import 'blocks/summit/theme';
+@import 'blocks/summit/activities';
+@import 'blocks/summit/chambers';

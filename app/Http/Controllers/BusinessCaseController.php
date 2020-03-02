@@ -36,6 +36,7 @@ class BusinessCaseController extends Controller
                 "major" => $request->input("major".$i), 
                 "batch" => $request->input("batch".$i), 
                 "KTM" => $request->input("KTM".$i), 
+                "university" => $request->input("university".$i),
             ]);
             $member->save();
         }

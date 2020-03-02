@@ -1,6 +1,6 @@
 .summit-description{
-    @include fluidpaddingy(1rem, 2.2rem);
-    @include fluidpaddingx(2rem, 4rem);
+    @include fluidpaddingy(1rem, 5rem);
+    @include fluidpaddingx(2rem, 12rem);
     width: 100%;
     min-height: 35%;
     display: flex;
@@ -17,13 +17,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         p {
-            @include paragraph();
+            @include paragraph1();
             @include myriadProRegular();
             color: map-get($theme-colors, "primary-light");
             line-height: 1.5;
-            text-align: justify;
+            text-align: center;
         }
 
         @media screen and (max-width: 960px){

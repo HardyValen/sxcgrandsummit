@@ -20,6 +20,8 @@ class SummitMember extends Model
         "major",
         "batch",
         "KTM",
+        "university",
+        "ch_selection"
     ];
 
     protected $primaryKey = 'summit_member_id';

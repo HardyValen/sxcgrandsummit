@@ -103,6 +103,11 @@
               <label class="text-label" for="major1">Major</label>
             </div>
 
+            <div class="registration-input">
+              <input type="text" class="form-input" name="university1" id="university1" placeholder=' ' required/>
+              <label class="text-label" for="university1">University</label>
+            </div>
+
             <div class="registration-input-row">
               <div class="registration-input-col">
                 <div class="registration-input">
@@ -185,6 +190,11 @@
               <label class="text-label" for="major2">Major</label>
             </div>
 
+            <div class="registration-input">
+              <input type="text" class="form-input" name="university2" id="university2" placeholder=' ' required/>
+              <label class="text-label" for="university2">University</label>
+            </div>
+
             <div class="registration-input-row">
               <div class="registration-input-col">
                 <div class="registration-input">
@@ -265,6 +275,11 @@
             <div class="registration-input">
               <input type="text" class="form-input" name="major3" id="major3" placeholder=' ' required/>
               <label class="text-label" for="major3">Major</label>
+            </div>
+
+            <div class="registration-input">
+              <input type="text" class="form-input" name="university3" id="university3" placeholder=' ' required/>
+              <label class="text-label" for="university3">University</label>
             </div>
 
             <div class="registration-input-row">

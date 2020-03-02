@@ -1,8 +1,8 @@
 .pre-event-hero{
-    @include backgroundOverlaySecondaryGradient("../assets/pre-event/hero.jpg");
+    @include backgroundOverlaySecondary("../assets/pre-event/hero.jpg");
     @include backgroundPosition(30%, 50%);
     width: 100%;
-    min-height: 60%;
+    min-height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

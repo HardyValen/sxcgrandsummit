@@ -19,7 +19,8 @@ class BusinessCaseMember extends Model
         "batch",
         "KTM",
         "email",
-        "line"
+        "line",
+        "university"
     ];
 
     protected $primaryKey = 'business_case_member_id';

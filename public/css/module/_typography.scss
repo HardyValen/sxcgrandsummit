@@ -6,7 +6,7 @@
 }
 
 @mixin header1(){
-    @include fluidfontsize(2.8rem, 4.0rem);
+    @include fluidfontsize(3rem, 4.6rem);
 }
 
 @mixin header2() {
@@ -18,7 +18,14 @@
 }
 
 @mixin paragraph() {
-    @include fluidfontsize(1.2rem, 1.4rem);
+    @include fluidfontsize(1.4rem, 1.6rem);
+}
+
+@mixin paragraph1() {
+    @include fluidfontsize(1.6rem, 2rem);
+}
+@mixin paragraph2() {
+    @include fluidfontsize(1.8rem, 2.2rem);
 }
 
 @mixin paragraphSize($w, $h) {

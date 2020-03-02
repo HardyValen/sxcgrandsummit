@@ -39,13 +39,15 @@
 
         p{
             @include myriadProRegular();
-            @include paragraph();
+            @include paragraph1();
             @include fluidpaddingbottom(2rem, 3rem);
             color: map-get($theme-colors, 'white');
             line-height: 1.5;
-
+            
             @media screen and (max-width: 960px){
-                line-height: 1.7;
+                line-height: 1.6;
+                @include paragraph();
+
             }
         }
     }

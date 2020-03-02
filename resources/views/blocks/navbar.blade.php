@@ -9,11 +9,11 @@
         <a href="/landing#schedule" id="navSchedule">SCHEDULE</a>
     </div>
     <div class="navbar-registration">
-        <a href="business-case/register" class="button-primary" id="navRegist">REGISTRATION</a>
+        <a href="/landing#registration" class="button-primary" id="navRegist">REGISTRATION</a>
     </div>
     <div class="navbar-mobile-nav">
         <a onclick="showsidebar()">
-            <img src="{{URL::asset('assets/registration/MoreIcon-Outline.svg')}}" alt="MORE OPTIONS">
+            <img src="{{URL::asset('assets/registration/MoreIcon-Outline.svg')}}" alt="MORE OPTIONS" id="sideButton">
         </a>
     </div>
 </nav>

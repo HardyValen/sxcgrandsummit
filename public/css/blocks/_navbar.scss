@@ -1,5 +1,5 @@
 .navbar{
-    @include fluidpaddingx(2rem, 3rem);
+    @include fluidpaddingx(3rem, 5rem);
     @include fluidpaddingy(1.5rem, 2rem);
     display: flex;
     width: 100%;
@@ -51,6 +51,7 @@
     }
 
     .navbar-registration{
+
         @media screen and (max-width: 960px){
             display: none;
         }
@@ -60,6 +61,9 @@
         display: none;
         @media screen and (max-width: 960px){
             display: flex;
+        }
+        &:hover{
+            
         }
     }
 }
