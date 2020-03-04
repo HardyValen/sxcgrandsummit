@@ -36,7 +36,7 @@
 
 @yield('script')
 <script type="text/javascript" src="{{URL::asset('js/smooth-scroll.js')}}"></script>
-<script type="text/javascript" src="{{URL::asset('js/dropdown-post.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/links-redirect.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/navigation.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/summit-add-member.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('js/slider.js')}}"></script>
