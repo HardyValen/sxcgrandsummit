@@ -3,7 +3,7 @@
         <img src="{{URL::asset('assets/icons/BackIcon.svg')}}" alt="BACK" onclick="hidesidebar()">
     </div>
     <div class="sidebar-links">
-        <a href="/landing" class="sidebar-link">
+        <a href="/landing" class="sidebar-link" id="sideHome">
             <img class="link-icon" src="{{URL::asset('assets/icons/Home.svg')}}" alt="HOME">
             <p class='link-description'>HOME</p>
         </a>
@@ -13,12 +13,12 @@
                 <p class='link-description'>ABOUT</p>
             </a>
         --}}
-        <a href="/landing#schedule" class="sidebar-link">
+        <a href="/landing#schedule" class="sidebar-link"  id="sideSchedule">
             <img class="link-icon" src="{{URL::asset('assets/icons/Schedule.svg')}}" alt="SCHEDULE">
             <p class='link-description'>SCHEDULE</p>
         </a>
         <a href="/summit" class="sidebar-link">
-            <img class="link-icon" src="{{URL::asset('assets/icons/Event.svg')}}" alt="EVENT">
+            <img class="link-icon" src="{{URL::asset('assets/icons/Event.svg')}}" alt="EVENT" id="sideEvent">
             <p class='link-description'>EVENT</p>
         </a>
     </div>

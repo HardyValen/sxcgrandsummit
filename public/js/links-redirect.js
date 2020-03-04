@@ -35,8 +35,20 @@ if (locationRegexLanding.test(url)){
         elmt.addEventListener("click", function() {scrollto("schedule")}
         )
     });
-
-    document.querySelector("#sideRegis").setAttribute('onclick', "hidesidebar()");
+    let sideHome = document.querySelector("#sideHome");
+    sideHome.forEach(elmt => {
+        elmt.removeAttribute("href");
+        elmt.addEventListener("click", function() {"hidesidebar()"});
+    });
+    let sideSchedule = document.querySelector("#sideSchedule");
+    sideSchedule.forEach(elmt => {
+        elmt.addEventListener("onclick", "hidesidebar()");
+    });
+    let sideEvent = document.querySelector("#sideEvent");
+    sideEvent.forEach(elmt => {
+        elmt.addEventListener("click", "hidesidebar()");
+    });
+    document.querySelector("#sideRegist").addEventListener("onclick", "hidesidebar()");
 }
 
 if (locationRegexSummit.test(url)){
