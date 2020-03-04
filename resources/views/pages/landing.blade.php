@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="post-link">
-                        <a class="button-disabled" href="#">Details Soon</a>
+                        <a class="button-primary" href="/pre-event">More Details</a>
                     </div>
                 </div>
                 
@@ -109,7 +109,7 @@
         </section>
             
         <section class="landing-registration" id="registration">
-            <a href="/business-case/register" class="button-section bg-business-case">
+            <a href="http://bit.ly/getbccsummit" class="button-section bg-business-case">
                 <h3>REGISTER</h3>
                 <h2>BUSINESS CASE</h2>
             </a>
@@ -117,7 +117,7 @@
                 <h3>REGISTER</h3>
                 <h2>PRE EVENT 1</h2>
             </a>
-            <a href="/summit/register" class="button-section bg-main-event">
+            <a href="http://bit.ly/thesummitsxc" class="button-section bg-main-event">
                 <h3>REGISTER</h3>
                 <h2>THE SUMMIT</h2>
                 <h2></h2>

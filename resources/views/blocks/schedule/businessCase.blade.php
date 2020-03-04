@@ -36,7 +36,7 @@
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
                 <h1>11</h1>
-                <p>February <br> 2020</p>
+                <p>March <br> 2020</p>
             </div>
             <div class="schedule-timeline-line">
                 <div class="timeline-donut"></div>

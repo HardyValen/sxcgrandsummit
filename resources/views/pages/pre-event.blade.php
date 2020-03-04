@@ -18,32 +18,70 @@
         <div class="description-container">
             <div class="header-line"></div>
             <p>
-                Pre Event is a series of events that are conducted and aimed to introduce the Grand Summit. Within these activities, we want to provide our target audience and Grand Summit participants the opportunity to gain various insights from speakers who are experts in their fields. The theme of the Pre Events itself will correlate with the big theme of The Summit, which revolves around "The Applications of SDGs in Building Sustainable Businesses."
+            A series of events that are conducted to introduce and build awareness of the Grand Summit. We want to provide the opportunity to gain various insights from expert speakers and mini-workshop sessions."
             </p>
         </div>
     </section>
 
-        <section class="pre-event-topics">
-            <div class="header-line"></div>
-            <h2>Pre Event 1:</h2>
-
+    <section class="pre-event-slider">
+        <div class="slider-container" id="sliderc">
+            <div id="1" class= "menu active" onclick="changePreEvent(event, 'title1')">Pre Event 1</div>
+            <div id="2" class= "menu" onclick="changePreEvent(event, 'title2')">Pre Event 2</div>
+        </div>
+    </section>
+    <section class="pre-event-topics" id="title1">
+        <div class="topic-title">
+            <h2>How Public Speaking Can Affect Your Leadership</h2>
+            <h3>February 22<sup>nd</sup>, 2020</h3>        
+        </div>
+        <div class="topic-flow">
             <div class="flow-container">
                 <div class="flow-card">
-                    <h3>Elimination Phase</h3>
+                    <h3>Talk Show</h3>
                     <p>
-                        Eligible Registered Participants will be distributed the Company Business Case and expected to solve that problem in forms of business paper.
+                        Inviting experts and organization’s leaders to share their knowledge and experiences as the perfect time for enhancing public speaking skills 
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>Final Competition</h3>
+                    <h3>Open Mic</h3>
                     <p>
-                        The best 10 teams will be chosen and invited to the Summit Main event venue and present their ideas to the professionals and company representatives.
+                        The perfect time for participants to take the chance and discuss directly with the speakers on how to speak in public by giving 2 minutes speech as a form of practice.
                     </p>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </section>
+    <section class="pre-event-topics" id="title2">
+        <div class="topic-title">
+            <h2> Sharpening Critical Thinking Skills & Build A Better Indonesia Through SDGs </h2>
+            <h3>March 21<sup>st</sup></h3>
+        </div>
+        <div class="topic-flow">
+            <div class="flow-container">
+                <div class="flow-card">
+                    <h3>Talk Show</h3>
+                    <p>
+                        Discussing with invited NGOs about 5 SDGs issues that will also be highlighted in The Summit which are; Climate Action, Responsible Consumption and Production, Decent Work and Economic Growth, Sustainable Cities and Communities, and Gender Equality.
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>School of Life: <br>Sharpening Our Critical Thinking</h3>
+                    <p>
+                        Learning about critical thinking and problem-solving analysis directly from the invited experts before the forum group discussion session.
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                <h3>Focused Group Discussion</h3>
+                <p>
+                    The participants will be divided into several groups and will get a particular case regarding one of the SDGs that has been discussed. They will solve the issues in 30-40 minutes and then present their solutions at the end of the session.                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+            
         @include('blocks.schedule.preEvent')
         @include('blocks.footer')
     </main>
