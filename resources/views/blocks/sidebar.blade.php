@@ -18,7 +18,7 @@
             <p class='link-description'>SCHEDULE</p>
         </a>
         <a href="/summit" class="sidebar-link">
-            <img class="link-icon" src="{{URL::asset('assets/icons/Event.svg')}}" alt="EVENT" id="sideEvent">
+            <img class="link-icon" src="{{URL::asset('assets/icons/Event.svg')}}" alt="EVENT">
             <p class='link-description'>EVENT</p>
         </a>
     </div>

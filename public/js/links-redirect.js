@@ -24,31 +24,26 @@ if (locationRegexLanding.test(url)){
     
     let navSchedule = document.querySelectorAll("#navSchedule");
     navSchedule.forEach(elmt => {
+        elmt.removeAttribute("href");
         elmt.addEventListener("click", function() {scrollto("#schedule")}
         )
     });
     
-    let sideButton = document.querySelector("#sideButton");
-    sideButton.forEach(elmt => {
-        //elmt.addEventListener("hover", function() {setAttribute('src', "{{URL::asset('assets/registration/MoreIcon-Fill.svg')}}")}
-        elmt.removeAttribute("onclick");
-        elmt.addEventListener("click", function() {scrollto("schedule")}
-        )
-    });
-    let sideHome = document.querySelector("#sideHome");
+    let sideHome = document.querySelectorAll("#sideHome");
     sideHome.forEach(elmt => {
         elmt.removeAttribute("href");
-        elmt.addEventListener("click", function() {"hidesidebar()"});
+        elmt.addEventListener("click", function() {hidesidebar()});
     });
-    let sideSchedule = document.querySelector("#sideSchedule");
+
+    let sideSchedule = document.querySelectorAll("#sideSchedule");
     sideSchedule.forEach(elmt => {
-        elmt.addEventListener("onclick", "hidesidebar()");
+        elmt.addEventListener("click", function() {hidesidebar()});
     });
-    let sideEvent = document.querySelector("#sideEvent");
-    sideEvent.forEach(elmt => {
-        elmt.addEventListener("click", "hidesidebar()");
+    
+    let sideRegist = document.querySelectorAll("#sideRegist");
+    sideRegist.forEach(elmt => {
+        elmt.addEventListener("click", function() {hidesidebar()});
     });
-    document.querySelector("#sideRegist").addEventListener("onclick", "hidesidebar()");
 }
 
 if (locationRegexSummit.test(url)){
