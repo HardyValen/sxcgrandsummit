@@ -19,6 +19,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+
+        @media screen and (max-width: 960px){
+            width: 85%;
+        }
+
         h2{
             @include montserrat();
             @include header2();

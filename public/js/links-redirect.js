@@ -5,7 +5,7 @@ var locationRegexSummit = new RegExp("summit*");
 var locationRegexBusinessCase = new RegExp("business-case*");
 var linkRegisSummit = "http://bit.ly/thesummitsxc"
 var linkRegisBCC = "http://bit.ly/getbccsummit"
-var linkRegisPreEvent = "http://bit.ly/PreEvent1SXCGrandSummit"
+var linkRegisPreEvent = "http://bit.ly/preevent2summit"
 
 if (locationRegexLanding.test(url)){
     let navRegist = document.querySelectorAll("#navRegist");

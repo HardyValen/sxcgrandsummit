@@ -113,7 +113,7 @@
                 <h3>REGISTER</h3>
                 <h2>BUSINESS CASE</h2>
             </a>
-            <a href="http://bit.ly/PreEvent1SXCGrandSummit" class="button-section bg-pre-event">
+            <a href="http://bit.ly/preevent2summit" class="button-section bg-pre-event">
                 <h3>REGISTER</h3>
                 <h2>PRE EVENT 1</h2>
             </a>
