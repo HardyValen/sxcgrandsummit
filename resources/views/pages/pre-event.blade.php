@@ -54,7 +54,7 @@
     </section>
     <section class="pre-event-topics" id="title2">
         <div class="topic-title">
-            <h2> Sharpening Critical Thinking Skills & Build A Better Indonesia Through SDGs </h2>
+            <h2>Indonesia Dalam Bencana, Pemerintah Kerja Apa?</br>Kita Bisa Apa?</h2>
             <h3>March 21<sup>st</sup></h3>
         </div>
         <div class="topic-flow">
@@ -62,21 +62,15 @@
                 <div class="flow-card">
                     <h3>Talk Show</h3>
                     <p>
-                        Discussing with invited NGOs about 5 SDGs issues that will also be highlighted in The Summit which are; Climate Action, Responsible Consumption and Production, Decent Work and Economic Growth, Sustainable Cities and Communities, and Gender Equality.
-                    </p>
-                </div>
-                <div class="flow-connector"></div>
-                <div class="flow-card">
-                    <h3>School of Life: <br>Sharpening Our Critical Thinking</h3>
-                    <p>
-                        Learning about critical thinking and problem-solving analysis directly from the invited experts before the forum group discussion session.
+                    The representatives from government and Non-Governmental Organization will discuss about Indonesia’s climate condition and SDGs No.13: Climate Action. The talk will bring to light the steps that have been taken by the government and what action that we can do to save Indonesia.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
                 <h3>Focused Group Discussion</h3>
                 <p>
-                    The participants will be divided into several groups and will get a particular case regarding one of the SDGs that has been discussed. They will solve the issues in 30-40 minutes and then present their solutions at the end of the session.                </p>
+                A 60 minutes of discussion will be conducted by 10 groups with one committee in each groups. Discussing the topic of climate action according to SDGs No.13, the participants will explore the ability to think critically, build factual arguments, and convey constructive criticism.
+                </p>
                 </div>
             </div>
         </div>

@@ -19,6 +19,7 @@
         @include paragraph();
         @include myriadProRegular();
         color: map-get($theme-colors, "primary-light");
+        text-align: justify;
         line-height: 1.5;
     }
 }

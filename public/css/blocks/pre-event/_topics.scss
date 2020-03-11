@@ -44,6 +44,7 @@
         p {
             @include paragraph();
             @include myriadProRegular();
+            text-align: justify;
             color: map-get($theme-colors, "primary-light");
             line-height: 1.5;
         }

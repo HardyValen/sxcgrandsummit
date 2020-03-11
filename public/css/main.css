@@ -4251,6 +4251,7 @@ main {
 .business-case-flow p {
   font-family: 'Myriad Pro Regular';
   color: #0368E3;
+  text-align: justify;
   line-height: 1.5;
 }
 
@@ -4629,6 +4630,7 @@ main {
 
 .pre-event-topics .topic-flow p {
   font-family: 'Myriad Pro Regular';
+  text-align: justify;
   color: #0368E3;
   line-height: 1.5;
 }
