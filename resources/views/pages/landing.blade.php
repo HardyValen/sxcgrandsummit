@@ -115,7 +115,7 @@
             </a>
             <a href="http://bit.ly/preevent2summit" class="button-section bg-pre-event">
                 <h3>REGISTER</h3>
-                <h2>PRE EVENT 1</h2>
+                <h2>PRE EVENT 2</h2>
             </a>
             <a href="http://bit.ly/thesummitsxc" class="button-section bg-main-event">
                 <h3>REGISTER</h3>
