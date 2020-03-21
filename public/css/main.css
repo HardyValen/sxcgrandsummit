@@ -92,9 +92,10 @@
 .button-white-transparent {
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
-  border: 2px solid white;
+  border: 3px solid white;
+  border-radius: 1rem;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
@@ -175,9 +176,10 @@
 .button-black-transparent {
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
-  border: 2px solid black;
+  border: 3px solid black;
+  border-radius: 1rem;
   color: black;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
@@ -258,14 +260,17 @@
 .button-primary {
   font-family: 'Montserrat', sans-serif;
   background-color: #0252B3;
-  border: 2px solid #0252B3;
+  border: 3px solid #0252B3;
+  border-radius: 1rem;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+  -webkit-box-shadow: 0rem 0rem 1.5rem 0.5rem rgba(2, 82, 179, 0.2);
+  box-shadow: 0rem 0.5rem 1.5rem 0.5rem rgba(2, 82, 179, 0.2);
 }
 
 .button-primary {
@@ -341,9 +346,10 @@
 .button-secondary {
   font-family: 'Montserrat', sans-serif;
   background-color: #FFC517;
-  border: 2px solid #FFC517;
+  border: 3px solid #FFC517;
+  border-radius: 1rem;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
@@ -423,10 +429,11 @@
 
 .button-secondary-transparent {
   font-family: 'Montserrat', sans-serif;
-  background-color: white;
-  border: 2px solid #FFC517;
-  color: #0252B3;
-  font-weight: 800;
+  background-color: transparent;
+  border: 3px solid #FFC517;
+  border-radius: 1rem;
+  color: #F4F4F4;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
@@ -489,17 +496,17 @@
 }
 
 .button-secondary-transparent:hover {
-  background-color: #E8E8E8;
-  color: #0252B3;
-  border-color: #E8E8E8;
+  background-color: #E5AC00;
+  color: #F4F4F4;
+  border-color: #E5AC00;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
 .button-secondary-transparent:active {
-  background-color: #F4F4F4;
-  color: #0252B3;
-  border-color: #F4F4F4;
+  background-color: #FFC517;
+  color: #F4F4F4;
+  border-color: #FFC517;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -507,9 +514,10 @@
 .button-disabled {
   font-family: 'Montserrat', sans-serif;
   background-color: #333333;
-  border: 2px solid #333333;
+  border: 3px solid #333333;
+  border-radius: 1rem;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
@@ -2498,26 +2506,27 @@ main {
 }
 
 .landing-hero {
-  background: url("../assets/landing/hero.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 16, 37, 0.7)), to(rgba(0, 16, 37, 0.7))), url("../assets/landing/hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 16, 37, 0.7), rgba(0, 16, 37, 0.7)), url("../assets/landing/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
-  background-position-y: 50%;
+  background-position-y: 70%;
   width: 100%;
-  min-height: 80%;
+  min-height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
   box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 960px) {
   .landing-hero {
-    background: url("../assets/landing/hero-mobile.jpg");
+    background: url("../assets/landing/hero-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
@@ -2528,9 +2537,7 @@ main {
 }
 
 .landing-hero .landing-hero-description {
-  padding-left: 8rem;
-  padding-right: 8rem;
-  width: 40%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2541,6 +2548,9 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-hero .landing-hero-description {
@@ -2586,48 +2596,107 @@ main {
   }
 }
 
+.landing-hero .landing-hero-description img {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description img {
+    padding-bottom: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(3rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description img {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.landing-hero .landing-hero-description img {
+  width: 35rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description img {
+    width: calc(35rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description img {
+    width: 40rem;
+  }
+}
+
 .landing-hero .landing-hero-description h1 {
   font-family: 'Montserrat', sans-serif;
   color: #F4F4F4;
   font-weight: 700;
+  text-align: center;
 }
 
 .landing-hero .landing-hero-description h1 {
-  font-size: 3rem;
+  font-size: 4.8rem;
 }
 
 @media screen and (min-width: 320px) {
   .landing-hero .landing-hero-description h1 {
-    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(4.8rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-hero .landing-hero-description h1 {
-    font-size: 4.6rem;
+    font-size: 6rem;
   }
 }
 
 .landing-hero .landing-hero-description h1 {
-  padding-bottom: 1.8rem;
+  padding-top: 0.9rem;
 }
 
 @media screen and (min-width: 320px) {
   .landing-hero .landing-hero-description h1 {
-    padding-bottom: calc(1.8rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.9rem + 0.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-hero .landing-hero-description h1 {
-    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
   }
+}
+
+.landing-hero .landing-hero-description h1 {
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-description h1 {
+    padding-bottom: calc(0.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-description h1 {
+    padding-bottom: 1rem;
+  }
+}
+
+.landing-hero .landing-hero-description h1 em {
+  font-style: normal;
+  color: #FFC517;
 }
 
 .landing-hero .landing-hero-description p {
   font-family: 'Myriad Pro Regular';
+  max-width: 70%;
   color: #F4F4F4;
-  line-height: 1.5;
+  line-height: 1.3;
+  text-align: center;
 }
 
 .landing-hero .landing-hero-description p {
@@ -2664,7 +2733,7 @@ main {
 
 @media screen and (max-width: 960px) {
   .landing-hero .landing-hero-description p {
-    line-height: 1.6;
+    line-height: 1.4;
   }
   .landing-hero .landing-hero-description p {
     font-size: 1.4rem;
@@ -2681,6 +2750,61 @@ main {
   .landing-hero .landing-hero-description p {
     font-size: 1.6rem;
   }
+}
+
+.landing-hero .landing-hero-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing-hero .landing-hero-btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-btn {
+    padding-left: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.landing-hero .landing-hero-btn {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .landing-hero-btn {
+    padding-bottom: calc(2.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(2.5rem + 0.7 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .landing-hero-btn {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+}
+
+.landing-hero .landing-hero-btn a {
+  margin: 0 2rem;
 }
 
 .landing-description {

@@ -1,54 +1,76 @@
 .landing-hero {
-    @include background("../assets/landing/hero.jpg");
-    @include backgroundPosition(50%, 50%);
+    @include backgroundOverlayDark("../assets/landing/hero.jpg");
+    @include backgroundPosition(50%, 70%);
     width: 100%;
-    min-height: 80%;
+    min-height: 60%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     @include shadowHero();
 
     @media screen and (max-width: 960px){
-        @include background("../assets/landing/hero-mobile.jpg");
+        @include background("../assets/landing/hero-mobile.png");
         min-height: 100%;
         justify-content: center;
     }
 
+    
     .landing-hero-description{
-        padding-left: 8rem;
-        padding-right: 8rem;
         @include fluidpaddingy(3rem, 4rem);
-        width: 40%;
-
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        align-items: center;
+        
         @media screen and (max-width: 960px){
             @include fluidpaddingx(2rem, 4rem);
             width: 100%;
         }
+        
+        img{
+            @include fluidpaddingy(3rem, 4rem);
+            @include fluidwidth(35rem, 40rem);
+        }
 
         h1{
             @include montserrat();
-            @include header1();
-            @include fluidpaddingbottom(1.8rem, 2.5rem);
+            @include header0();
+            @include fluidpaddingtop(0.9rem, 1.5rem);
+            @include fluidpaddingbottom(0.5rem, 1rem);
             color: map-get($theme-colors, 'white');
             font-weight: 700;
+            text-align: center;
             
+            em{
+                font-style: normal;
+                color: map-get($theme-colors, "secondary");
+            }
         }
 
         p{
             @include myriadProRegular();
             @include paragraph1();
             @include fluidpaddingbottom(2rem, 3rem);
+            max-width: 70%;
             color: map-get($theme-colors, 'white');
-            line-height: 1.5;
+            line-height: 1.3;
+            text-align: center;
             
             @media screen and (max-width: 960px){
-                line-height: 1.6;
+                line-height: 1.4;
                 @include paragraph();
-
             }
+        }   
+    }
+
+    .landing-hero-btn {
+        @include fluidpaddingx(2rem, 3rem);
+        @include fluidpaddingy(2.5rem, 3.2rem);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a{
+            margin: 0 2rem;
         }
     }
 }

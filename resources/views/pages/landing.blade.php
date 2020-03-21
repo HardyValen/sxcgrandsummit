@@ -12,10 +12,12 @@
 
         <section class="landing-hero">
             <div class="landing-hero-description">
-                <h1>What is SxC 9th Grand Summit ?</h1>
+                <img src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="Landing-SXCGS9">
+                <h1>What is <em>SXC Grand Summit?</em></h1>
                 <p>The biggest annual event held by StudentsxCEOs Bandung Chapter, a platform for selected students across Indonesia to solve real problems related to Sustainable Development Goals (SDGs) and propose it to company & non-government organization.</p>
-                <div>
-                    <a class="button-white-transparent" onClick="scrollto('#description')">Scroll down</a>
+                <div class="landing-hero-btn">
+                    <a class="button-primary" onClick="scrollto('#description')">Registration</a>
+                    <a class="button-secondary-transparent" onClick="scrollto('#description')">Learn more</a>
                 </div>
             </div>
         </section>

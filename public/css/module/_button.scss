@@ -1,3 +1,5 @@
+@import 'shadow';
+
 @mixin button(
     $color, 
     $color-bg,
@@ -10,9 +12,10 @@
     @include montserrat();
     @include fluidfontsize(1.2rem, 1.6rem);
     background-color: $color-bg;
-    border: 2px solid $color-border;
+    border: 3px solid $color-border;
+    border-radius: 1rem;
     color: $color;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.2s;
@@ -61,7 +64,8 @@
         map-get($theme-colors, "primary"),
         map-get($theme-colors, "primary-light"),
         map-get($theme-colors, "secondary")
-    )
+    );
+    @include shadowButton();
 }
 
 .button-secondary{
@@ -76,11 +80,11 @@
 
 .button-secondary-transparent{
     @include button(
-        map-get($theme-colors, "primary"),
-        white,
+        map-get($theme-colors, "white"),
+        transparent,
         map-get($theme-colors, "secondary"),
-        map-get($theme-colors, "white-alt"),
-        map-get($theme-colors, "white")
+        map-get($theme-colors, "secondary-dark"),
+        map-get($theme-colors, "secondary")
     )
 }
 

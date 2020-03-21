@@ -31,6 +31,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+@mixin backgroundOverlayDark($url) {
+    background: linear-gradient(0deg, rgba(0, 16, 37, 0.7),rgba(0, 16, 37, 0.7)), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @mixin backgroundOverlayHover($url){
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.25)), url($url);
