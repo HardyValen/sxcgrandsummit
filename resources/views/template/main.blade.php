@@ -30,6 +30,7 @@
 
 <body>
     @yield('content')
+    <script type="text/javascript" src="https://my.hellobar.com/89a7b6f042624ab79d8488d0e2216a17fda8b754.js"></script>
 </body>
 
 </html>
