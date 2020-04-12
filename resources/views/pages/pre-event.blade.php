@@ -12,6 +12,7 @@
 
         <section class="pre-event-hero">
             <h1>Pre Event</h1>
+            <a href="/landing#registration" class="button-primary" id="navRegist">REGISTER NOW</a>
         </section>
 
     <section class="pre-event-description">

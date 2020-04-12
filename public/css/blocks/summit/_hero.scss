@@ -1,11 +1,13 @@
 .summit-hero {
     @include backgroundOverlayPrimary("../assets/summit/hero.jpg");
     @include backgroundPosition(50%, 50%);
+    
     width: 100%;
     min-height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
     @include shadowHero();
     
     @media screen and (max-width: 960px){
@@ -14,10 +16,14 @@
     }
     
     h1{
+        @include fluidpaddingy(1.2rem, 1.8rem);
         @include header1();
         @include montserrat();
         font-weight: 700;
-        color: map-get($theme-colors, "white-alt");
+        color: map-get($theme-colors, "white");
+    }
+    a{
+        @include header3();
     }
 
 }

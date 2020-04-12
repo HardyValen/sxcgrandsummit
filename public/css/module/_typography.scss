@@ -27,6 +27,9 @@
 @mixin paragraph2() {
     @include fluidfontsize(1.8rem, 2.2rem);
 }
+@mixin superscript() {
+    @include fluidfontsize(1.2rem, 1.5rem);
+}
 
 @mixin paragraphSize($w, $h) {
     @include fluidfontsize($w, $h);

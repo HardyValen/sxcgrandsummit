@@ -12,6 +12,7 @@
 
         <section class="summit-hero">
             <h1>The Summit</h1>
+            <a href="/landing#registration" class="button-secondary" id="navRegist">REGISTER NOW</a>
         </section>
 
         <section class="summit-description">

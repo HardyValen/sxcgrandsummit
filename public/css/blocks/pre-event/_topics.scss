@@ -37,6 +37,9 @@
             @include montserrat();
             color: map-get($theme-colors, "primary");
         }
+        sup{
+            @include superscript();
+        }
     }
     .topic-flow {
         @include fluidpaddingx(2rem, 3rem);

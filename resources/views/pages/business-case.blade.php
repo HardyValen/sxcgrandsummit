@@ -12,6 +12,7 @@
 
         <section class="business-case-hero">
             <h1>Business Case Competition</h1>
+            <a href="/landing#registration" class="button-primary" id="navRegist">REGISTER NOW</a>
         </section>
 
         <section class="business-case-description">
