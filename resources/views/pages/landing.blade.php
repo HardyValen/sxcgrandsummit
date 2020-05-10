@@ -23,23 +23,21 @@
         </section>
 
         <section class="landing-description" id="description">
-            <div class="box1">
-                <div></div>
-            </div>
             <div class="landing-flex-container">
-                <div class='section-title'>
+                <div class='landing-description-text'>
                     <div class='header-line'></div>
-                    <h2>Why should you join the 9th Grand Summit?</h2>
-                </div>
-                <div class="landing-description-text">
+                    <h2>Why join SxC 9<sup>th</sup> Grand Summit?</h2>
                     <p>
                         The biggest annual event held by StudentsxCEOs Bandung Chapter, a platform for selected students across Indonesia to solve real problems related to Sustainable Development Goals (SDGs) and propose it to company & non-government organization.
                     </p>
                 </div>
+                <div class="landing-description-image">
+                    <div></div>
+                </div>
             </div>
-            <div class="box2">
-                <div>\</div>
-            </div>
+            {{-- <div class="box2">
+                <div></div>
+            </div> --}}
         </section>
         
         <section class="landing-event">

@@ -4,9 +4,6 @@ $images: (
     "../assets/landing/event/post3.jpg"
 );
   
-// Use: 
-// - _section-cards.scss
-
 .landing-event{
     @include mobilePadding();
     width: 100%;

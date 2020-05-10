@@ -2526,9 +2526,12 @@ main {
 
 @media screen and (max-width: 960px) {
   .landing-hero {
-    background: url("../assets/landing/hero-mobile.png");
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 16, 37, 0.7)), to(rgba(0, 16, 37, 0.7))), url("../assets/landing/hero-mobile.png");
+    background: linear-gradient(0deg, rgba(0, 16, 37, 0.7), rgba(0, 16, 37, 0.7)), url("../assets/landing/hero-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 35%;
     min-height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2537,7 +2540,8 @@ main {
 }
 
 .landing-hero .landing-hero-description {
-  width: 100%;
+  width: 70%;
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2696,6 +2700,7 @@ main {
   max-width: 70%;
   color: #F4F4F4;
   line-height: 1.3;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -2817,9 +2822,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-description .box1 {
@@ -2943,17 +2948,17 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 .landing-description .landing-flex-container {
@@ -2994,42 +2999,109 @@ main {
   }
 }
 
-.landing-description .landing-flex-container .landing-description-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 60%;
+@media screen and (max-width: 960px) {
+  .landing-description .landing-flex-container {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 960px) {
-  .landing-description .landing-flex-container .landing-description-text {
-    width: 100%;
+.landing-description .landing-flex-container .landing-description-text {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 55%;
+  text-align: justify;
+  margin: 4rem;
+}
+
+.landing-description .landing-flex-container .landing-description-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #0252B3;
+}
+
+.landing-description .landing-flex-container .landing-description-text h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text h2 {
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text h2 {
+    font-size: 3.2rem;
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text h2 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text h2 {
+    padding-bottom: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text h2 {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
   }
 }
 
 .landing-description .landing-flex-container .landing-description-text p {
   font-family: 'Myriad Pro Regular';
-  color: #0252B3;
-  text-align: center;
+  color: #0c0c0c;
   line-height: 1.5;
 }
 
 .landing-description .landing-flex-container .landing-description-text p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 320px) {
   .landing-description .landing-flex-container .landing-description-text p {
-    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.8rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-description .landing-flex-container .landing-description-text p {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-image {
+  width: 45%;
+}
+
+.landing-description .landing-flex-container .landing-description-image div {
+  background: url("../assets/landing/event/post1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 30%;
+  border-radius: 3rem;
+}
+
+.landing-description .landing-flex-container .landing-description-image div {
+  height: 25rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-image div {
+    height: calc(25rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-image div {
+    height: 30rem;
   }
 }
 

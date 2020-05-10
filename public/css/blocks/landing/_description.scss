@@ -3,7 +3,7 @@
     min-height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
     .box1{
         height: 0;
@@ -50,26 +50,46 @@
         @include mobilePadding();
         
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 80%;
+
+        @media screen and (max-width: 960px) {
+            width: 100%;
+        }
     
         .landing-description-text{
-            display: flex;
-            justify-content: center;
-            width: 60%;
+            justify-content: left;
+            width: 55%;
+            text-align: justify;
+            margin: 4rem;
     
-            @media screen and (max-width: 960px) {
-                width: 100%;
+            h2 {
+                @include header2();
+                @include montserrat();
+                color: map-get($theme-colors, "primary");
+                @include fluidpaddingy(1.4rem, 1.8rem);
+
             }
-    
             p {
                 @include myriadProRegular();
-                @include paragraph1();
-                color: map-get($theme-colors, "primary");
-                text-align: center;
+                @include paragraph2();
+                color: map-get($theme-colors, "black");
                 line-height: 1.5;
+            }
+        }
+
+        .landing-description-image {
+            width: 45%;
+            // @include fluidheight(30rem, 40rem);
+
+            div{
+                // TODO Change Placeholder
+                @include background("../assets/landing/event/post1.jpg");
+                @include backgroundPosition(50%, 30%);
+                @include fluidheight(25rem, 30rem);
+                border-radius: 3rem;
             }
         }
     }
