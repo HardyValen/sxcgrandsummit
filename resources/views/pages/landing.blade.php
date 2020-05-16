@@ -26,10 +26,21 @@
             <div class="landing-flex-container">
                 <div class='landing-description-text'>
                     <div class='header-line'></div>
-                    <h2>Why join SxC 9<sup>th</sup> Grand Summit?</h2>
-                    <p>
-                        The biggest annual event held by StudentsxCEOs Bandung Chapter, a platform for selected students across Indonesia to solve real problems related to Sustainable Development Goals (SDGs) and propose it to company & non-government organization.
-                    </p>
+                    <h2>Why you should join the 9<sup>th</sup> Grand Summit</h2>
+                    <ul>
+                        <li>
+                            Build a wide network with students from all over Indonesia.
+                        </li>
+                        <li>
+                            A platform to go beyond and explore potentials.
+                        </li>
+                        <li>
+                            Encourage collaboration and innovation through continuous discussions.
+                        </li>
+                        <li>
+                            An action to take part and give impact on business, social, and environment matter.
+                        </li>
+                    </ul>
                 </div>
                 <div class="landing-description-image">
                     <div></div>

@@ -91,9 +91,9 @@ $actimages: (
                 
                 .activity-title::before {
                     @include fluidpadding(1.6rem, 1.6rem);
-                    display: inline-flex;
                     @include fluidwidth(3.2rem, 4.2rem);
                     @include fluidheight(3.2rem, 4.2rem);
+                    display: inline-flex;
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;

@@ -53,40 +53,71 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 100%;
 
         @media screen and (max-width: 960px) {
             width: 100%;
         }
     
         .landing-description-text{
+            padding-left: 0rem;
+            padding-right: 2rem;
             justify-content: left;
             width: 55%;
-            text-align: justify;
-            margin: 4rem;
+            text-align: left;
+            margin: 2rem;
     
             h2 {
-                @include header2();
+                @include fluidfontsize(2rem, 2.8rem);
+                letter-spacing: 0.05rem;
                 @include montserrat();
                 color: map-get($theme-colors, "primary");
                 @include fluidpaddingy(1.4rem, 1.8rem);
-
+                
             }
-            p {
-                @include myriadProRegular();
-                @include paragraph2();
-                color: map-get($theme-colors, "black");
-                line-height: 1.5;
+            // p {
+                //     @include myriadProRegular();
+                //     @include paragraph2();
+                //     color: map-get($theme-colors, "black");
+                //     line-height: 1.5;
+                // }
+                sup{
+                    @include paragraph2();
+                }
+                ul {
+                    padding-right: 10rem;
+                    li {
+                        @include myriadProRegular();
+                        @include paragraph2();
+                        @include fluidleft(2.6rem, 3rem);
+                        letter-spacing: 0.01rem;
+                        color: map-get($theme-colors, "black");
+                        line-height: 1.5;
+                        list-style: none;
+                        position: relative;
+                }
+                li:before{
+                    content:'';
+                    position: absolute;
+                    @include fluidleft(-2rem, -2.4rem);
+                    @include fluidtop(1rem, 1.2rem);
+                    @include fluidwidth(1rem, 1.2rem);
+                    @include fluidheight(1rem, 1.2rem);
+                    display: inline-flex;
+                    border-radius: 50%;
+                    background-color: map-get($theme-colors, "secondary");
+                }
             }
+            
         }
 
         .landing-description-image {
+            padding-left: 2rem;
+            padding-right: 0rem;
             width: 45%;
-            // @include fluidheight(30rem, 40rem);
 
             div{
-                // TODO Change Placeholder
-                @include background("../assets/landing/event/post1.jpg");
+                @include background("../assets/landing/desc.png");
                 @include backgroundPosition(50%, 30%);
                 @include fluidheight(25rem, 30rem);
                 border-radius: 3rem;

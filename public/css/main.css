@@ -18,6 +18,7 @@
 /* -- 06. Mixin untuk fluid letter spacing -- */
 /* -- 07. Mixin untuk Responsive Border (Satu Sisi) -- */
 /* -- 08. Mixin untuk Padding-Inline-Start -- */
+/* -- 09. Mixin untuk positioning -- */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 .color-primary {
   color: #0252B3;
@@ -3599,7 +3600,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .landing-description .landing-flex-container {
@@ -3661,15 +3662,18 @@ main {
 }
 
 .landing-description .landing-flex-container .landing-description-text {
+  padding-left: 0rem;
+  padding-right: 2rem;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
   width: 55%;
-  text-align: justify;
-  margin: 4rem;
+  text-align: left;
+  margin: 2rem;
 }
 
 .landing-description .landing-flex-container .landing-description-text h2 {
+  letter-spacing: 0.05rem;
   font-family: 'Montserrat', sans-serif;
   color: #0252B3;
 }
@@ -3680,19 +3684,19 @@ main {
 
 @media screen and (min-width: 320px) {
   .landing-description .landing-flex-container .landing-description-text h2 {
-    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(2rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-description .landing-flex-container .landing-description-text h2 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .landing-description .landing-flex-container .landing-description-text h2 {
-    font-size: calc(2.22222vw);
+    font-size: calc(1.94444vw);
   }
 }
 
@@ -3722,40 +3726,191 @@ main {
   }
 }
 
-.landing-description .landing-flex-container .landing-description-text p {
-  font-family: 'Myriad Pro Regular';
-  color: #0c0c0c;
-  line-height: 1.5;
-}
-
-.landing-description .landing-flex-container .landing-description-text p {
+.landing-description .landing-flex-container .landing-description-text sup {
   font-size: 1.8rem;
 }
 
 @media screen and (min-width: 320px) {
-  .landing-description .landing-flex-container .landing-description-text p {
+  .landing-description .landing-flex-container .landing-description-text sup {
     font-size: calc(1.8rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .landing-description .landing-flex-container .landing-description-text p {
+  .landing-description .landing-flex-container .landing-description-text sup {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .landing-description .landing-flex-container .landing-description-text p {
+  .landing-description .landing-flex-container .landing-description-text sup {
     font-size: calc(1.52778vw);
   }
 }
 
+.landing-description .landing-flex-container .landing-description-text ul {
+  padding-right: 10rem;
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li {
+  font-family: 'Myriad Pro Regular';
+  letter-spacing: 0.01rem;
+  color: #0c0c0c;
+  line-height: 1.5;
+  list-style: none;
+  position: relative;
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text ul li {
+    font-size: calc(1.8rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text ul li {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-description .landing-flex-container .landing-description-text ul li {
+    font-size: calc(1.52778vw);
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li {
+  left: 2.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text ul li {
+    left: calc(2.6rem + 0.4 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text ul li {
+    left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-description .landing-flex-container .landing-description-text ul li {
+    left: calc(2.08333vw);
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li:before {
+  content: '';
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: #FFC517;
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li:before {
+  left: -2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    left: calc(-2rem + -0.4 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    left: -2.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    left: calc(-1.66667vw);
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li:before {
+  top: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    top: calc(1rem + 0.2 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    top: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    top: calc(0.83333vw);
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li:before {
+  width: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    width: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    width: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    width: calc(0.83333vw);
+  }
+}
+
+.landing-description .landing-flex-container .landing-description-text ul li:before {
+  height: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    height: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    height: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-description .landing-flex-container .landing-description-text ul li:before {
+    height: calc(0.83333vw);
+  }
+}
+
 .landing-description .landing-flex-container .landing-description-image {
+  padding-left: 2rem;
+  padding-right: 0rem;
   width: 45%;
 }
 
 .landing-description .landing-flex-container .landing-description-image div {
-  background: url("../assets/landing/event/post1.jpg");
+  background: url("../assets/landing/desc.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
