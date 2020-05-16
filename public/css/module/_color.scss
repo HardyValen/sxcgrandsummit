@@ -15,6 +15,9 @@ $theme-colors: (
     "secondary": #FFC517,
     "secondary-dark": #E5AC00,
 
+    // Ternary Colors
+    "purple-light" : #EFEEFF,
+
     // Gray
     "gray1": #333333,
     "gray2": #4F4F4F,
@@ -22,6 +25,7 @@ $theme-colors: (
     "gray4": #BDBDBD,
     "gray5": #E0E0E0,
     "gray6": #F2F2F2,
+
 );
 
 .color-primary {
