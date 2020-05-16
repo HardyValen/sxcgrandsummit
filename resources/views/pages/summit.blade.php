@@ -11,7 +11,25 @@
         @include("blocks.navbar")
 
         <section class="summit-hero">
-            <h1>The Summit</h1>
+            <div class="hero-text">
+                <div class="hero-logo">
+                    <img src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
+                </div>
+                <div class="hero-title">
+
+                </div>
+                <div class="hero-description">
+
+                </div>
+            </div>
+            <div class="hero-bottom">
+                <div class="hero-buttons">
+                    
+                </div>
+                <div class="hero-schedule">
+
+                </div>
+            </div>
         </section>
 
         <section class="summit-description">
