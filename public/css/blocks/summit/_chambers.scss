@@ -4,116 +4,188 @@ $chmimages: (
     "sdg13": "../assets/summit/sdg13.jpg",
     "sdg4logo": "../assets/summit/logo-projectChild.jpg",
     "sdg8logo": "../assets/summit/logo-XSProject.svg",
-    "sdg13logo": "../assets/summit/logo-walhi.jpg"
+    "sdg13logo": "../assets/summit/logo-walhi.jpg",
+    "sdg4backdrop" : "../assets/summit/projectchild-backdrop.jpg",
+    "sdg8backdrop" : "../assets/summit/xsproject-backdrop.png",
+    "sdg13backdrop" : "../assets/summit/walhi-backdrop.jpg",
 );
   
 .summit-chambers {
+    @include fluidpaddingy(3rem, 5rem);
+    @include fluidpaddingx(3rem, 12rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #efeeff;
+
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.0;
+        color: map-get($theme-colors, "primary");
+    }
+    
+    h3{
+        @include header3();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+        color: map-get($theme-colors, "white-alt");
+    }
+
+    p {
+        @include paragraph();
+        @include myriadProRegular();
+        line-height: 1.3;
+        color: map-get($theme-colors, "white-alt");        
+    }
+
+    .description-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        * {
+            @include fluidpaddingbottom(2rem, 2rem);
+        }
+    }
+
+    .description-body{
+        width: 100%;
+        display: flex;
+    }
+}
+
+.panels-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    background-color: map-get($theme-colors, "secondary" );
-    
-    .chambers-container {
-        @include fluidpaddingy(2rem, 3rem);
-        @include fluidpaddingx(2rem, 4rem);
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: map-get($theme-colors, "white-alt" );
-        @include shadowSides();
-        
-        @media screen and (max-width: 960px) {
-            @include fluidpaddingx(1.6rem, 3.6rem);
+
+    @media screen and (max-width: 960px) {
+        flex-direction: column;        
+    }
+
+    .panel {
+        width: 100%;
+        border-radius: remToVw(96rem, 1rem);
+        background-color: map-get($theme-colors, "primary");
+
+        &:first-child{
+            @media screen and (min-width: 960px) {
+                @include fluidmarginright(1rem, 1rem);
+            }
+        }
+
+        &:last-child{
+            @media screen and (min-width: 960px) {
+                @include fluidmarginleft(1rem, 1rem);
+            }
+        }
+
+        &:not(:first-child):not(:last-child){
+            @media screen and (min-width: 960px) {
+                @include fluidmarginx(1rem, 1rem);
+            }
+        }
+
+        &:not(:last-child){
+            @media screen and (max-width: 960px){
+                @include fluidmarginbottom(2rem, 2rem);
+            }
+        }
+
+        .panel-image-backdrop {
+            @include fluidheight(25rem, 30rem);
             width: 100%;
+            border-radius: remToVw(96rem, 1rem) remToVw(96rem, 1rem) 0 0;
+            display: flex;
+            flex-direction: column;
         }
-        
-        h1 {
-            @include header2();
-            @include montserrat();
-            font-weight: 700;
-            color: map-get($theme-colors, "primary" );
+
+        .panel-title{
+            width: 100%;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                @include fluidheight(10rem, 10rem);
+            }
         }
-        
-        .chamber-block {
-            @include fluidpaddingy(1.6rem, 2.8rem);
+
+        .panel-header{
+            @include fluidpaddingtop(2rem, 3rem);
+            @include fluidpaddingx(2rem, 3rem);
             width: 100%;
             display: flex;
             flex-direction: row;
-            align-items: center;
-            
-            @media screen and (max-width: 960px) {
-                flex-direction: column;
-            }
-            
-            .activity-image {
-                width: 100%;
-                min-width: 50%;
-                @include fluidheight(15rem,20rem);
-                border-radius: .5rem;
-                margin: 0 1rem 0 1rem;
-                
-                @media screen and (max-width: 960px) {
-                    display: none;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .header-icon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                img {
+                    @include fluidwidth(4rem, 6rem);
                 }
             }
-            .img-coaching{
-                @include background(map-get($actimages,"coaching"));
-                @include backgroundPosition(70%, 60%);
-            }
-            .img-talkshow{
-                @include background(map-get($actimages,"talkshow"));
-                @include backgroundPosition(70%, 85%);
-            }
-            .img-chamber{
-                @include background(map-get($actimages,"chamber"));
-                @include backgroundPosition(50%, 55%);
-            }
-            .img-gala{
-                @include background(map-get($actimages,"gala"));
-                @include backgroundPosition(40%, 60%);
-            }
-            
-            .activity-description {
-                @include fluidpaddingx(1.6rem, 2.4rem);
-                min-width: 40%;
+
+            .header-title{
                 display: flex;
                 flex-direction: column;
-                justify-content: left;
-                
-                .activity-title{
-                    @include header3();
-                    @include montserrat();
-                    font-weight: 600;
-                    color: map-get($theme-colors, "primary");
+                align-items: flex-end;
+
+                *:not(:last-child) {
+                    @include fluidpaddingbottom(1rem, 1rem);
                 }
-                
-                .activity-title::before {
-                    @include fluidpadding(1.6rem, 1.6rem);
-                    display: inline-flex;
-                    @include fluidwidth(3.2rem, 4.2rem);
-                    @include fluidheight(3.2rem, 4.2rem);
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    background-color: map-get($theme-colors, "secondary");
-                    color: map-get($theme-colors, "primary");
-                    content: counter(section);
-                    counter-increment: section;
-                    margin-right: 1rem;
-                }
-                
-                p {
-                    @include paragraph();
-                    @include myriadProRegular();
-                    color: map-get($theme-colors, "primary-light" );
-                    margin-top: 1.6rem;
-                    text-align: justify;
+
+                h3 {
+                    @include fluidfontsize(1.4rem, 1.8rem);
+                    text-align: right;
                 }
             }
         }
+
+        .panel-footer{
+            @include fluidpadding(1.2rem, 1.5rem);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            *:not(:last-child){
+                @include fluidpaddingbottom(1rem, 1rem);
+            }
+
+            h3{
+                color: map-get($theme-colors, "secondary");
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
     }
+
+    
+}
+
+.backdrop-project-child{
+    @include backgroundOverlayDark(map-get($chmimages, "sdg4backdrop"));
+}
+
+.backdrop-xs-project{
+    @include backgroundOverlayDark(map-get($chmimages, "sdg8backdrop"));
+}
+
+.backdrop-walhi{
+    @include backgroundOverlayDark(map-get($chmimages, "sdg13backdrop"));
 }

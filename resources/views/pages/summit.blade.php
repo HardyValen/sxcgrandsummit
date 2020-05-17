@@ -88,7 +88,7 @@
         <section class="summit-description">
             <div class="description-header">
                 <div class="header-line"></div>
-                <h1>The Summit</h1>
+                <h2>The Summit</h2>
             </div>
             <div class="description-body">
                 <div class="description-text">
@@ -109,17 +109,23 @@
         </section>
 
         <section class="summit-theme">
-            <div class="theme-container">
-                <h2>
-                    Theme:
-                </h2>
-                <h3>
-                    "The Application of SDGs in Building Sustainable Businesses"
-                </h3>
-                <p>
-                    Discussing about sustainable businesses and environmental matter, the theme’s objective is to give a real impact to the company, stakeholders, society, and environment according to the United Nations Sustainable Development Goals from the NGOs’ perspective. We encourage the participants to take part in caring about our social and environmental matter by building a continuous discussion and creating feasible solutions that can be implemented by the NGOs.
-                </p>
+            <div class="description-header">
+                <div class="header-line"></div>
+                <h2>Theme:</h2>
             </div>
+            <div class="description-body">
+                <div class="description-quote">
+                    <blockquote>
+                        The Application of SDGs in Building Sustainable Business
+                    </blockquote>
+                </div>
+                <div class="description-text">
+                    <p>
+                        Discussing about sustainable businesses and environmental matters, the theme’s objective is to give a real impact to the company, stakeholders, society, and environment according to the United Nations Sustainable Development Goals from the NGOs’ perspective. We encourage the participants to take part in caring about our social and environmental matter by building a continuous discussion and creating feasible solutions that can be implemented by the NGOs.
+                    </p>
+                </div>
+            </div>
+
         </section>
 
         <section class="summit-activities">
@@ -175,8 +181,143 @@
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
+
+        <section class="summit-chambers">
+            <div class="description-header">
+                <div class="header-line"></div>
+                <h2>Chambers</h2>
+            </div>
+            <div class="description-body">
+                <div class="panels-container">
+
+                    <!-- Project Child-->
+                    <div class="panel">
+                        <div class="panel-image-backdrop backdrop-project-child">
+                            <div class="panel-header">
+                                <div class="header-icon">
+                                    <img src="{{URL::asset('assets/summit/sdg4.png')}}">
+                                </div>
+                                <div>
+                                    <div class="header-title">
+                                        <h3>
+                                            SDG 4<br>Quality Education
+                                        </h3>
+                                        <div class="header-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-title">
+                                <img src="{{URL::asset('assets/summit/projectchild-logo.png')}}">
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="footer-title">
+                                <h3>
+                                    Project Child
+                                </h3>
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    Project Child is a community-based NGO that strives to deplenish poverty in the coastal and riverside communities of Indonesia. They hope for every Indonesian child to have a chance to learn, a healthy start and feel supported and secured, as well as prepared for natural disasters.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Project Child -->
+
+                    <!-- XSProject -->
+                    <div class="panel">
+                        <div class="panel-image-backdrop backdrop-xs-project">
+                            <div class="panel-header">
+                                <div class="header-icon">
+                                    <img src="{{URL::asset('assets/summit/sdg8.png')}}">
+                                </div>
+                                <div>
+                                    <div class="header-title">
+                                        <h3>
+                                            SDG 8<br>Decent Work<br>and Economic Growth
+                                        </h3>
+                                        <div class="header-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-title">
+                                <img src="{{URL::asset('assets/summit/xsproject-logo.svg')}}">
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="footer-title">
+                                <h3>
+                                    XSProject
+                                </h3>
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    XSProject concerns about the lives of those living on trash picking at open garbage dumps in Jakarta, they work to help improve the lives of the poor families by utilizing the trash that the pickers depend on to make a living.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of XSProject -->
+
+                    <!-- Walhi -->
+                    <div class="panel">
+                        <div class="panel-image-backdrop backdrop-walhi">
+                            <div class="panel-header">
+                                <div class="header-icon">
+                                    <img src="{{URL::asset('assets/summit/sdg13.png')}}">
+                                </div>
+                                <div>
+                                    <div class="header-title">
+                                        <h3>
+                                            SDG 13<br>Climate Action
+                                        </h3>
+                                        <div class="header-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-title">
+                                <img src="{{URL::asset('assets/summit/walhi-logo.png')}}">
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="footer-title">
+                                <h3>
+                                    WALHI
+                                </h3>
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    Abbreviation for "Wahana Lingkungan Hidup Indonesia". Since 1980, WALHI has persistently focused on saving and restoring Indonesia's living environment. They fight for the rights of a protected and fulfilled living environment right as prt of the Human Rights.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Walhi -->
+
+                </div>
+            </div>
+        </section>
+
         @include('blocks.schedule.summit')
+
+        <section class="summit-registration">
+            <div class="registration-container">
+                <div class="registration-title">
+                    <h2>
+                        <span class="color-secondary">
+                            Register
+                        </span>
+                    </h2>
+                    <h2>The Summit</h2>
+                </div>
+                <a class="button-primary">
+                    Register Now
+                </a>
+            </div>
+        </section>
+
         @include('blocks.footer')
     </main>
 @endsection

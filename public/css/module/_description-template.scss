@@ -1,8 +1,11 @@
+// @mixin description-template-2()
+// for general purpose theme, topic
+// uses white color for background color
+
 @mixin description-template-1(){
     @include fluidpaddingy(3rem, 5rem);
     @include fluidpaddingx(3rem, 12rem);
     width: 100%;
-    min-height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +49,7 @@
         flex-direction: column;
         align-items: center;
 
-        h1 {
+        h2 {
             @include fluidpaddingbottom(2rem, 2rem);
         }
     }
@@ -87,6 +90,84 @@
             img {
                 @include fluidwidth(30rem, 40rem);
             }
+        }
+    }
+}
+
+// @mixin description-template-2()
+// for general purpose theme, topic
+// uses primary color for background color
+
+@mixin description-template-2() {
+    @include fluidpaddingy(3rem, 5rem);
+    @include fluidpaddingx(3rem, 12rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: map-get($theme-colors, "primary");
+
+    h1{
+        @include header1();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.0;
+        color: map-get($theme-colors, "white-alt");
+    }
+
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.0;
+        color: map-get($theme-colors, "white-alt");
+    }
+    
+    h3{
+        @include header3();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+        color: map-get($theme-colors, "white-alt");
+    }
+
+    p {
+        @include paragraph();
+        @include myriadProRegular();
+        line-height: 1.3;
+        color: map-get($theme-colors, "white-alt");        
+    }
+
+    blockquote {
+        @include fluidfontsize(2.4rem, 3.6rem);
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+        color: map-get($theme-colors, "white-alt");   
+    }
+
+    .description-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        * {
+            @include fluidpaddingbottom(2rem, 2rem);
+        }
+    }
+
+    .description-body{
+        * {
+            @include fluidpaddingbottom(2rem, 2rem);
+        }
+
+        blockquote {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
         }
     }
 }
