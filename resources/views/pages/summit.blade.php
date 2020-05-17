@@ -12,40 +12,104 @@
 
         <section class="summit-hero">
             <div class="hero-text">
-                <div class="hero-logo">
-                    <img src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
-                </div>
+                <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
                 <div class="hero-title">
-
+                    <h1>
+                        <span class="color-secondary">The Summit</span><br> 
+                        National Conference
+                    </h1>
                 </div>
                 <div class="hero-description">
-
+                    <p>
+                        A national conference that invites experts to share their insights and experiences in specific fields regarding SDGs to empower students to be potential entrepreneurs. There will be coaching sessions that are led by experts from NGOs, group discussions, and presentations of the given solution in front of NGOs.
+                    </p>
                 </div>
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    
+                    <a class="button-primary" href="#">Registration</a>
+                    <a class="button-secondary-transparent" href="#">
+                        <div class="button-with-icon">
+                            <span>Scroll Down</span> 
+                            <img src="{{URL::asset('assets/icons/mouse.svg')}}">
+                        </div>
+                    </a>   
                 </div>
                 <div class="hero-schedule">
-
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Open<br>Registration</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>17</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>February<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Study guides<br>release</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>2</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>March<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Close<br>Registration</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>20</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>March<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <a href="#">More Schedule..</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="summit-description">
-            <div class="description-container">
+            <div class="description-header">
                 <div class="header-line"></div>
-                <p>
-                    
-                    The 9th Grand Summit will exhibit a conference as the peak event called The Summit. Invited experts to share their insights and experiences in specific fields to empower students. This event aims to train students to be potential entrepreneurs that have high motivation and think critically. The participants will get a chance to network with other students from all over Indonesia.
-                    <br><br>There will be coaching sessions to prepare them for discussions that lead by experts from NGOs in five chambers with five different SDGs issues as the main topic. Each participant will be assigned in a chosen chamber and are expected to generate suitable and feasible solutions towards the problem.
-                    <br><br>In the end, each chamber will get a chance to present their solutions in front of NGOs who will consider whether their solutions can be implemented. We aim to give the participants a platform to go beyond and also encourage diverse forms of collaboration and innovation by providing room for discussions.
-                </p>
+                <h1>The Summit</h1>
+            </div>
+            <div class="description-body">
+                <div class="description-text">
+                    <p>
+                        The 9th Grand Summit will exhibit a conference as the peak event called The Summit. Invited experts to share their insights and experiences in specific fields to empower students. This event aims to train students to be potential entrepreneurs that have high motivation and think critically. The participants will get a chance to network with other students from all over Indonesia.
+                    </p>
+                    <p>
+                        There will be coaching sessions to prepare them for discussions that lead by experts from NGOs in five chambers with five different SDGs issues as the main topic. Each participant will be assigned in a chosen chamber and are expected to generate suitable and feasible solutions towards the problem.
+                    </p>
+                    <p>
+                        In the end, each chamber will get a chance to present their solutions in front of NGOs who will consider whether their solutions can be implemented. We aim to give the participants a platform to go beyond and also encourage diverse forms of collaboration and innovation by providing room for discussions.
+                    </p>
+                </div>
+                <div class="description-image">
+                    <img src="{{URL::asset('assets/summit/summit-description.svg')}}">
+                </div>
             </div>
         </section>
 
         <section class="summit-theme">
-            <div class="theme-container"?>
+            <div class="theme-container">
                 <h2>
                     Theme:
                 </h2>

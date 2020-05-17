@@ -15,6 +15,9 @@
     border: 3px solid $color-border;
     border-radius: 1rem;
     color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -121,3 +124,13 @@
     }
 }
 
+.button-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    img {
+        margin-left: 1rem;
+        @include fluidheight(2rem, 2.8rem);
+    }
+}
