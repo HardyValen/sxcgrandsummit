@@ -1,4 +1,4 @@
-@mixin registration-template(){
+@mixin registration-template($url){
     @include fluidpadding(3rem, 5rem);
     width: 100%;
     display: flex;
@@ -19,7 +19,7 @@
     }
 
     .registration-container{
-        @include backgroundOverlayDark("../assets/summit/registration-backdrop.png");
+        @include backgroundOverlayDark($url);
         width: 100%;
         @include fluidminheight(20rem, 30rem);
         border: 1px solid black;

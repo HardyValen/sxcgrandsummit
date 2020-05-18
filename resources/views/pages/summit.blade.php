@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section('title')
-    9th Grand Summit &ndash; Students&#x2715;CEOs
+    Summit - 9th Grand Summit &ndash; Students&#x2715;CEOs
 @endsection
 
 @section('content')

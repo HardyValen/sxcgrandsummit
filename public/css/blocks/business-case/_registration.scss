@@ -1,0 +1,5 @@
+@import "../../module/registration-template";
+
+.business-case-registration {
+    @include registration-template("../assets/business-case/registration-backdrop.png");
+}
