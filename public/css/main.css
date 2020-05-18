@@ -105,7 +105,6 @@
   border-radius: 1rem;
   color: white;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -119,70 +118,70 @@
 
 @media screen and (min-width: 320px) {
   .button-white-transparent {
-    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-white-transparent {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-white-transparent {
-    padding-left: calc(1.90972vw);
-    padding-right: calc(1.90972vw);
+    padding-left: calc(1.52778vw);
+    padding-right: calc(1.52778vw);
   }
 }
 
 .button-white-transparent {
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-white-transparent {
-    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-white-transparent {
-    padding-bottom: 1.2rem;
-    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-white-transparent {
-    padding-top: calc(0.83333vw);
-    padding-bottom: calc(0.83333vw);
+    padding-top: calc(0.55556vw);
+    padding-bottom: calc(0.55556vw);
   }
 }
 
 .button-white-transparent {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-white-transparent {
-    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-white-transparent {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-white-transparent {
-    font-size: calc(1.11111vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -209,7 +208,6 @@
   border-radius: 1rem;
   color: black;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -223,70 +221,70 @@
 
 @media screen and (min-width: 320px) {
   .button-black-transparent {
-    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-black-transparent {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-black-transparent {
-    padding-left: calc(1.90972vw);
-    padding-right: calc(1.90972vw);
+    padding-left: calc(1.52778vw);
+    padding-right: calc(1.52778vw);
   }
 }
 
 .button-black-transparent {
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-black-transparent {
-    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-black-transparent {
-    padding-bottom: 1.2rem;
-    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-black-transparent {
-    padding-top: calc(0.83333vw);
-    padding-bottom: calc(0.83333vw);
+    padding-top: calc(0.55556vw);
+    padding-bottom: calc(0.55556vw);
   }
 }
 
 .button-black-transparent {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-black-transparent {
-    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-black-transparent {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-black-transparent {
-    font-size: calc(1.11111vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -313,7 +311,6 @@
   border-radius: 1rem;
   color: white;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -329,70 +326,70 @@
 
 @media screen and (min-width: 320px) {
   .button-primary {
-    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-primary {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-primary {
-    padding-left: calc(1.90972vw);
-    padding-right: calc(1.90972vw);
+    padding-left: calc(1.52778vw);
+    padding-right: calc(1.52778vw);
   }
 }
 
 .button-primary {
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-primary {
-    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-primary {
-    padding-bottom: 1.2rem;
-    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-primary {
-    padding-top: calc(0.83333vw);
-    padding-bottom: calc(0.83333vw);
+    padding-top: calc(0.55556vw);
+    padding-bottom: calc(0.55556vw);
   }
 }
 
 .button-primary {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-primary {
-    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-primary {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-primary {
-    font-size: calc(1.11111vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -412,6 +409,111 @@
   transition: 0.1s;
 }
 
+.button-primary-transparent {
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  border: 3px solid #0368E3;
+  border-radius: 1rem;
+  color: #FFC517;
+  font-weight: 700;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  -webkit-box-shadow: 0rem 0rem 1.5rem 0.5rem rgba(2, 82, 179, 0.2);
+  box-shadow: 0rem 0.5rem 1.5rem 0.5rem rgba(2, 82, 179, 0.2);
+}
+
+.button-primary-transparent {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-primary-transparent {
+    padding-left: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-primary-transparent {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .button-primary-transparent {
+    padding-left: calc(1.52778vw);
+    padding-right: calc(1.52778vw);
+  }
+}
+
+.button-primary-transparent {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-primary-transparent {
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-primary-transparent {
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .button-primary-transparent {
+    padding-top: calc(0.55556vw);
+    padding-bottom: calc(0.55556vw);
+  }
+}
+
+.button-primary-transparent {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .button-primary-transparent {
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .button-primary-transparent {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .button-primary-transparent {
+    font-size: calc(1.25vw);
+  }
+}
+
+.button-primary-transparent:hover {
+  background-color: #0368E3;
+  color: #FFC517;
+  border-color: #0368E3;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-primary-transparent:active {
+  background-color: transparent;
+  color: #FFC517;
+  border-color: transparent;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .button-secondary {
   font-family: 'Montserrat', sans-serif;
   background-color: #FFC517;
@@ -419,7 +521,6 @@
   border-radius: 1rem;
   color: white;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -433,70 +534,70 @@
 
 @media screen and (min-width: 320px) {
   .button-secondary {
-    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-secondary {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-secondary {
-    padding-left: calc(1.90972vw);
-    padding-right: calc(1.90972vw);
+    padding-left: calc(1.52778vw);
+    padding-right: calc(1.52778vw);
   }
 }
 
 .button-secondary {
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-secondary {
-    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-secondary {
-    padding-bottom: 1.2rem;
-    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-secondary {
-    padding-top: calc(0.83333vw);
-    padding-bottom: calc(0.83333vw);
+    padding-top: calc(0.55556vw);
+    padding-bottom: calc(0.55556vw);
   }
 }
 
 .button-secondary {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-secondary {
-    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-secondary {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-secondary {
-    font-size: calc(1.11111vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -523,7 +624,6 @@
   border-radius: 1rem;
   color: #F4F4F4;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -537,70 +637,70 @@
 
 @media screen and (min-width: 320px) {
   .button-secondary-transparent {
-    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-secondary-transparent {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-secondary-transparent {
-    padding-left: calc(1.90972vw);
-    padding-right: calc(1.90972vw);
+    padding-left: calc(1.52778vw);
+    padding-right: calc(1.52778vw);
   }
 }
 
 .button-secondary-transparent {
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-secondary-transparent {
-    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-secondary-transparent {
-    padding-bottom: 1.2rem;
-    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-secondary-transparent {
-    padding-top: calc(0.83333vw);
-    padding-bottom: calc(0.83333vw);
+    padding-top: calc(0.55556vw);
+    padding-bottom: calc(0.55556vw);
   }
 }
 
 .button-secondary-transparent {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-secondary-transparent {
-    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-secondary-transparent {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-secondary-transparent {
-    font-size: calc(1.11111vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -627,7 +727,6 @@
   border-radius: 1rem;
   color: white;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -641,70 +740,70 @@
 
 @media screen and (min-width: 320px) {
   .button-disabled {
-    padding-left: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(1rem + 1.75 * ((100vw - 32rem) / (96 - 32)));
+    padding-left: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-disabled {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-disabled {
-    padding-left: calc(1.90972vw);
-    padding-right: calc(1.90972vw);
+    padding-left: calc(1.52778vw);
+    padding-right: calc(1.52778vw);
   }
 }
 
 .button-disabled {
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-disabled {
-    padding-bottom: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
-    padding-top: calc(0.9rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(0.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-disabled {
-    padding-bottom: 1.2rem;
-    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-disabled {
-    padding-top: calc(0.83333vw);
-    padding-bottom: calc(0.83333vw);
+    padding-top: calc(0.55556vw);
+    padding-bottom: calc(0.55556vw);
   }
 }
 
 .button-disabled {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .button-disabled {
-    font-size: calc(1.2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.4rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .button-disabled {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .button-disabled {
-    font-size: calc(1.11111vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -1595,6 +1694,7 @@ drop-post-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1694,8 +1794,8 @@ drop-post-container {
 
 .navbar .navbar-links a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  color: #4F4F4F;
+  font-weight: 700;
+  color: #0252B3;
   letter-spacing: 1px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1762,13 +1862,158 @@ drop-post-container {
 }
 
 .navbar .navbar-links a:active {
-  color: #0252B3;
+  color: #0368E3;
 }
 
 @media screen and (max-width: 960px) {
   .navbar .navbar-links {
     display: none;
   }
+}
+
+.navbar .navbar-links .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar .navbar-links .dropdown .dropbtn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0252B3;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.navbar .navbar-links .dropdown .dropbtn {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar .navbar-links .dropdown .dropbtn {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar .navbar-links .dropdown .dropbtn {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar .navbar-links .dropdown .dropbtn {
+    font-size: calc(1.11111vw);
+  }
+}
+
+.navbar .navbar-links .dropdown .dropbtn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar .navbar-links .dropdown .dropbtn {
+    padding-left: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar .navbar-links .dropdown .dropbtn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar .navbar-links .dropdown .dropbtn {
+    padding-left: calc(1.38889vw);
+    padding-right: calc(1.38889vw);
+  }
+}
+
+.navbar .navbar-links .dropdown .dropbtn:hover {
+  color: #0368E3;
+}
+
+.navbar .navbar-links .dropdown .dropbtn:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .navbar-links .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .navbar-links .dropdown .dropdown-content a {
+  float: none;
+  color: #0252B3;
+  text-align: left;
+}
+
+.navbar .navbar-links .dropdown .dropdown-content a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar .navbar-links .dropdown .dropdown-content a {
+    padding-left: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar .navbar-links .dropdown .dropdown-content a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar .navbar-links .dropdown .dropdown-content a {
+    padding-left: calc(1.38889vw);
+    padding-right: calc(1.38889vw);
+  }
+}
+
+.navbar .navbar-links .dropdown .dropdown-content a {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar .navbar-links .dropdown .dropdown-content a {
+    padding-bottom: calc(1.6rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(1.6rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navbar .navbar-links .dropdown .dropdown-content a {
+    padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar .navbar-links .dropdown .dropdown-content a {
+    padding-top: calc(1.11111vw);
+    padding-bottom: calc(1.11111vw);
+  }
+}
+
+.navbar .navbar-links .dropdown .dropdown-content a:hover {
+  color: #0368E3;
 }
 
 @media screen and (max-width: 960px) {
@@ -3296,19 +3541,19 @@ main {
 
 @media screen and (min-width: 320px) {
   .landing-hero .landing-hero-description p {
-    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.6rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .landing-hero .landing-hero-description p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .landing-hero .landing-hero-description p {
-    font-size: calc(1.38889vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -5765,19 +6010,19 @@ main {
 
 @media screen and (min-width: 320px) {
   .pre-event-description .description-container p {
-    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.6rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .pre-event-description .description-container p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .pre-event-description .description-container p {
-    font-size: calc(1.38889vw);
+    font-size: calc(1.25vw);
   }
 }
 
@@ -6436,19 +6681,19 @@ main {
 
 @media screen and (min-width: 320px) {
   .summit-description .description-container p {
-    font-size: calc(1.6rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    font-size: calc(1.6rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .summit-description .description-container p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .summit-description .description-container p {
-    font-size: calc(1.38889vw);
+    font-size: calc(1.25vw);
   }
 }
 

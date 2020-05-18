@@ -25,7 +25,7 @@
 }
 
 @mixin paragraph1() {
-    @include fluidfontsize(1.6rem, 2rem);
+    @include fluidfontsize(1.6rem, 1.8rem);
 }
 @mixin paragraph2() {
     @include fluidfontsize(1.8rem, 2.2rem);

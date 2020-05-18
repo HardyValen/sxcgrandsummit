@@ -7,16 +7,16 @@
     $color-hover,
     $color-active
 ){
-    @include fluidpaddingx(1rem, 2.75rem);
-    @include fluidpaddingy(0.9rem, 1.2rem);
+    @include fluidpaddingx(1rem, 2.2rem);
+    @include fluidpaddingy(0.5rem, 0.8rem);
     @include montserrat();
-    @include fluidfontsize(1.2rem, 1.6rem);
+    @include fluidfontsize(1.4rem, 1.8rem);
     background-color: $color-bg;
     border: 3px solid $color-border;
     border-radius: 1rem;
     color: $color;
     font-weight: 700;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.2s;
     cursor: pointer;
@@ -64,6 +64,17 @@
         map-get($theme-colors, "primary"),
         map-get($theme-colors, "primary-light"),
         map-get($theme-colors, "secondary")
+    );
+    @include shadowButton();
+}
+
+.button-primary-transparent{
+    @include button(
+        map-get($theme-colors, "secondary"),
+        transparent,
+        map-get($theme-colors, "primary-light"),
+        map-get($theme-colors, "primary-light"),
+        transparent,
     );
     @include shadowButton();
 }
