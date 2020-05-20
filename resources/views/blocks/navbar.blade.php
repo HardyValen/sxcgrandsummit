@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <nav class='navbar'>
-    <div class="navbar-logo">
+    <a href="/landing" class="navbar-logo">
         <img src="{{URL::asset('assets/logo/GrandSummit.svg')}}" alt="SXCGS9">
-    </div>
+    </a>
     <ul class="nav-list">
         <li>
             <a href="/landing">HOME</a>

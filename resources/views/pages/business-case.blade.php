@@ -78,7 +78,7 @@
                     </div>
                     <div class="hero-schedule-separator"></div>
                     <div class="hero-schedule-element">
-                        <a href="#">More Schedule..</a>
+                        <a href="/landing#schedule" class="more">More Schedule..</a>
                     </div>
                 </div>
             </div>

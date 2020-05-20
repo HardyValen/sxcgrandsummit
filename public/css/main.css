@@ -2737,9 +2737,13 @@ drop-post-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: #303030;
 }
 
@@ -2814,6 +2818,34 @@ drop-post-container {
 @media screen and (min-width: 1440px) {
   .footer .footer-copyright {
     font-size: calc(1.11111vw);
+  }
+}
+
+.footer .footer-copyright .footer-logo, .footer .footer-copyright .empty {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer .footer-copyright .footer-logo a img {
+  height: 5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .footer .footer-copyright .footer-logo a img {
+    height: calc(5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer .footer-copyright .footer-logo a img {
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer .footer-copyright .footer-logo a img {
+    height: calc(4.16667vw);
   }
 }
 
@@ -5702,6 +5734,28 @@ main {
           flex-direction: column;
 }
 
+.business-case-hero {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-hero {
+    padding-bottom: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-hero {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-hero {
+    padding-bottom: calc(3.47222vw);
+  }
+}
+
 .business-case-hero h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -6094,9 +6148,57 @@ main {
   margin-right: 1rem;
 }
 
+.business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  font-weight: 700;
+}
+
+.business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: calc(1.11111vw);
+  }
+}
+
 .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
   -ms-flex-negative: 1;
       flex-shrink: 1;
+}
+
+.business-case-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+  width: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: calc(1.38889vw);
+  }
 }
 
 .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element a {
@@ -6776,6 +6878,28 @@ main {
           flex-direction: column;
 }
 
+.pre-event-hero {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-hero {
+    padding-bottom: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-hero {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-hero {
+    padding-bottom: calc(3.47222vw);
+  }
+}
+
 .pre-event-hero h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -7168,9 +7292,57 @@ main {
   margin-right: 1rem;
 }
 
+.pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  font-weight: 700;
+}
+
+.pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: calc(1.11111vw);
+  }
+}
+
 .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
   -ms-flex-negative: 1;
       flex-shrink: 1;
+}
+
+.pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+  width: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: calc(1.38889vw);
+  }
 }
 
 .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element a {
@@ -8031,6 +8203,28 @@ main {
           flex-direction: column;
 }
 
+.summit-hero {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-hero {
+    padding-bottom: calc(2rem + 3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-hero {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .summit-hero {
+    padding-bottom: calc(3.47222vw);
+  }
+}
+
 .summit-hero h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -8423,9 +8617,57 @@ main {
   margin-right: 1rem;
 }
 
+.summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  font-weight: 700;
+}
+
+.summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    font-size: calc(1.11111vw);
+  }
+}
+
 .summit-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
   -ms-flex-negative: 1;
       flex-shrink: 1;
+}
+
+.summit-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+  width: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: calc(1rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element:last-child {
+    width: calc(1.38889vw);
+  }
 }
 
 .summit-hero .hero-bottom .hero-schedule .hero-schedule-element a {

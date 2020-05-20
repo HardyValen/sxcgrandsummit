@@ -5,6 +5,8 @@
     $stdPaddingMax: 3rem;
     $extPaddingMax: 5rem;
 
+
+    @include fluidpaddingbottom($stdPaddingMin, $extPaddingMax);
     @include backgroundOverlayDark($url);
     @include backgroundPosition(50%, 50%);
     @include shadowHero();
@@ -114,6 +116,7 @@
         .hero-schedule {
             @include fluidpaddingx($stdPaddingMin, $extPaddingMax);
             @include fluidpaddingy($stdPaddingMin, $stdPaddingMax);
+            
             background-color: map-get($theme-colors, "primary");
             border-radius: remToVw(136.6rem, 1rem) 0 0 remToVw(136.6rem, 1rem);
             display: flex;
@@ -148,9 +151,14 @@
                         margin-right: 1rem;
                     }
                 }
+                .more {
+                    @include paragraph();
+                    font-weight: 700;
+                }
 
                 &:last-child{
                     flex-shrink: 1;
+                    @include fluidwidth(1rem, 2rem);
                 }
 
                 a {

@@ -16,6 +16,13 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <p>&copy; StudentsxCEOs Bandung 9th Grand Summit, All Rights Reserved</p>
+        <div class = "footer-logo">
+            <a href= "/landing" class="logo">
+                <img src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9" class="footer-logo">
+            </a>
+        </div>
+        <div class="copyright-text"><p>&copy; StudentsxCEOs Bandung 9th Grand Summit, All Rights Reserved</p>
+        </div>
+        <div class="empty"></div>
     </div>
 </footer>
