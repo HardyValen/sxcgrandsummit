@@ -107,6 +107,10 @@
                     @include fluidfontsize(1.3rem, 1.7rem);
                     @include myriadProBold();
                 }
+                sup {
+                    @include paragraph2();
+                    text-
+                }
             }
 
             .schedule-timeline-line{
