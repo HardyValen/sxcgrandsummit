@@ -11,15 +11,88 @@
         @include("blocks.navbar")
 
         <section class="pre-event-hero">
-            <h1>Pre Event</h1>
+            <div class="hero-text">
+                <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
+                <div class="hero-title">
+                    <h1>
+                        <span class="color-secondary">Pre</span> Event<br>
+                    </h1>
+                </div>
+                <div class="hero-description">
+                    <p>
+                        A series of events that are conducted to introduce and build awareness of the Grand Summit. We want to provide the opportunity to gain various insights from expert speakers and hands on experience on mini-workshop session.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-bottom">
+                <div class="hero-buttons">
+                    <a class="button-primary" href="#">Registration</a>
+                    <a class="button-secondary-transparent" href="#">
+                        <div class="button-with-icon">
+                            <span>Scroll Down</span> 
+                            <img src="{{URL::asset('assets/icons/mouse.svg')}}">
+                        </div>
+                    </a>   
+                </div>
+                <div class="hero-schedule">
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Pre<br>Event 1</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <p>Finished</p>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Open Registration<br>Pre Event 2</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>7</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>March<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Pre<br>Event 2</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>21</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>March<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <a href="#">More Schedule..</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
     <section class="pre-event-description">
-        <div class="description-container">
+        <div class="description-header">
             <div class="header-line"></div>
-            <p>
-            A series of events that are conducted to introduce and build awareness of the Grand Summit. We want to provide the opportunity to gain various insights from expert speakers and mini-workshop sessions."
-            </p>
+            <h2>A Brief Description</h2>
+        </div>
+        <div class="description-body">
+            <div class="description-text">
+                <p>
+                    Pre Event is a series of events that are conducted and aimed to introduce the Grand Summit. Within these activities, we want to provide our target audience and Grand Summit participants the opportunity to gain various insights from speakers who are experts in their fields. The theme of the Pre Events itself will correlate with the big theme of The Summit, which revolves around "The Applications of SDGs in Building Sustainable Businesses."
+                </p>
+            </div>
+            <div class="description-image">
+                <img src="{{URL::asset('assets/pre-event/description-image.png')}}">
+            </div>
         </div>
     </section>
 
@@ -29,6 +102,7 @@
             <div id="2" class= "menu" onclick="changePreEvent(event, 'title2')">Pre Event 2</div>
         </div>
     </section>
+    
     <section class="pre-event-topics" id="title1">
         <div class="topic-title">
             <h2>How Public Speaking Can Affect Your Leadership</h2>
@@ -52,6 +126,7 @@
             </div>
         </div>
     </section>
+
     <section class="pre-event-topics" id="title2">
         <div class="topic-title">
             <h2>Indonesia Dalam Bencana, Pemerintah Kerja Apa?</br>Kita Bisa Apa?</h2>
@@ -69,7 +144,7 @@
                 <div class="flow-card">
                 <h3>Focused Group Discussion</h3>
                 <p>
-                A 60 minutes of discussion will be conducted by 10 groups with one committee in each groups. Discussing the topic of climate action according to SDGs No.13, the participants will explore the ability to think critically, build factual arguments, and convey constructive criticism.
+                    A 60 minutes of discussion will be conducted by 10 groups with one committee in each groups. Discussing the topic of climate action according to SDGs No.13, the participants will explore the ability to think critically, build factual arguments, and convey constructive criticism.
                 </p>
                 </div>
             </div>

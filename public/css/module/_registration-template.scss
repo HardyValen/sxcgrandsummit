@@ -1,0 +1,43 @@
+@mixin registration-template($url){
+    @include fluidpadding(3rem, 5rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($theme-colors, "white-alt");
+
+    @media screen and (max-width: 960px) {
+        @include fluidpadding(0rem, 0rem);
+    }
+
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+        color: map-get($theme-colors, "white-alt");
+    }
+
+    .registration-container{
+        @include backgroundOverlayDark($url);
+        width: 100%;
+        @include fluidminheight(20rem, 30rem);
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: remToVw(96rem, 1rem);
+
+        @media screen and (max-width: 960px) {
+            border-radius: 0;
+        }
+
+        .registration-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include fluidpaddingbottom(2rem, 3rem);
+        }
+    }
+}

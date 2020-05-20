@@ -1,7 +1,17 @@
 @function strip-unit($value) {
     @return $value / ($value * 0 + 1);
+}
+  
+@function pxToRem($value) {
+    @return (strip-unit($value) / 10) * 1rem;
   }
   
+  // @param: viewport size on rem, value on rem
+  @function remToVw($viewport, $value){
+    $strippedValue : strip-unit($value);
+    $strippedViewport : strip-unit($viewport);
+    @return ($strippedValue / $strippedViewport) * 100vw;
+  }
 
 /* MIXIN FOR CUSTOM RANGE OF FLUID SIZES
  *  -- Menerima masukan batas bawah font size 'floor' dan batas atas font size 'ceiling', satuan rem!

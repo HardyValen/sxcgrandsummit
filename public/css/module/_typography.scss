@@ -1,14 +1,14 @@
 @mixin headerLine($floor, $ceil) {
     @include fluidheight($floor, $ceil);
     margin-bottom: 0.8rem;
-    width: 10rem;
+    @include fluidwidth(10rem, 10rem);
     background: linear-gradient(90deg, #FFC517 0%, rgba(255, 197, 23, 0) 110.95%);
 }
 
 @mixin header0(){
     @include fluidfontsize(4.8rem, 6rem);
 }
-    @mixin header1(){
+@mixin header1(){
     @include fluidfontsize(3rem, 4.6rem);
 }
 

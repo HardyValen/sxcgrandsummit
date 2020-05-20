@@ -1,0 +1,5 @@
+@import "../../module/registration-template";
+
+.summit-registration {
+    @include registration-template("../assets/summit/registration-backdrop.png");
+}
