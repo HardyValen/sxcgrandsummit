@@ -49,11 +49,11 @@
                             <h3>Open Registration<br>Pre Event 2</h3>
                         </div>
                         <div class="hero-schedule-date">
-                            <div class="hero-schedule-day">
-                                <h1>7</h1>
-                            </div>
+                            {{-- <div class="hero-schedule-day">
+                                <h1>TBA</h1>
+                            </div> --}}
                             <div class="hero-schedule-month-year">
-                                <p>March<br>2020</p>
+                                <p>To Be<br>Announced..</p>
                             </div>
                         </div>
                     </div>
@@ -63,11 +63,11 @@
                             <h3>Pre<br>Event 2</h3>
                         </div>
                         <div class="hero-schedule-date">
-                            <div class="hero-schedule-day">
-                                <h1>21</h1>
-                            </div>
+                            {{-- <div class="hero-schedule-day">
+                                <h1>TBA</h1>
+                            </div> --}}
                             <div class="hero-schedule-month-year">
-                                <p>March<br>2020</p>
+                                <p>To Be<br>Announced..</p>
                             </div>
                         </div>
                     </div>

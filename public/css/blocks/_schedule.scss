@@ -1,6 +1,6 @@
 .schedule-container{
     @include fluidpaddingy(2rem, 3rem);
-    @include fluidpaddingright(2rem, 3rem);
+    // @include fluidpaddingx(2rem, 3rem);
     width: 100%;
     min-height: 20rem;
     background-color: map-get($theme-colors, "primary-light");
@@ -114,6 +114,7 @@
                 p{
                     @include fluidfontsize(1.3rem, 1.7rem);
                     @include myriadProBold();
+                    @include fluidpaddingright(4rem, 5rem);
                 }
             }
 

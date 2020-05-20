@@ -60,13 +60,18 @@
         }
     
         .landing-description-text{
-            padding-left: 0rem;
-            padding-right: 2rem;
+            padding-left: 0;
+            @include fluidpaddingright(2rem,2rem);
             justify-content: left;
             width: 55%;
             text-align: left;
             margin: 2rem;
-    
+            
+            @media screen and (max-width: 960px) {
+                width: 90%;
+                padding-right: 0;
+            }
+
             h2 {
                 @include fluidfontsize(2rem, 2.8rem);
                 letter-spacing: 0.05rem;
@@ -75,17 +80,16 @@
                 @include fluidpaddingy(1.4rem, 1.8rem);
                 
             }
-            // p {
-                //     @include myriadProRegular();
-                //     @include paragraph2();
-                //     color: map-get($theme-colors, "black");
-                //     line-height: 1.5;
-                // }
                 sup{
                     @include paragraph2();
                 }
                 ul {
                     padding-right: 10rem;
+
+                    @media screen and (max-width: 960px) {
+                        padding-right: 2rem;
+                    }
+
                     li {
                         @include myriadProRegular();
                         @include paragraph2();
@@ -121,6 +125,10 @@
                 @include backgroundPosition(50%, 30%);
                 @include fluidheight(25rem, 30rem);
                 border-radius: 3rem;
+            }
+            
+            @media screen and (max-width: 960px) {
+                display: none;
             }
         }
     }

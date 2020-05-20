@@ -38,18 +38,10 @@
                     <div class='header-line'></div>
                     <h2>Why you should join the 9<sup>th</sup> Grand Summit</h2>
                     <ul>
-                        <li>
-                            Build a wide network with students from all over Indonesia.
-                        </li>
-                        <li>
-                            A platform to go beyond and explore potentials.
-                        </li>
-                        <li>
-                            Encourage collaboration and innovation through continuous discussions.
-                        </li>
-                        <li>
-                            An action to take part and give impact on business, social, and environment matter.
-                        </li>
+                        <li>Build a wide network with students from all over Indonesia.</li>
+                        <li>A platform to go beyond and explore potentials.</li>
+                        <li>Encourage collaboration and innovation through continuous discussions.</li>
+                        <li>An action to take part and give impact on business, social, and environment matter.</li>
                     </ul>
                 </div>
                 <div class="landing-description-image">
@@ -71,59 +63,47 @@
             
             <div class="post-container" id="event">
                 <div class="post-card">
-                    <div class="post-image image-event-1"></div>
+                    <div class="post-title-image image-event-1">
+                        <span>Business<br><span class="color-secondary">Case Competition</span></span>
+                    </div>
                     <div class="post-desc">
-                        <div class="post-title">
-                            <h3>
-                                Bussiness Case Competition    
-                            </h3>
-                        </div>
-                        <div class="post-summary">
-                            <p>
-                                Business Case Competition is a business based problem-solving competition in Indonesia. Through this program, each team will identify prominent issues faced by a company and try to build a strategy to provide a solution in order to help the company reach their goals.
-                            </p>
-                        </div>
+                        <p>
+                            Business Case Competition - the business based problem-solving competition in Indonesia. Through this program, each team will identify the prominent issues faced by the company and try to build a strategy to provide a solution in order to help the company reach goals.
+                        </p>
                     </div>
                     <div class="post-link">
-                        <a class="button-secondary" href="/business-case">More Details</a>
+                        <a class="button-primary" href="/business-case">More Details..</a>
+                        <a class="button-primary-invert-transparent" href="#" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
                 
                 <div class="post-card">
-                    <div class="post-image image-event-3"></div>
+                    <div class="post-title-image image-event-3">
+                        <span>Pre <span class="color-secondary">Event</span></span>
+                    </div>
                     <div class="post-desc">
-                        <div class="post-title">
-                            <h3>
-                                Pre Event  
-                            </h3>
-                        </div>
-                        <div class="post-summary">
-                            <p>
-                                Pre Event is a a series of events that are conducted to build awareness of the Grand Summit. We want to provide the opportunity to gain various insights from expert speakers and mini-workshops. 
-                            </p>
-                        </div>
+                        <p>
+                            Pre Event - a series of events that are conducted to introduce build awareness of the Grand Summit. We want to provide the opportunity to gain various insights from expert speakers and mini-workshop.
+                        </p>
                     </div>
                     <div class="post-link">
-                        <a class="button-primary" href="/pre-event">More Details</a>
+                        <a class="button-primary" href="/pre-event">More Details..</a>
+                        <a class="button-primary-invert-transparent" href="#" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
                 
                 <div class="post-card">
-                    <div class="post-image image-event-2"></div>
+                    <div class="post-title-image image-event-2">
+                        <span>The <span class="color-secondary">Summit</span></span>
+                    </div>
                     <div class="post-desc">
-                        <div class="post-title">
-                            <h3>
-                                The Summit
-                            </h3>
-                        </div>
-                        <div class="post-summary">
-                            <p>
-                                The Summit is a national conference that invites experts to share their insights and experiences in specific fields regarding SDGs to empower students to be potential entrepreneurs. There will be coaching sessions that are led by experts from NGOs, group discussions, and presentations of the given solution in front of NGOs.
-                            </p>
-                        </div>
+                        <p>
+                            The Summit - a national conference that invites experts to share their insights and experiences in specific fields regarding SDGs to empower students to be potential entrepreneurs. There will be coaching sessions that are led by experts from NGOs, group discussions, and presentations of the given solution in front of NGOs.
+                        </p>
                     </div>
                     <div class="post-link">
-                        <a class="button-secondary" href="/summit">More Details</a>
+                        <a class="button-primary" href="/summit">More Details..</a>
+                        <a class="button-primary-invert-transparent" href="#" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
             </div>    

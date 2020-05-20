@@ -38,42 +38,42 @@
                 <div class="hero-schedule">
                     <div class="hero-schedule-element">
                         <div class="hero-schedule-title">
-                            <h3>Open<br>Registration</h3>
-                        </div>
-                        <div class="hero-schedule-date">
-                            <div class="hero-schedule-day">
-                                <h1>17</h1>
-                            </div>
-                            <div class="hero-schedule-month-year">
-                                <p>February<br>2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-schedule-separator"></div>
-                    <div class="hero-schedule-element">
-                        <div class="hero-schedule-title">
-                            <h3>Study guides<br>release</h3>
-                        </div>
-                        <div class="hero-schedule-date">
-                            <div class="hero-schedule-day">
-                                <h1>2</h1>
-                            </div>
-                            <div class="hero-schedule-month-year">
-                                <p>March<br>2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-schedule-separator"></div>
-                    <div class="hero-schedule-element">
-                        <div class="hero-schedule-title">
                             <h3>Close<br>Registration</h3>
                         </div>
                         <div class="hero-schedule-date">
                             <div class="hero-schedule-day">
-                                <h1>20</h1>
+                                <h1>24</h1>
                             </div>
                             <div class="hero-schedule-month-year">
-                                <p>March<br>2020</p>
+                                <p>June<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Study Guide<br>Release</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>25</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>June<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Essay<br>Submission</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>24</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>July<br>2020</p>
                             </div>
                         </div>
                     </div>
