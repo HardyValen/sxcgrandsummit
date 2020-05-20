@@ -1,5 +1,5 @@
 @import '../../module/hero-template';
 
 .summit-hero {
-    @include hero-template("../assets/summit/hero.jpg");
+    @include hero-template("../assets/summit/hero.png");
 }

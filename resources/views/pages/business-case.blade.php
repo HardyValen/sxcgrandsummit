@@ -28,7 +28,7 @@
                 <div class="hero-buttons">
                     <a class="button-primary" href="#">Registration</a>
                     <a class="button-secondary-transparent" href="#">
-                        <div class="button-with-icon">
+                        <div class="button-with-icon" onclick="scrollto('#scroll')">
                             <span>Scroll Down</span> 
                             <img src="{{URL::asset('assets/icons/mouse.svg')}}">
                         </div>
@@ -78,13 +78,13 @@
                     </div>
                     <div class="hero-schedule-separator"></div>
                     <div class="hero-schedule-element">
-                        <a href="/landing#schedule" class="more">More Schedule..</a>
+                        <a href="#!" onclick="scrollto('#schedule')" class="more">More Schedule..</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="business-case-description">
+        <section class="business-case-description" id="scroll">
             <div class="description-header">
                 <div class="header-line"></div>
                 <h2>A Brief Description</h2>
@@ -143,7 +143,9 @@
             </div>
         </section>
 
-        @include('blocks.schedule.businessCase')
+        <section id="schedule">
+            @include('blocks.schedule.businessCase')
+        </section>
 
         <section class="business-case-registration">
             <div class="registration-container">

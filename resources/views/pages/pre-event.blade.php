@@ -12,7 +12,7 @@
 
         <section class="pre-event-hero">
             <div class="hero-text">
-                <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
+                {{-- <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9"> --}}
                 <div class="hero-title">
                     <h1>
                         <span class="color-secondary">Pre</span> Event<br>
@@ -28,7 +28,7 @@
                 <div class="hero-buttons">
                     <a class="button-primary" href="#">Registration</a>
                     <a class="button-secondary-transparent" href="#">
-                        <div class="button-with-icon">
+                        <div class="button-with-icon" onclick="scrollto('#scroll')">
                             <span>Scroll Down</span> 
                             <img src="{{URL::asset('assets/icons/mouse.svg')}}">
                         </div>
@@ -73,13 +73,13 @@
                     </div>
                     <div class="hero-schedule-separator"></div>
                     <div class="hero-schedule-element">
-                        <a href="#">More Schedule..</a>
+                        <a href="#!" onclick="scrollto('#schedule')" class="more">More Schedule..</a>
                     </div>
                 </div>
             </div>
         </section>
 
-    <section class="pre-event-description">
+    <section class="pre-event-description" id="scroll">
         <div class="description-header">
             <div class="header-line"></div>
             <h2>A Brief Description</h2>
@@ -151,7 +151,9 @@
         </div>
     </section>
             
+    <section id="schedule">
         @include('blocks.schedule.preEvent')
+    </section>
         @include('blocks.footer')
     </main>
 @endsection

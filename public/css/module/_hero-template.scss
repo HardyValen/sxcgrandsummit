@@ -1,19 +1,22 @@
 @mixin hero-template($url){
     $externalPadding: ("min": 2rem, "max": 5rem);
     $logoWidth: ("min": 8rem, "max": 12rem);
-    $stdPaddingMin: 2rem;
-    $stdPaddingMax: 3rem;
+    $stdPaddingMin: 1rem;
+    $stdPaddingMax: 2rem;
     $extPaddingMax: 5rem;
+    $btnPadding: 3rem;
 
 
     @include fluidpaddingbottom($stdPaddingMin, $extPaddingMax);
     @include backgroundOverlayDark($url);
+    min-height: 85%;
     @include backgroundPosition(50%, 50%);
     @include shadowHero();
 
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 
     h1{
         @include fluidfontsize(3.6rem, 6.4rem);
@@ -58,7 +61,7 @@
         }
 
         .hero-description {
-            width: 55%;
+            width: 52.5%;
 
             @media screen and (max-width: 960px) {
                 width: 100%;
@@ -75,9 +78,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         
         @media screen and (max-width: 1366px){
-            flex-direction: column;
+            // flex-direction: column;
         }
 
         .hero-buttons {
@@ -99,44 +103,45 @@
 
             a {
                 &:first-child {
-                    margin-right: 1rem;
+                    margin-right: $btnPadding;
                 }
 
                 &:last-child {
-                    margin-left: 1rem;
+                    margin-left: $btnPadding;
                 }
 
                 &:not(:last-child):not(:first-child) {
-                    margin-right: 1rem;
-                    margin-left: 1rem;
+                    margin-right: $btnPadding;
+                    margin-left: $btnPadding;
                 }
             }
         }
 
         .hero-schedule {
-            @include fluidpaddingx($stdPaddingMin, $extPaddingMax);
+            @include fluidpaddingx($stdPaddingMin, $stdPaddingMax);
             @include fluidpaddingy($stdPaddingMin, $stdPaddingMax);
             
             background-color: map-get($theme-colors, "primary");
-            border-radius: remToVw(136.6rem, 1rem) 0 0 remToVw(136.6rem, 1rem);
+            border-radius: 2vw 0 0 2vw;
+            // border-radius: remToVw(136.6rem, 1rem) 0 0 remToVw(136.6rem, 1rem);
             display: flex;
             flex-direction: row;
-            flex-grow: 2;
+            min-width: 55%;
+            // flex-grow: 1;
 
             @media screen and (max-width: 960px){
                 display: none;
             }
 
-            @media screen and (max-width: 1366px) {
-                border-radius: 0;
-                width: 100%;
-            }
+            // @media screen and (max-width: 1366px) {
+            //     width: 100%;
+            // }
 
             .hero-schedule-element{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                flex-grow: 3;
+                flex-grow: 1;
 
                 .hero-schedule-title{
                     padding-bottom: 1rem;
@@ -158,7 +163,7 @@
 
                 &:last-child{
                     flex-shrink: 1;
-                    @include fluidwidth(1rem, 2rem);
+                    @include fluidwidth(5rem, 6rem);
                 }
 
                 a {
@@ -169,10 +174,11 @@
             }
 
             .hero-schedule-separator{
-                width: .1rem;
+                width: .2rem;
                 background-color: white;
-                margin-left: 2rem;
-                margin-right: 2rem;
+                @include fluidmarginx(2rem, 2rem);
+                // margin-left: 2rem;
+                // margin-right: 2rem;
             }
         }
     }

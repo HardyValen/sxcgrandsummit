@@ -11,13 +11,23 @@
         @include("blocks.navbar")
 
         <section class="landing-hero">
-            <div class="landing-hero-description">
-                <img src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="Landing-SXCGS9">
-                <h1>What is <em>SXC Grand Summit?</em></h1>
-                <p>The biggest annual event held by StudentsxCEOs Bandung Chapter, a platform for selected students across Indonesia to solve real problems related to Sustainable Development Goals (SDGs) and propose it to company & non-government organization.</p>
-                <div class="landing-hero-btn">
-                    <a class="button-primary" onClick="scrollto('#description')">Registration</a>
-                    <a class="button-secondary-transparent" onClick="scrollto('#description')">Learn more</a>
+            <div class="hero-text">
+                <div class="hero-title">
+                    <h1>Take Your Seat and<br>
+                        <span class="color-secondary">Unleash Your Potential</span>
+                    </h1>
+                        
+                </div>
+                <div class="hero-description">
+                    <p>
+                        The 9th Grand Summit is StudentsxCEOs Bandung Chapter’s most anticipated annual event. It provides a platform for selected students across Indonesia to discuss and bring a solution for businesses and NGOs to solve real problems relevant to the Sustainable Development Goals (SDGs). The 9th Grand Summit covers the pre-event, business case competition, and conference.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-bottom">
+                <div class="hero-buttons">
+                    <a class="button-primary" href="#">Registration</a>
+                    <a class="button-secondary-transparent" href="#">Learn More</a>
                 </div>
             </div>
         </section>

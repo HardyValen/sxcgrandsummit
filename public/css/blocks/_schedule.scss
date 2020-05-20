@@ -1,5 +1,6 @@
 .schedule-container{
     @include fluidpaddingy(2rem, 3rem);
+    @include fluidpaddingright(2rem, 3rem);
     width: 100%;
     min-height: 20rem;
     background-color: map-get($theme-colors, "primary-light");
@@ -29,6 +30,12 @@
         font-weight: 700;
     }
 
+    sup{
+        @include montserrat();
+        @include superscript();
+        vertical-align: text-top;
+    }
+
     p{
         @include paragraph();
         @include myriadProRegular();
@@ -49,6 +56,7 @@
     }
 
     .schedule-timeline-container{
+        
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -106,10 +114,6 @@
                 p{
                     @include fluidfontsize(1.3rem, 1.7rem);
                     @include myriadProBold();
-                }
-                sup {
-                    @include paragraph2();
-                    text-
                 }
             }
 
