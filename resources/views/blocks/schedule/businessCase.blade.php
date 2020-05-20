@@ -7,22 +7,8 @@
 
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
-                <h1>15</h1>
-                <p>February <br> 2020</p>
-            </div>
-            <div class="schedule-timeline-line">
-                <div class="timeline-donut"></div>
-                <div class="timeline-line"></div>
-            </div>
-            <div class="schedule-timeline-event">
-                <p>Open<br>Registration</p>
-            </div>
-        </div>
-
-        <div class="schedule-timeline-item">
-            <div class="schedule-timeline-date">
-                <h1>10</h1>
-                <p>March <br> 2020</p>
+                <h1>24<sup>th</sup></h1>
+                <p>June <br> 2020</p>
             </div>
             <div class="schedule-timeline-line">
                 <div class="timeline-donut"></div>
@@ -35,8 +21,8 @@
         
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
-                <h1>11</h1>
-                <p>March <br> 2020</p>
+                <h1>25<sup>th</sup></h1>
+                <p>June <br> 2020</p>
             </div>
             <div class="schedule-timeline-line">
                 <div class="timeline-donut"></div>
@@ -46,26 +32,26 @@
                 <p>Case<br>Distribution</p>
             </div>
         </div>
-
-
+        
+        
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
-                <h1>25</h1>
-                <p>March<br>2020</p>
+                <h1>24<sup>th</sup></h1>
+                <p>July<br>2020</p>
             </div>
             <div class="schedule-timeline-line">
                 <div class="timeline-donut"></div>
                 <div class="timeline-line"></div>
             </div>
             <div class="schedule-timeline-event">
-                <p>Paper<br>Submission</p>
+                <p>Case<br>Submission</p>
             </div>
         </div>
-
+        
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
-                <h1>10</h1>
-                <p>April<br>2020</p>
+                <h1>7<sup>th</sup></h1>
+                <p>August<br>2020</p>
             </div>
             <div class="schedule-timeline-line">
                 <div class="timeline-donut"></div>
@@ -75,31 +61,17 @@
                 <p>Finalist<br>Announcement</p>
             </div>
         </div>
-
+        
         <div class="schedule-timeline-item">
             <div class="schedule-timeline-date">
-                <h1>18</h1>
-                <p>April<br>2020</p>
-            </div>
-            <div class="schedule-timeline-line">
-                <div class="timeline-donut"></div>
-                <div class="timeline-line"></div>
-            </div>
-            <div class="schedule-timeline-event">
-                <p>Coaching<br>Session</p>
-            </div>
-        </div>
-
-        <div class="schedule-timeline-item">
-            <div class="schedule-timeline-date">
-                <h1>19</h1>
-                <p>April<br>2020</p>
+                <h1>21<sup>th</sup>&ndash;23<sup>rd</sup></h1>
+                <p>August<br>2020</p>
             </div>
             <div class="schedule-timeline-line">
                 <div class="timeline-donut"></div>
             </div>
             <div class="schedule-timeline-event">
-                <p>Final Presentation &<br>Awarding Night</p>
+                <p>Grand<br>Final</p>
             </div>
         </div>
 
