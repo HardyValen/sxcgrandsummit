@@ -1405,6 +1405,28 @@ body {
   width: 100%;
 }
 
+.section-title {
+  padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .section-title {
+    padding-top: calc(1.5rem + 0.3 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .section-title {
+    padding-top: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-title {
+    padding-top: calc(1.25vw);
+  }
+}
+
 .section-title h2 {
   font-family: 'Montserrat', sans-serif;
   color: #0252B3;
@@ -1433,28 +1455,6 @@ body {
   }
 }
 
-.section-title h2 {
-  padding-bottom: 2rem;
-}
-
-@media screen and (min-width: 320px) {
-  .section-title h2 {
-    padding-bottom: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .section-title h2 {
-    padding-bottom: 3rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .section-title h2 {
-    padding-bottom: calc(2.08333vw);
-  }
-}
-
 .post-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1468,7 +1468,54 @@ body {
   overflow-x: auto;
   width: 100%;
   min-height: auto;
-  padding: 1.5rem;
+}
+
+.post-container {
+  padding-bottom: 1.9rem;
+}
+
+@media screen and (min-width: 320px) {
+  .post-container {
+    padding-bottom: calc(1.9rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .post-container {
+    padding-bottom: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post-container {
+    padding-bottom: calc(1.45833vw);
+  }
+}
+
+.post-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .post-container {
+    padding-left: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .post-container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post-container {
+    padding-left: calc(0.83333vw);
+    padding-right: calc(0.83333vw);
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -7232,8 +7279,8 @@ main {
 }
 
 .business-case-registration .registration-container {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 16, 37, 0.8)), to(rgba(0, 16, 37, 0.9))), url("../assets/business-case/registration-backdrop.png");
-  background: linear-gradient(0deg, rgba(0, 16, 37, 0.8), rgba(0, 16, 37, 0.9)), url("../assets/business-case/registration-backdrop.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../assets/business-case/registration-backdrop.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-case/registration-backdrop.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -7315,6 +7362,10 @@ main {
   .business-case-registration .registration-container .registration-title {
     padding-bottom: calc(2.08333vw);
   }
+}
+
+.schedule {
+  background-color: #0252B3;
 }
 
 .pre-event-hero {
@@ -11066,8 +11117,8 @@ main {
 }
 
 .summit-registration .registration-container {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 16, 37, 0.8)), to(rgba(0, 16, 37, 0.9))), url("../assets/summit/registration-backdrop.png");
-  background: linear-gradient(0deg, rgba(0, 16, 37, 0.8), rgba(0, 16, 37, 0.9)), url("../assets/summit/registration-backdrop.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../assets/summit/registration-backdrop.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/summit/registration-backdrop.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

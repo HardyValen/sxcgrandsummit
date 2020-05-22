@@ -1,13 +1,14 @@
 .post-container{
     $btnPadding: 1rem;
 
+    @include fluidpaddingbottom(1.9rem, 2.1rem);
+    @include fluidpaddingx(1rem, 1.2rem);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
     width: 100%;
     min-height: auto;
-    padding: 1.5rem;
     
     @media screen and (max-width: 960px){
         &::-webkit-scrollbar{

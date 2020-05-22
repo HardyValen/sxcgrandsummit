@@ -145,7 +145,11 @@
         </div>
     </section>
             
-    <section id="schedule">
+    <section class="schedule" id="schedule">
+        @component('blocks.title')
+                <h2 class="timeline-title" style="color: white">Pre Event 1 Timeline</h2>
+                <h2 class="timeline-title" style="color: white">Pre Event 2 Timeline</h2>
+            @endcomponent
         @include('blocks.schedule.preEvent')
     </section>
         @include('blocks.footer')
