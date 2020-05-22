@@ -1,14 +1,77 @@
-// use _section-registration.scss
+$bg-images: (
+    "business-case": "../assets/landing/event/post1.jpg",
+    "pre-event": "../assets/landing/event/post2.jpg",
+    "summit": "../assets/landing/event/post3.jpg"
+    );
 
 .landing-registration{
-    width: 100%;
-    min-height: 100%;
-    background-color: map-get($theme-colors, "white");
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+        width: 100%;
+        min-height: 20vw;
+        background-color: map-get($theme-colors, "white");
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        
+        @media screen and (max-width: 960px) {
+            flex-direction: column;
+        }
+
+    h2 {
+        @include header2();
+        @include montserrat();
+        color: map-get($theme-colors, "white");
+        text-align: center;
+    }
+
     
-    @media screen and (max-width: 960px) {
-        flex-direction: column;
+    .button-secondary-transparent {
+        @include fluidwidth(25rem, 27rem);
+        @include fluidheight(5rem,6rem);
+        @include fluidmargintop(2rem, 3rem);
+        border-width: 0.2rem;
+        // align-self: center;
+        
+        
+        // &:hover .regis{
+        //     background-size: 110%;
+    
+        // }
+    }
+
+
+    .regis {
+        width: 100%;
+        height:inherit;
+
+        .business-case{
+            @include backgroundDesaturate(map-get($bg-images, "business-case"));
+        }
+        
+        .pre-event{
+            @include backgroundDesaturate(map-get($bg-images, "pre-event"));
+        }
+        
+        .summit{
+            @include backgroundDesaturate(map-get($bg-images, "summit"));
+        }
+
+        .business-case, .pre-event, .summit {
+            @include fluidpaddingbottom(5rem, 6rem);
+            @include fluidpaddingtop(3rem, 4rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            transition: all 0.2s;
+            background-size: 170%;
+            background-position: center;
+            height:100%;
+            min-height: 20vw;
+            
+            @media screen and (max-width: 960px) {
+                min-height: 55vw;
+            }
+        }
+        
     }
 }

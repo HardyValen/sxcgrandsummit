@@ -16,6 +16,6 @@ $images: (
 @each $image in $images {
     $i: index($images, $image);
     .image-event-#{$i}{
-        @include backgroundDark($image);
+        @include background($image);
     }
 }

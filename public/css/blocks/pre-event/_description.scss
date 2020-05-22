@@ -6,4 +6,8 @@
     img {
         border-radius: remToVw(96rem, 2rem);
     }
+
+    p {
+        @include paragraph1();
+    }
 }

@@ -39,14 +39,19 @@
         }
 
         .post-title-image {
-            @include fluidheight(15rem, 20rem);
-            @include backgroundPosition(50%, 10%);
+            @include fluidheight(15rem, 18rem);
+            @include backgroundPosition(50%, 60%);
+            background-size: 115%;
             width: 100%;
             border-radius: 2.5rem;
             display: flex;
             justify-content: center;
             color: map-get($theme-colors, "white");
             align-items: center;
+            
+            @media screen and (max-width: 960px){
+                border-radius: 1.2rem;
+            }
 
             span{
                 @include header3();
@@ -68,7 +73,6 @@
         .post-link{
             display: flex;
             flex-flow: row;
-            // justify-content: space-between;
             margin-top: auto;
             a {
 

@@ -13,13 +13,13 @@
                 <p class='link-description'>ABOUT</p>
             </a>
         --}}
+        <a href="/landing#events" class="sidebar-link">
+            <img class="link-icon" src="{{URL::asset('assets/icons/Event.svg')}}" alt="EVENT">
+            <p class='link-description'>EVENT</p>
+        </a>
         <a href="/landing#schedule" class="sidebar-link"  id="sideSchedule">
             <img class="link-icon" src="{{URL::asset('assets/icons/Schedule.svg')}}" alt="SCHEDULE">
             <p class='link-description'>SCHEDULE</p>
-        </a>
-        <a href="/summit" class="sidebar-link">
-            <img class="link-icon" src="{{URL::asset('assets/icons/Event.svg')}}" alt="EVENT">
-            <p class='link-description'>EVENT</p>
         </a>
     </div>
     <div class="sidebar-banner-container">

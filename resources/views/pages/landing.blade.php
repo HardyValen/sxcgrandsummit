@@ -48,12 +48,9 @@
                     <div></div>
                 </div>
             </div>
-            {{-- <div class="box2">
-                <div></div>
-            </div> --}}
         </section>
         
-        <section class="landing-event">
+        <section class="landing-event" id="events">
             <div class="landing-event-title">
                 <div class='section-title'>
                     <div class="header-line"></div>
@@ -78,7 +75,7 @@
                 </div>
                 
                 <div class="post-card">
-                    <div class="post-title-image image-event-3">
+                    <div class="post-title-image image-event-2">
                         <span>Pre <span class="color-secondary">Event</span></span>
                     </div>
                     <div class="post-desc">
@@ -93,7 +90,7 @@
                 </div>
                 
                 <div class="post-card">
-                    <div class="post-title-image image-event-2">
+                    <div class="post-title-image image-event-3">
                         <span>The <span class="color-secondary">Summit</span></span>
                     </div>
                     <div class="post-desc">
@@ -108,26 +105,31 @@
                 </div>
             </div>    
         </section>
-            
+        
         <section class="landing-registration" id="registration">
-            <a href="http://bit.ly/getbccsummit" class="button-section bg-business-case">
-                <h3>REGISTER</h3>
-                <h2>BUSINESS CASE</h2>
-            </a>
-            <a href="http://bit.ly/preevent2summit" class="button-section bg-pre-event">
-                <h3>REGISTER</h3>
-                <h2>PRE EVENT 2</h2>
-            </a>
-            <a href="http://bit.ly/thesummitsxc" class="button-section bg-main-event">
-                <h3>REGISTER</h3>
-                <h2>THE SUMMIT</h2>
-                <h2></h2>
-            </a>
+            <div class="regis">
+                <div class="business-case">
+                    <h2>Business Case<br><span class="color-secondary">Competition</span></h2>
+                    <a class="button-secondary-transparent" href="http://bit.ly/getbccsummit">Register</a>
+                </div>
+            </div>
+            <div class="regis">
+                <div class="pre-event">
+                    <h2>Pre <span class="color-secondary">Event</span></h2>
+                    <a class="button-secondary-transparent" href="http://bit.ly/preevent2summit">Register</a>
+                </div>
+            </div>
+            <div class="regis">
+                <div class="summit">
+                    <h2>The <span class="color-secondary">Summit</span></h2>
+                    <a class="button-secondary-transparent" href="http://bit.ly/thesummitsxc">Register</a>
+                </div>
+            </div>
         </section>
         
         <section class="landing-schedule" id="schedule">
             @component('blocks.title')
-                <h2 style="color: white">Schedule</h2>
+                <h2 style="color: white">Timeline</h2>
             @endcomponent
             @include('blocks.schedule.businessCase')<hr>
             @include('blocks.schedule.summit')<hr>

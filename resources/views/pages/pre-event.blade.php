@@ -26,7 +26,7 @@
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary" href="#">Registration</a>
+                    <a class="button-primary" href="http://bit.ly/preevent2summit">Registration</a>
                     <a class="button-secondary-transparent" href="#">
                         <div class="button-with-icon" onclick="scrollto('#scroll')">
                             <span>Scroll Down</span> 
@@ -49,9 +49,6 @@
                             <h3>Open Registration<br>Pre Event 2</h3>
                         </div>
                         <div class="hero-schedule-date">
-                            {{-- <div class="hero-schedule-day">
-                                <h1>TBA</h1>
-                            </div> --}}
                             <div class="hero-schedule-month-year">
                                 <p>To Be<br>Announced..</p>
                             </div>
@@ -63,9 +60,6 @@
                             <h3>Pre<br>Event 2</h3>
                         </div>
                         <div class="hero-schedule-date">
-                            {{-- <div class="hero-schedule-day">
-                                <h1>TBA</h1>
-                            </div> --}}
                             <div class="hero-schedule-month-year">
                                 <p>To Be<br>Announced..</p>
                             </div>
@@ -82,7 +76,7 @@
     <section class="pre-event-description" id="scroll">
         <div class="description-header">
             <div class="header-line"></div>
-            <h2>A Brief Description</h2>
+            <h2>A Brief Description:</h2>
         </div>
         <div class="description-body">
             <div class="description-text">
