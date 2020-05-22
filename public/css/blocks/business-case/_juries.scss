@@ -1,0 +1,12 @@
+.business-case-juries{
+    @include fluidpaddingx(3rem, 5rem);
+    @include fluidpaddingy(2rem, 5rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($theme-colors, "white-alt");
+
+    
+}

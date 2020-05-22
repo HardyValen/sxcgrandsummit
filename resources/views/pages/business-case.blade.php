@@ -27,8 +27,8 @@
             <div class="hero-bottom">
                 <div class="hero-buttons">
                     <a class="button-primary" href="http://bit.ly/getbccsummit">Registration</a>
-                    <a class="button-secondary-transparent" href="#">
-                        <div class="button-with-icon" onclick="scrollto('#scroll')">
+                    <a class="button-secondary-transparent" onclick="scrollto('#scroll')">
+                        <div class="button-with-icon">
                             <span>Scroll Down</span> 
                             <img src="{{URL::asset('assets/icons/mouse.svg')}}">
                         </div>
@@ -145,6 +145,24 @@
 
         <section id="schedule">
             @include('blocks.schedule.businessCase')
+        </section>
+
+        <section class="business-case-juries">
+            <div class="showcase-title">
+                <div class="header-line"></div>
+                <h2>The Juries</h2>t
+            </div>
+            <div class="showcase-container">
+                <div class="showcase-card">
+                    <h3>Gabriella Hartono Putri</h3>
+                </div>
+                <div class="showcase-card">
+                    <h3>Jordi Adrianto Apriantono</h3>
+                </div>
+                <div class="showcase-card">
+                    <h3>Nicky Oktav Fauziah</h3>
+                </div>
+            </div>
         </section>
 
         <section class="business-case-registration">
