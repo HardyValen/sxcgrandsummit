@@ -19,7 +19,7 @@
     }
 
     .registration-container{
-        @include backgroundOverlayDark($url);
+        @include backgroundDark($url);
         width: 100%;
         @include fluidminheight(20rem, 30rem);
         border: 1px solid black;

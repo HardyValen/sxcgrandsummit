@@ -54,12 +54,14 @@ main{
 @import 'blocks/business-case/flow';
 @import 'blocks/business-case/registration';
 @import 'blocks/business-case/juries';
+@import 'blocks/business-case/schedule';
 
 // 4. Pre Event
 @import 'blocks/pre-event/hero';    
 @import 'blocks/pre-event/description';
 @import 'blocks/pre-event/topics';
 @import 'blocks/pre-event/slider';
+@import 'blocks/pre-event/registration';
 
 // 5. Summit
 @import 'blocks/summit/hero';

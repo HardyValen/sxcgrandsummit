@@ -143,7 +143,10 @@
             </div>
         </section>
 
-        <section id="schedule">
+        <section class="schedule" id="schedule">
+            @component('blocks.title')
+                <h2 style="color: white">Timeline</h2>
+            @endcomponent
             @include('blocks.schedule.businessCase')
         </section>
 
@@ -175,7 +178,7 @@
                     </h2>
                     <h2>Business Case</h2>
                 </div>
-                <a class="button-primary">
+                <a class="button-primary" href="http://bit.ly/getbccsummit">
                     Register Now
                 </a>
             </div>
