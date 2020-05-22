@@ -25,7 +25,7 @@
         @include header2();
         @include montserrat();
         font-weight: 700;
-        line-height: 1.0;
+        line-height: 1.15;
         color: map-get($theme-colors, "primary");
     }
     

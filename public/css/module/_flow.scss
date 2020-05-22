@@ -28,16 +28,17 @@ body{
     }
     
     .flow-card{
-        @include fluidwidth(50rem,52rem);
         @include fluidpaddingx(3rem, 4rem);
         @include fluidpaddingy(2rem, 2.4rem);
         border-radius: remToVw(96rem, 1rem);
-        // width: 100%;
+        width: 100%;
+        max-width: remToVw(96rem, 52rem);
         border: remToVw(96rem, 0.1rem) solid;
         border-color: map-get($theme-colors, "secondary");
 
         @media screen and (max-width: 960px){
             border-width: 1px;
+            max-width: 52rem;
         }
         
         h3::before {

@@ -151,18 +151,30 @@
         </section>
 
         <section class="business-case-juries">
-            <div class="showcase-title">
+            <div class="showcase-header">
                 <div class="header-line"></div>
-                <h2>The Juries</h2>t
+                <h2>The Juries</h2>
             </div>
-            <div class="showcase-container">
+            <div class="showcase-body">
                 <div class="showcase-card">
+                    <img src="{{URL::asset('assets/pre-event/jury1.png')}}">
                     <h3>Gabriella Hartono Putri</h3>
+                    <ul>
+                        <li>
+                            Member of Paragon Indonesian Leaders
+                        </li>
+                        <li>
+                            P&G Human Resource Intern
+                        </li>
+                    </ul>
                 </div>
                 <div class="showcase-card">
+                    <img src="{{URL::asset('assets/pre-event/jury2.png')}}">
                     <h3>Jordi Adrianto Apriantono</h3>
+                    <p>The Mortal Assistant</p>
                 </div>
                 <div class="showcase-card">
+                    <img src="{{URL::asset('assets/pre-event/jury3.png')}}">
                     <h3>Nicky Oktav Fauziah</h3>
                 </div>
             </div>
