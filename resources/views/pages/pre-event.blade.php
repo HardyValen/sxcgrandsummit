@@ -92,8 +92,8 @@
 
     <section class="pre-event-slider">
         <div class="slider-container" id="sliderc">
-            <div id="1" class= "menu active" onclick="changePreEvent(event, 'title1')">Pre Event 1</div>
-            <div id="2" class= "menu" onclick="changePreEvent(event, 'title2')">Pre Event 2</div>
+            <div id="1" class= "menu" onclick="changePreEvent(event, 'title1')">Pre Event 1</div>
+            <div id="2" class= "menu active" onclick="changePreEvent(event, 'title2')">Pre Event 2</div>
         </div>
     </section>
     
@@ -147,11 +147,27 @@
             
     <section class="schedule" id="schedule">
         @component('blocks.title')
-                <h2 class="timeline-title" style="color: white">Pre Event 1 Timeline</h2>
-                <h2 class="timeline-title" style="color: white">Pre Event 2 Timeline</h2>
-            @endcomponent
+            <h2 style="color: white">Timeline</h2>
+        @endcomponent
         @include('blocks.schedule.preEvent')
     </section>
+
+    <section id="pre-event-registration" class="pre-event-registration">
+        <div class="registration-container">
+            <div class="registration-title">
+                <h2>Pre Event 2</h2>
+                <h2>
+                    <span class="color-secondary">
+                        Free Registration
+                    </span>
+                </h2>
+            </div>
+            <a class="button-primary" href="http://bit.ly/preevent2summit">
+                Register Now
+            </a>
+        </div>
+    </section>
+
         @include('blocks.footer')
     </main>
 @endsection

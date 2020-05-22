@@ -9,14 +9,13 @@ function changePreEvent(evt, pre) {
     for (i = 0; i < slides.length; i++) {
         slides[i].className = slides[i].className.replace(" active","");
     }
+    document.getElementById("pre-event-registration").style.display = "none";
     
-    var tl = document.getElementsByClassName("timeline-title");
-    for (i = 0; i < slides.length; i++) {
-        tl[i].style.display = "none";
-        // tl[i].className = slides[i].className.replace(" active","");
-    }
     evt.currentTarget.className += " active";
     document.getElementById(pre).style.display = "flex";
+    if (pre == 'title2') {
+        document.getElementById("pre-event-registration").style.display = "flex";
+    }
 }   
 
-document.getElementById("1").click();
+document.getElementById("2").click();
