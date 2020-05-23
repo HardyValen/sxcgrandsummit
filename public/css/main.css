@@ -98,6 +98,22 @@
   src: local("Myriad Pro Bold Condensed Italic"), url("module/fonts/MYRIADPRO-BOLDCONDIT.woff") format("woff");
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
 .button-white-transparent {
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
@@ -7323,10 +7339,6 @@ main {
   }
 }
 
-body {
-  counter-reset: section;
-}
-
 .business-case-juries {
   width: 100%;
   display: -webkit-box;
@@ -7512,6 +7524,75 @@ body {
   }
 }
 
+.business-case-juries ul {
+  width: 100%;
+}
+
+.business-case-juries ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.business-case-juries ul li::before {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.25vw;
+          flex: 0 0 1.25vw;
+  height: 1.25vw;
+  border: 0.41667vw solid #0252B3;
+  border-radius: 50%;
+  content: " ";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.business-case-juries ul li::before {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-juries ul li::before {
+    margin-right: calc(1rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-juries ul li::before {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-juries ul li::before {
+    margin-right: calc(0.69444vw);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .business-case-juries ul li::before {
+    height: 1.2rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 1.2rem;
+            flex: 0 0 1.2rem;
+    border: 0.4rem solid #0252B3;
+  }
+}
+
 .business-case-juries .showcase-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7581,32 +7662,6 @@ body {
           align-items: center;
 }
 
-.business-case-juries .showcase-body .showcase-card {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-@media screen and (min-width: 320px) {
-  .business-case-juries .showcase-body .showcase-card {
-    padding-left: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
-    padding-right: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .business-case-juries .showcase-body .showcase-card {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .business-case-juries .showcase-body .showcase-card {
-    padding-left: calc(3.47222vw);
-    padding-right: calc(3.47222vw);
-  }
-}
-
 @media screen and (max-width: 960px) {
   .business-case-juries .showcase-body .showcase-card:not(:last-child) {
     margin-bottom: 4rem;
@@ -7631,120 +7686,85 @@ body {
   }
 }
 
-.business-case-juries .showcase-body .showcase-card img {
+.business-case-juries .showcase-body .showcase-card .showcase-card-image {
   width: 100%;
 }
 
-.business-case-juries .showcase-body .showcase-card img {
+.business-case-juries .showcase-body .showcase-card .showcase-card-image {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-juries .showcase-body .showcase-card .showcase-card-image {
+    padding-left: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
+    padding-right: calc(3rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-juries .showcase-body .showcase-card .showcase-card-image {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-juries .showcase-body .showcase-card .showcase-card-image {
+    padding-left: calc(3.47222vw);
+    padding-right: calc(3.47222vw);
+  }
+}
+
+.business-case-juries .showcase-body .showcase-card .showcase-card-image img {
+  width: 100%;
+}
+
+.business-case-juries .showcase-body .showcase-card .showcase-card-image img {
   padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 320px) {
-  .business-case-juries .showcase-body .showcase-card img {
+  .business-case-juries .showcase-body .showcase-card .showcase-card-image img {
     padding-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .business-case-juries .showcase-body .showcase-card img {
+  .business-case-juries .showcase-body .showcase-card .showcase-card-image img {
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .business-case-juries .showcase-body .showcase-card img {
+  .business-case-juries .showcase-body .showcase-card .showcase-card-image img {
     padding-bottom: calc(1.38889vw);
   }
 }
 
-.business-case-juries .showcase-body .showcase-card ul {
+.business-case-juries .showcase-body .showcase-card .showcase-card-title, .business-case-juries .showcase-body .showcase-card .showcase-card-description {
   width: 100%;
 }
 
-.business-case-juries .showcase-body .showcase-card ul li {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.business-case-juries .showcase-body .showcase-card ul li {
-  padding-top: 1rem;
+.business-case-juries .showcase-body .showcase-card .showcase-card-title, .business-case-juries .showcase-body .showcase-card .showcase-card-description {
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 320px) {
-  .business-case-juries .showcase-body .showcase-card ul li {
-    padding-top: calc(1rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  .business-case-juries .showcase-body .showcase-card .showcase-card-title, .business-case-juries .showcase-body .showcase-card .showcase-card-description {
+    padding-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
-  .business-case-juries .showcase-body .showcase-card ul li {
-    padding-top: 1rem;
+  .business-case-juries .showcase-body .showcase-card .showcase-card-title, .business-case-juries .showcase-body .showcase-card .showcase-card-description {
+    padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .business-case-juries .showcase-body .showcase-card ul li {
-    padding-top: calc(0.69444vw);
-  }
-}
-
-.business-case-juries .showcase-body .showcase-card ul li::before {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 1.25vw;
-          flex: 0 0 1.25vw;
-  height: 1.25vw;
-  border: 0.41667vw solid #0252B3;
-  border-radius: 50%;
-  content: " ";
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.business-case-juries .showcase-body .showcase-card ul li::before {
-  margin-right: 1rem;
-}
-
-@media screen and (min-width: 320px) {
-  .business-case-juries .showcase-body .showcase-card ul li::before {
-    margin-right: calc(1rem + 0 * ((100vw - 32rem) / (96 - 32)));
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .business-case-juries .showcase-body .showcase-card ul li::before {
-    margin-right: 1rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .business-case-juries .showcase-body .showcase-card ul li::before {
-    margin-right: calc(0.69444vw);
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .business-case-juries .showcase-body .showcase-card ul li::before {
-    height: 1.2rem;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 1.2rem;
-            flex: 0 0 1.2rem;
-    border: 0.4rem solid #0252B3;
+  .business-case-juries .showcase-body .showcase-card .showcase-card-title, .business-case-juries .showcase-body .showcase-card .showcase-card-description {
+    padding-bottom: calc(1.38889vw);
   }
 }
 

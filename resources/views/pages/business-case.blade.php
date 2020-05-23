@@ -157,25 +157,44 @@
             </div>
             <div class="showcase-body">
                 <div class="showcase-card">
-                    <img src="{{URL::asset('assets/pre-event/jury1.png')}}">
-                    <h3>Gabriella Hartono Putri</h3>
-                    <ul>
-                        <li>
-                            Member of Paragon Indonesian Leaders
-                        </li>
-                        <li>
-                            P&G Human Resource Intern
-                        </li>
-                    </ul>
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/jury1.png')}}">
+                    </div>
+                    <div class="showcase-card-title">
+                        <h3 class="text-align-center">Gabriella Hartono Putri</h3>
+                    </div>
+                    <div class="showcase-card-description">
+                        <ul>
+                            <li>
+                                Member of Paragon Indonesian Leaders
+                            </li>
+                            <li>
+                                P&G Human Resource Intern
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="showcase-card">
-                    <img src="{{URL::asset('assets/pre-event/jury2.png')}}">
-                    <h3>Jordi Adrianto Apriantono</h3>
-                    <p>The Mortal Assistant</p>
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/jury2.png')}}">
+                    </div>
+                    <div class="showcase-card-title">
+                        <h3 class="text-align-center">Jordi Adrianto Apriantono</h3>
+                    </div>
+                    <div class="showcase-card-description">
+                        <p class="text-align-center">The Mortal Assistant</p>
+                    </div>
                 </div>
                 <div class="showcase-card">
-                    <img src="{{URL::asset('assets/pre-event/jury3.png')}}">
-                    <h3>Nicky Oktav Fauziah</h3>
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/jury3.png')}}">
+                    </div>
+                    <div class="showcase-card-title">
+                        <h3 class="text-align-center">Nicky Oktav Fauziah</h3>
+                    </div>
+                    <div class="showcase-card-description">
+                        <p class="text-align-right">Insert Text Here</p>
+                    </div>
                 </div>
             </div>
         </section>
