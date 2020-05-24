@@ -102,8 +102,9 @@
         </section>
 
         <section class="business-case-flow">
-            <div class="header-line"></div>
-            <h2>The Flow of the Competition:</h2>
+            @component('blocks.title')
+                <h2 style="color: white">The Flow of The Competition:</h2>
+            @endcomponent
 
             <div class="flow-container">
                 <div class="flow-card">
@@ -152,48 +153,54 @@
 
         <section class="business-case-juries">
             <div class="showcase-header">
-                <div class="header-line"></div>
+                @component('blocks.title')
                 <h2>The Juries</h2>
+                @endcomponent
             </div>
             <div class="showcase-body">
                 <div class="showcase-card">
-                    <div class="showcase-card-image">
-                        <img src="{{URL::asset('assets/pre-event/jury1.png')}}">
+                    <div class="showcase-card-placeholder">Coming Soon :)</div>
+                    {{-- <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/speaker4.png')}}">
                     </div>
                     <div class="showcase-card-title">
-                        <h3 class="text-align-center">Gabriella Hartono Putri</h3>
+                        <h2>speaker1</h2>
                     </div>
                     <div class="showcase-card-description">
                         <ul>
-                            <li>
-                                Member of Paragon Indonesian Leaders
-                            </li>
-                            <li>
-                                P&G Human Resource Intern
-                            </li>
+                            <li>title1</li>
+                            <li>title2</li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="showcase-card">
-                    <div class="showcase-card-image">
-                        <img src="{{URL::asset('assets/pre-event/jury2.png')}}">
+                    <div class="showcase-card-placeholder">Coming Soon :)</div>
+                    {{-- <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/speaker5.png')}}">
                     </div>
                     <div class="showcase-card-title">
-                        <h3 class="text-align-center">Jordi Adrianto Apriantono</h3>
+                        <h2>speaker2</h2>
                     </div>
                     <div class="showcase-card-description">
-                        <p class="text-align-center">The Mortal Assistant</p>
-                    </div>
+                        <ul>
+                            <li>title1</li>
+                            <li>title2</li>
+                        </ul>
+                    </div> --}}
                 </div>
                 <div class="showcase-card">
-                    <div class="showcase-card-image">
-                        <img src="{{URL::asset('assets/pre-event/jury3.png')}}">
+                    <div class="showcase-card-placeholder">Coming Soon :)</div>
+                    {{-- <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/speaker6.png')}}">
                     </div>
                     <div class="showcase-card-title">
-                        <h3 class="text-align-center">Nicky Oktav Fauziah</h3>
+                        <h2>speaker2</h2>
                     </div>
                     <div class="showcase-card-description">
-                        <p class="text-align-right">Insert Text Here</p>
+                        <ul>
+                            <li>title1</li>
+                            <li>title2</li>
+                        </ul> --}}
                     </div>
                 </div>
             </div>

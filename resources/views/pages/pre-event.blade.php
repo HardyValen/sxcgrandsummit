@@ -92,25 +92,29 @@
 
     <section class="pre-event-slider">
         <div class="slider-container" id="sliderc">
-            <div id="1" class= "menu" onclick="changePreEvent(event, 'title1')">Pre Event 1</div>
-            <div id="2" class= "menu active" onclick="changePreEvent(event, 'title2')">Pre Event 2</div>
+            <div id="1" class= "menu" onclick="changePreEvent(event, 'title1', 'speaker1')">Pre Event 1</div>
+            <div id="2" class= "menu active" onclick="changePreEvent(event, 'title2', 'speaker2')">Pre Event 2</div>
         </div>
     </section>
     
     <section class="pre-event-topics" id="title1">
         @component('blocks.title')
-            <h2 style="color: white">Timeline</h2>
+            <h2>Topic</h2>
         @endcomponent
-        <div class="topic-title">
-            <h2>How Public Speaking<br>Affect Our Leadership Skills.</h2>
-            <h4>February 22<sup>nd</sup>, 2020</h4>        
+        @component('blocks.quote')
+            How Public Speaking<br>Affect Our Leadership Skills
+        @endcomponent
+        <div class="pre-event-date">February 22<sup>nd</sup>, 2020</div>        
         </div>
         <div class="topic-flow">
+            @component('blocks.title')
+                <h2>Main Activities</h2>
+            @endcomponent
             <div class="flow-container">
                 <div class="flow-card">
                     <h3>Talk Show</h3>
                     <p>
-                        Inviting experts and organization’s leaders to share their knowledge and experiences as the perfect time for enhancing public speaking skills 
+                        Inviting experts and organization’s leaders to share their knowledge and experiences as the perfect time for enhancing public speaking skills.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
@@ -125,30 +129,146 @@
     </section>
 
     <section class="pre-event-topics" id="title2">
-        <div class="header-line"></div>
-        <h2 class="topic-header">Topic :</h2>
-        
-        <div class="topic-title">
-            <blockquote>
-                <h2>Indonesia Dalam Bencana, Pemerintah Kerja Apa?</h2>
-                </blockquote>
-            <br><h2>Kita Bisa Apa?</h2>
-            <h3>March 21<sup>st</sup></h3>
+        @component('blocks.title')
+            <h2>Topic</h2>
+        @endcomponent
+        @component('blocks.quote')
+            Sharpening Critical Thinking Skills & <br>Building A Better Indonesia Through SDGs
+        @endcomponent
+        <div class="pre-event-date">Coming on 2020</div>        
         </div>
         <div class="topic-flow">
+            @component('blocks.title')
+                <h2>Main Activities</h2>
+            @endcomponent
             <div class="flow-container">
                 <div class="flow-card">
                     <h3>Talk Show</h3>
                     <p>
-                    The representatives from government and Non-Governmental Organization will discuss about Indonesia’s climate condition and SDGs No.13: Climate Action. The talk will bring to light the steps that have been taken by the government and what action that we can do to save Indonesia.
+                        Discussing with invited NGOs about 5 SDGs issues that will also be highlighted in The Summit which are; Climate Action, Responsible Consumption and Production, Decent Work and Economic Growth, Sustainable Cities and Communities, and Gender Equality.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                <h3>Focused Group Discussion</h3>
-                <p>
-                    A 60 minutes of discussion will be conducted by 10 groups with one committee in each groups. Discussing the topic of climate action according to SDGs No.13, the participants will explore the ability to think critically, build factual arguments, and convey constructive criticism.
-                </p>
+                    <h3>School of Life: Sharpening Our Critical Thinking </h3>
+                    <p>
+                        Learning about critical thinking and problem-solving analysis directly from the invited experts before the forum group discussion session.
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>Focused Group Discussion</h3>
+                    <p>
+                        The participants will be divided into several groups and will get a particular case regarding one of the SDGs that has been discussed. They will solve the issues in 30-40 minutes and then present their solutions at the end of the session.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pre-event-speakers" id="speaker1">
+        <div class="showcase-header">
+            @component('blocks.title')
+            <h2>Meet The Speakers</h2>
+            @endcomponent
+        </div>
+        <div class="showcase-body">
+            <div class="showcase-card">
+                <div class="showcase-card-image">
+                    <img src="{{URL::asset('assets/pre-event/speaker1.png')}}">
+                </div>
+                <div class="showcase-card-title">
+                    <h2>Gabriella Hartono Putri</h2>
+                </div>
+                <div class="showcase-card-description">
+                    <ul>
+                        <li>Member of Paragon Indonesian Leaders</li>
+                        <li>P&G Human Resource Intern</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="showcase-card">
+                <div class="showcase-card-image">
+                    <img src="{{URL::asset('assets/pre-event/speaker2.png')}}">
+                </div>
+                <div class="showcase-card-title">
+                    <h2>Jordi Adrianto Apriantono</h2>
+                </div>
+                <div class="showcase-card-description">
+                    <ul>
+                        <li>Individual Winner of Unilever Future</li>
+                        <li>Leaders' League 2019</li>
+                        <li>XL Future Leaders' Batch 7 Awardee</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="showcase-card">
+                <div class="showcase-card-image">
+                    <img src="{{URL::asset('assets/pre-event/speaker3.png')}}">
+                </div>
+                <div class="showcase-card-title">
+                    <h2>Nicky Oktav Fauziah</h2>
+                </div>
+                <div class="showcase-card-description">
+                    <ul>
+                        <li>Private Class of Public Speaking at Superprof</li>
+                        <li>Speaker at International Symposium "Are You The Next CEO?" Scholarian Seoul, South Korea</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pre-event-speakers" id="speaker2">
+        <div class="showcase-header">
+            @component('blocks.title')
+            <h2>Meet The Speakers</h2>
+            @endcomponent
+        </div>
+        <div class="showcase-body">
+            <div class="showcase-card">
+                <div class="showcase-card-placeholder">Coming Soon :)</div>
+                {{-- <div class="showcase-card-image">
+                    <img src="{{URL::asset('assets/pre-event/speaker4.png')}}">
+                </div>
+                <div class="showcase-card-title">
+                    <h2>speaker1</h2>
+                </div>
+                <div class="showcase-card-description">
+                    <ul>
+                        <li>title1</li>
+                        <li>title2</li>
+                    </ul>
+                </div> --}}
+            </div>
+            <div class="showcase-card">
+                <div class="showcase-card-placeholder">Coming Soon :)</div>
+                {{-- <div class="showcase-card-image">
+                    <img src="{{URL::asset('assets/pre-event/speaker5.png')}}">
+                </div>
+                <div class="showcase-card-title">
+                    <h2>speaker2</h2>
+                </div>
+                <div class="showcase-card-description">
+                    <ul>
+                        <li>title1</li>
+                        <li>title2</li>
+                    </ul>
+                </div> --}}
+            </div>
+            <div class="showcase-card">
+                <div class="showcase-card-placeholder">Coming Soon :)</div>
+                {{-- <div class="showcase-card-image">
+                    <img src="{{URL::asset('assets/pre-event/speaker6.png')}}">
+                </div>
+                <div class="showcase-card-title">
+                    <h2>speaker2</h2>
+                </div>
+                <div class="showcase-card-description">
+                    <ul>
+                        <li>title1</li>
+                        <li>title2</li>
+                    </ul> --}}
                 </div>
             </div>
         </div>

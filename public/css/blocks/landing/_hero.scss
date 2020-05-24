@@ -14,7 +14,7 @@
     );
     @include backgroundOverlayDark("../assets/landing/hero.jpg");
     @include backgroundPosition(50%, 50%);
-    @include shadowHero();
+    // @include shadowHero();
 
     min-height: 70%;
     width: 100%;

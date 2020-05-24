@@ -12,6 +12,7 @@
     h2{
         @include montserrat();
         @include header2();
+        @include fluidmargintop(1rem, 1rem);
         color: map-get($theme-colors, "primary");
         text-align: center;
     }       

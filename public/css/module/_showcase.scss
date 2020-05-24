@@ -1,4 +1,6 @@
 @mixin showcase(){
+    $img-padding: ("min": 3rem, "max": 4rem);
+
     @include fluidpaddingx(3rem, 5rem);
     @include fluidpaddingy(2rem, 5rem);
     width: 100%;
@@ -42,31 +44,28 @@
     ul {
         width: 100%;
 
-        li {   
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-
-            &::before{
-                @include fluidmarginright(1rem, 1rem);
-                flex: 0 0 remToVw(96rem, 1.2rem);
-                height: remToVw(96rem, 1.2rem);
-                border: remToVw(96rem, .4rem) solid map-get($theme-colors, "primary");
-                border-radius: 50%;
-                content: " ";
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-
-                @media screen and (max-width: 960px) {
-                    height: 1.2rem;
-                    flex: 0 0 1.2rem;
-                    border: .4rem solid map-get($theme-colors, "primary");
-                }
-            }
-        } 
-    }
+        li {
+            @include myriadProRegular();
+            @include paragraph2();
+            @include fluidleft(2.6rem, 3rem);
+            letter-spacing: 0.01rem;
+            color: map-get($theme-colors, "black");
+            line-height: 1.5;
+            list-style: none;
+            position: relative;
+        }
+        li:before{
+            content:'';
+            position: absolute;
+            @include fluidleft(-2rem, -2.4rem);
+            @include fluidtop(0.9rem, 1.1rem);
+            @include fluidwidth(1rem, 1.2rem);
+            @include fluidheight(1rem, 1.2rem);
+            display: inline-flex;
+            border-radius: 50%;
+            border: remToVw(96rem, .25rem) solid map-get($theme-colors, "primary");
+        }
+    } 
 
     .showcase-header{
         display: flex;
@@ -89,9 +88,10 @@
 
         .showcase-card {
             width: 100%;
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-start;
 
             &:not(:last-child) {
                 @media screen and (max-width: 960px) {
@@ -101,16 +101,50 @@
 
             .showcase-card-image{
                 width: 100%;
-                @include fluidpaddingx(3rem, 5rem);
-
+                @include fluidpaddingx(
+                    map-get($img-padding, "min"),
+                    map-get($img-padding, "max"));
+                    
                 img {
                     width: 100%;
                     @include fluidpaddingbottom(2rem, 2rem);
                 }
             }
 
-            .showcase-card-title, .showcase-card-description{
+            .showcase-card-placeholder{
                 width: 100%;
+                @include fluidpaddingy(10rem, 10rem);
+                // @include fluidpaddingx(
+                //     map-get($img-padding, "min"),
+                //     map-get($img-padding, "max"));
+                color: map-get($theme-colors, "primary-light");
+                @include fluidwidth(25rem,25rem);
+                @include fluidheight(30rem,30rem);
+                background: linear-gradient(90deg, map-get($theme-colors, "secondary") 1, map-get($theme-colors, "secondary") 1);
+                align-self: center;
+                border-radius: 2rem;
+                @include montserrat();
+                @include header3();
+                font-weight: 700;
+                text-align: center;
+
+            }
+                
+            .showcase-card-title{
+                width: 100%;
+                // display: inline-flex;
+                @include fluidpaddingx(1rem, 2rem);
+                @include fluidpaddingbottom(2rem, 2rem);
+                text-align: center;
+            }
+            .showcase-card-description{
+                // flex-grow: 1;
+                // align-items: baseline;
+                font-style: italic;
+                width: 100%;
+                @include fluidpaddingx(
+                    map-get($img-padding, "min"),
+                    map-get($img-padding, "max"));
                 @include fluidpaddingbottom(2rem, 2rem);
             }
         }

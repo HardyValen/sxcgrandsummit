@@ -96,11 +96,11 @@
 
             @media screen and (max-width: 960px) {
                 &:first-child{
-                    @include fluidpaddingleft(2rem, 7rem);
+                    @include fluidmarginleft(2rem, 7rem);
                 }
 
                 &:last-child{
-                    @include fluidpaddingright(2rem, 7rem);
+                    @include fluidmarginright(2rem, 7rem);
                 }
             }
 

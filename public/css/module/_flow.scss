@@ -30,7 +30,8 @@ body{
     .flow-card{
         @include fluidpaddingx(3rem, 4rem);
         @include fluidpaddingy(2rem, 2.4rem);
-        border-radius: remToVw(96rem, 1rem);
+        border-radius: 2rem;
+        // border-radius: remToVw(96rem, 2rem);
         width: 100%;
         max-width: remToVw(96rem, 52rem);
         border: remToVw(96rem, 0.1rem) solid;
@@ -41,11 +42,20 @@ body{
             max-width: 52rem;
         }
         
+        h3{
+            position: relative;
+            @include fluidpaddingleft(4.5rem, 5.5rem);
+        }
+        
         h3::before {
-            @include fluidpadding(2rem, 2rem);
-            display: inline-flex;
             @include fluidwidth(3.5rem, 4.5rem);
             @include fluidheight(3.5rem, 4.5rem);
+            position: absolute;
+            @include fluidleft(0rem, 0rem);
+            @include fluidtop(-1rem, -1rem);
+            // @include fluidpadding(2rem, 2rem);
+            // @include fluidmargin(1rem,1rem);
+            display: inline-flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
@@ -53,8 +63,8 @@ body{
             color: map-get($theme-colors, "primary");
             content: counter(section) ".";
             counter-increment: section;
-            margin-right: remToVw(96rem, 2rem);
         }
+
     }
 
     .flow-connector{

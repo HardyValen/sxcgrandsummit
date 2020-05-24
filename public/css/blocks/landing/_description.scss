@@ -80,31 +80,31 @@
                 @include fluidpaddingy(1.4rem, 1.8rem);
                 
             }
-                sup{
-                    @include paragraph2();
+            sup{
+                @include paragraph2();
+            }
+            ul {
+                padding-right: 10rem;
+
+                @media screen and (max-width: 960px) {
+                    padding-right: 2rem;
                 }
-                ul {
-                    padding-right: 10rem;
 
-                    @media screen and (max-width: 960px) {
-                        padding-right: 2rem;
-                    }
-
-                    li {
-                        @include myriadProRegular();
-                        @include paragraph2();
-                        @include fluidleft(2.6rem, 3rem);
-                        letter-spacing: 0.01rem;
-                        color: map-get($theme-colors, "black");
-                        line-height: 1.5;
-                        list-style: none;
-                        position: relative;
+                li {
+                    @include myriadProRegular();
+                    @include paragraph2();
+                    @include fluidleft(2.6rem, 3rem);
+                    letter-spacing: 0.01rem;
+                    color: map-get($theme-colors, "black");
+                    line-height: 1.5;
+                    list-style: none;
+                    position: relative;
                 }
                 li:before{
                     content:'';
                     position: absolute;
                     @include fluidleft(-2rem, -2.4rem);
-                    @include fluidtop(1rem, 1.2rem);
+                    @include fluidtop(0.9rem, 1.1rem);
                     @include fluidwidth(1rem, 1.2rem);
                     @include fluidheight(1rem, 1.2rem);
                     display: inline-flex;

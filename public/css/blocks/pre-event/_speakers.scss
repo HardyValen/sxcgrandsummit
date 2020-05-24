@@ -1,6 +1,6 @@
 @import "../../module/showcase";
 
-.business-case-juries{
+.pre-event-speakers {
     @include showcase();
 
     .section-title {
@@ -8,4 +8,6 @@
         padding-top: 0;
         @include fluidpaddingbottom(2rem, 2rem);
     }
+
+
 }

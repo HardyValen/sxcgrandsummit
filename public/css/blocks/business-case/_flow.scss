@@ -1,6 +1,6 @@
 .business-case-flow{
     @include fluidpaddingy(2.4rem, 3.2rem);
-    @include fluidpaddingx(2rem, 8rem);
+    @include fluidpaddingx(4rem, 8rem);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     h2{
         @include header2();
         @include montserrat();
-        @include fluidmarginbottom(2rem, 3rem);
+        @include fluidmarginbottom(3rem, 4rem);
         font-weight: 700;
         text-align: center;
         color: map-get($theme-colors, "white-alt");
@@ -21,6 +21,8 @@
     }
 
     p {
+        @include paragraph2();
+        line-height: 1.25;
         color: map-get($theme-colors, "white-alt");
     }
 

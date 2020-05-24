@@ -8,12 +8,13 @@ $images: (
     @include mobilePadding();
     width: 100%;
     height: auto;
-    background-color: map-get($theme-colors, "white-alt");
+    background-color: map-get($theme-colors, "purple-light");
     display: flex;
     flex-direction: column;
     
     .section-title {
-        @include fluidpaddingbottom(3rem, 4rem);
+        padding-top: 0;
+        @include fluidpaddingy(2rem, 3rem);
     }
 }
 

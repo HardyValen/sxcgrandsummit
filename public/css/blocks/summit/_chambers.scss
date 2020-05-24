@@ -18,7 +18,7 @@ $chmimages: (
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #efeeff;
+    background-color: map-get($theme-colors, "purple-light");
 
     h2{
         @include header2();

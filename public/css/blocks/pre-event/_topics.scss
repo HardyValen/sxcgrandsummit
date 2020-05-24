@@ -2,6 +2,26 @@
 
 .pre-event-topics  {
     @include description-template-2();
+
+    .section-title {
+        padding-top: 0;
+        @include fluidpaddingbottom(2.5rem, 2.5rem);
+    }
+
+    .pre-event-date {
+        @include header3();
+        @include montserrat();
+        font-weight: 700;
+        color: map-get($theme-colors, "white");
+        @include fluidpaddingtop(1rem, 1.2rem);
+        @include fluidpaddingbottom(4.5rem, 4.7rem);
+    }
+
+    sup{
+        @include montserrat();
+        @include superscript();
+        vertical-align: text-top;
+    }
 }
 
 // .pre-event-topics{
