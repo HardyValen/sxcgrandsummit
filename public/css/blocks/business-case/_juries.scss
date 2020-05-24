@@ -1,0 +1,5 @@
+@import "../../module/showcase";
+
+.business-case-juries{
+    @include showcase();
+}

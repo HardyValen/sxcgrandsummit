@@ -1,7 +1,17 @@
 @function strip-unit($value) {
     @return $value / ($value * 0 + 1);
+}
+  
+@function pxToRem($value) {
+    @return (strip-unit($value) / 10) * 1rem;
   }
   
+  // @param: viewport size on rem, value on rem
+  @function remToVw($viewport, $value){
+    $strippedValue : strip-unit($value);
+    $strippedViewport : strip-unit($viewport);
+    @return ($strippedValue / $strippedViewport) * 100vw;
+  }
 
 /* MIXIN FOR CUSTOM RANGE OF FLUID SIZES
  *  -- Menerima masukan batas bawah font size 'floor' dan batas atas font size 'ceiling', satuan rem!
@@ -32,6 +42,9 @@
               @media screen and (min-width: 960px) {
                 width: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                width: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -48,6 +61,9 @@
               }
               @media screen and (min-width: 960px) {
                 min-width: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                min-width: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -66,6 +82,9 @@
               @media screen and (min-width: 960px) {
                 height: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                height: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -83,6 +102,9 @@
               @media screen and (min-width: 960px) {
                 min-height: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                min-height: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -99,6 +121,9 @@
               }
               @media screen and (min-width: 960px) {
                 max-height: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                max-height: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -118,6 +143,9 @@
               @media screen and (min-width: 960px) {
                 padding-top: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                padding-top: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -134,6 +162,9 @@
               }
               @media screen and (min-width: 960px) {
                 padding-bottom: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                padding-bottom: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -152,6 +183,9 @@
               @media screen and (min-width: 960px) {
                 padding-left: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                padding-left: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -168,6 +202,9 @@
               }
               @media screen and (min-width: 960px) {
                 padding-right: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                padding-right: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -189,6 +226,10 @@
                 padding-left: $ceiling;
                 padding-right: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                padding-left: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+                padding-right: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -206,8 +247,12 @@
                 padding-top: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 32rem) / (96 - 32)));
               }
               @media screen and (min-width: 960px) {
-                padding-top: $ceiling;
                 padding-bottom: $ceiling;
+                padding-top: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                padding-top: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+                padding-bottom: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -225,6 +270,9 @@
               }
               @media screen and (min-width: 960px) {
                 padding: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                padding: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -244,6 +292,9 @@
               @media screen and (min-width: 960px) {
                 margin-top: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                margin-top: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -260,6 +311,9 @@
               }
               @media screen and (min-width: 960px) {
                 margin-bottom: $ceiling;
+              }              
+              @media screen and (min-width: 1440px) {
+                margin-bottom: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -278,6 +332,9 @@
               @media screen and (min-width: 960px) {
                 margin-left: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                margin-left: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -294,6 +351,9 @@
               }
               @media screen and (min-width: 960px) {
                 margin-right: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                margin-right: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -315,6 +375,10 @@
                 margin-left: $ceiling;
                 margin-right: $ceiling;
               }
+              @media screen and (min-width: 1440px) {
+                margin-left: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+                margin-right: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+              }
           }
       }
     }
@@ -332,8 +396,12 @@
                 margin-top: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 32rem) / (96 - 32)));
               }
               @media screen and (min-width: 960px) {
-                margin-top: $ceiling;
                 margin-bottom: $ceiling;
+                margin-top: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                margin-top: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+                margin-bottom: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -351,6 +419,9 @@
               }
               @media screen and (min-width: 960px) {
                 margin: $ceiling;
+              }
+              @media screen and (min-width: 1440px) {
+                margin: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
               }
           }
       }
@@ -370,6 +441,9 @@
                 @media screen and (min-width: 960px) {
                   font-size: $ceiling;
                 }
+                @media screen and (min-width: 1440px) {
+                  font-size: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+                }
             }
         }
     }
@@ -388,9 +462,9 @@
                   letter-spacing: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 320px) / (960 - 320)));
                   padding-left: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 320px) / (960 - 320)));
                 }
-                @media screen and (min-width: 960px) {
-                  letter-spacing: $ceiling;
-                  padding-left: $ceiling;
+                @media screen and (min-width: 1440px) {
+                  letter-spacing: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+                  padding-left: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
                 }
             }
         }
@@ -399,7 +473,7 @@
 /* -- 07. Mixin untuk Responsive Border (Satu Sisi) -- */
 @mixin responsiveborder($size, $color, $type) {
   & {
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 1440px) {
       @if $type == "left" {
         border-left: $size solid $color;
       } @else if $type == "right" {
@@ -424,6 +498,53 @@
           @media screen and (min-width: 960px) {
             padding-inline-start: $ceiling;
           }
+          @media screen and (min-width: 1440px) {
+            padding-inline-start: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+          }
       }
   }
 }
+
+
+/* -- 09. Mixin untuk positioning -- */
+@mixin fluidtop($floor, $ceiling) {
+    $u1: unit($floor);
+    $u2: unit($ceiling);
+    
+    @if $u1 == $u2 {
+        & {
+            top: $floor;
+  
+            @media screen and (min-width: 320px) {
+              top: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 320px) / (960 - 320)));
+            }
+            @media screen and (min-width: 960px) {
+              top: $ceiling;
+            }
+            @media screen and (min-width: 1440px) {
+              top: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+            }
+        }
+    }
+  }
+
+  @mixin fluidleft($floor, $ceiling) {
+    $u1: unit($floor);
+    $u2: unit($ceiling);
+    
+    @if $u1 == $u2 {
+        & {
+            left: $floor;
+  
+            @media screen and (min-width: 320px) {
+              left: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 320px) / (960 - 320)));
+            }
+            @media screen and (min-width: 960px) {
+              left: $ceiling;
+            }
+            @media screen and (min-width: 1440px) {
+              left: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+            }
+        }
+    }
+  }

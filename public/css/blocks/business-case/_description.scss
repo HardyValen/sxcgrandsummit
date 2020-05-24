@@ -1,47 +1,9 @@
+@import "../../module/description-template";
+
 .business-case-description{
-    @include fluidpaddingy(2.4rem, 3.2rem);
-    @include fluidpaddingx(2rem, 8rem);
-    width: 100%;
-    min-height: 50%;
-    display: flex;
-    @include shadowDesc();
-    background-color: map-get($theme-colors , "white");
+    @include description-template-1();
 
-    h2{
-        @include montserrat();
-        @include header2();
-        font-weight: 700;
-        color: map-get($theme-colors, "primary");
-        margin-bottom: 1rem;
-    }
-
-    p {
-        @include paragraph2();
-        @include myriadProRegular();
-        color: map-get($theme-colors, "primary-light");
-        line-height: 1.5;
-    }
-
-    .description-container{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        @media screen and (max-width: 960px){
-            width: 100%;
-        }
-    }
-
-    .description-assets{
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media screen and (max-width: 960px){
-            width: 0%;
-            display: none;
-        }
+    img {
+        border-radius: remToVw(96rem, 2rem);
     }
 }

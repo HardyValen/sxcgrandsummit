@@ -1,53 +1,115 @@
+
 .landing-hero {
-    @include background("../assets/landing/hero.jpg");
+    $externalPadding: ("min": 5rem, "max": 7rem);
+    $logoWidth: ("min": 8rem, "max": 12rem);
+    $stdPaddingMin: 1rem;
+    $stdPaddingMax: 2rem;
+    $extPaddingMax: 5rem;
+    $btnPadding: 2rem;
+
+
+    @include fluidpaddingy(
+        map-get($externalPadding, "min"), 
+        map-get($externalPadding, "max")
+    );
+    @include backgroundOverlayDark("../assets/landing/hero.jpg");
     @include backgroundPosition(50%, 50%);
-    width: 100%;
-    min-height: 80%;
-    display: flex;
-    justify-content: flex-end;
     @include shadowHero();
 
-    @media screen and (max-width: 960px){
-        @include background("../assets/landing/hero-mobile.jpg");
-        min-height: 100%;
-        justify-content: center;
+    min-height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        @include fluidfontsize(3.6rem, 6.4rem);
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.0;
+        color: map-get($theme-colors, "white-alt");
     }
 
-    .landing-hero-description{
-        padding-left: 8rem;
-        padding-right: 8rem;
-        @include fluidpaddingy(3rem, 4rem);
-        width: 40%;
+    p {
+        @include paragraph();
+        @include myriadProRegular();
+        line-height: 1.3;
+        color: map-get($theme-colors, "white-alt");        
+    }
 
-        display: flex;
+    h3{
+        @include header3();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+        color: map-get($theme-colors, "secondary");
+    }
+
+    .hero-text {
+        width: 100%;
         flex-direction: column;
-        justify-content: center;
+        @include fluidpadding(
+            map-get($externalPadding, "min"), 
+            map-get($externalPadding, "max")
+        );
 
-        @media screen and (max-width: 960px){
-            @include fluidpaddingx(2rem, 4rem);
-            width: 100%;
+        .hero-title {
+            @include fluidpaddingy($stdPaddingMin, $stdPaddingMax);
         }
 
-        h1{
-            @include montserrat();
-            @include header1();
-            @include fluidpaddingbottom(1.8rem, 2.5rem);
-            color: map-get($theme-colors, 'white');
-            font-weight: 700;
-            
+        .hero-description {
+            width: 52.5%;
+
+            @media screen and (max-width: 960px) {
+                width: 100%;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .hero-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media screen and (max-width: 1366px){
+            // flex-direction: column;
         }
 
-        p{
-            @include myriadProRegular();
-            @include paragraph1();
-            @include fluidpaddingbottom(2rem, 3rem);
-            color: map-get($theme-colors, 'white');
-            line-height: 1.5;
-            
-            @media screen and (max-width: 960px){
-                line-height: 1.6;
-                @include paragraph();
+        .hero-buttons {
+            @include fluidpaddingx(
+                map-get($externalPadding, "min"),
+                map-get($externalPadding, "max")
+            );
 
+            display: flex;
+            justify-content: center;
+            flex-shrink: 1;
+
+            @media screen and (max-width: 1366px) {
+                @include fluidpaddingbottom(
+                    map-get($externalPadding, "min"), 
+                    map-get($externalPadding, "max")
+                );
+            }
+
+            a {
+                &:first-child {
+                    margin-right: $btnPadding;
+                }
+
+                &:last-child {
+                    margin-left: $btnPadding;
+                }
+
+                &:not(:last-child):not(:first-child) {
+                    margin-right: $btnPadding;
+                    margin-left: $btnPadding;
+                }
             }
         }
     }

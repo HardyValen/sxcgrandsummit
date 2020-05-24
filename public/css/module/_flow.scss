@@ -4,35 +4,41 @@ body{
 
 .flow-container{
     width: 100%;
-    max-width: 56rem;
     min-height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    h2{
-        @include header2();
-        @include montserrat();
-        font-weight: 700;
-        margin-bottom: 1rem;
+
+    @media screen and (min-width: 960px){
+        max-width: remToVw(96rem, 56rem);
     }
     
     h3{
         @include header3();
         @include montserrat();
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin-bottom: remToVw(96rem, 1rem);
+    }
+
+    p {
+        @include paragraph();
+        @include myriadProRegular();
+        text-align: justify;
+        line-height: 1.5;
     }
     
     .flow-card{
-        @include fluidpaddingx(2rem, 3rem);
-        @include fluidpaddingy(1.2rem, 1.8rem);
-        border: 1px solid black;
-        border-radius: 1rem;
+        @include fluidpaddingx(3rem, 4rem);
+        @include fluidpaddingy(2rem, 2.4rem);
+        border-radius: remToVw(96rem, 1rem);
         width: 100%;
+        max-width: remToVw(96rem, 52rem);
+        border: remToVw(96rem, 0.1rem) solid;
+        border-color: map-get($theme-colors, "secondary");
 
-        h3{
-            color: map-get($theme-colors, "primary");
+        @media screen and (max-width: 960px){
+            border-width: 1px;
+            max-width: 52rem;
         }
         
         h3::before {
@@ -45,15 +51,15 @@ body{
             border-radius: 50%;
             background-color: map-get($theme-colors, "secondary");
             color: map-get($theme-colors, "primary");
-            content: counter(section);
+            content: counter(section) ".";
             counter-increment: section;
-            margin-right: 2rem;
+            margin-right: remToVw(96rem, 2rem);
         }
     }
 
     .flow-connector{
-        @include fluidwidth(.3rem, .8rem);
-        height: 4rem;
+        @include fluidwidth(.1rem, .2rem);
+        height: remToVw(96rem, 4rem);
         background-color: map-get($theme-colors, "secondary");
     }
 }

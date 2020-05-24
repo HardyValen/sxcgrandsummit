@@ -2,23 +2,26 @@
     @include fluidpaddingy(2.4rem, 3.2rem);
     @include fluidpaddingx(2rem, 8rem);
     width: 100%;
-    min-height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: map-get($theme-colors, "primary");
 
     h2{
-        @include montserrat();
         @include header2();
+        @include montserrat();
         font-weight: 700;
-        color: map-get($theme-colors, "primary");
-        margin-bottom: 2rem;
+        margin-bottom: remToVw(96rem, 1rem);
+        text-align: center;
+        color: map-get($theme-colors, "white-alt");
+    }
+
+    h3 {
+        color: map-get($theme-colors, "white-alt");
     }
 
     p {
-        @include paragraph();
-        @include myriadProRegular();
-        color: map-get($theme-colors, "primary-light");
-        line-height: 1.5;
+        color: map-get($theme-colors, "white-alt");
     }
+
 }

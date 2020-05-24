@@ -1,15 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <nav class='navbar'>
-    <div class="navbar-logo">
+    <a href="/landing" class="navbar-logo">
         <img src="{{URL::asset('assets/logo/GrandSummit.svg')}}" alt="SXCGS9">
-    </div>
-    <div class="navbar-links">
-        <a href="/landing">HOME</a>
-        {{-- <a href="/about">ABOUT</a> --}}
-        <a href="/landing#event" id="navEvent">EVENT</a>
-        <a href="/landing#schedule" id="navSchedule">SCHEDULE</a>
-    </div>
+    </a>
+    <ul class="nav-list">
+        <li>
+            <a href="/landing">HOME</a>
+        </li>
+        <li>
+            <a href="#!">EVENT <i class="fa fa-caret-down"></i></a>
+            <ul class="nav-dropdown">
+                <li><a href="/business-case"><img src="{{URL::asset('assets/icons/bcc-icon.png')}}" alt="BCC">Business Case Competition</a></li>
+                <hr>
+                <li><a href="/pre-event"><img src="{{URL::asset('assets/icons/pre-icon.png')}}" alt="PRE-EVENT">Pre Event</a></li>
+                <hr>
+                <li><a href="/summit"><img src="{{URL::asset('assets/icons/summit-icon.png')}}" alt="SUMMIT">The Summit</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/landing#schedule" id="navSchedule">SCHEDULE</a>
+        </li>
+    </ul>
     <div class="navbar-registration">
-        <a href="/landing#registration" class="button-primary" id="navRegist">REGISTRATION</a>
+        <a href="/landing#registration" class="button-primary-transparent" id="navRegist">Registration</a>
     </div>
     <div class="navbar-mobile-nav">
         <a onclick="showsidebar()">

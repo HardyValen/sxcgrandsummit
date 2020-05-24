@@ -1,10 +1,13 @@
 @mixin headerLine($floor, $ceil) {
     @include fluidheight($floor, $ceil);
     margin-bottom: 0.8rem;
-    width: 10rem;
+    @include fluidwidth(10rem, 10rem);
     background: linear-gradient(90deg, #FFC517 0%, rgba(255, 197, 23, 0) 110.95%);
 }
 
+@mixin header0(){
+    @include fluidfontsize(4.8rem, 6rem);
+}
 @mixin header1(){
     @include fluidfontsize(3rem, 4.6rem);
 }
@@ -22,12 +25,31 @@
 }
 
 @mixin paragraph1() {
-    @include fluidfontsize(1.6rem, 2rem);
+    @include fluidfontsize(1.6rem, 1.8rem);
 }
 @mixin paragraph2() {
     @include fluidfontsize(1.8rem, 2.2rem);
 }
+@mixin superscript() {
+    @include fluidfontsize(1.2rem, 1.5rem);
+}
 
 @mixin paragraphSize($w, $h) {
     @include fluidfontsize($w, $h);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-justify {
+    text-align: justify;
 }

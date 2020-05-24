@@ -16,7 +16,6 @@ $actimages: (
     .activity-container {
         @include fluidpaddingy(2rem, 3rem);
         @include fluidpaddingx(2rem, 4rem);
-        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -85,15 +84,15 @@ $actimages: (
                 .activity-title{
                     @include header3();
                     @include montserrat();
-                    font-weight: 600;
+                    font-weight: 700;
                     color: map-get($theme-colors, "primary");
                 }
                 
                 .activity-title::before {
                     @include fluidpadding(1.6rem, 1.6rem);
-                    display: inline-flex;
                     @include fluidwidth(3.2rem, 4.2rem);
                     @include fluidheight(3.2rem, 4.2rem);
+                    display: inline-flex;
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;
@@ -107,7 +106,7 @@ $actimages: (
                 p {
                     @include paragraph();
                     @include myriadProRegular();
-                    color: map-get($theme-colors, "primary-light" );
+                    color: map-get($theme-colors, "black-alt");
                     margin-top: 1.6rem;
                     text-align: justify;
                 }

@@ -1,14 +1,17 @@
+$padding-x: 2.5rem;
+
 .navbar{
     @include fluidpaddingx(3rem, 5rem);
     @include fluidpaddingy(1.5rem, 2rem);
     display: flex;
+    overflow: visible;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     transition: 0.5s ease-in-out;
-    background-color: map-get($theme-colors, "white");
+    // background-color: map-get($theme-colors, "white");
 
     .navbar-logo{
         img{
@@ -16,41 +19,96 @@
         }
     }
 
-    .navbar-links{
+    ul {
         display: flex;
+        flex-direction: row;
+        li {
+            @include fluidpaddingx($padding-x, $padding-x);
+            list-style: none;
+            position: relative;
 
-        a{
-            @include fluidpaddingx(2rem, 2rem);
-            @include montserrat();
-            @include paragraph();
-            font-weight: 800;
-            color: map-get($theme-colors, "black-alt");
-            letter-spacing: 1px;
-            transition: all 0.2s;
-
-            &:first-child{
+            &:first-child {
                 padding-left: 0;
             }
 
-            &:last-child{
+            &:last-child {
                 padding-right: 0;
             }
 
-            &:hover{
-                color: map-get($theme-colors, "primary-light");
+            a, a:visited {
+                @include montserrat();
+                @include paragraph();
+                font-weight: 700;
+                color: map-get($theme-colors, "primary");
+                letter-spacing: 1px;
+                transition: all 0.2s;
+                
+                &:hover {
+                    color: map-get($theme-colors, "primary-light");
+                }
+                &:not(:only-child):after {
+                    padding-left: 4px;
+                }
             }
 
-            &:active{
-                color: map-get($theme-colors, "primary" );
+            &:hover ul{
+                display: block;
+            }
+            // Dropdown List
+            ul {
+                display: none;
+                background-color: map-get($theme-colors, "white");
+                list-style: none;
+                position: absolute;
+                z-index: 1;
+                border-radius: 2rem;
+                @include fluidpaddingtop(2rem, 2rem);
+                
+                hr {
+                    color: map-get($theme-colors, "gray4");
+                    @include fluidmarginx($padding-x, $padding-x);
+                }
+                
+                li {
+                    a {
+                        @include fluidwidth(30rem, 30rem);
+                        @include fluidpaddingy(1.5rem, 1.7rem);
+                        display: flex;
+                        align-items: center;
+                        
+                        img {
+                            min-width: 100px;
+                            // @include fluidwidth(10vh, 10vh);
+                            @include fluidpaddingright($padding-x, $padding-x);
+                        }
+                    }
+                    
+                    
+                    &:first-child{
+                        @include fluidpaddingx($padding-x, $padding-x);
+                    }
+                    
+                    &:hover {
+                        background-color: map-get($theme-colors, "white-alt");
+                        border-radius: 2rem;
+                    }
+                    
+                }
+
             }
         }
 
-        @media screen and (max-width: 960px){
+        // .nav-dropdown {
+        // }
+        
+        @media screen and (max-width: 960px) {
             display: none;
         }
     }
+    
 
-    .navbar-registration{
+    .navbar-registration {
+
 
         @media screen and (max-width: 960px){
             display: none;
@@ -61,9 +119,6 @@
         display: none;
         @media screen and (max-width: 960px){
             display: flex;
-        }
-        &:hover{
-            
         }
     }
 }

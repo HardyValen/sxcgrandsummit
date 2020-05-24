@@ -55,7 +55,18 @@
         @include paragraph();
         @include myriadProRegular();
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: row;
         background-color: #303030;
+        
+        .footer-logo, .empty{
+            flex: 1;
+        }
+
+        .footer-logo a img{
+            // @include fluidwidth(5rem, 6rem);
+            @include fluidheight(5rem, 6rem);
+        }
+
     }
 }

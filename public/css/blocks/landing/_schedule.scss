@@ -1,4 +1,3 @@
 .landing-schedule{
-    @include fluidpaddingtop(2rem, 3rem);
-    background-color: map-get($theme-colors, "primary-light");
+    background-color: map-get($theme-colors, "primary");
 }

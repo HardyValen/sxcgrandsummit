@@ -1,11 +1,14 @@
 .post-container{
+    $btnPadding: 1rem;
+
+    @include fluidpaddingbottom(1.9rem, 2.1rem);
+    @include fluidpaddingx(1rem, 1.2rem);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
     width: 100%;
     min-height: auto;
-    padding: 1.5rem;
     
     @media screen and (max-width: 960px){
         &::-webkit-scrollbar{
@@ -36,36 +39,56 @@
             flex: 0 0 auto;
         }
 
-        .post-image {
+        .post-title-image {
+            @include fluidheight(15rem, 18rem);
+            @include backgroundPosition(50%, 60%);
+            background-size: 115%;
             width: 100%;
-            @include fluidheight(15rem, 20rem);
-            @include backgroundPosition(50%, 10%);
-            border-radius: .5rem;
+            border-radius: 2.5rem;
+            display: flex;
+            justify-content: center;
+            color: map-get($theme-colors, "white");
+            align-items: center;
+            
+            @media screen and (max-width: 960px){
+                border-radius: 1.2rem;
+            }
+
+            span{
+                @include header3();
+                @include montserrat();
+                text-align: center;
+                font-weight: 700;
+
+            }
         }
 
         .post-desc {
+            @include fluidmarginy(2rem, 2.4rem);
             display: flex;
             flex-flow: column;
             justify-content: flex-start;
-            margin-bottom: 3rem;
+            text-align: justify;
+        }
         
-            .post-title {
-                margin-top: 2rem;   
-            }
-            .post-summary{
-                text-align: justify;
-                margin-top: 1rem;
-            }
-            
-        }
-
         .post-link{
-            text-align: left;
-            margin-top: auto;   
-        }
+            display: flex;
+            flex-flow: row;
+            margin-top: auto;
+            a {
 
-        h3, h2, h1, p {
-            color: map-get($theme-colors, "primary")
+                &:first-child {
+                    @include fluidmarginright($btnPadding, $btnPadding);
+                }
+    
+                &:last-child {
+                    @include fluidmarginleft($btnPadding, $btnPadding);
+                }
+                &:not(:last-child):not(:first-child) {
+                    margin-right: $btnPadding;
+                    margin-left: $btnPadding;
+                }
+            }
         }
 
         h3 {
