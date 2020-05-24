@@ -98,9 +98,12 @@
     </section>
     
     <section class="pre-event-topics" id="title1">
+        @component('blocks.title')
+            <h2 style="color: white">Timeline</h2>
+        @endcomponent
         <div class="topic-title">
-            <h2>How Public Speaking Can Affect Your Leadership</h2>
-            <h3>February 22<sup>nd</sup>, 2020</h3>        
+            <h2>How Public Speaking<br>Affect Our Leadership Skills.</h2>
+            <h4>February 22<sup>nd</sup>, 2020</h4>        
         </div>
         <div class="topic-flow">
             <div class="flow-container">
@@ -122,8 +125,14 @@
     </section>
 
     <section class="pre-event-topics" id="title2">
+        <div class="header-line"></div>
+        <h2 class="topic-header">Topic :</h2>
+        
         <div class="topic-title">
-            <h2>Indonesia Dalam Bencana, Pemerintah Kerja Apa?</br>Kita Bisa Apa?</h2>
+            <blockquote>
+                <h2>Indonesia Dalam Bencana, Pemerintah Kerja Apa?</h2>
+                </blockquote>
+            <br><h2>Kita Bisa Apa?</h2>
             <h3>March 21<sup>st</sup></h3>
         </div>
         <div class="topic-flow">

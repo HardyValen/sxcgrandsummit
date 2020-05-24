@@ -11,6 +11,10 @@ $images: (
     background-color: map-get($theme-colors, "white-alt");
     display: flex;
     flex-direction: column;
+    
+    .section-title {
+        @include fluidpaddingbottom(3rem, 4rem);
+    }
 }
 
 @each $image in $images {

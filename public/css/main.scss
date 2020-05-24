@@ -35,6 +35,10 @@ main{
     @include headerLine(0.8rem, 0.8rem);
 }
 
+.quote{
+    @include quoteMarks();
+}
+
 // 1. Landing
 @import 'blocks/landing/hero';
 @import 'blocks/landing/description';
@@ -62,6 +66,7 @@ main{
 @import 'blocks/pre-event/topics';
 @import 'blocks/pre-event/slider';
 @import 'blocks/pre-event/registration';
+@import 'blocks/pre-event/schedule';
 
 // 5. Summit
 @import 'blocks/summit/hero';

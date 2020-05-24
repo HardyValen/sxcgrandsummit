@@ -10,8 +10,8 @@
     h2{
         @include header2();
         @include montserrat();
+        @include fluidmarginbottom(2rem, 3rem);
         font-weight: 700;
-        margin-bottom: remToVw(96rem, 1rem);
         text-align: center;
         color: map-get($theme-colors, "white-alt");
     }

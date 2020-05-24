@@ -1,52 +1,66 @@
-.pre-event-topics{
-    @include fluidpaddingy(2.4rem, 3.2rem);
-    @include fluidpaddingx(2rem, 8rem);
-    width: 100%;
-    min-height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 0.5s ease;
+@import "../../module/hero-template";
 
-    .topic-title {
-        width: 60%;
-        @include fluidpaddingx(2rem, 3rem);
-        @include fluidpaddingy(1.2rem, 1.8rem);
-        display: flex;
-        border: 1px solid map-get($theme-colors, "black-alt" );
-        border-radius: 1rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        @media screen and (max-width: 960px){
-            width: 85%;
-        }
-
-        h2{
-            @include montserrat();
-            @include header2();
-            font-weight: 700;
-            color: map-get($theme-colors, "primary");
-        }
-        h3 {
-            margin-top: 0.75rem;
-            margin-bottom: 0.75rem;
-            @include header3();
-            @include montserrat();
-            color: map-get($theme-colors, "primary");
-        }
-    }
-    .topic-flow {
-        @include fluidpaddingx(2rem, 3rem);
-        @include fluidpaddingy(1.8rem, 2.2rem);
-        p {
-            @include paragraph();
-            @include myriadProRegular();
-            text-align: justify;
-            color: map-get($theme-colors, "primary-light");
-            line-height: 1.5;
-        }
-    }
+.pre-event-topics  {
+    @include description-template-2();
 }
+
+// .pre-event-topics{
+//     @include fluidpaddingy(2.4rem, 3.2rem);
+//     @include fluidpaddingx(2rem, 8rem);
+//     width: 100%;
+//     min-height: 60%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     transition: 0.5s ease;
+//     background-color: map-get($theme-colors, "primary");
+
+//     .topic-title {
+//         width: 60%;
+//         @include fluidpaddingx(2rem, 3rem);
+//         @include fluidpaddingy(1.2rem, 1.8rem);
+//         display: flex;
+//         border: 1px solid map-get($theme-colors, "black-alt" );
+//         border-radius: 1rem;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+
+//         @media screen and (max-width: 960px){
+//             width: 85%;
+//         }
+
+//         h1{
+//             @include montserrat();
+//             @include header1();
+//             font-weight: 700;
+//             color: map-get($theme-colors, "white");
+//         }
+
+//         h2{
+//             @include montserrat();
+//             @include header2();
+//             font-weight: 700;
+//             color: map-get($theme-colors, "white");
+//         }
+//         h4 {
+//             margin-top: 0.75rem;
+//             margin-bottom: 0.75rem;
+//             @include headerSize(1.4rem, 1.8rem);
+//             @include montserrat();
+//             color: map-get($theme-colors, "white");
+//         }
+//     }
+//     .topic-flow {
+//         @include fluidpaddingx(2rem, 3rem);
+//         @include fluidpaddingy(1.8rem, 2.2rem);
+//         p {
+//             @include paragraph();
+//             @include myriadProRegular();
+//             text-align: justify;
+//             color: map-get($theme-colors, "white");
+//             line-height: 1.5;
+//         }
+//     }
+// }

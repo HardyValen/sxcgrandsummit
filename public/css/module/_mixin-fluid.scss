@@ -527,6 +527,27 @@
         }
     }
   }
+  
+@mixin fluidbottom($floor, $ceiling) {
+    $u1: unit($floor);
+    $u2: unit($ceiling);
+    
+    @if $u1 == $u2 {
+        & {
+            bottom: $floor;
+  
+            @media screen and (min-width: 320px) {
+              bottom: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 320px) / (960 - 320)));
+            }
+            @media screen and (min-width: 960px) {
+              bottom: $ceiling;
+            }
+            @media screen and (min-width: 1440px) {
+              bottom: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+            }
+        }
+    }
+  }
 
   @mixin fluidleft($floor, $ceiling) {
     $u1: unit($floor);
@@ -544,6 +565,27 @@
             }
             @media screen and (min-width: 1440px) {
               left: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
+            }
+        }
+    }
+  }
+
+  @mixin fluidright($floor, $ceiling) {
+    $u1: unit($floor);
+    $u2: unit($ceiling);
+    
+    @if $u1 == $u2 {
+        & {
+            right: $floor;
+  
+            @media screen and (min-width: 320px) {
+              right: calc(#{$floor} + #{strip-unit($ceiling - $floor)} * ((100vw - 320px) / (960 - 320)));
+            }
+            @media screen and (min-width: 960px) {
+              right: $ceiling;
+            }
+            @media screen and (min-width: 1440px) {
+              right: calc(#{strip-unit($ceiling * 10) / strip-unit(1440px) * 100vw});
             }
         }
     }

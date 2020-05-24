@@ -37,7 +37,7 @@ $chmimages: (
     }
 
     p {
-        @include paragraph();
+        @include paragraphSize(1rem, 1.4rem);
         @include myriadProRegular();
         line-height: 1.3;
         color: map-get($theme-colors, "white-alt");        
@@ -48,8 +48,8 @@ $chmimages: (
         flex-direction: column;
         align-items: center;
 
-        * {
-            @include fluidpaddingbottom(2rem, 2rem);
+        h2 {
+            @include fluidpaddingbottom(3rem, 3rem);
         }
     }
 
@@ -72,7 +72,8 @@ $chmimages: (
 
     .panel {
         width: 100%;
-        border-radius: remToVw(96rem, 1rem);
+        border-radius: 1.5rem;
+        // border-radius: remToVw(96rem, 1rem);
         background-color: map-get($theme-colors, "primary");
 
         &:first-child{
@@ -102,7 +103,8 @@ $chmimages: (
         .panel-image-backdrop {
             @include fluidheight(25rem, 30rem);
             width: 100%;
-            border-radius: remToVw(96rem, 1rem) remToVw(96rem, 1rem) 0 0;
+            border-radius: 1.5rem 1.5rem 0 0;
+            // border-radius: remToVw(96rem, 1rem) remToVw(96rem, 1rem) 0 0;
             display: flex;
             flex-direction: column;
         }
@@ -155,7 +157,7 @@ $chmimages: (
         }
 
         .panel-footer{
-            @include fluidpadding(1.2rem, 1.5rem);
+            @include fluidpadding(1.5rem, 1.8rem);
             width: 100%;
             display: flex;
             flex-direction: column;

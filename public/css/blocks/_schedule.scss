@@ -41,12 +41,13 @@
     }
 
     .schedule-title{
+        @include fluidpaddingx(2rem, 7rem);
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 30%;
+        overflow: hidden;
         color: map-get($theme-colors, "white");
-        @include fluidpaddingx(2rem, 7rem);
         
         @media screen and (max-width: 960px) {
             @include fluidpaddingy(2rem, 3rem);
@@ -56,12 +57,13 @@
 
     .schedule-timeline-container{
         
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: auto;
         min-height: auto;
         width: 70%;
+        justify-content: baseline;
         @include fluidmarginright(3rem, 3rem);
 
         &::-webkit-scrollbar{
@@ -87,9 +89,10 @@
         .schedule-timeline-item{
             @include fluidminwidth(14rem, 20rem);
             @include fluidpaddingy(2rem, 3rem);
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
-            justify-content: space-between;
+            flex-shrink: 0;
+            justify-content: flex-start;
 
             @media screen and (max-width: 960px) {
                 &:first-child{
@@ -102,20 +105,25 @@
             }
 
             .schedule-timeline-date{
-                display: flex;
+                display: inline-flex;
                 flex-direction: row;
                 align-items: center;
                 color: map-get($theme-colors, "secondary");
                 padding-bottom: 1rem;
+                flex-shrink: 0;
 
                 h1{
                     @include fluidmarginright(1rem, 1.2rem);
                 }
 
+                h3{
+                    @include fluidmarginright(1rem, 1.2rem);
+                    line-height: 1.15;
+                }
+
                 p{
                     @include fluidfontsize(1.3rem, 1.7rem);
                     @include myriadProBold();
-                    @include fluidpaddingright(4rem, 5rem);
                 }
             }
 

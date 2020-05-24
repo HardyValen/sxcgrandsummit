@@ -11,17 +11,17 @@ $actimages: (
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: map-get($theme-colors, "white" );
+    background-color: map-get($theme-colors, "white-alt" );
     
     .activity-container {
-        @include fluidpaddingy(2rem, 3rem);
-        @include fluidpaddingx(2rem, 4rem);
+        width: 90%;
+        @include fluidpadding(2rem, 3rem);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: map-get($theme-colors, "white-alt" );
-        @include shadowSides();
+        // @include shadowSides();
         
         @media screen and (max-width: 960px) {
             @include fluidpaddingx(1.6rem, 3.6rem);
@@ -36,7 +36,7 @@ $actimages: (
         }
         
         .activity-block {
-            @include fluidpaddingy(1.6rem, 2.8rem);
+            @include fluidpaddingy(1.6rem, 2rem);
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -45,13 +45,16 @@ $actimages: (
             @media screen and (max-width: 960px) {
                 flex-direction: column;
             }
-            
+
             .activity-image {
-                width: 100%;
-                min-width: 50%;
+                // width: 100%;
+                // max-width: 50%;
+                min-width: 40%;
                 @include fluidheight(15rem,20rem);
-                border-radius: .5rem;
+                border-radius: 2rem;
                 margin: 0 1rem 0 1rem;
+                flex-grow: 2;
+                flex-shrink: 0;
                 
                 @media screen and (max-width: 960px) {
                     display: none;
@@ -80,6 +83,7 @@ $actimages: (
                 display: flex;
                 flex-direction: column;
                 justify-content: left;
+                flex-grow: 1;
                 
                 .activity-title{
                     @include header3();
@@ -104,9 +108,9 @@ $actimages: (
                 }
                 
                 p {
-                    @include paragraph();
+                    @include paragraph1();
                     @include myriadProRegular();
-                    color: map-get($theme-colors, "black-alt");
+                    color: map-get($theme-colors, "black");
                     margin-top: 1.6rem;
                     text-align: justify;
                 }

@@ -27,7 +27,7 @@
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary" href="#">Registration</a>
+                    <a class="button-primary" href="http://bit.ly/getbccsummit">Registration</a>
                     <a class="button-secondary-transparent" href="#" onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
@@ -111,28 +111,25 @@
         <section class="summit-theme">
             <div class="description-header">
                 <div class="header-line"></div>
-                <h2>Theme:</h2>
+                <h2>Theme</h2>
             </div>
             <div class="description-body">
-                <div class="description-quote">
-                    <blockquote>
-                        The Application of SDGs in Building Sustainable Business
-                    </blockquote>
-                </div>
+                @component('blocks.quote')
+                    The Application of SDGs<br>in Building Sustainable Business
+                @endcomponent
                 <div class="description-text">
                     <p>
                         Discussing about sustainable businesses and environmental matters, the theme’s objective is to give a real impact to the company, stakeholders, society, and environment according to the United Nations Sustainable Development Goals from the NGOs’ perspective. We encourage the participants to take part in caring about our social and environmental matter by building a continuous discussion and creating feasible solutions that can be implemented by the NGOs.
                     </p>
                 </div>
             </div>
-
+            
         </section>
-
+        
         <section class="summit-activities">
             <div class= "activity-container">
-                <h1>
-                    Main Activities:
-                </h1>
+                <div class="header-line"></div>
+                <h1>Main Activities</h1>
                 <div class="activity-block">
                     <div class= "activity-description">
                         <div class="activity-title">
@@ -300,7 +297,10 @@
             </div>
         </section>
 
-        <section id="schedule">
+        <section class="schedule" id="schedule">
+            @component('blocks.title')
+                <h2 style="color: white">Timeline</h2>
+            @endcomponent
             @include('blocks.schedule.summit')
         </section>
 
