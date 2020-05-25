@@ -226,6 +226,14 @@
   transition: 0.1s;
 }
 
+.button-white-transparent:focus {
+  background-color: #FFC517;
+  color: white;
+  border-color: #FFC517;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .button-black-transparent {
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
@@ -331,6 +339,14 @@
 }
 
 .button-black-transparent:active {
+  background-color: #FFC517;
+  color: black;
+  border-color: #FFC517;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-black-transparent:focus {
   background-color: #FFC517;
   color: black;
   border-color: #FFC517;
@@ -452,6 +468,14 @@
   transition: 0.1s;
 }
 
+.button-primary:focus {
+  background-color: #FFC517;
+  color: white;
+  border-color: #FFC517;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .button-primary-transparent {
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
@@ -557,6 +581,14 @@
 }
 
 .button-primary-transparent:active {
+  background-color: transparent;
+  color: #FFC517;
+  border-color: transparent;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-primary-transparent:focus {
   background-color: transparent;
   color: #FFC517;
   border-color: transparent;
@@ -676,6 +708,14 @@
   transition: 0.1s;
 }
 
+.button-primary-invert-transparent:focus {
+  background-color: transparent;
+  color: #0368E3;
+  border-color: transparent;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .button-secondary {
   font-family: 'Montserrat', sans-serif;
   background-color: #FFC517;
@@ -788,6 +828,14 @@
   transition: 0.1s;
 }
 
+.button-secondary:focus {
+  background-color: #0252B3;
+  color: white;
+  border-color: #0252B3;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .button-secondary-transparent {
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
@@ -808,6 +856,7 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+  text-align: center;
 }
 
 .button-secondary-transparent {
@@ -893,6 +942,14 @@
 }
 
 .button-secondary-transparent:active {
+  background-color: #FFC517;
+  color: #F4F4F4;
+  border-color: #FFC517;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-secondary-transparent:focus {
   background-color: #FFC517;
   color: #F4F4F4;
   border-color: #FFC517;
@@ -1005,6 +1062,14 @@
 }
 
 .button-disabled:active {
+  background-color: #828282;
+  color: white;
+  border-color: #828282;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-disabled:focus {
   background-color: #828282;
   color: white;
   border-color: #828282;
@@ -1734,6 +1799,9 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   text-align: justify;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .post-container .post-card .post-desc {

@@ -70,7 +70,7 @@
                     </div>
                     <div class="post-link">
                         <a class="button-primary" href="/business-case">More Details..</a>
-                        <a class="button-primary-invert-transparent" href="#" onclick="scrollto('#schedule')">   Timeline   </a>
+                        <a class="button-primary-invert-transparent" href="#schedule" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
                 
@@ -85,7 +85,7 @@
                     </div>
                     <div class="post-link">
                         <a class="button-primary" href="/pre-event">More Details..</a>
-                        <a class="button-primary-invert-transparent" href="#" onclick="scrollto('#schedule')">   Timeline   </a>
+                        <a class="button-primary-invert-transparent" href="#schedule" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
                 
@@ -100,7 +100,7 @@
                     </div>
                     <div class="post-link">
                         <a class="button-primary" href="/summit">More Details..</a>
-                        <a class="button-primary-invert-transparent" href="#" onclick="scrollto('#schedule')">   Timeline   </a>
+                        <a class="button-primary-invert-transparent" href="#schedule" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
             </div>    

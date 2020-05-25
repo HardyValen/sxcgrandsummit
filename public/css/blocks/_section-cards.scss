@@ -69,12 +69,14 @@
             flex-flow: column;
             justify-content: flex-start;
             text-align: justify;
+            flex-grow: 2;
         }
         
         .post-link{
             display: flex;
             flex-flow: row;
             margin-top: auto;
+
             a {
 
                 &:first-child {
