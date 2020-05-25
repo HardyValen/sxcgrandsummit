@@ -37,6 +37,12 @@
         border-color: $color-active;
         transition: 0.1s;
     }
+    &:focus{
+        background-color:$color-active;
+        color: $color;
+        border-color: $color-active;
+        transition: 0.1s;
+    }
 }
 
 .button-white-transparent{
@@ -110,7 +116,8 @@
         map-get($theme-colors, "secondary"),
         map-get($theme-colors, "secondary"),
         map-get($theme-colors, "secondary")
-    )
+    );
+    text-align: center;
 }
 
 .button-disabled{

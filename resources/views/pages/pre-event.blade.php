@@ -27,7 +27,7 @@
             <div class="hero-bottom">
                 <div class="hero-buttons">
                     <a class="button-primary" href="http://bit.ly/preevent2summit">Registration</a>
-                    <a class="button-secondary-transparent" href="#" onclick="scrollto('#scroll')">
+                    <a class="button-secondary-transparent" href="#scroll"  onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
                             <img src="{{URL::asset('assets/icons/mouse.svg')}}">
