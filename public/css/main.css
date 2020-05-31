@@ -841,7 +841,7 @@
   background-color: transparent;
   border: 3px solid #FFC517;
   border-radius: 1rem;
-  color: #F4F4F4;
+  color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,7 +935,7 @@
 
 .button-secondary-transparent:hover {
   background-color: #FFC517;
-  color: #F4F4F4;
+  color: #FFFFFF;
   border-color: #FFC517;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -943,7 +943,7 @@
 
 .button-secondary-transparent:active {
   background-color: #FFC517;
-  color: #F4F4F4;
+  color: #FFFFFF;
   border-color: #FFC517;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -951,7 +951,7 @@
 
 .button-secondary-transparent:focus {
   background-color: #FFC517;
-  color: #F4F4F4;
+  color: #FFFFFF;
   border-color: #FFC517;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -1725,7 +1725,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #F4F4F4;
+  color: #FFFFFF;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2393,7 +2393,7 @@ drop-post-container {
 
 .navbar ul li ul {
   display: none;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
   list-style: none;
   position: absolute;
   z-index: 1;
@@ -3266,7 +3266,7 @@ drop-post-container {
   width: 100%;
   min-height: 20rem;
   background-color: #0252B3;
-  color: #F4F4F4;
+  color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3458,7 +3458,7 @@ drop-post-container {
           align-items: center;
   width: 30%;
   overflow: hidden;
-  color: #F4F4F4;
+  color: #FFFFFF;
 }
 
 .schedule-container .schedule-title {
@@ -3864,7 +3864,7 @@ drop-post-container {
 
 main {
   overflow-x: hidden;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
 }
 
 .display-inline-block {
@@ -5116,7 +5116,7 @@ main {
 .landing-registration {
   width: 100%;
   min-height: 20vw;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5140,7 +5140,7 @@ main {
 
 .landing-registration h2 {
   font-family: 'Montserrat', sans-serif;
-  color: #F4F4F4;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -7137,7 +7137,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
 }
 
 .business-case-description {
@@ -9102,7 +9102,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
 }
 
 .pre-event-description {
@@ -9726,7 +9726,7 @@ main {
 .pre-event-topics .pre-event-date {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #F4F4F4;
+  color: #FFFFFF;
 }
 
 .pre-event-topics .pre-event-date {
@@ -9947,7 +9947,7 @@ main {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #828282;
-  border: 6px solid #F4F4F4;
+  border: 6px solid #FFFFFF;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -10011,9 +10011,9 @@ main {
 
 .pre-event-slider .slider-container .menu.active {
   opacity: 1;
-  border: 6px solid #F4F4F4;
+  border: 6px solid #FFFFFF;
   background-color: #0252B3;
-  color: #F4F4F4;
+  color: #FFFFFF;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -11529,7 +11529,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
 }
 
 .summit-description {
