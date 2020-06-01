@@ -240,7 +240,7 @@
                                 </div>
                             </div>
                             <div class="panel-title">
-                                <img src="{{URL::asset('assets/summit/xsproject-logo.svg')}}">
+                                <img src="{{URL::asset('assets/summit/xsproject-logo.png')}}">
                             </div>
                         </div>
                         <div class="panel-footer">
