@@ -223,4 +223,12 @@
 
 .registration-submit{
     @include fluidpaddingy(2rem, 3rem);
+    // @include fluidpaddingx(2rem, 3rem);
+    
+    .button-black-transparent {
+        @include fluidmarginx(0.5rem, 1rem);
+        @include fluidfontsize(1.4rem, 1.6rem);
+
+    }
+
 }

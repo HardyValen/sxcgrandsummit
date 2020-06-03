@@ -6215,6 +6215,54 @@ main {
   }
 }
 
+.registration-submit .button-black-transparent {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-submit .button-black-transparent {
+    margin-left: calc(0.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+    margin-right: calc(0.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-submit .button-black-transparent {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .registration-submit .button-black-transparent {
+    margin-left: calc(0.69444vw);
+    margin-right: calc(0.69444vw);
+  }
+}
+
+.registration-submit .button-black-transparent {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .registration-submit .button-black-transparent {
+    font-size: calc(1.4rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .registration-submit .button-black-transparent {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .registration-submit .button-black-transparent {
+    font-size: calc(1.11111vw);
+  }
+}
+
 .registration-hero {
   min-width: 60%;
   min-height: 100%;
