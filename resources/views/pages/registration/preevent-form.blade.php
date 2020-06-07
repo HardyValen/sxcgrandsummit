@@ -39,6 +39,11 @@
               <label class="text-label" for="name">Full Name</label>
             </div>
 
+            <div class="registration-input">
+              <input type="email" class="form-input" name="email" id="email" placeholder=' ' required/>
+              <label class="text-label" for="email">Email</label>
+            </div>
+
             <div class="registration-input-row">
               <div class="registration-input-col">
                 <div class="registration-radio-wrapper">
@@ -58,18 +63,8 @@
             </div>
 
             <div class="registration-input">
-              <input type="email" class="form-input" name="email" id="email" placeholder=' ' required/>
-              <label class="text-label" for="email">Email</label>
-            </div>
-
-            <div class="registration-input">
-              <input type="text" class="form-input" name="phone" id="phone" placeholder=' ' required/>
-              <label class="text-label" for="phone">Phone Number</label>
-            </div>
-
-            <div class="registration-input">
-              <input type="text" class="form-input" name="major" id="major" placeholder=' ' required/>
-              <label class="text-label" for="major">Major</label>
+              <input type="text" class="form-input" name="hometown" id="hometown" placeholder=' ' required/>
+              <label class="text-label" for="hometown">Home Town</label>
             </div>
 
             <div class="registration-input">
@@ -78,9 +73,15 @@
             </div>
 
             <div class="registration-input">
-              <input type="text" class="form-input" name="hometown" id="hometown" placeholder=' ' required/>
-              <label class="text-label" for="hometown">Home Town</label>
+              <input type="text" class="form-input" name="major" id="major" placeholder=' ' required/>
+              <label class="text-label" for="major">Major</label>
             </div>
+
+            <div class="registration-input">
+              <input type="text" class="form-input" name="phone" id="phone" placeholder=' ' required/>
+              <label class="text-label" for="phone">Phone Number</label>
+            </div>
+            
 
           </div>
 
