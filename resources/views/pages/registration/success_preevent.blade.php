@@ -18,13 +18,12 @@
 		<div class="registration-title">
 			<img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
 			<h1>SUCCESSFULLY REGISTERED</h1>
-			<h2>(EARLY BIRD)</h2>
 		</div>
 
 		<div class="registration-success">
 			<div class="registration-success-description">
 				<p style='text-align: center'>
-					Your registration for The Summmit of the 9th StudentsxCEOs Pre Event 2 has been recorded.
+					Your registration for The Summit of the 9th StudentsxCEOs Pre Event 2 has been recorded.
 				</p>
 				<p style="text-align: center">
 					We also have sent you the email for the next step of registration to {{ $data->email }}.
@@ -42,7 +41,7 @@
 			<div class="registration-success-summary">
 				<div class="summary-data-container">
 					<div class="summary-data">
-						<p class='summary-title'>REGISTER DATE</p>
+						<p class='summary-title'>To Complete The Registration, <b>you must pay minimum donation Rp. 20.000 to these accounts:</b> </p>
 						<p class='summary-date'>{{ date('l, d F Y') }}</p>
 					</div>
 <!-- 					<div class="summary-data">
@@ -52,6 +51,7 @@
 					<div class="summary-data">
 						<p class='summary-title'>PAYMENT</p>
 						<p class='summary-date'>
+							Jenius 90012636107 Faiza Nurkholida<br>
 							BCA 5221166435 Chyntia Angelina<br>
 							BNI  670350698 Zahra Fulli Fauza<br>
 						</p>
