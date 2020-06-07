@@ -13,7 +13,7 @@
 			<a href="/pre-event">
 			<img src="{{URL::asset("assets/registration/BackIcon.svg")}}">
 			</a>
-			<img src="{{URL::asset("assets/registration/MoreIcon-Outline.svg")}}">
+			{{-- <img src="{{URL::asset("assets/registration/MoreIcon-Outline.svg")}}"> --}}
 		</div>
 
 		<div class="registration-title">
@@ -32,19 +32,20 @@
 						But unfortunately, our system cannot send you an email automatically for the next step of registration to {{ $data->email }}, we're sorry for the 15 seconds inconvenience.
 					</p>
 					<p>
-						Please contact one of our public relations for the next step of registration: Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
+						Please contact our instagram at <a href="https://www.instagram.com/studentsxceosbdg/" >@sxcgrandsummit</a>
 					</p>
 				@else
 					<p>
 						We also have sent you the email for the next step of registration to {{ $data->email }}.
 					</p>
 					<p>
-						If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
+						If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact our instagram at 
+						<a href="https://www.instagram.com/studentsxceosbdg/" target="_blank">@sxcgrandsummit</a>
 					</p>
 				@endif
 			</div>
 
-			<hr style="background-color: #aaaaaa">
+			{{-- <hr style="background-color: #aaaaaa">
 
 			<div class="registration-success-summary">
 				<div class="summary-data-container">
@@ -73,7 +74,7 @@
 				</div>
 			</div>
 
-			<hr style="background-color: #aaaaaa">
+			<hr style="background-color: #aaaaaa"> --}}
 
 			<div class="registration-success-link">
 				<a href="/landing" class='button-primary'>LANDING PAGE</a>
