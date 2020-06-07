@@ -6319,9 +6319,11 @@ main {
 .registration-hero {
   min-width: 60%;
   min-height: 100%;
-  background: url("../assets/registration/RegistrationHero.jpg");
+  background: url("../assets/registration/PreEventPoster.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 0%;
+  background-position-y: 30%;
 }
 
 @media screen and (max-width: 960px) {
@@ -10319,9 +10321,9 @@ main {
 
 .pre-event-slider .slider-container {
   margin: !important auto;
-  max-width: 50vw;
+  min-width: 50%;
+  max-width: 80%;
   padding: 0;
-  width: 80vw;
   border: 1px solid #828282;
   border-radius: 2rem;
 }
@@ -10381,7 +10383,8 @@ main {
   float: left;
   text-align: center;
   opacity: 0.5;
-  width: 33.33333%;
+  min-width: 33.33333%;
+  max-width: 33%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #828282;
@@ -10392,24 +10395,24 @@ main {
 }
 
 .pre-event-slider .slider-container .menu {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 @media screen and (min-width: 320px) {
   .pre-event-slider .slider-container .menu {
-    padding: calc(2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+    padding: calc(1.5rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .pre-event-slider .slider-container .menu {
-    padding: 2.4rem;
+    padding: 2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .pre-event-slider .slider-container .menu {
-    padding: calc(1.66667vw);
+    padding: calc(1.38889vw);
   }
 }
 

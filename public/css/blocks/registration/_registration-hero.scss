@@ -1,7 +1,8 @@
 .registration-hero{
     min-width: 60%;
     min-height: 100%;
-    @include background("../assets/registration/RegistrationHero.jpg");
+    @include background("../assets/registration/PreEventPoster.jpg");
+    @include backgroundPosition(0%, 30%);
 
     @media screen and (max-width: 960px){
         display: none;
