@@ -31,14 +31,14 @@
 					We also have sent you the email for the next step of registration to {{ $data->email }}.
 				</p>
 				<p style="text-align: center">
-				    If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
+				    If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact our instagram at @sxcgrandsummit
 				</p>
 				<p style="text-align: center">
 					We also have sent you the email for the next step of registration to {{ $data->email }}.
 				</p>
 			</div>
 
-			<hr style="background-color: #aaaaaa">
+			{{-- <hr style="background-color: #aaaaaa"> --}}
 
 			<div class="registration-success-summary">
 				<div class="summary-data-container">

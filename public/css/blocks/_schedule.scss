@@ -79,7 +79,8 @@
 
         @media screen and (max-width: 960px) {
             width: 100%;
-            margin-right: 0;
+            // margin-right: 0;
+            @include fluidmarginx(2rem, 7rem);
 
             &::-webkit-scrollbar{
                 display: none;
@@ -94,15 +95,15 @@
             flex-shrink: 0;
             justify-content: flex-start;
 
-            @media screen and (max-width: 960px) {
-                &:first-child{
-                    @include fluidmarginleft(2rem, 7rem);
-                }
+            // @media screen and (max-width: 960px) {
+            //     &:first-child{
+            //         @include fluidmarginleft(2rem, 7rem);
+            //     }
 
-                &:last-child{
-                    @include fluidmarginright(2rem, 7rem);
-                }
-            }
+            //     &:last-child{
+            //         @include fluidmarginright(2rem, 7rem);
+            //     }
+            // }
 
             .schedule-timeline-date{
                 display: inline-flex;

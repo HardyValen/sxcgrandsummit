@@ -39,20 +39,20 @@
 						We also have sent you the email for the next step of registration to {{ $data->email }}.
 					</p>
 					<p>
-						If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
+						If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact our instagram at @sxcgrandsummit
 					</p>
 				@endif
 			</div>
 
-			<hr style="background-color: #aaaaaa">
+			{{-- <hr style="background-color: #aaaaaa"> --}}
 
-			<div class="registration-success-summary">
+			{{-- <div class="registration-success-summary">
 				<div class="summary-data-container">
 					<div class="summary-data">
 						<p class='summary-title'>To Complete The Registration, <b>you must pay minimum donation Rp. 20.000 to these accounts:</b> </p>
 						<p class='summary-date'>{{ date('l, d F Y') }}</p>
 					</div>
-<!-- 				<div class="summary-data">
+                    <!--<div class="summary-data">
 						<p class='summary-title'>TEAM ID</p>
 						<p class='summary-date'>{{ $data->id }}</p>
 					</div> -->
@@ -71,7 +71,7 @@
 						</p>
 					</div> -->
 				</div>
-			</div>
+			</div> --}}
 
 			<hr style="background-color: #aaaaaa">
 
