@@ -12,20 +12,22 @@
 
         <section class="landing-hero">
             <div class="hero-top">
-                <div class="hero-title">
-                    <h1><span class="color-secondary">Stay</span>
-                        (ACT)
-                        <span class="color-secondary">HOME</span>
-                    </h1>
-                        
-                </div>
-                <div class="hero-description">
-                    <p>
-                        The 9th Grand Summit is StudentsxCEOs Bandung Chapter’s most anticipated annual event.
-                        It provides a platform for selected students across Indonesia to discuss and bring a
-                        solution for businesses and NGOs to solve real problems relevant to the Sustainable Development Goals (SDGs).
-                        The 9th Grand Summit covers the pre-event, business case competition, and conference.    
-                    </p>
+                <div class="hero-text">
+                    <div class="hero-title">
+                        <h1><span class="color-secondary">Stay</span>
+                            (ACT)
+                            <span class="color-secondary">HOME</span>
+                        </h1>
+                            
+                    </div>
+                    <div class="hero-description">
+                        <p>
+                            The 9th Grand Summit is StudentsxCEOs Bandung Chapter’s most anticipated annual event.
+                            It provides a platform for selected students across Indonesia to discuss and bring a
+                            solution for businesses and NGOs to solve real problems relevant to the Sustainable Development Goals (SDGs).
+                            The 9th Grand Summit covers the pre-event, business case competition, and conference.    
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="hero-bottom">
