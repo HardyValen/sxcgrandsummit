@@ -31,6 +31,6 @@ class PreeventController extends Controller
     	$user->email = request('email');
         $user->notify(new EmailPreevent());
         
-		return view('pages.registration.preevent_summit')->with('data', $member);
+		return view('pages.registration.success_preevent')->with('data', $member);
     }
 }
