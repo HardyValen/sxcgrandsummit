@@ -153,13 +153,9 @@
                 <div class="flow-card">
                     <h3>Registration</h3>
                     <p>
-                        Register before June 13<sup>th</sup>
-                        and get email confirmation for payment. 
-                        100% of ticket sales will be donated to
-                        Yayasan Indonesia Kuat. You can also donate more!
-                        The link to join the online seminar will also be sent to your email.
-                        Join the online seminar punctually and nail the skill!
- 
+                        Register before June 13<sup>th</sup>, 2020
+                        and follow the steps on the confirmation email.
+                        Fight Covid-19 by donating to Yayasan Indonesia Kuat through this event!
                     </p>
                 </div>
                 <div class="flow-connector"></div>
@@ -209,13 +205,9 @@
                 <div class="flow-card">
                     <h3>Registration</h3>
                     <p>
-                        Register before June 20<sup>th</sup>
-                         and get email confirmation for payment. 
-                        100% of ticket sales will be donated to
-                        Yayasan Indonesia Kuat. You can also donate more!
-                        The link to join the online seminar will also be sent to your email.
-                        Join the online seminar punctually and nail the skill!
- 
+                        Register before June 20<sup>th</sup>, 2020
+                        and follow the steps on the confirmation email.
+                        Fight Covid-19 by donating to Yayasan Indonesia Kuat through this event!
                     </p>
                 </div>
                 <div class="flow-connector"></div>
