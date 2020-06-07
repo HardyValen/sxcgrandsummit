@@ -49,7 +49,7 @@
 
         img{
             @include fluidwidth(12rem, 15rem);
-            margin-bottom: 1.2rem;
+            margin-bottom: remToVw(96rem, 2rem);
             display: none;
 
             @media screen and (max-width: 960px) {
@@ -222,8 +222,19 @@
 }
 
 .registration-submit{
+    width: 100%;
     @include fluidpaddingy(2rem, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     // @include fluidpaddingx(2rem, 3rem);
+
+    .registration-submit-button{
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
     
     .button-black-transparent {
         @include fluidmarginx(0.5rem, 1rem);
@@ -231,4 +242,7 @@
 
     }
 
+    p {
+        text-align: center;
+    }
 }

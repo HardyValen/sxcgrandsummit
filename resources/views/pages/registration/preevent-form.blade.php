@@ -18,7 +18,7 @@
         </a>
       </div>
 
-      <div class="registration-title" style="margin-bottom: 1rem">
+      <div class="registration-title" style="margin-bottom: 2rem">
         <img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
         <h3>Pre Event 2</h3>
         <h1>REGISTRATION</h1>
@@ -29,14 +29,17 @@
       <form action="" method="post">
         @csrf
         <div class="registration-content">
-      
-
           <div class="registration-input-group">
             <p class="group-header">YOUR INFO &mdash;</p>
             
             <div class="registration-input">
               <input type="text" class="form-input" name="name" id="name" placeholder=' ' required/>
               <label class="text-label" for="name">Full Name</label>
+            </div>
+
+            <div class="registration-input">
+              <input type="email" class="form-input" name="email" id="email" placeholder=' ' required/>
+              <label class="text-label" for="email">Email</label>
             </div>
 
             <div class="registration-input-row">
@@ -58,18 +61,8 @@
             </div>
 
             <div class="registration-input">
-              <input type="email" class="form-input" name="email" id="email" placeholder=' ' required/>
-              <label class="text-label" for="email">Email</label>
-            </div>
-
-            <div class="registration-input">
-              <input type="text" class="form-input" name="phone" id="phone" placeholder=' ' required/>
-              <label class="text-label" for="phone">Phone Number</label>
-            </div>
-
-            <div class="registration-input">
-              <input type="text" class="form-input" name="major" id="major" placeholder=' ' required/>
-              <label class="text-label" for="major">Major</label>
+              <input type="text" class="form-input" name="hometown" id="hometown" placeholder=' ' required/>
+              <label class="text-label" for="hometown">Home Town</label>
             </div>
 
             <div class="registration-input">
@@ -78,18 +71,25 @@
             </div>
 
             <div class="registration-input">
-              <input type="text" class="form-input" name="hometown" id="hometown" placeholder=' ' required/>
-              <label class="text-label" for="hometown">Home Town</label>
+              <input type="text" class="form-input" name="major" id="major" placeholder=' ' required/>
+              <label class="text-label" for="major">Major</label>
             </div>
+
+            <div class="registration-input">
+              <input type="text" class="form-input" name="phone" id="phone" placeholder=' ' required/>
+              <label class="text-label" for="phone">Phone Number</label>
+            </div>
+            
 
           </div>
 
         <hr style="background-color: #aaaaaa">
 
-        <div class="registration-submit flex-justify-center">
-          <div class="registration-input">
+        <div class="registration-submit">
+          <div class="registration-submit-button">
             <input type="submit" class='button-primary' value="Register">
           </div>
+          <p>Please wait for a maximum of <b>15 Seconds</b> after clicking the register. We're going to mail you automatically if successful.</p>
         </div>
 
       </form>

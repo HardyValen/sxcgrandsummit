@@ -5642,7 +5642,7 @@ main {
 }
 
 .registration-card .registration-title img {
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.08333vw;
   display: none;
 }
 
@@ -6214,6 +6214,20 @@ main {
 }
 
 .registration-submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registration-submit {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -6237,6 +6251,17 @@ main {
     padding-top: calc(2.08333vw);
     padding-bottom: calc(2.08333vw);
   }
+}
+
+.registration-submit .registration-submit-button {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .registration-submit .button-black-transparent {
@@ -6285,6 +6310,10 @@ main {
   .registration-submit .button-black-transparent {
     font-size: calc(1.11111vw);
   }
+}
+
+.registration-submit p {
+  text-align: center;
 }
 
 .registration-hero {
@@ -6355,6 +6384,11 @@ main {
 
 .registration-success .registration-success-description {
   margin-bottom: 1.5rem;
+}
+
+.registration-success .registration-success-description p {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .registration-success .registration-success-link {

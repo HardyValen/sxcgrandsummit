@@ -5,11 +5,12 @@
 @endsection
 
 @section('content')
-  <main class='registration-container'>
+@include('blocks.sidebar')
+<main class='registration-container'>
     <section class="registration-hero"></section>
     <section class="registration-card">
 		<div class="registration-navigation">
-			<a href="/business-case/register">
+			<a href="/pre-event">
 			<img src="{{URL::asset("assets/registration/BackIcon.svg")}}">
 			</a>
 			<img src="{{URL::asset("assets/registration/MoreIcon-Outline.svg")}}">
@@ -17,24 +18,30 @@
 
 		<div class="registration-title">
 			<img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
-			<h1>SUCCESSFULLY REGISTERED</h1>
-			<h2>(EARLY BIRD)</h2>
+			<h3>Pre Event 2</h3>
+			<h2>Registration Success</h2>
 		</div>
 
 		<div class="registration-success">
 			<div class="registration-success-description">
-				<p style='text-align: center'>
+				<p>
 					Your registration for The Summmit of the 9th StudentsxCEOs Pre Event 2 has been recorded.
 				</p>
-				<p style="text-align: center">
-					We also have sent you the email for the next step of registration to {{ $data->email }}.
-				</p>
-				<p style="text-align: center">
-				    If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
-				</p>
-				<p style="text-align: center">
-					We also have sent you the email for the next step of registration to {{ $data->email }}.
-				</p>
+				@if ($emailException)
+					<p>
+						But unfortunately, our system cannot send you an email automatically for the next step of registration to {{ $data->email }}, we're sorry for the 15 seconds inconvenience.
+					</p>
+					<p>
+						Please contact one of our public relations for the next step of registration: Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
+					</p>
+				@else
+					<p>
+						We also have sent you the email for the next step of registration to {{ $data->email }}.
+					</p>
+					<p>
+						If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
+					</p>
+				@endif
 			</div>
 
 			<hr style="background-color: #aaaaaa">
@@ -42,16 +49,17 @@
 			<div class="registration-success-summary">
 				<div class="summary-data-container">
 					<div class="summary-data">
-						<p class='summary-title'>REGISTER DATE</p>
+						<p class='summary-title'>To Complete The Registration, <b>you must pay minimum donation Rp. 20.000 to these accounts:</b> </p>
 						<p class='summary-date'>{{ date('l, d F Y') }}</p>
 					</div>
-<!-- 					<div class="summary-data">
+<!-- 				<div class="summary-data">
 						<p class='summary-title'>TEAM ID</p>
 						<p class='summary-date'>{{ $data->id }}</p>
 					</div> -->
 					<div class="summary-data">
 						<p class='summary-title'>PAYMENT</p>
 						<p class='summary-date'>
+							Jenius 90012636107 Faiza Nurkholida<br>
 							BCA 5221166435 Chyntia Angelina<br>
 							BNI  670350698 Zahra Fulli Fauza<br>
 						</p>
