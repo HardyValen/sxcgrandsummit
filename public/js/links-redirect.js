@@ -6,9 +6,9 @@ let locationRegexBusinessCase = new RegExp("business-case*");
 // let linkRegisSummit = "https://sxcgrandsummit.com/summit/register"
 // let linkRegisBCC = "https://sxcgrandsummit.com/business-case/register"
 // let linkRegisPreEvent = "https://sxcgrandsummit.com/pre-event/register"
-let linkRegisSummit = "http://bit.ly/thesummitsxc"
-let linkRegisBCC = "http://bit.ly/getbccsummit"
-let linkRegisPreEvent = "http://bit.ly/preevent2summit"
+let linkRegisSummit = "summit/register"
+let linkRegisBCC = "business-case/register"
+let linkRegisPreEvent = "pre-event/register"
 
 
 // $ Link to registers
