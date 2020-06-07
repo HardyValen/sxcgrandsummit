@@ -170,6 +170,10 @@
         font-weight: 700;
         line-height: 1.0;
         color: map-get($theme-colors, "white");
+        @media screen and (max-width:960px) {
+            @include fluidfontsize(2.5rem, 3.4rem);
+            line-height: 1.25;
+        }
     }
 
     h2{
@@ -178,6 +182,8 @@
         font-weight: 700;
         line-height: 1.0;
         color: map-get($theme-colors, "white");
+
+        
     }
     
     
@@ -199,6 +205,9 @@
         display: inline-flex;
         border-radius: 50%;
         background-color: map-get($theme-colors, "secondary");
+        @media screen and (max-width:960px) {
+            display: none;
+        }
     }
 
     .showcase-header{
@@ -206,6 +215,10 @@
         flex-direction: column;
         align-items: center;
         @include fluidpaddingbottom(7rem, 8rem);
+        
+        @media screen and (max-width:960px){
+            @include fluidpaddingbottom(2rem, 3rem);
+        }
     }
 
     .showcase-body {
@@ -216,19 +229,38 @@
         border-radius: 3rem;
         display: flex;
         flex-direction: row;
-        // justify-content: center;
         align-items: center;
-
-
+        
+        @media screen and (max-width:960px) {
+            background: none;
+            @include background("../assets/pre-event/showcase-body-vertical.svg");
+            @include backgroundPosition(50%, 0%);
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+        }
+        
         .showcase-image{
             width: 32%;
-            // @include fluidpadding(6rem, 6rem);
             display: flex;
             align-items: center;
             justify-content: center;
             img {
                 width: 60%;
             }
+            
+            @media screen and (max-width:960px) {
+                @include fluidminheight(15rem, 18rem);
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                
+                img {
+                    @include fluidpaddingtop(3rem, 3.2rem);
+                    width: 70%;
+                }
+            }
+            
         }
 
         .showcase-text {
@@ -238,6 +270,20 @@
                 @include fluidpaddingtop(1rem, 1.2rem);
                 @include fluidpaddingleft(2rem, 2.4rem);
             }
+            
+            @media screen and (max-width:960px) {
+                width: 100%;
+                @include fluidpaddingx(2rem, 2.5rem);
+                @include fluidpaddingtop(7rem, 8rem);
+                @include fluidpaddingbottom(3rem, 3.2rem);
+                text-align: center;
+                
+                .speaker-title {
+                    padding: 0;
+                    @include fluidpaddingtop(1.8rem, 2rem);
+                }
+            }
+
         }   
     }
 }

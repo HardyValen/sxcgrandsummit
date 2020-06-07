@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="hero-icon">
-                    <img src="{{URL::asset('assets/business-case/icon.png')}}"
+                    <img src="{{URL::asset('assets/business-case/icon.png')}}">
                 </div>
             </div>
             <div class="hero-bottom">

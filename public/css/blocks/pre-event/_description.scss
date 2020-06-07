@@ -10,7 +10,11 @@
     h2{
         color: map-get($theme-colors, "white");
     }
-    
+    .description-header {
+        @media screen and (max-width:960px){
+            width: 80%;
+        }
+    }
     .description-body {
         @include fluidpaddingy(5rem, 6rem);
         width: 85%;
@@ -25,10 +29,20 @@
 
         .description-text {
             @include fluidpaddingleft(4rem, 5rem);
+
+            @media screen and (max-width:960px){
+                @include fluidpaddingright(3rem, 3.5rem);
+                @include fluidpaddingleft(2rem, 2.5rem);
+                text-align: justify;
+            }
         }
 
         .description-image {
             @include fluidpaddingleft(2.5rem, 3.5rem);
+            @media screen and (max-width:960px){
+                padding-left: 0;
+                @include fluidpaddingbottom(3rem, 4rem);
+            }
         }
 
 
@@ -51,6 +65,10 @@
             line-height: 2.5;
             list-style: none;
             position: relative;
+            @media screen and (max-width:960px){
+                line-height: 1.5;
+                @include fluidpaddingbottom(1rem, 1.2rem);
+            }
         }
         li:before{
             content:'';
@@ -62,6 +80,9 @@
             display: inline-flex;
             border-radius: 50%;
             background-color: map-get($theme-colors, "white");
+            @media screen and (max-width:960px){
+                @include fluidtop(0.9rem, 1.1rem);
+            }
         }
     }
 }
