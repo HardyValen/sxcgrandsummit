@@ -1,5 +1,5 @@
 @mixin hero-template($url){
-    $externalPadding: ("min": 2rem, "max": 5rem);
+    $externalPadding: ("min": 5rem, "max": 8rem);
     $logoWidth: ("min": 8rem, "max": 12rem);
     $stdPaddingMin: 1rem;
     $stdPaddingMax: 2rem;
@@ -45,48 +45,70 @@
         color: map-get($theme-colors, "secondary");
     }
 
-    .hero-text {
+    .hero-top {
         width: 100%;
-        flex-direction: column;
-        @include fluidpadding(
+        display: flex;
+        justify-content: stretch;
+        flex-direction: row;
+        align-items: flex-end;
+        @include fluidpaddingx(
             map-get($externalPadding, "min"), 
             map-get($externalPadding, "max")
         );
+        @include fluidpaddingy(3rem, 4rem);
 
-        .hero-logo {
-            @include fluidwidth(
-                map-get($logoWidth, "min"),
-                map-get($logoWidth, "max")
-            );
-        }
 
-        .hero-title {
-            @include fluidpaddingy($stdPaddingMin, $stdPaddingMax);
-        }
-
-        .hero-description {
-            width: 52.5%;
+        .hero-text {
+            width:60%;
+            display: flex;
+            flex-direction: column;
 
             @media screen and (max-width: 960px) {
                 width: 100%;
             }
 
-            p {
-                @include paragraph1();
-                text-align: justify;
+            .hero-logo {
+                @include fluidwidth(
+                    map-get($logoWidth, "min"),
+                    map-get($logoWidth, "max")
+                );
+            }
+    
+            .hero-title {
+                @include fluidpaddingy($stdPaddingMin, $stdPaddingMax);
+            }
+    
+            .hero-description {
+                p {
+                    @include paragraph1();
+                    text-align: justify;
+                }
+            }
+        }
+
+        .hero-icon {
+            width: 40%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+            @media screen and (max-width: 960px) {
+                display: none;
+            }
+
+            img {
+                width: 80%;
+                @include fluidpaddingright(2rem, 3rem);
             }
         }
     }
 
-    .hero-icon {
-        
-    }
 
     .hero-bottom {
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         
         @media screen and (max-width: 960px){
@@ -101,7 +123,9 @@
             );
 
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
             flex-shrink: 1;
 
             @media screen and (max-width: 1366px) {
@@ -113,29 +137,30 @@
 
             
             a {
-                &:first-child {
-                    margin-right: $btnPadding;
+                margin: 0;
+                // &:first-child {
+                //     margin-right: $btnPadding;
                     
-                    @media screen and (max-width: 960px) {
-                        margin-right: $btnPadding/2;
-                    }
-                }
+                //     @media screen and (max-width: 960px) {
+                //         margin-right: $btnPadding/2;
+                //     }
+                // }
                 
-                &:last-child {
-                    margin-left: $btnPadding;
-                    @media screen and (max-width: 960px) {
-                        margin-left: $btnPadding/2;
-                    }
-                }
+                // &:last-child {
+                //     margin-left: $btnPadding;
+                //     @media screen and (max-width: 960px) {
+                //         margin-left: $btnPadding/2;
+                //     }
+                // }
                 
-                &:not(:last-child):not(:first-child) {
-                    margin-right: $btnPadding;
-                    margin-left: $btnPadding;
-                    @media screen and (max-width: 960px) {
-                        margin-left: $btnPadding/2;
-                        margin-right: $btnPadding/2;
-                    }
-                }
+                // &:not(:last-child):not(:first-child) {
+                //     margin-right: $btnPadding;
+                //     margin-left: $btnPadding;
+                //     @media screen and (max-width: 960px) {
+                //         margin-left: $btnPadding/2;
+                //         margin-right: $btnPadding/2;
+                //     }
+                // }
             }
         }
 

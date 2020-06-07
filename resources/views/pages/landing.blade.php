@@ -11,7 +11,7 @@
         @include("blocks.navbar")
 
         <section class="landing-hero">
-            <div class="hero-text">
+            <div class="hero-top">
                 <div class="hero-title">
                     <h1><span class="color-secondary">Stay</span>
                         (ACT)

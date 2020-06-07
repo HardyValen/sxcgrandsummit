@@ -38,7 +38,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             @include fluidpaddingbottom(2rem, 3rem);
+            br {
+                line-height: 200%;
+            }
         }
     }
 }

@@ -154,9 +154,10 @@
 @mixin showcase2(){
     $img-padding: ("min": 3rem, "max": 4rem);
     @include background("../assets/pre-event/speaker-backdrop.png");
-    @include fluidpaddingy(5rem, 6rem);
+    @include fluidpaddingtop(5rem, 6rem);
+    @include fluidpaddingbottom(10rem, 12rem);
     width: 100%;
-    height: 100%;
+    // height: 100%;
     display: flex;
     flex-direction: column;
     // justify-content: center;
@@ -169,6 +170,10 @@
         font-weight: 700;
         line-height: 1.0;
         color: map-get($theme-colors, "white");
+        @media screen and (max-width:960px) {
+            @include fluidfontsize(2.5rem, 3.4rem);
+            line-height: 1.25;
+        }
     }
 
     h2{
@@ -177,11 +182,13 @@
         font-weight: 700;
         line-height: 1.0;
         color: map-get($theme-colors, "white");
+
+        
     }
     
     
     h3 {
-        @include header3();
+        @include fluidfontsize(1.6rem, 2rem);
         @include montserrat();
         font-weight: 600;
         color: map-get($theme-colors, "white");
@@ -192,12 +199,15 @@
         content:'';
         position: absolute;
         @include fluidleft(-2rem, -2.4rem);
-        @include fluidtop(0.6rem, 0.8rem);
+        @include fluidtop(0.4rem, 0.6rem);
         @include fluidwidth(1.2rem, 1.4rem);
         @include fluidheight(1.2rem, 1.4rem);
         display: inline-flex;
         border-radius: 50%;
-        border: remToVw(96rem, .25rem) solid map-get($theme-colors, "secondary");
+        background-color: map-get($theme-colors, "secondary");
+        @media screen and (max-width:960px) {
+            display: none;
+        }
     }
 
     .showcase-header{
@@ -205,35 +215,75 @@
         flex-direction: column;
         align-items: center;
         @include fluidpaddingbottom(7rem, 8rem);
+        
+        @media screen and (max-width:960px){
+            @include fluidpaddingbottom(2rem, 3rem);
+        }
     }
 
     .showcase-body {
         @include background("../assets/pre-event/showcase-body.svg");
-        @include backgroundPosition(50%, 50%);
-        width: 80%;
+        @include backgroundPosition(0%, 50%);
         @include fluidminheight(30rem, 35rem);
+        width: 80%;
         border-radius: 3rem;
         display: flex;
         flex-direction: row;
-        // justify-content: center;
         align-items: center;
-
-
+        
+        @media screen and (max-width:960px) {
+            background: none;
+            @include background("../assets/pre-event/showcase-body-vertical.svg");
+            @include backgroundPosition(50%, 0%);
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+        }
+        
         .showcase-image{
-            // width: 50%;
-            @include fluidpadding(6rem, 6rem);
-                
+            width: 32%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
-                width: 100%;
+                width: 60%;
             }
+            
+            @media screen and (max-width:960px) {
+                @include fluidminheight(15rem, 18rem);
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                
+                img {
+                    @include fluidpaddingtop(3rem, 3.2rem);
+                    width: 70%;
+                }
+            }
+            
         }
 
         .showcase-text {
-            @include fluidpaddingleft(4rem, 4rem);
+            @include fluidpaddingleft(8rem, 8rem);
+            width: 68%;
             .speaker-title {
                 @include fluidpaddingtop(1rem, 1.2rem);
                 @include fluidpaddingleft(2rem, 2.4rem);
             }
+            
+            @media screen and (max-width:960px) {
+                width: 100%;
+                @include fluidpaddingx(2rem, 2.5rem);
+                @include fluidpaddingtop(7rem, 8rem);
+                @include fluidpaddingbottom(3rem, 3.2rem);
+                text-align: center;
+                
+                .speaker-title {
+                    padding: 0;
+                    @include fluidpaddingtop(1.8rem, 2rem);
+                }
+            }
+
         }   
     }
 }

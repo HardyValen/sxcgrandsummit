@@ -1,13 +1,88 @@
-@import "../../module/description-template";
+// @import "../../module/description-template";
 
 .pre-event-description{
-    @include description-template-1();
+    background-color: map-get($theme-colors, "primary");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h2{
+        color: map-get($theme-colors, "white");
+    }
+    .description-header {
+        @media screen and (max-width:960px){
+            width: 80%;
+        }
+    }
+    .description-body {
+        @include fluidpaddingy(5rem, 6rem);
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
-    img {
-        border-radius: remToVw(96rem, 2rem);
+        @media screen and (max-width:960px){
+            flex-direction: column;
+        }
+
+        .description-text {
+            @include fluidpaddingleft(4rem, 5rem);
+
+            @media screen and (max-width:960px){
+                @include fluidpaddingright(3rem, 3.5rem);
+                @include fluidpaddingleft(2rem, 2.5rem);
+                text-align: justify;
+            }
+        }
+
+        .description-image {
+            @include fluidpaddingleft(2.5rem, 3.5rem);
+            @media screen and (max-width:960px){
+                padding-left: 0;
+                @include fluidpaddingbottom(3rem, 4rem);
+            }
+        }
+
+
     }
 
-    p {
-        @include paragraph1();
+    ul {
+        padding-right: 10rem;
+
+        @media screen and (max-width: 960px) {
+            padding-right: 2rem;
+        }
+
+        li {
+            @include montserrat();
+            @include paragraph1();
+            @include fluidleft(2.6rem, 3rem);
+            letter-spacing: 0.01rem;
+            color: map-get($theme-colors, "white");
+            font-weight: 600;
+            line-height: 2.5;
+            list-style: none;
+            position: relative;
+            @media screen and (max-width:960px){
+                line-height: 1.5;
+                @include fluidpaddingbottom(1rem, 1.2rem);
+            }
+        }
+        li:before{
+            content:'';
+            position: absolute;
+            @include fluidleft(-2rem, -2.4rem);
+            @include fluidtop(1.5rem, 1.7rem);
+            @include fluidwidth(1rem, 1.2rem);
+            @include fluidheight(1rem, 1.2rem);
+            display: inline-flex;
+            border-radius: 50%;
+            background-color: map-get($theme-colors, "white");
+            @media screen and (max-width:960px){
+                @include fluidtop(0.9rem, 1.1rem);
+            }
+        }
     }
 }

@@ -11,23 +11,27 @@
         @include("blocks.navbar")
 
         <section class="pre-event-hero">
-            <div class="hero-text">
-                {{-- <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9"> --}}
-                <div class="hero-title">
-                    <h1>
-                        <span class="color-secondary">Pre</span> Event<br>
-                    </h1>
+            <div class="hero-top">
+                <div class="hero-text">
+                    <div class="hero-title">
+                        <h1>
+                            <span class="color-secondary">Pre</span> Event<br>
+                        </h1>
+                    </div>
+                    <div class="hero-description">
+                        <p>
+                            A series of events that are conducted to introduce and build awareness of the Grand Summit.
+                            We want to provide the opportunity to gain various insights from expert speakers and hands on experience on mini-workshop session.
+                        </p>
+                    </div>
                 </div>
-                <div class="hero-description">
-                    <p>
-                        A series of events that are conducted to introduce and build awareness of the Grand Summit.
-                        We want to provide the opportunity to gain various insights from expert speakers and hands on experience on mini-workshop session.
-                    </p>
+                <div class="hero-icon">
+                    <img src="{{URL::asset('assets/pre-event/icon.png')}}">
                 </div>
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary" id="summitLink">Registration</a>
+                    <a class="button-primary preLink">Registration</a>
                     {{-- <a class="button-secondary-transparent" href="#scroll"  onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
@@ -85,28 +89,11 @@
             </div>
         </section>
 
-    {{-- <section class="pre-event-description" id="scroll">
-        <div class="description-header">
-            <div class="header-line"></div>
-            <h2>A Brief Description:</h2>
-        </div>
-        <div class="description-body">
-            <div class="description-text">
-                <p>
-                    Pre Event is a series of events that are conducted and aimed to introduce the Grand Summit. Within these activities, we want to provide our target audience and Grand Summit participants the opportunity to gain various insights from speakers who are experts in their fields. The theme of the Pre Events itself will correlate with the big theme of The Summit, which revolves around "The Applications of SDGs in Building Sustainable Businesses."
-                </p>
-            </div>
-            <div class="description-image">
-                <img src="{{URL::asset('assets/pre-event/description-image.png')}}">
-            </div>
-        </div>
-    </section> --}}
-
     <section class="pre-event-slider">
         <div class="slider-container" id="sliderc">
-            <div id="1" class= "menu" onclick="changePreEvent(event, 'title1', 'speaker1')">Pre Event 1</div>
-            <div id="2" class= "menu active" onclick="changePreEvent(event, 'title2', 'speaker2')">Pre Event 2</div>
-            <div id="3" class= "menu" onclick="changePreEvent(event, 'title3', 'speaker3')">Pre Event 3</div>
+            <div id="1" class= "menu" onclick="changePreEvent(event, 'title1', 'speaker1', 'null')">Pre Event 1</div>
+            <div id="2" class= "menu active" onclick="changePreEvent(event, 'title2', 'speaker2', 'desc2')">Pre Event 2</div>
+            <div id="3" class= "menu" onclick="changePreEvent(event, 'title3', 'speaker3', 'desc3')">Pre Event 3</div>
         </div>
     </section>
     
@@ -253,105 +240,155 @@
         </div>
     </section>
 
-    <section class="pre-event-speakers" id="speaker1">
-        <div class="showcase-header">
-            @component('blocks.title')
-            <h2>Meet The Speakers</h2>
-            @endcomponent
-        </div>
-        <div class="showcase-body">
-            <div class="showcase-card">
-                <div class="showcase-card-image">
-                    <img src="{{URL::asset('assets/pre-event/speaker1.png')}}">
-                </div>
-                <div class="showcase-card-title">
-                    <h2>Gabriella Hartono Putri</h2>
-                </div>
-                <div class="showcase-card-description">
-                    <ul>
-                        <li>Member of Paragon Indonesian Leaders</li>
-                        <li>P&G Human Resource Intern</li>
-                    </ul>
-                </div>
+    <section class="pre-event-speakers temp1" id="speaker1">
+        <div class="temp1">
+            <div class="showcase-header">
+                @component('blocks.title')
+                <h2>Meet The Speakers</h2>
+                @endcomponent
             </div>
-            <div class="showcase-card">
-                <div class="showcase-card-image">
-                    <img src="{{URL::asset('assets/pre-event/speaker2.png')}}">
+            <div class="showcase-body">
+                <div class="showcase-card">
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/speaker1.png')}}">
+                    </div>
+                    <div class="showcase-card-title">
+                        <h2>Gabriella Hartono Putri</h2>
+                    </div>
+                    <div class="showcase-card-description">
+                        <ul>
+                            <li>Member of Paragon Indonesian Leaders</li>
+                            <li>P&G Human Resource Intern</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="showcase-card-title">
-                    <h2>Jordi Adrianto Apriantono</h2>
+                <div class="showcase-card">
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/speaker2.png')}}">
+                    </div>
+                    <div class="showcase-card-title">
+                        <h2>Jordi Adrianto Apriantono</h2>
+                    </div>
+                    <div class="showcase-card-description">
+                        <ul>
+                            <li>Individual Winner of Unilever Future</li>
+                            <li>Leaders' League 2019</li>
+                            <li>XL Future Leaders' Batch 7 Awardee</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="showcase-card-description">
-                    <ul>
-                        <li>Individual Winner of Unilever Future</li>
-                        <li>Leaders' League 2019</li>
-                        <li>XL Future Leaders' Batch 7 Awardee</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="showcase-card">
-                <div class="showcase-card-image">
-                    <img src="{{URL::asset('assets/pre-event/speaker3.png')}}">
-                </div>
-                <div class="showcase-card-title">
-                    <h2>Nicky Oktav Fauziah</h2>
-                </div>
-                <div class="showcase-card-description">
-                    <ul>
-                        <li>Private Class of Public Speaking at Superprof</li>
-                        <li>Speaker at International Symposium "Are You The Next CEO?" Scholarian Seoul, South Korea</li>
-                    </ul>
+                <div class="showcase-card">
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/pre-event/speaker3.png')}}">
+                    </div>
+                    <div class="showcase-card-title">
+                        <h2>Nicky Oktav Fauziah</h2>
+                    </div>
+                    <div class="showcase-card-description">
+                        <ul>
+                            <li>Private Class of Public Speaking at Superprof</li>
+                            <li>Speaker at International Symposium "Are You The Next CEO?" Scholarian Seoul, South Korea</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pre-event-speakers" id="speaker2">
-        <div class="showcase-header">
-            @component('blocks.title')
-            <h2>Meet The Speaker</h2>
-            @endcomponent
-        </div>
-        <div class="showcase-body">
-            <div class="showcase-image">
-                <img src={{URL::asset('assets/pre-event/speakerpe2.png')}}>
+    <section class="pre-event-speakers temp2" id="speaker2">
+        <div class="temp2">
+            <div class="showcase-header">
+                @component('blocks.title')
+                <h2>Meet The Speaker</h2>
+                @endcomponent
             </div>
-            <div class="showcase-text">
-                <div class="speaker-name">
-                    <h1>
-                        Archie Anugrah
-                    </h1>
+            <div class="showcase-body">
+                <div class="showcase-image">
+                    <img src={{URL::asset('assets/pre-event/speakerpe2.png')}}>
                 </div>
-                <div class="speaker-title">
-                    <h3>
-                        Head of CEO Office -<span style="font-weight: 450"> PT Payfazz Teknologi Nusantara</span>
-                    </h3>
+                <div class="showcase-text">
+                    <div class="speaker-name">
+                        <h1>
+                            Archie Anugrah
+                        </h1>
+                    </div>
+                    <div class="speaker-title">
+                        <h3>
+                            Head of CEO Office -<span style="font-weight: 450"> PT Payfazz Teknologi Nusantara</span>
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="pre-event-speakers" id="speaker3">
-        <div class="showcase-header">
+        <div class="temp2">
+            <div class="showcase-header">
+                @component('blocks.title')
+                <h2>Meet The Speaker</h2>
+                @endcomponent
+            </div>
+            <div class="showcase-body">
+                <div class="showcase-image">
+                    <img src={{URL::asset('assets/pre-event/speakerpe3.png')}}>
+                </div>
+                <div class="showcase-text">
+                    <div class="speaker-name">
+                        <h1>
+                            Melvin Sumapung
+                        </h1>
+                    </div>
+                    <div class="speaker-title">
+                        <h3>
+                            CEO of <span style="font-weight: 450"> Justika</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pre-event-description"  id="desc2">
+        <div class="description-header">
             @component('blocks.title')
-            <h2>Meet The Speaker</h2>
+                <h2>Who Should Join The Experience?</h2>
             @endcomponent
         </div>
-        <div class="showcase-body">
-            <div class="showcase-image">
-                <img src={{URL::asset('assets/pre-event/speakerpe3.png')}}>
+        <div class="description-body">
+            <div class="description-image">
+                <img src="{{URL::asset('assets/pre-event/desc.png')}}">
             </div>
-            <div class="showcase-text">
-                <div class="speaker-name">
-                    <h1>
-                        Melvin Sumapung
-                    </h1>
-                </div>
-                <div class="speaker-title">
-                    <h3>
-                        CEO of -<span style="font-weight: 450"> Justika</span>
-                    </h3>
-                </div>
+            <div class="description-text" id="desc2">
+                <ul>
+                    <li>Local business owners and members <span style="font-weight: 400">who want to keep sustain in the VUCA era.</span></li>
+                    <li>Active organizations <span style="font-weight: 400">member in a dynamic environment. </span></li>
+                    <li>Students at high school and universities <span style="font-weight: 400">in a competitive environment.</span></li>
+                    <li>High enthusiast learner <span style="font-weight: 400">who wants to sharpen soft-skills.</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pre-event-description"  id="desc3">
+        <div class="description-header">
+            @component('blocks.title')
+                <h2>Who Should Join The Experience?</h2>
+            @endcomponent
+        </div>
+        <div class="description-body">
+            <div class="description-image">
+                <img src="{{URL::asset('assets/pre-event/desc.png')}}">
+            </div>
+
+            <div class="description-text">
+                <ul>
+                    <li>Local business owners and members <span style="font-weight: 400">who want to keep sustain in the VUCA era.</span></li>
+                    <li>Active organizations <span style="font-weight: 400">member in a dynamic environment. </span></li>
+                    <li>Students at high school and universities <span style="font-weight: 400">in a competitive environment.</span></li>
+                    <li>High enthusiast learner <span style="font-weight: 400">who wants to sharpen soft-skills.</span></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -366,10 +403,10 @@
     <section id="pre-event-registration" class="pre-event-registration">
         <div class="registration-container">
             <div class="registration-title">
-                <h2>Pre Event 2</h2>
                 <h2>
+                    Register<br>
                     <span class="color-secondary">
-                        Free Registration
+                        Pre Event 2
                     </span>
                 </h2>
             </div>
