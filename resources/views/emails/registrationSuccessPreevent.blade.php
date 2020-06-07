@@ -82,49 +82,26 @@
                                             </tr>
                                             <tr style="box-sizing: border-box;">
                                                 <p style="color: #636363;box-sizing: border-box;">
-                                                    We have received your registration form.
-                                                </p>
-                                                <p>
-                                                    Thank you for participating in StudentsxCEOs 9th Grand Summit Pre Event 2. To finish your registration, please follow these steps:
-                                                </p>
-                                                <p>
-                                                    1. <b>Finish payment by transfering Rp75.000,- (Early Bird Fee) to</b>
+                                                    Dear Pioneers of The Future, we already received your registration form for this Pre-Event:
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
-                                                    BCA 5221166435 Chyntia Angelina<br>
-                                                    BNI  670350698 Zahra Fulli Fauza
+                                                    <b>Mastering Pitching Skill to Sell Your Ideas</b>
                                                 </p>
                                                 <p>
-                                                    Please keep your proof of payment.
+                                                   To finish your registration, please <b>finish your payment</b> first with a <b>minimum of Rp. 20.000</b> and of course, <b>you can also donate more</b>/ 100% of ticket sales will be <b>donated to Yayasan Indonesia Kuat</b> in order to help Indonesia to fight against COVID-19. You can transfer through this following bank accounts:
+                                                </p>
+                                                <p style="color: #636363;box-sizing: border-box;">
+                                                    BCA 5221166435 Cynthia Angelina<br>
+                                                    BNI 670350698 Zahra Fulli Fauza
                                                 </p>
                                                 <p>
-                                                    2. <b>Scan Student Identity Card of every team member</b><br><br>
-                                                    This identity card scan is used to ensure each team member is an active undergraduate/diploma student.<br><br> 
-                                                    Identity cards must be scanned on both sides (front and back). <br><br>
-                                                    The scan results should be compiled in one PDF document with the name THE SUMMIT REG_[TEAM NAME] or THE SUMMIT REG_[FULL NAME] for individual registration. example:<br><br>
-                                                    THE SUMMIT REG_LUMOS.pdf<br>
-                                                    or<br>
-                                                    THE SUMMIT REG_FATHIMA AZZAHRA.pdf<br>
-                                                </p>
-                                                <p>
-                                                    3. <b>Send proof of payment and scan result to <i>grandsummitscc@gmail.com</i></b><br><br>
-
-                                                    with subject:<br><br>
-                                                    <i>For team registration</i><br>
-                                                    THE SUMMIT REG_ [TEAM NAME]_[TEAM LEADER'S FIRST NAME]<br>
-                                                    example:<br>
-                                                    THE SUMMIT REG_LUMOS_FATHIMA<br><br>
-
-                                                    <i>For individual registration</i><br>
-                                                    THE SUMMIT REG_ [FULL NAME]<br>
-                                                    example: <br>
-                                                    THE SUMMIT REG_FATHIMA AZZAHRA<br>
+                                                    Please <b>upload your payment receipt on bit.ly/payment2</b>. The deadline for payment is <b>24 hours after you receive this email.</b> 
                                                 </p>
                                                 <p>
                                                     4. <b>You will receive a confirmation email after your payment and document is verified within 1 x 24 hours.</b>
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
-                                                    Should you have any inquiries, feel free to contact us at <b>grandsummitsxc@gmail.com</b> and keep in touch for our latest information in <b>instagram.com/sxcgrandsummit</b>.
+                                                    Should you have any inquiries, feel free to contact us at grandsummitsxc@gmail.com and keep in touch for our latest information on instagram.com/sxcgrandsummit.
                                                 </p>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 30px 0 30px;font-size: 13px;box-sizing: border-box;"></p>
                                                 <p style="color: #636363;box-sizing: border-box;">
