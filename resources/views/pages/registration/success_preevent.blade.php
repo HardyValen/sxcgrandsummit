@@ -32,7 +32,7 @@
 						But unfortunately, our system cannot send you an email automatically for the next step of registration to {{ $data->email }}, we're sorry for the 15 seconds inconvenience.
 					</p>
 					<p>
-						Please contact our instagram at <a href="https://www.instagram.com/studentsxceosbdg/" >@sxcgrandsummit</a>
+						Please contact our instagram at <a href="https://www.instagram.com/sxcgrandsummit/" >@sxcgrandsummit</a>
 					</p>
 				@else
 					<p>
