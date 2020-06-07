@@ -6372,6 +6372,14 @@ main {
   text-align: center;
 }
 
+.registration-success .registration-success-description a {
+  color: #0252B3;
+}
+
+.registration-success .registration-success-description a:hover {
+  color: #0368E3;
+}
+
 .registration-success .registration-success-link {
   width: 100%;
   display: -webkit-box;

@@ -13,9 +13,9 @@
         <a href="{{URL::previous()}}">
           <img src="{{URL::asset("assets/registration/BackIcon.svg")}}">
         </a>
-        <a onclick="showsidebar()">
+        {{-- <a onclick="showsidebar()">
           <img src="{{URL::asset("assets/registration/MoreIcon-Outline.svg")}}">
-        </a>
+        </a> --}}
       </div>
 
       <div class="registration-title" style="margin-bottom: 2rem">

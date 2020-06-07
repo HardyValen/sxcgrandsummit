@@ -13,7 +13,7 @@
 			<a href="/pre-event">
 			<img src="{{URL::asset("assets/registration/BackIcon.svg")}}">
 			</a>
-			<img src="{{URL::asset("assets/registration/MoreIcon-Outline.svg")}}">
+			{{-- <img src="{{URL::asset("assets/registration/MoreIcon-Outline.svg")}}"> --}}
 		</div>
 
 		<div class="registration-title">
@@ -32,7 +32,7 @@
 						But unfortunately, our system cannot send you an email automatically for the next step of registration to {{ $data->email }}, we're sorry for the 15 seconds inconvenience.
 					</p>
 					<p>
-						Please contact one of our public relations for the next step of registration: Laura (081260000412/line: laurahtgaol) or Pauline (087780770588/line: serafinpauline)
+						Please contact our instagram at <a href="https://www.instagram.com/studentsxceosbdg/" >@sxcgrandsummit</a>
 					</p>
 				@else
 					<p>
