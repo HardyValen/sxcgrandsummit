@@ -1,11 +1,25 @@
-var url = window.location.pathname;
-var locationRegexLanding = new RegExp("landing*");
-var locationRegexPreEvent= new RegExp("pre-event*");
-var locationRegexSummit = new RegExp("summit*");
-var locationRegexBusinessCase = new RegExp("business-case*");
-var linkRegisSummit = "http://bit.ly/thesummitsxc"
-var linkRegisBCC = "http://bit.ly/getbccsummit"
-var linkRegisPreEvent = "http://bit.ly/preevent2summit"
+let url = window.location.pathname;
+let locationRegexLanding = new RegExp("landing*");
+let locationRegexPreEvent= new RegExp("pre-event*");
+let locationRegexSummit = new RegExp("summit*");
+let locationRegexBusinessCase = new RegExp("business-case*");
+// let linkRegisSummit = "https://sxcgrandsummit.com/summit/register"
+// let linkRegisBCC = "https://sxcgrandsummit.com/business-case/register"
+// let linkRegisPreEvent = "https://sxcgrandsummit.com/pre-event/register"
+let linkRegisSummit = "http://bit.ly/thesummitsxc"
+let linkRegisBCC = "http://bit.ly/getbccsummit"
+let linkRegisPreEvent = "http://bit.ly/preevent2summit"
+
+
+// $ Link to registers
+function update(classname, property, value) {
+    Array.from(document.getElementsByClassName(classname)).forEach(elm => (elm[property] = value));
+}
+
+update("preLink", "href", linkRegisPreEvent);
+update("bccLink", "href", linkRegisBCC);
+update("summitLink", "href", linkRegisSummit);
+
 
 if (locationRegexLanding.test(url)){
     let navRegist = document.querySelectorAll("#navRegist");

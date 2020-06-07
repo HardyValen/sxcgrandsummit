@@ -150,3 +150,90 @@
         }
     }
 }
+
+@mixin showcase2(){
+    $img-padding: ("min": 3rem, "max": 4rem);
+    @include background("../assets/pre-event/speaker-backdrop.png");
+    @include fluidpaddingy(5rem, 6rem);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    background-color: map-get($theme-colors, "white-alt");
+
+    h1{
+        @include header1();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.0;
+        color: map-get($theme-colors, "white");
+    }
+
+    h2{
+        @include header2();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.0;
+        color: map-get($theme-colors, "white");
+    }
+    
+    
+    h3 {
+        @include header3();
+        @include montserrat();
+        font-weight: 600;
+        color: map-get($theme-colors, "white");
+        position: relative;        
+    }
+
+    h3:before{
+        content:'';
+        position: absolute;
+        @include fluidleft(-2rem, -2.4rem);
+        @include fluidtop(0.6rem, 0.8rem);
+        @include fluidwidth(1.2rem, 1.4rem);
+        @include fluidheight(1.2rem, 1.4rem);
+        display: inline-flex;
+        border-radius: 50%;
+        border: remToVw(96rem, .25rem) solid map-get($theme-colors, "secondary");
+    }
+
+    .showcase-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include fluidpaddingbottom(7rem, 8rem);
+    }
+
+    .showcase-body {
+        @include background("../assets/pre-event/showcase-body.svg");
+        @include backgroundPosition(50%, 50%);
+        width: 80%;
+        @include fluidminheight(30rem, 35rem);
+        border-radius: 3rem;
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        align-items: center;
+
+
+        .showcase-image{
+            // width: 50%;
+            @include fluidpadding(6rem, 6rem);
+                
+            img {
+                width: 100%;
+            }
+        }
+
+        .showcase-text {
+            @include fluidpaddingleft(4rem, 4rem);
+            .speaker-title {
+                @include fluidpaddingtop(1rem, 1.2rem);
+                @include fluidpaddingleft(2rem, 2.4rem);
+            }
+        }   
+    }
+}

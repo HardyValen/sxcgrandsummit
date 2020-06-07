@@ -8,9 +8,9 @@
 
 
     @include fluidpaddingbottom($stdPaddingMin, $extPaddingMax);
-    @include backgroundOverlayDark($url);
+    @include backgroundDark1($url);
     @include backgroundPosition(50%, 50%);
-    @include shadowHero();
+    // @include shadowHero();
     min-height: 50vw;
     
     @media screen and (max-width: 960px) {
@@ -72,9 +72,14 @@
             }
 
             p {
+                @include paragraph1();
                 text-align: justify;
             }
         }
+    }
+
+    .hero-icon {
+        
     }
 
     .hero-bottom {
@@ -157,7 +162,7 @@
             .hero-schedule-element{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: first baseline;
                 flex-grow: 1;
 
                 .hero-schedule-title{
@@ -175,6 +180,7 @@
                 }
                 .more {
                     @include paragraph();
+                    @include fluidpaddingtop(4.5rem, 4.5rem);
                     font-weight: 700;
                 }
 

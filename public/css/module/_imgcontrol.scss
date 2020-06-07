@@ -42,6 +42,12 @@
     background-size: cover;
 }
 
+@mixin backgroundDark1($url) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @mixin backgroundDesaturate($url) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url($url);
     background-repeat: no-repeat;

@@ -11,3 +11,15 @@
 
 
 }
+
+.pre-event-speakers2 {
+    @include showcase2();
+
+    .section-title {
+        color: map-get($theme-colors, "white");
+        padding-top: 0;
+        @include fluidpaddingbottom(2rem, 2rem);
+    }
+
+
+}

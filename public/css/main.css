@@ -6605,14 +6605,12 @@ main {
 }
 
 .business-case-hero {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 16, 37, 0.8)), to(rgba(0, 16, 37, 0.9))), url("../assets/business-case/hero.png");
-  background: linear-gradient(0deg, rgba(0, 16, 37, 0.8), rgba(0, 16, 37, 0.9)), url("../assets/business-case/hero.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/business-case/hero.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/business-case/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
-  -webkit-box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
   min-height: 50vw;
   width: 100%;
   display: -webkit-box;
@@ -6833,6 +6831,28 @@ main {
   text-align: justify;
 }
 
+.business-case-hero .hero-text .hero-description p {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-hero .hero-text .hero-description p {
+    font-size: calc(1.6rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-hero .hero-text .hero-description p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-hero .hero-text .hero-description p {
+    font-size: calc(1.25vw);
+  }
+}
+
 .business-case-hero .hero-bottom {
   width: 100%;
   display: -webkit-box;
@@ -7030,9 +7050,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -7082,6 +7102,28 @@ main {
 @media screen and (min-width: 1440px) {
   .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
     font-size: calc(1.11111vw);
+  }
+}
+
+.business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  padding-top: 4.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: calc(4.5rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: calc(3.125vw);
   }
 }
 
@@ -8570,14 +8612,12 @@ main {
 }
 
 .pre-event-hero {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 16, 37, 0.8)), to(rgba(0, 16, 37, 0.9))), url("../assets/pre-event/hero-backdrop.png");
-  background: linear-gradient(0deg, rgba(0, 16, 37, 0.8), rgba(0, 16, 37, 0.9)), url("../assets/pre-event/hero-backdrop.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/pre-event/hero-backdrop.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pre-event/hero-backdrop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
-  -webkit-box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
   min-height: 50vw;
   width: 100%;
   display: -webkit-box;
@@ -8798,6 +8838,28 @@ main {
   text-align: justify;
 }
 
+.pre-event-hero .hero-text .hero-description p {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-hero .hero-text .hero-description p {
+    font-size: calc(1.6rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-hero .hero-text .hero-description p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-hero .hero-text .hero-description p {
+    font-size: calc(1.25vw);
+  }
+}
+
 .pre-event-hero .hero-bottom {
   width: 100%;
   display: -webkit-box;
@@ -8995,9 +9057,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -9047,6 +9109,28 @@ main {
 @media screen and (min-width: 1440px) {
   .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
     font-size: calc(1.11111vw);
+  }
+}
+
+.pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  padding-top: 4.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: calc(4.5rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: calc(3.125vw);
   }
 }
 
@@ -9822,24 +9906,24 @@ main {
 }
 
 .pre-event-topics .pre-event-date {
-  padding-bottom: 4.5rem;
+  padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 320px) {
   .pre-event-topics .pre-event-date {
-    padding-bottom: calc(4.5rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+    padding-bottom: calc(4rem + 0 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .pre-event-topics .pre-event-date {
-    padding-bottom: 4.7rem;
+    padding-bottom: 4rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .pre-event-topics .pre-event-date {
-    padding-bottom: calc(3.26389vw);
+    padding-bottom: calc(2.77778vw);
   }
 }
 
@@ -9867,6 +9951,33 @@ main {
 @media screen and (min-width: 1440px) {
   .pre-event-topics sup {
     font-size: calc(1.04167vw);
+  }
+}
+
+.pre-event-topics .pre-event-desc {
+  max-width: 70vw;
+  text-align: center;
+}
+
+.pre-event-topics .topic-flow {
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-topics .topic-flow {
+    padding-top: calc(4rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-topics .topic-flow {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-topics .topic-flow {
+    padding-top: calc(2.77778vw);
   }
 }
 
@@ -9951,11 +10062,33 @@ main {
 
 .pre-event-slider .slider-container {
   margin: !important auto;
-  max-width: 35vw;
+  max-width: 50vw;
   padding: 0;
   width: 80vw;
   border: 1px solid #828282;
   border-radius: 2rem;
+}
+
+.pre-event-slider .slider-container {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-slider .slider-container {
+    margin-top: calc(3rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-slider .slider-container {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-slider .slider-container {
+    margin-top: calc(2.08333vw);
+  }
 }
 
 .pre-event-slider .slider-container {
@@ -9991,7 +10124,7 @@ main {
   float: left;
   text-align: center;
   opacity: 0.5;
-  width: 50%;
+  width: 33.33333%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #828282;
@@ -10996,15 +11129,439 @@ main {
   }
 }
 
-.summit-hero {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 16, 37, 0.8)), to(rgba(0, 16, 37, 0.9))), url("../assets/summit/hero.png");
-  background: linear-gradient(0deg, rgba(0, 16, 37, 0.8), rgba(0, 16, 37, 0.9)), url("../assets/summit/hero.png");
+.pre-event-speakers2 {
+  background: url("../assets/pre-event/speaker-backdrop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E8E8E8;
+}
+
+.pre-event-speakers2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 {
+    padding-bottom: calc(5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+    padding-top: calc(5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 {
+    padding-top: calc(4.16667vw);
+    padding-bottom: calc(4.16667vw);
+  }
+}
+
+.pre-event-speakers2 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.0;
+  color: #FFFFFF;
+}
+
+.pre-event-speakers2 h1 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 h1 {
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 h1 {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 h1 {
+    font-size: calc(3.19444vw);
+  }
+}
+
+.pre-event-speakers2 h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.0;
+  color: #FFFFFF;
+}
+
+.pre-event-speakers2 h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 h2 {
+    font-size: calc(2rem + 1.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 h2 {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 h2 {
+    font-size: calc(2.22222vw);
+  }
+}
+
+.pre-event-speakers2 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.pre-event-speakers2 h3 {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 h3 {
+    font-size: calc(1.6rem + 0.8 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 h3 {
+    font-size: calc(1.66667vw);
+  }
+}
+
+.pre-event-speakers2 h3:before {
+  content: '';
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  border: 0.26042vw solid #FFC517;
+}
+
+.pre-event-speakers2 h3:before {
+  left: -2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 h3:before {
+    left: calc(-2rem + -0.4 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 h3:before {
+    left: -2.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 h3:before {
+    left: calc(-1.66667vw);
+  }
+}
+
+.pre-event-speakers2 h3:before {
+  top: 0.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 h3:before {
+    top: calc(0.6rem + 0.2 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 h3:before {
+    top: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 h3:before {
+    top: calc(0.55556vw);
+  }
+}
+
+.pre-event-speakers2 h3:before {
+  width: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 h3:before {
+    width: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 h3:before {
+    width: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 h3:before {
+    width: calc(0.97222vw);
+  }
+}
+
+.pre-event-speakers2 h3:before {
+  height: 1.2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 h3:before {
+    height: calc(1.2rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 h3:before {
+    height: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 h3:before {
+    height: calc(0.97222vw);
+  }
+}
+
+.pre-event-speakers2 .showcase-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pre-event-speakers2 .showcase-header {
+  padding-bottom: 7rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 .showcase-header {
+    padding-bottom: calc(7rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 .showcase-header {
+    padding-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 .showcase-header {
+    padding-bottom: calc(5.55556vw);
+  }
+}
+
+.pre-event-speakers2 .showcase-body {
+  background: url("../assets/pre-event/showcase-body.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
-  -webkit-box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0rem 1.7rem 2rem 0rem rgba(0, 0, 0, 0.3);
+  width: 80%;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pre-event-speakers2 .showcase-body {
+  min-height: 30rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 .showcase-body {
+    min-height: calc(30rem + 5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 .showcase-body {
+    min-height: 35rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 .showcase-body {
+    min-height: calc(24.30556vw);
+  }
+}
+
+.pre-event-speakers2 .showcase-body .showcase-image {
+  padding: 6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 .showcase-body .showcase-image {
+    padding: calc(6rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 .showcase-body .showcase-image {
+    padding: 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 .showcase-body .showcase-image {
+    padding: calc(4.16667vw);
+  }
+}
+
+.pre-event-speakers2 .showcase-body .showcase-image img {
+  width: 100%;
+}
+
+.pre-event-speakers2 .showcase-body .showcase-text {
+  padding-left: 4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 .showcase-body .showcase-text {
+    padding-left: calc(4rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 .showcase-body .showcase-text {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 .showcase-body .showcase-text {
+    padding-left: calc(2.77778vw);
+  }
+}
+
+.pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+    padding-top: calc(1rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+    padding-top: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+    padding-top: calc(0.83333vw);
+  }
+}
+
+.pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+    padding-left: calc(2rem + 0.4 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+    padding-left: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 .showcase-body .showcase-text .speaker-title {
+    padding-left: calc(1.66667vw);
+  }
+}
+
+.pre-event-speakers2 .section-title {
+  color: #FFFFFF;
+  padding-top: 0;
+}
+
+.pre-event-speakers2 .section-title {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-speakers2 .section-title {
+    padding-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-speakers2 .section-title {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-speakers2 .section-title {
+    padding-bottom: calc(1.38889vw);
+  }
+}
+
+.summit-hero {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/summit/hero.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/summit/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
   min-height: 50vw;
   width: 100%;
   display: -webkit-box;
@@ -11225,6 +11782,28 @@ main {
   text-align: justify;
 }
 
+.summit-hero .hero-text .hero-description p {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-hero .hero-text .hero-description p {
+    font-size: calc(1.6rem + 0.2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-hero .hero-text .hero-description p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .summit-hero .hero-text .hero-description p {
+    font-size: calc(1.25vw);
+  }
+}
+
 .summit-hero .hero-bottom {
   width: 100%;
   display: -webkit-box;
@@ -11422,9 +12001,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -11474,6 +12053,28 @@ main {
 @media screen and (min-width: 1440px) {
   .summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
     font-size: calc(1.11111vw);
+  }
+}
+
+.summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+  padding-top: 4.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: calc(4.5rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .summit-hero .hero-bottom .hero-schedule .hero-schedule-element .more {
+    padding-top: calc(3.125vw);
   }
 }
 

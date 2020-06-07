@@ -20,19 +20,20 @@
                 </div>
                 <div class="hero-description">
                     <p>
-                        A series of events that are conducted to introduce and build awareness of the Grand Summit. We want to provide the opportunity to gain various insights from expert speakers and hands on experience on mini-workshop session.
+                        A series of events that are conducted to introduce and build awareness of the Grand Summit.
+                        We want to provide the opportunity to gain various insights from expert speakers and hands on experience on mini-workshop session.
                     </p>
                 </div>
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary" href="http://bit.ly/preevent2summit">Registration</a>
-                    <a class="button-secondary-transparent" href="#scroll"  onclick="scrollto('#scroll')">
+                    <a class="button-primary" id="summitLink">Registration</a>
+                    {{-- <a class="button-secondary-transparent" href="#scroll"  onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
                             <img src="{{URL::asset('assets/icons/mouse.svg')}}">
                         </div>
-                    </a>   
+                    </a>    --}}
                 </div>
                 <div class="hero-schedule">
                     <div class="hero-schedule-element">
@@ -40,17 +41,11 @@
                             <h3>Pre<br>Event 1</h3>
                         </div>
                         <div class="hero-schedule-date">
-                            <p>Finished</p>
-                        </div>
-                    </div>
-                    <div class="hero-schedule-separator"></div>
-                    <div class="hero-schedule-element">
-                        <div class="hero-schedule-title">
-                            <h3>Open Registration<br>Pre Event 2</h3>
-                        </div>
-                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>22</h1>
+                            </div>
                             <div class="hero-schedule-month-year">
-                                <p>To Be<br>Announced..</p>
+                                <p>February<br>2020</p>
                             </div>
                         </div>
                     </div>
@@ -60,8 +55,25 @@
                             <h3>Pre<br>Event 2</h3>
                         </div>
                         <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>13</h1>
+                            </div>
                             <div class="hero-schedule-month-year">
-                                <p>To Be<br>Announced..</p>
+                                <p>June<br>2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-schedule-separator"></div>
+                    <div class="hero-schedule-element">
+                        <div class="hero-schedule-title">
+                            <h3>Pre<br>Event 3</h3>
+                        </div>
+                        <div class="hero-schedule-date">
+                            <div class="hero-schedule-day">
+                                <h1>20</h1>
+                            </div>
+                            <div class="hero-schedule-month-year">
+                                <p>June<br>2020</p>
                             </div>
                         </div>
                     </div>
@@ -73,7 +85,7 @@
             </div>
         </section>
 
-    <section class="pre-event-description" id="scroll">
+    {{-- <section class="pre-event-description" id="scroll">
         <div class="description-header">
             <div class="header-line"></div>
             <h2>A Brief Description:</h2>
@@ -88,12 +100,13 @@
                 <img src="{{URL::asset('assets/pre-event/description-image.png')}}">
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="pre-event-slider">
         <div class="slider-container" id="sliderc">
             <div id="1" class= "menu" onclick="changePreEvent(event, 'title1', 'speaker1')">Pre Event 1</div>
             <div id="2" class= "menu active" onclick="changePreEvent(event, 'title2', 'speaker2')">Pre Event 2</div>
+            <div id="3" class= "menu" onclick="changePreEvent(event, 'title3', 'speaker3')">Pre Event 3</div>
         </div>
     </section>
     
@@ -133,9 +146,73 @@
             <h2>Topic</h2>
         @endcomponent
         @component('blocks.quote')
-            Sharpening Critical Thinking Skills & <br>Building A Better Indonesia Through SDGs
+           Mastering Pitching<br>Skill to Sell Your Ideas
         @endcomponent
-        <div class="pre-event-date">Coming on 2020</div>        
+        <div class="pre-event-date">June 13<sup>th</sup>, 2020</div>
+        <div class="pre-event-desc">
+            <p>
+            Pitching is an essential skill to convey ideas, products, projects, or even yourself.
+            The art of pitching is on how you convince the audience and present ear-catching contents.
+            It requires some techniques to balance tone, body language, and contents.
+            A powerful pitch can lead you to billions worth of investment, profitable partnership or even a great job position. 
+            </p>
+        </div>
+    </div>
+    <div class="topic-flow">
+        @component('blocks.title')
+        <h2>Main Activities</h2>
+        @endcomponent
+        <div class="flow-container">
+                <div class="flow-card">
+                    <h3>Registration</h3>
+                    <p>
+                        Register before June 13<sup>th</sup>
+                        and get email confirmation for payment. 
+                        100% of ticket sales will be donated to
+                        Yayasan Indonesia Kuat. You can also donate more!
+                        The link to join the online seminar will also be sent to your email.
+                        Join the online seminar punctually and nail the skill!
+ 
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>Online Seminar</h3>
+                    <p>
+                        The speaker will share the secret tips and tricks 
+                        for you to nail the pitch. Learn this and that about 
+                        pitching skill and master the techniques!
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>Q&A Session</h3>
+                    <p>
+                        Discuss the topic directly with the speaker and get
+                        insightful answers to help you sharpen the
+                        pitching skill!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pre-event-topics" id="title3">
+        @component('blocks.title')
+        <h2>Topic</h2>
+        @endcomponent
+        @component('blocks.quote')
+        Problem Solving 101<br>in This Disruption Era
+        @endcomponent
+        <div class="pre-event-date">June 20<sup>th</sup>, 2020</div>        
+        <div class="pre-event-desc">
+            <p>
+                Problem solving is one the essential skills both as individuals and organizations.
+                Sharpening problem skills can help you immediately recognize the root cause of
+                a problem and effectively create feasible solutions. In the VUCA (volatility,
+                uncertainty, complexity, and ambiguity) era, problem solving became more crucial
+                in the needs of effective solutions.
+            </p>
         </div>
         <div class="topic-flow">
             @component('blocks.title')
@@ -143,23 +220,33 @@
             @endcomponent
             <div class="flow-container">
                 <div class="flow-card">
-                    <h3>Talk Show</h3>
+                    <h3>Registration</h3>
                     <p>
-                        Discussing with invited NGOs about 5 SDGs issues that will also be highlighted in The Summit which are; Climate Action, Responsible Consumption and Production, Decent Work and Economic Growth, Sustainable Cities and Communities, and Gender Equality.
+                        Register before June 20<sup>th</sup>
+                         and get email confirmation for payment. 
+                        100% of ticket sales will be donated to
+                        Yayasan Indonesia Kuat. You can also donate more!
+                        The link to join the online seminar will also be sent to your email.
+                        Join the online seminar punctually and nail the skill!
+ 
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>School of Life: Sharpening Our Critical Thinking </h3>
+                    <h3>Online Seminar</h3>
                     <p>
-                        Learning about critical thinking and problem-solving analysis directly from the invited experts before the forum group discussion session.
+                        The speaker will share the secret tips and tricks 
+                        for you to nail the pitch. Learn this and that about 
+                        pitching skill and master the techniques!
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>Focused Group Discussion</h3>
+                    <h3>Q&A Session</h3>
                     <p>
-                        The participants will be divided into several groups and will get a particular case regarding one of the SDGs that has been discussed. They will solve the issues in 30-40 minutes and then present their solutions at the end of the session.
+                        Feed your curiosity and find out more about 
+                        problem solving through direct discussion with 
+                        the speaker!
                     </p>
                 </div>
             </div>
@@ -222,53 +309,48 @@
     <section class="pre-event-speakers" id="speaker2">
         <div class="showcase-header">
             @component('blocks.title')
-            <h2>Meet The Speakers</h2>
+            <h2>Meet The Speaker</h2>
             @endcomponent
         </div>
         <div class="showcase-body">
-            <div class="showcase-card">
-                <div class="showcase-card-placeholder">Coming Soon :)</div>
-                {{-- <div class="showcase-card-image">
-                    <img src="{{URL::asset('assets/pre-event/speaker4.png')}}">
-                </div>
-                <div class="showcase-card-title">
-                    <h2>speaker1</h2>
-                </div>
-                <div class="showcase-card-description">
-                    <ul>
-                        <li>title1</li>
-                        <li>title2</li>
-                    </ul>
-                </div> --}}
+            <div class="showcase-image">
+                <img src={{URL::asset('assets/pre-event/speakerpe2.png')}}>
             </div>
-            <div class="showcase-card">
-                <div class="showcase-card-placeholder">Coming Soon :)</div>
-                {{-- <div class="showcase-card-image">
-                    <img src="{{URL::asset('assets/pre-event/speaker5.png')}}">
+            <div class="showcase-text">
+                <div class="speaker-name">
+                    <h1>
+                        Archie Anugrah
+                    </h1>
                 </div>
-                <div class="showcase-card-title">
-                    <h2>speaker2</h2>
+                <div class="speaker-title">
+                    <h3>
+                        Head of CEO Office -<span style="font-weight: 450"> PT Payfazz Teknologi Nusantara</span>
+                    </h3>
                 </div>
-                <div class="showcase-card-description">
-                    <ul>
-                        <li>title1</li>
-                        <li>title2</li>
-                    </ul>
-                </div> --}}
             </div>
-            <div class="showcase-card">
-                <div class="showcase-card-placeholder">Coming Soon :)</div>
-                {{-- <div class="showcase-card-image">
-                    <img src="{{URL::asset('assets/pre-event/speaker6.png')}}">
+        </div>
+    </section>
+
+    <section class="pre-event-speakers" id="speaker3">
+        <div class="showcase-header">
+            @component('blocks.title')
+            <h2>Meet The Speaker</h2>
+            @endcomponent
+        </div>
+        <div class="showcase-body">
+            <div class="showcase-image">
+                <img src={{URL::asset('assets/pre-event/speakerpe3.png')}}>
+            </div>
+            <div class="showcase-text">
+                <div class="speaker-name">
+                    <h1>
+                        Melvin Sumapung
+                    </h1>
                 </div>
-                <div class="showcase-card-title">
-                    <h2>speaker2</h2>
-                </div>
-                <div class="showcase-card-description">
-                    <ul>
-                        <li>title1</li>
-                        <li>title2</li>
-                    </ul> --}}
+                <div class="speaker-title">
+                    <h3>
+                        CEO of -<span style="font-weight: 450"> Justika</span>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -291,7 +373,7 @@
                     </span>
                 </h2>
             </div>
-            <a class="button-primary" href="http://bit.ly/preevent2summit">
+            <a class="button-primary preLink">
                 Register Now
             </a>
         </div>

@@ -14,13 +14,23 @@
         font-weight: 700;
         color: map-get($theme-colors, "white");
         @include fluidpaddingtop(1rem, 1.2rem);
-        @include fluidpaddingbottom(4.5rem, 4.7rem);
+        @include fluidpaddingbottom(4rem, 4rem);
     }
-
+    
     sup{
         @include montserrat();
         @include superscript();
         vertical-align: text-top;
+    }
+    
+    .pre-event-desc {
+        max-width: 70vw;
+        
+        text-align: center;
+    }
+    
+    .topic-flow {
+        @include fluidpaddingtop(4rem, 4rem);
     }
 }
 

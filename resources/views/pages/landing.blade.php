@@ -13,21 +13,25 @@
         <section class="landing-hero">
             <div class="hero-text">
                 <div class="hero-title">
-                    <h1>Take Your Seat and<br>
-                        <span class="color-secondary">Unleash Your Potential</span>
+                    <h1><span class="color-secondary">Stay</span>
+                        (ACT)
+                        <span class="color-secondary">HOME</span>
                     </h1>
                         
                 </div>
                 <div class="hero-description">
                     <p>
-                        The 9th Grand Summit is StudentsxCEOs Bandung Chapter’s most anticipated annual event. It provides a platform for selected students across Indonesia to discuss and bring a solution for businesses and NGOs to solve real problems relevant to the Sustainable Development Goals (SDGs). The 9th Grand Summit covers the pre-event, business case competition, and conference.
+                        The 9th Grand Summit is StudentsxCEOs Bandung Chapter’s most anticipated annual event.
+                        It provides a platform for selected students across Indonesia to discuss and bring a
+                        solution for businesses and NGOs to solve real problems relevant to the Sustainable Development Goals (SDGs).
+                        The 9th Grand Summit covers the pre-event, business case competition, and conference.    
                     </p>
                 </div>
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
                     <a class="button-primary" href="#registration" onclick="scrollto('#registration')">Registration</a>
-                    <a class="button-secondary-transparent" href="#description" onclick="scrollto('#description')">Learn More</a>
+                    <a class="button-secondary-transparent" href="#description" onclick="scrollto('#description')">More</a>
                 </div>
             </div>
         </section>
@@ -110,19 +114,19 @@
             <div class="regis">
                 <div class="business-case">
                     <h2>Business Case<br><span class="color-secondary">Competition</span></h2>
-                    <a class="button-secondary-transparent" href="http://bit.ly/getbccsummit">Register</a>
+                    <a class="button-secondary-transparent bccLink">Register</a>
                 </div>
             </div>
             <div class="regis">
                 <div class="pre-event">
                     <h2>Pre <span class="color-secondary">Event</span></h2>
-                    <a class="button-secondary-transparent" href="http://bit.ly/preevent2summit">Register</a>
+                    <a class="button-secondary-transparent preLink">Register</a>
                 </div>
             </div>
             <div class="regis">
                 <div class="summit">
                     <h2>The <span class="color-secondary">Summit</span></h2>
-                    <a class="button-secondary-transparent" href="http://bit.ly/thesummitsxc">Register</a>
+                    <a class="button-secondary-transparent summitLink">Register</a>
                 </div>
             </div>
         </section>

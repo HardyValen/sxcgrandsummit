@@ -1,4 +1,4 @@
-$menu-items : 2;
+$menu-items : 3;
 $width : (100/$menu-items) * 1%;
 $indicator-color : map-get($theme-colors, "white");
 $border-radius: 2rem;
@@ -15,10 +15,10 @@ $border-radius: 2rem;
         // display: flex;
         // flex-direction: column;
         margin: !important auto;
+        @include fluidmargintop(3rem, 3rem);
         @include fluidmarginbottom(3rem, 3rem);
-        max-width : 35vw;
+        max-width : 50vw;
         padding: 0;
-        // width: $width*2;
         width: 80vw;
         border: 1px solid map-get($theme-colors, "gray3");
         border-radius: $border-radius;
