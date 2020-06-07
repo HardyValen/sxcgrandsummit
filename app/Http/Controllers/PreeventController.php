@@ -81,10 +81,6 @@ class PreeventController extends Controller
             $emailException = true;
         }
         
-<<<<<<< HEAD
 		return view('pages.registration.success_preevent', ['emailException' => $emailException])->with('data', $member);
-=======
-		return view('pages.registration.success_preevent')->with('data', $member);
->>>>>>> cde3da1733d0afb236885f60c6c946e10b40ff08
     }
 }
