@@ -49,7 +49,7 @@
 			<div class="registration-success-summary">
 				<div class="summary-data-container">
 					<div class="summary-data">
-						<p class='summary-title'>REGISTER DATE</p>
+						<p class='summary-title'>To Complete The Registration, <b>you must pay minimum donation Rp. 20.000 to these accounts:</b> </p>
 						<p class='summary-date'>{{ date('l, d F Y') }}</p>
 					</div>
 <!-- 				<div class="summary-data">
@@ -59,6 +59,7 @@
 					<div class="summary-data">
 						<p class='summary-title'>PAYMENT</p>
 						<p class='summary-date'>
+							Jenius 90012636107 Faiza Nurkholida<br>
 							BCA 5221166435 Chyntia Angelina<br>
 							BNI  670350698 Zahra Fulli Fauza<br>
 						</p>
