@@ -92,13 +92,10 @@
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
                                                     BCA 5221166435 Cynthia Angelina<br>
-                                                    BNI 670350698 Zahra Fulli Fauza
+                                                    BNI 670350698 Zahra Fulli Fauza<br>
                                                 </p>
                                                 <p>
                                                     Please <b>upload your payment receipt on bit.ly/payment2</b>. The deadline for payment is <b>24 hours after you receive this email.</b> 
-                                                </p>
-                                                <p>
-                                                    4. <b>You will receive a confirmation email after your payment and document is verified within 1 x 24 hours.</b>
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
                                                     Should you have any inquiries, feel free to contact us at grandsummitsxc@gmail.com and keep in touch for our latest information on instagram.com/sxcgrandsummit.
