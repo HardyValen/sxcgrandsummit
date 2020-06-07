@@ -11,18 +11,21 @@
         @include("blocks.navbar")
 
         <section class="summit-hero">
-            <div class="hero-text">
-                <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
-                <div class="hero-title">
-                    <h1>
-                        <span class="color-secondary">The Summit</span><br> 
-                        National Conference
-                    </h1>
-                </div>
-                <div class="hero-description">
-                    <p>
-                        A national conference that invites experts to share their insights and experiences in specific fields regarding SDGs to empower students to be potential entrepreneurs. There will be coaching sessions that are led by experts from NGOs, group discussions, and presentations of the given solution in front of NGOs.
-                    </p>
+            <div class="hero-top">
+                <div class="hero-text">
+                    
+                    <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
+                    <div class="hero-title">
+                        <h1>
+                            <span class="color-secondary">The Summit</span><br> 
+                            National Conference
+                        </h1>
+                    </div>
+                    <div class="hero-description">
+                        <p>
+                            A national conference that invites experts to share their insights and experiences in specific fields regarding SDGs to empower students to be potential entrepreneurs. There will be coaching sessions that are led by experts from NGOs, group discussions, and presentations of the given solution in front of NGOs.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="hero-bottom">

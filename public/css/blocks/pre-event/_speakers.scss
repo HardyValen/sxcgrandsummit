@@ -1,6 +1,6 @@
 @import "../../module/showcase";
 
-.pre-event-speakers {
+.pre-event-speakers .temp1{
     @include showcase();
 
     .section-title {
@@ -12,7 +12,7 @@
 
 }
 
-.pre-event-speakers2 {
+.pre-event-speakers .temp2 {
     @include showcase2();
 
     .section-title {

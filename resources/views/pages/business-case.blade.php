@@ -11,17 +11,22 @@
         @include("blocks.navbar")
 
         <section class="business-case-hero">
-            <div class="hero-text">
-                <div class="hero-title">
-                    <h1>
-                        <span class="color-secondary">Business</span><br> 
-                        Case Competition
-                    </h1>
+            <div class="hero-top">
+                <div class="hero-text">
+                    <div class="hero-title">
+                        <h1>
+                            <span class="color-secondary">Business</span><br> 
+                            Case Competition
+                        </h1>
+                    </div>
+                    <div class="hero-description">
+                        <p>
+                            Business Case Competition is a business based problem-solving competition in Indonesia. Through this program, each team will identify the prominent issues faced by a company and try to build a strategy to provide a solution in order to help the company reach their goals.
+                        </p>
+                    </div>
                 </div>
-                <div class="hero-description">
-                    <p>
-                        Business Case Competition is a business based problem-solving competition in Indonesia. Through this program, each team will identify the prominent issues faced by a company and try to build a strategy to provide a solution in order to help the company reach their goals.
-                    </p>
+                <div class="hero-icon">
+                    <img src="{{URL::asset('assets/business-case/icon.png')}}"
                 </div>
             </div>
             <div class="hero-bottom">
