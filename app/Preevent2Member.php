@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Preevent2Member extends Model
 {
     public $timestamps = false;
+    public $emailException;
+    
     protected $table = 'preevent2_members';
 
     protected $fillable = [

@@ -70,11 +70,17 @@ class PreeventController extends Controller
             $insert
         );
 
-        // EMAIL NOTIF, DEPRECATED
-        // $user = new User();
-    	// $user->email = request('email');
-        // $user->notify(new EmailPreevent());
+        // EMAIL NOTIF, false means there's no problem. if true then there IS a problem
+        $emailException = false;
         
-		return view('pages.registration.success_preevent')->with('data', $member);
+        try {
+            $user = new User();
+            $user->email = request('email');
+            $user->notify(new EmailPreevent());
+        } catch (\Exception $e) {
+            $emailException = true;
+        }
+        
+		return view('pages.registration.success_preevent', ['emailException' => $emailException])->with('data', $member);
     }
 }

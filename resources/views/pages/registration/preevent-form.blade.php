@@ -18,7 +18,7 @@
         </a>
       </div>
 
-      <div class="registration-title" style="margin-bottom: 1rem">
+      <div class="registration-title" style="margin-bottom: 2rem">
         <img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
         <h3>Pre Event 2</h3>
         <h1>REGISTRATION</h1>
@@ -29,8 +29,6 @@
       <form action="" method="post">
         @csrf
         <div class="registration-content">
-      
-
           <div class="registration-input-group">
             <p class="group-header">YOUR INFO &mdash;</p>
             
@@ -86,10 +84,11 @@
 
         <hr style="background-color: #aaaaaa">
 
-        <div class="registration-submit flex-justify-center">
-          <div class="registration-input">
+        <div class="registration-submit">
+          <div class="registration-submit-button">
             <input type="submit" class='button-primary' value="Register">
           </div>
+          <p>Please wait for a maximum of <b>15 Seconds</b> after clicking the register. We're going to mail you automatically if successful.</p>
         </div>
 
       </form>
