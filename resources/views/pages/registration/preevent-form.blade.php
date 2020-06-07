@@ -53,11 +53,6 @@
                       <input type="radio" class="individual-radio" name="gender" value="Female">
                       <span class='radio-button'><span></span></span>
                   </label>
-                  <label>
-                      <span class='radio-description'>Other</span>
-                      <input type="radio" class="individual-radio" name="gender" value="Other">
-                      <span class='radio-button'><span></span></span>
-                  </label>
                 </div>
               </div>
             </div>
