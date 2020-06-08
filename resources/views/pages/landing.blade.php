@@ -18,7 +18,6 @@
                             (ACT)
                             <span class="color-secondary">HOME</span>
                         </h1>
-                            
                     </div>
                     <div class="hero-description">
                         <p>
@@ -28,6 +27,9 @@
                             The 9th Grand Summit covers the pre-event, business case competition, and conference.    
                         </p>
                     </div>
+                </div>
+                <div class="hero-icon">
+                    <img src="{{URL::asset('assets/landing/icon.png')}}">
                 </div>
             </div>
             <div class="hero-bottom">
@@ -39,7 +41,7 @@
         </section>
 
         <section class="landing-description" id="description">
-            <div class="landing-flex-container">
+            {{-- <div class="landing-flex-container">
                 <div class='landing-description-text'>
                     <div class='header-line'></div>
                     <h2>Why you should join the 9<sup>th</sup> Grand Summit</h2>
@@ -52,6 +54,37 @@
                 </div>
                 <div class="landing-description-image">
                     <div></div>
+                </div>
+            </div> --}}
+            <div class="showcase-header">
+                @component('blocks.title')
+                <h2>It's getting easier!</h2>
+                @endcomponent
+            </div>
+            <div class="showcase-body">
+                <div class="showcase-card">
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/landing/description/collab.png')}}">
+                    </div>
+                    <div class="showcase-card-description ">
+                        <p class="text-align-center">Collaborate closer with students all over Indonesia.</p>
+                    </div>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/landing/description/travel.png')}}">
+                    </div>
+                    <div class="showcase-card-description ">
+                        <p class="text-align-center">Say goodbye to the travel fee! Just sit tight and convey ideas online!</p>
+                    </div>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-card-image">
+                        <img src="{{URL::asset('assets/landing/description/vsummit.png')}}">
+                    </div>
+                    <div class="showcase-card-description ">
+                        <p class="text-align-center">You can act from your home and create impact for our country.</p>
+                    </div>
                 </div>
             </div>
         </section>

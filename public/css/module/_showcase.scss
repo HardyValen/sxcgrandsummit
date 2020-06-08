@@ -140,7 +140,6 @@
             .showcase-card-description{
                 // flex-grow: 1;
                 // align-items: baseline;
-                font-style: italic;
                 width: 100%;
                 @include fluidpaddingx(
                     map-get($img-padding, "min"),
