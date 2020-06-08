@@ -3,11 +3,11 @@ let locationRegexLanding = new RegExp("landing*");
 let locationRegexPreEvent= new RegExp("pre-event*");
 let locationRegexSummit = new RegExp("summit*");
 let locationRegexBusinessCase = new RegExp("business-case*");
-let linkRegisSummit = "summit/register"
-let linkRegisBCC = "business-case/register"
+// let linkRegisSummit = "summit/register"
+// let linkRegisBCC = "business-case/register"
 let linkRegisPreEvent = "pre-event/register"
-// let linkRegisSummit = "http://bit.ly/thesummitsxc"
-// let linkRegisBCC = "http://bit.ly/getbccsummit"
+let linkRegisSummit = "http://bit.ly/thesummitsxc"
+let linkRegisBCC = "http://bit.ly/getbccsummit"
 // let linkRegisPreEvent = "http://bit.ly/preevent2summit"
 
 
