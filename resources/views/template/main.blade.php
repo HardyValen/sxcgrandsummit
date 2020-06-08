@@ -16,7 +16,7 @@
 
     {{-- CSS --}}    
     <link rel="stylesheet" href="{{URL::asset('css/base.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/main.css?id=1')}}">
     
     {{-- JS --}}
     
