@@ -1,6 +1,6 @@
 @mixin hero-template($url){
     $externalPadding: ("min": 5rem, "max": 8rem);
-    $logoWidth: ("min": 8rem, "max": 12rem);
+    $logoWidth: ("min": 18rem, "max": 20rem);
     $stdPaddingMin: 1rem;
     $stdPaddingMax: 2rem;
     $extPaddingMax: 5rem;
@@ -26,7 +26,7 @@
         @include fluidfontsize(3.6rem, 6.4rem);
         @include montserrat();
         font-weight: 700;
-        line-height: 1.0;
+        line-height: 1.5;
         color: map-get($theme-colors, "white-alt");
     }
 

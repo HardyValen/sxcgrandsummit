@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-links-container">
         <div class="footer-links">
-            <a href="https://www.instagram.com/studentsxceosbdg/" class="footer-link">
+            <a href="https://www.instagram.com/sxcgrandsummit/" class="footer-link">
                 <img src="{{URL::asset('assets/icons/instagram.svg')}}">
             </a>
             <a href="https://lin.ee/38yYPIT" class="footer-link">

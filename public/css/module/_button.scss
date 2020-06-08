@@ -12,13 +12,14 @@
     @include montserrat();
     @include fluidfontsize(1.4rem, 1.8rem);
     background-color: $color-bg;
-    border: 3px solid $color-border;
+    border: 2.5px solid $color-border;
     border-radius: 1rem;
     color: $color;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    min-width: 10rem;
     // text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.2s;
@@ -42,6 +43,9 @@
         color: $color;
         border-color: $color-active;
         transition: 0.1s;
+    }
+    @media screen and (max-width: 960px) {
+        min-height: 48px;
     }
 }
 

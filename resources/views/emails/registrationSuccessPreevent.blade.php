@@ -68,8 +68,7 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tr style="box-sizing: border-box;">
                                             <th style="box-sizing: border-box;">
-                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">9TH GRAND SUMMIT PRE EVENT 2</h2>
-                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">REGISTRATION CONFIRMATION</h2>
+                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">PRE EVENT 2<br>REGISTRATION CONFIRMATION</h2>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 0;font-size: 13px;box-sizing: border-box;"></p>
                                             </th>
                                         </tr>
@@ -78,29 +77,44 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tbody style="box-sizing: border-box;">
                                             <tr style="box-sizing: border-box;">
-                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Dear Participant,</span></h2>
+                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Dear Pioneers of The Future, we already received your registration form for this Pre Event 2:</span></h2>
                                             </tr>
                                             <tr style="box-sizing: border-box;">
-                                                <p style="color: #636363;box-sizing: border-box;">
-                                                    Dear Pioneers of The Future, we already received your registration form for this Pre-Event:
-                                                </p>
-                                                <p style="color: #636363;box-sizing: border-box;">
+                                                <h2 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
                                                     <b>Mastering Pitching Skill to Sell Your Ideas</b>
+                                                </h2>
+                                                <p style="box-sizing: border-box;">
+                                                    We are honored for you to join us in this prestigious pre-event. This event will be held in
                                                 </p>
-                                                <p>
-                                                   To finish your registration, please <b>finish your payment</b> first with a <b>minimum of Rp. 20.000</b> and of course, <b>you can also donate more</b>/ 100% of ticket sales will be <b>donated to Yayasan Indonesia Kuat</b> in order to help Indonesia to fight against COVID-19. You can transfer through this following bank accounts:
+                                                <h3 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
+                                                    <b>Saturday, 13th June 2020<br>13.00 - 15.30</b>
+                                                </h3>
+                                                <p style="box-sizing: border-box;">
+                                                    We will send you further email regarding <b>the link</b> to join our pre-event on <b>Friday, 12th june 2020.</b>
                                                 </p>
-                                                <p style="color: #636363;box-sizing: border-box;">
-                                                    BCA 5221166435 Cynthia Angelina<br>
-                                                    BNI 670350698 Zahra Fulli Fauza<br>
+                                                <p style="box-sizing: border-box;">
+                                                    As a participant for this pre-event, you will experience an immersive webinar that will improve how you convince the audience and present ear-catching content. A powerful pitch can lead you to billion worth of investment, profitable partnership, or even a great job position.
                                                 </p>
-                                                <p>
-                                                    Please <b>upload your payment receipt on bit.ly/payment2</b>. The deadline for payment is <b>24 hours after you receive this email.</b> 
+                                                <p style="box-sizing: border-box;">
+                                                    Our event also <b>collaborated with Aliansi Indonesia Kuat</b>, a movement to help <b>Indonesia fighting against COVID19</b>. If you want to contribute, you can donate without any minimum amount. <b>To donate</b>, please transfer through this following bank accounts or OVO:
                                                 </p>
-                                                <p style="color: #636363;box-sizing: border-box;">
-                                                    Should you have any inquiries, feel free to contact us at grandsummitsxc@gmail.com and keep in touch for our latest information on instagram.com/sxcgrandsummit.
+                                                <h3 style="color: #0452B3;box-sizing: border-box;margin: 30px 0px;">
+                                                    <b>BCA 5221166435 Chyntia Angelina</b><br>
+                                                    <b>BNI 670350698 Zahra Fulli Fauza</b><br>
+                                                    <b>OVO 081809309607  Faiza</b><br>
+                                                </h3>
+                                                <p style="box-sizing: border-box;">
+                                                    Add 2 at the end of your transferred amount. Example: Rp100.002
                                                 </p>
+                                                <h3 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
+                                                    <i>
+                                                        <b>Prepare yourself to be challenged<br>in order to master your pitching skill</b>
+                                                    </i>
+                                                </h3>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 30px 0 30px;font-size: 13px;box-sizing: border-box;"></p>
+                                                <p style="color: #636363;box-sizing: border-box;">
+                                                    Should you have any inquiries, feel free to contact us at <a href="mailto:grandsummitsxc@gmail.com" style="color: #0452B3">grandsummitsxc@gmail.com</a> and keep in touch for our latest information in <a target="_blank" href="https://www.instagram.com/sxcgrandsummit/" style="color: #0452B3">Our Instagram</a>.
+                                                </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
                                                     Regards,
                                                 </p>

@@ -33,7 +33,7 @@
             <div class="hero-bottom">
                 <div class="hero-buttons">
                     <a class="button-primary" href="#registration" onclick="scrollto('#registration')">Registration</a>
-                    <a class="button-secondary-transparent" href="#description" onclick="scrollto('#description')">More</a>
+                    <a class="button-secondary-transparent" href="#description" onclick="scrollto('#description')" style="width: 14rem">More</a>
                 </div>
             </div>
         </section>
@@ -75,7 +75,7 @@
                         </p>
                     </div>
                     <div class="post-link">
-                        <a class="button-primary" href="/business-case">More Details..</a>
+                        <a class="button-primary" href="/business-case">More</a>
                         <a class="button-primary-invert-transparent" href="#schedule" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                         </p>
                     </div>
                     <div class="post-link">
-                        <a class="button-primary" href="/pre-event">More Details..</a>
+                        <a class="button-primary" href="/pre-event">More</a>
                         <a class="button-primary-invert-transparent" href="#schedule" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         </p>
                     </div>
                     <div class="post-link">
-                        <a class="button-primary" href="/summit">More Details..</a>
+                        <a class="button-primary" href="/summit">More</a>
                         <a class="button-primary-invert-transparent" href="#schedule" onclick="scrollto('#schedule')">   Timeline   </a>
                     </div>
                 </div>

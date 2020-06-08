@@ -32,12 +32,12 @@
             <div class="hero-bottom">
                 <div class="hero-buttons">
                     <a class="button-primary bccLink">Registration</a>
-                    <a class="button-secondary-transparent" href="#scroll" onclick="scrollto('#scroll')">
+                    {{-- <a class="button-secondary-transparent" href="#scroll" onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
                             <img src="{{URL::asset('assets/icons/mouse.svg')}}">
                         </div>
-                    </a>   
+                    </a>    --}}
                 </div>
                 <div class="hero-schedule">
                     <div class="hero-schedule-element">
@@ -92,12 +92,13 @@
         <section class="business-case-description" id="scroll">
             <div class="description-header">
                 <div class="header-line"></div>
-                <h2>A Brief Description</h2>
+                <h2>Case Contributor</h2>
             </div>
             <div class="description-body">
                 <div class="description-text">
+                    <h2>PT. KAO INDONESIA</h2>
                     <p>
-                        Business Case Competition is a business based problem-solving competition. Through this program, teams must identify the most prominent issues faced by the company and develop a strategy to provide a solution to help companies achieve their goals. They are expected to solve the problem in forms of paper. Winning strategies include being detail-oriented, creative, and business acumen when presenting recommendations.
+                        Providing high quality products with a vision to be a company that understands the best and remains the closest to its consumers and customers. PT. KAO Indonesia is a leading FMCG company in Indonesia with three main categories; skincare, health products, and household.
                     </p>
                 </div>
                 <div class="description-image">
@@ -108,42 +109,56 @@
 
         <section class="business-case-flow">
             @component('blocks.title')
-                <h2 style="color: white">The Flow of The Competition:</h2>
+                <h2 style="color: white">Competition Flow</h2>
             @endcomponent
 
             <div class="flow-container">
                 <div class="flow-card">
-                    <h3>Elimination Phase</h3>
+                    <h3>Before June 24th - Registration</h3>
                     <p>
-                        The Company Business Case will be distributed to qualified registered participants and it is expected to be solved in business paper form.
+                        Each team consists of three members of undergraduate students from any major.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>Coaching Session</h3>
+                    <h3>June 25th - Case Distribution</h3>
                     <p>
-                        The top 10 teams will be invited to the main event, The Summit, to present their solution and ideas in front of professionals and company representatives.
+                        The case by PT. KAO Indonesia will be sent through email.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>Company Sharing Session</h3>
+                    <h3>Before July 24th - Paper Submission</h3>
                     <p>
-                        The best 10 teams will be participating on the Company Visit Session provided by Business Case Competition partnering company in the Summit Main Event Venue in Bandung.
+                        Solve the case and submit your paper through grandsummitsxc@gmail.com.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>Final Phase</h3>
+                    <h3>August 7th - Finalist Announcement </h3>
                     <p>
-                        The best 10 teams have to execute the final presentation in front of the judges.
+                        The finalist will be announced on our website and instagram @sxcgrandsummit.
                     </p>
                 </div>
                 <div class="flow-connector"></div>
                 <div class="flow-card">
-                    <h3>Awarding Night</h3>
+                    <h3>August 21st - 22nd - Online Coaching Session</h3>
                     <p>
-                        There will be chosen the 1st, 2nd, and 3rd Winner under the discretion of the judges.
+                        The participants will get the opportunity for attending online coaching sessions with expert speakers from business fields. Don’t miss the chance!
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>August 23rd - Online Presentation</h3>
+                    <p>
+                        The best 10 teams must execute an online presentation in front of the judges. Prepare well and be the champion!
+                    </p>
+                </div>
+                <div class="flow-connector"></div>
+                <div class="flow-card">
+                    <h3>August 23rd - Announcement of The Champions</h3>
+                    <p>
+                        The champions will be announced via Instagram Live on our instagram @sxcgrandsummit.
                     </p>
                 </div>
             </div>
@@ -156,7 +171,7 @@
             @include('blocks.schedule.businessCase')
         </section>
 
-        <section class="business-case-juries">
+        {{-- <section class="business-case-juries">
             <div class="showcase-header">
                 @component('blocks.title')
                 <h2>The Juries</h2>
@@ -165,7 +180,7 @@
             <div class="showcase-body">
                 <div class="showcase-card">
                     <div class="showcase-card-placeholder">Coming Soon :)</div>
-                    {{-- <div class="showcase-card-image">
+                    <div class="showcase-card-image">
                         <img src="{{URL::asset('assets/pre-event/speaker4.png')}}">
                     </div>
                     <div class="showcase-card-title">
@@ -176,11 +191,11 @@
                             <li>title1</li>
                             <li>title2</li>
                         </ul>
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="showcase-card">
                     <div class="showcase-card-placeholder">Coming Soon :)</div>
-                    {{-- <div class="showcase-card-image">
+                    <div class="showcase-card-image">
                         <img src="{{URL::asset('assets/pre-event/speaker5.png')}}">
                     </div>
                     <div class="showcase-card-title">
@@ -191,11 +206,11 @@
                             <li>title1</li>
                             <li>title2</li>
                         </ul>
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="showcase-card">
                     <div class="showcase-card-placeholder">Coming Soon :)</div>
-                    {{-- <div class="showcase-card-image">
+                    <div class="showcase-card-image">
                         <img src="{{URL::asset('assets/pre-event/speaker6.png')}}">
                     </div>
                     <div class="showcase-card-title">
@@ -205,11 +220,11 @@
                         <ul>
                             <li>title1</li>
                             <li>title2</li>
-                        </ul> --}}
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <section class="business-case-registration">
             <div class="registration-container">

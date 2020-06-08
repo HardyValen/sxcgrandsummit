@@ -13,8 +13,7 @@
         <section class="summit-hero">
             <div class="hero-top">
                 <div class="hero-text">
-                    
-                    <img class="hero-logo" src="{{URL::asset('assets/logo/GrandSummitWhite.svg')}}" alt="SXCGS9">
+                    <img class="hero-logo" src="{{URL::asset('assets/summit/sdgs.png')}}" alt="SXCGS9">
                     <div class="hero-title">
                         <h1>
                             <span class="color-secondary">The Summit</span><br> 
@@ -23,20 +22,23 @@
                     </div>
                     <div class="hero-description">
                         <p>
-                            A national conference that invites experts to share their insights and experiences in specific fields regarding SDGs to empower students to be potential entrepreneurs. There will be coaching sessions that are led by experts from NGOs, group discussions, and presentations of the given solution in front of NGOs.
+                            The Summit provides a platform to collaborate closer with students across Indonesia and create brilliant solutions for our nation. Get the opportunity for online coaching sessions and present your ideas to NGOs!
                         </p>
                     </div>
+                </div>
+                <div class="hero-icon">
+                    <img src="{{URL::asset('assets/summit/icon.png')}}">
                 </div>
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
                     <a class="button-primary summitLink">Registration</a>
-                    <a class="button-secondary-transparent" href="#scroll" onclick="scrollto('#scroll')">
+                    {{-- <a class="button-secondary-transparent" href="#scroll" onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
                             <img src="{{URL::asset('assets/icons/mouse.svg')}}">
                         </div>
-                    </a>   
+                    </a>    --}}
                 </div>
                 <div class="hero-schedule">
                     <div class="hero-schedule-element">
@@ -88,7 +90,7 @@
             </div>
         </section>
 
-        <section class="summit-description" id="scroll">
+        {{-- <section class="summit-description" id="scroll">
             <div class="description-header">
                 <div class="header-line"></div>
                 <h2>The Summit</h2>
@@ -109,7 +111,7 @@
                     <img src="{{URL::asset('assets/summit/summit-description.svg')}}">
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <section class="summit-theme">
             <div class="description-header">
@@ -118,11 +120,11 @@
             </div>
             <div class="description-body">
                 @component('blocks.quote')
-                    The Application of SDGs<br>in Building Sustainable Business
+                    The Application of SDGs<br>in Building Sustainable Businesses
                 @endcomponent
                 <div class="description-text">
                     <p>
-                        Discussing about sustainable businesses and environmental matters, the theme’s objective is to give a real impact to the company, stakeholders, society, and environment according to the United Nations Sustainable Development Goals from the NGOs’ perspective. We encourage the participants to take part in caring about our social and environmental matter by building a continuous discussion and creating feasible solutions that can be implemented by the NGOs.
+                        StudentsxCEOs Bandung Chapter 9th Grand Summit committed to provide a place for students all over Indonesia to collaborate for the betterment of Indonesia. We encourage the participants to contribute ideas and give real impact for our nation regarding the Sustainable Development Goals.
                     </p>
                 </div>
             </div>
@@ -131,15 +133,18 @@
         
         <section class="summit-activities">
             <div class= "activity-container">
-                <div class="header-line"></div>
-                <h1>Main Activities</h1>
+                <div class="activity-header">
+                    @component('blocks.title')
+                    <h2>Be The Change Agent!</h2>
+                    @endcomponent
+                </div>
                 <div class="activity-block">
                     <div class= "activity-description">
                         <div class="activity-title">
-                            Coaching Session
+                            Before June 24th - Registration 
                         </div>
                         <p>
-                            This session will be conducted by business experts and leaders to provide insights and generalize basic understanding regarding how to resolve each SDGs issue. The topics are "Problem Discovery" that will help participants find the root causes using a specific framework and "Applicable Solutions" to generate, evaluate, choose, and implement solutions.
+                            Register individually or in a team with a maximum of 3 members. You can also choose your chamber.
                         </p>
                     </div>
                     <div class="activity-image img-coaching"></div>
@@ -152,7 +157,7 @@
                             Talk Shows Session
                         </div>
                         <p>
-                            Providing speakers from different NGOs that will share insights on the growing issues of SDGs to give the participants specific information of the issues that will be solved within their chambers.
+                            Providing speakers from different NGOs that will share insights on the growing issues of SDGs to give the participants specific information of the issues that will be solved within their chambers. 
                         </p>
                     </div>
                 </div>

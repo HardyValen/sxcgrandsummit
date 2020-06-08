@@ -11,7 +11,7 @@ $actimages: (
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: map-get($theme-colors, "white-alt" );
+    background-color: map-get($theme-colors, "white" );
     
     .activity-container {
         width: 90%;
@@ -20,7 +20,7 @@ $actimages: (
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: map-get($theme-colors, "white-alt" );
+        // background-color: map-get($theme-colors, "white-alt" );
         // @include shadowSides();
         
         @media screen and (max-width: 960px) {
@@ -35,12 +35,17 @@ $actimages: (
             color: map-get($theme-colors, "primary" );
         }
         
+        .activity-header {
+            @include fluidpaddingbottom(4rem, 5rem);
+        }
+
         .activity-block {
-            @include fluidpaddingy(1.6rem, 2rem);
+            @include fluidpaddingbottom(5rem, 6rem);
             width: 100%;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
+            justify-content: stretch;
             
             @media screen and (max-width: 960px) {
                 flex-direction: column;
@@ -48,8 +53,8 @@ $actimages: (
 
             .activity-image {
                 // width: 100%;
-                // max-width: 50%;
                 min-width: 40%;
+                max-width: 50%;
                 @include fluidheight(15rem,20rem);
                 border-radius: 2rem;
                 margin: 0 1rem 0 1rem;
