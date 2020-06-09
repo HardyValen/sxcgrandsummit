@@ -91,14 +91,15 @@
             display: flex;
             justify-content: right;
             align-items: center;
-
+            
             @media screen and (max-width: 960px) {
                 display: none;
             }
-
+            
             img {
                 width: 100%;
                 @include fluidpaddingleft(2rem, 3rem);
+                // @include fluidbottom(-10rem, -12rem);
             }
         }
     }
@@ -113,7 +114,6 @@
         
         @media screen and (max-width: 960px){
             justify-content: center;
-            // flex-direction: column;
         }
 
         .hero-buttons {
@@ -135,6 +135,13 @@
                 );
             }
 
+            .button-primary, .button-secondary-transparent {
+                @include fluidwidth(16rem, 17rem);
+                
+                @media screen and (max-width: 960px){
+                    @include fluidwidth(12rem, 13rem);
+                }
+            }
             
             a {
                 margin: 0;

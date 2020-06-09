@@ -8,7 +8,7 @@
             <a href="/landing">HOME</a>
         </li>
         <li>
-            <a href="#!">EVENT <i class="fa fa-caret-down"></i></a>
+            <a>EVENT <i class="fa fa-caret-down"></i></a>
             <ul class="nav-dropdown">
                 <li><a href="/business-case"><img src="{{URL::asset('assets/icons/bcc-icon.png')}}" alt="BCC">Business Case Competition</a></li>
                 <hr>

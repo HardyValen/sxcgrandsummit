@@ -1,5 +1,16 @@
 @import "../../module/hero-template";
 
 .landing-hero{
+    // z-index: -10;
     @include hero-template("../assets/landing/hero.jpg");
+    .hero-top {
+        // position: relative;
+        .hero-icon {
+            position: relative;
+            @include fluidbottom(-8rem, -10rem);
+            @include fluidleft(3rem, 4rem);
+            width: 60%;
+            
+        }
+    }
 }
