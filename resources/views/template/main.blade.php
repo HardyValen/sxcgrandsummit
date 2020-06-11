@@ -7,7 +7,7 @@
 
     {{-- Meta Description --}}
     <meta name="description" content="The biggest annual event held by StudentsxCEOs Bandung Chapter, a platform for selected students across Indonesia to solve real problems related to Sustainable Development Goals (SDGs) and propose it to company & non-government organization">
-
+    @yield('meta')
     {{-- Icon --}}
     <link rel="icon" type="image/png" sizes="340x340" href="{{URL::asset('assets/logo/favicon.png')}}">
     <meta name="theme-color" content="#024597">

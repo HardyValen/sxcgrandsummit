@@ -1,5 +1,9 @@
 @extends('template.main')
 
+@section('meta')
+<script type="text/javascript" src="https://my.hellobar.com/89a7b6f042624ab79d8488d0e2216a17fda8b754.js"></script>    
+@endsection
+
 @section('title')
     9th Grand Summit &ndash; Students&#x2715;CEOs
 @endsection
