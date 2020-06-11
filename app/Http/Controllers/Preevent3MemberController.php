@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Preevent2Member;
+use App\Preevent3Member;
 use App\User;
-use App\Notifications\EmailPreevent;
+use App\Notifications\EmailPreevent3;
 use App\Notifications;
 
 class PreeventController extends Controller
