@@ -28,47 +28,47 @@ class PreeventController extends Controller
         ]);
         $member->save();
 
-        // // Brute Force Way to Google Spreadsheets
-        // $client = new \Google_Client();
-        // $client->setApplicationName('SXCGrandSummit');
-        // $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
-        // $client->setAccessType('offline');
-        // $client->setAuthConfig(__DIR__ . '/../../../storage/credentials.json');
+        // Brute Force Way to Google Spreadsheets
+        $client = new \Google_Client();
+        $client->setApplicationName('SXCGrandSummit');
+        $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
+        $client->setAccessType('offline');
+        $client->setAuthConfig(__DIR__ . '/../../../storage/credentials.json');
 
-        // $service = new \Google_Service_Sheets($client);
-        // $spreadsheetId = "1XsMr5U1kWZ0lu8jQrUAv7yS0Zz_0MO1ux4B2d2YzJKE";
-        // $range = "PreEvent2";
+        $service = new \Google_Service_Sheets($client);
+        $spreadsheetId = "1XsMr5U1kWZ0lu8jQrUAv7yS0Zz_0MO1ux4B2d2YzJKE";
+        $range = "PreEvent3";
 
-        // $values = [
-        //     [
-        //         $request->name,
-        //         $request->gender,
-        //         $request->email,
-        //         $request->phone,
-        //         $request->major,
-        //         $request->university,
-        //         $request->hometown
-        //     ]
-        // ];
+        $values = [
+            [
+                $request->name,
+                $request->gender,
+                $request->email,
+                $request->phone,
+                $request->major,
+                $request->university,
+                $request->hometown
+            ]
+        ];
 
-        // $body = new \Google_Service_Sheets_ValueRange([
-        //     'values' => $values
-        // ]);
+        $body = new \Google_Service_Sheets_ValueRange([
+            'values' => $values
+        ]);
 
-        // $params = [
-        //     'valueInputOption' => 'RAW'
-        // ];
-        // $insert = [
-        //     "insertDataOption" => "INSERT_ROWS"
-        // ];
+        $params = [
+            'valueInputOption' => 'RAW'
+        ];
+        $insert = [
+            "insertDataOption" => "INSERT_ROWS"
+        ];
 
-        // $result = $service->spreadsheets_values->append(
-        //     $spreadsheetId,
-        //     $range,
-        //     $body,
-        //     $params,
-        //     $insert
-        // );
+        $result = $service->spreadsheets_values->append(
+            $spreadsheetId,
+            $range,
+            $body,
+            $params,
+            $insert
+        );
 
         // EMAIL NOTIF, false means there's no problem. if true then there IS a problem
         $emailException = false;
