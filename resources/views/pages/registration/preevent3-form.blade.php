@@ -20,7 +20,7 @@
 
       <div class="registration-title" style="margin-bottom: 2rem">
         <img src="{{URL::asset('assets/logo/GrandSummit.svg')}}">
-        <h3>Pre Event 2</h3>
+        <h3>Pre Event 3</h3>
         <h1>REGISTRATION</h1>
       </div>
 
