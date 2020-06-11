@@ -32,7 +32,7 @@
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary summitLink">Registration</a>
+                    <a class="button-primary summitLink">Register</a>
                     {{-- <a class="button-secondary-transparent" href="#scroll" onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 

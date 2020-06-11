@@ -14,8 +14,15 @@ class CreatePreevent3MembersTable extends Migration
     public function up()
     {
         Schema::create('preevent3_members', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->bigIncrements('preevent3_member_id')->unsigned();
+
+            $table->string('fullname', 256);
+            $table->string('gender', 32);
+            $table->string('email', 256);
+            $table->string('phone', 256);
+            $table->string('hometown', 256);
+            $table->string('major', 256);
+            $table->string('university', 256);
         });
     }
 

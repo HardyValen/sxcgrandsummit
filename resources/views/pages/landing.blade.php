@@ -38,8 +38,8 @@
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary" href="#registration" onclick="scrollto('#registration')">Registration</a>
-                    <a class="button-secondary-transparent" href="#description" onclick="scrollto('#description')" style="width: 12rem">More</a>
+                    <a class="button-primary" href="#registration" onclick="scrollto('#registration')">Register</a>
+                    <a class="button-secondary-transparent" href="#description" onclick="scrollto('#description')">More</a>
                 </div>
             </div>
         </section>

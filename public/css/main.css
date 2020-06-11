@@ -4653,6 +4653,52 @@ main {
   }
 }
 
+.landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+  width: 16rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(16rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 17rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(11.80556vw);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(12rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 1440px) {
+  .landing-hero .hero-bottom .hero-buttons .button-primary, .landing-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(9.02778vw);
+  }
+}
+
 .landing-hero .hero-bottom .hero-buttons a {
   margin: 0;
 }
@@ -4899,6 +4945,55 @@ main {
   .landing-hero .hero-bottom .hero-schedule .hero-schedule-separator {
     margin-left: calc(1.38889vw);
     margin-right: calc(1.38889vw);
+  }
+}
+
+.landing-hero .hero-top .hero-icon {
+  position: relative;
+  width: 60%;
+}
+
+.landing-hero .hero-top .hero-icon {
+  bottom: -8rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .hero-top .hero-icon {
+    bottom: calc(-8rem + -2 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .hero-top .hero-icon {
+    bottom: -10rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-hero .hero-top .hero-icon {
+    bottom: calc(-6.94444vw);
+  }
+}
+
+.landing-hero .hero-top .hero-icon {
+  left: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-hero .hero-top .hero-icon {
+    left: calc(3rem + 1 * ((100vw - 320px) / (960 - 320)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-hero .hero-top .hero-icon {
+    left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-hero .hero-top .hero-icon {
+    left: calc(2.77778vw);
   }
 }
 
@@ -7714,6 +7809,52 @@ main {
   }
 }
 
+.business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+  width: 16rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(16rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 17rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(11.80556vw);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(12rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 1440px) {
+  .business-case-hero .hero-bottom .hero-buttons .button-primary, .business-case-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(9.02778vw);
+  }
+}
+
 .business-case-hero .hero-bottom .hero-buttons a {
   margin: 0;
 }
@@ -9827,6 +9968,52 @@ main {
 @media screen and (max-width: 1366px) and (min-width: 1440px) {
   .pre-event-hero .hero-bottom .hero-buttons {
     padding-bottom: calc(5.55556vw);
+  }
+}
+
+.pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+  width: 16rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(16rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 17rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(11.80556vw);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(12rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 1440px) {
+  .pre-event-hero .hero-bottom .hero-buttons .button-primary, .pre-event-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(9.02778vw);
   }
 }
 
@@ -13161,6 +13348,52 @@ main {
 @media screen and (max-width: 1366px) and (min-width: 1440px) {
   .summit-hero .hero-bottom .hero-buttons {
     padding-bottom: calc(5.55556vw);
+  }
+}
+
+.summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+  width: 16rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(16rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 17rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(11.80556vw);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+  .summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(12rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+  .summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 1440px) {
+  .summit-hero .hero-bottom .hero-buttons .button-primary, .summit-hero .hero-bottom .hero-buttons .button-secondary-transparent {
+    width: calc(9.02778vw);
   }
 }
 
