@@ -25,10 +25,7 @@
                     </div>
                     <div class="hero-description">
                         <p>
-                            The 9th Grand Summit is StudentsxCEOs Bandung Chapter’s most anticipated annual event.
-                            It provides a platform for selected students across Indonesia to discuss and bring a
-                            solution for businesses and NGOs to solve real problems relevant to the Sustainable Development Goals (SDGs).
-                            The 9th Grand Summit covers the pre-event, business case competition, and conference.    
+                            9th Grand Summit is StudentsxCEOs Bandung Chapter grandest annual event. We provide online platforms for students across Indonesia to collaborate closer and bring real solutions for the betterment of Indonesia. Collaborating with business and NGOs, 9th Grand Summit supports the implementation of Sustainable Development Goals. With The Summit Online National Conference, Business Case Competition, and Pre Events, we open big opportunity for you to stay productive and #StayActHome 
                         </p>
                     </div>
                 </div>

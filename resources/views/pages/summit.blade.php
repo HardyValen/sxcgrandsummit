@@ -132,59 +132,69 @@
         </section>
         
         <section class="summit-activities">
-            <div class= "activity-container">
-                <div class="activity-header">
-                    @component('blocks.title')
-                    <h2>Be The Change Agent!</h2>
-                    @endcomponent
-                </div>
-                <div class="activity-block">
-                    <div class= "activity-description">
-                        <div class="activity-title">
-                            Before June 24th - Registration 
-                        </div>
-                        <p>
-                            Register individually or in a team with a maximum of 3 members. You can also choose your chamber.
-                        </p>
+            <div class="activity-header">
+                @component('blocks.title')
+                <h2>Be The Change Agent!</h2>
+                @endcomponent
+            </div>
+            <div class="activity-block">
+                <div class= "activity-description">
+                    <div class="activity-title">
+                        Before June 24<sup>th</sup> -<span style="font-weight: 450"> Registration</span>
                     </div>
-                    <div class="activity-image img-coaching"></div>
+                    <p>
+                        Register individually or in a team with a maximum of 3 members. You can also choose your chamber;
+                    </p>
                 </div>
-                
-                <div class= "activity-block">
-                    <div class="activity-image img-talkshow"></div>
-                    <div class= "activity-description">
-                        <div class="activity-title">
-                            Talk Shows Session
-                        </div>
-                        <p>
-                            Providing speakers from different NGOs that will share insights on the growing issues of SDGs to give the participants specific information of the issues that will be solved within their chambers. 
-                        </p>
+                <img class="activity-image" src="{{URL::asset('assets/summit/act1.png')}}">
+            </div>
+            
+            <div class= "activity-block">
+                <div class= "activity-description">
+                    <div class="activity-title">
+                        June 25th -<span style="font-weight: 450"> Study Guide Distribution</span>
                     </div>
+                    <p>
+                        Providing speakers from different NGOs that will share insights on the growing issues of SDGs to give the participants specific information of the issues that will be solved within their chambers. 
+                    </p>
                 </div>
-                
-                <div class= "activity-block">
-                    <div class= "activity-description">
-                        <div class="activity-title">
-                            Chamber Session
-                        </div>
-                        <p>
-                            The perfect time to interact, discuss, collaborate, and cooperate to find a solution for each chamber’s issue. The conference leaders will lead the discussion, create the study guides, and assess each participant from their performance and essay. From the discussions, we expect a feasible solution to be presented in the end in front of the NGOs.
-                        </p>
+                <img class="activity-image" src="{{URL::asset('assets/summit/act2.png')}}">
+            </div>
+            
+            <div class= "activity-block">
+                <div class= "activity-description">
+                    <div class="activity-title">
+                        June 25<sup>th</sup> -<span style="font-weight: 450"> Study Guide Distribution</span>
                     </div>
-                    <div class="activity-image img-chamber"></div>
+                    <p>
+                        The perfect time to interact, discuss, collaborate, and cooperate to find a solution for each chamber’s issue. The conference leaders will lead the discussion, create the study guides, and assess each participant from their performance and essay. From the discussions, we expect a feasible solution to be presented in the end in front of the NGOs.
+                    </p>
                 </div>
-                
-                <div class= "activity-block">
-                    <div class="activity-image img-gala"></div>
-                    <div class= "activity-description">
-                        <div class="activity-title">
-                            Social Night & Gala Dinner
-                        </div>
-                        <p>
-                            A big chance for participants to network, create positive impressions and a memorable experience of The Summit. Social Night is a platform where participants can enjoy and interact with each other informally and will be closed by Gala Dinner.
-                        </p>
+                <img class="activity-image" src="{{URL::asset('assets/summit/act3.png')}}">
+            </div>
+            
+            <div class= "activity-block">
+                <div class= "activity-description">
+                    <div class="activity-title">
+                        August 21<sup>st</sup> -<span style="font-weight: 450"> Day 1: Online Coaching Session</span>
                     </div>
+                    <p>
+                        A big chance for participants to network, create positive impressions and a memorable experience of The Summit. Social Night is a platform where participants can enjoy and interact with each other informally and will be closed by Gala Dinner.
+                    </p>
                 </div>
+                <img class="activity-image" src="{{URL::asset('assets/summit/act4.png')}}">
+            </div>
+
+            <div class= "activity-block">
+                <div class= "activity-description">
+                    <div class="activity-title">
+                        August 22<sup>st</sup> -<span style="font-weight: 450"> Day 2: Online Conference Chamber Session</span>
+                    </div>
+                    <p>
+                        A big chance for participants to network, create positive impressions and a memorable experience of The Summit. Social Night is a platform where participants can enjoy and interact with each other informally and will be closed by Gala Dinner.
+                    </p>
+                </div>
+                <img class="activity-image" src="{{URL::asset('assets/summit/act5.png')}}">
             </div>
         </section>
 

@@ -164,67 +164,25 @@
             </div>
         </section>
 
+        <section class="business-case-prize">
+            <div class="showcase-body">
+                <div class="showcase-head">
+                    <h2>Win Total Prize</h2>
+                </div>
+                <div class="showcase-text">
+                    <img src="{{URL::asset('assets/business-case/reward.svg')}}">
+                    <h1>   Rp 26.000.000</h1>
+                </div>
+            
+            </div>
+        </section>
+
         <section class="schedule" id="schedule">
             @component('blocks.title')
                 <h2 style="color: white">Timeline</h2>
             @endcomponent
             @include('blocks.schedule.businessCase')
         </section>
-
-        {{-- <section class="business-case-juries">
-            <div class="showcase-header">
-                @component('blocks.title')
-                <h2>The Juries</h2>
-                @endcomponent
-            </div>
-            <div class="showcase-body">
-                <div class="showcase-card">
-                    <div class="showcase-card-placeholder">Coming Soon :)</div>
-                    <div class="showcase-card-image">
-                        <img src="{{URL::asset('assets/pre-event/speaker4.png')}}">
-                    </div>
-                    <div class="showcase-card-title">
-                        <h2>speaker1</h2>
-                    </div>
-                    <div class="showcase-card-description">
-                        <ul>
-                            <li>title1</li>
-                            <li>title2</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="showcase-card">
-                    <div class="showcase-card-placeholder">Coming Soon :)</div>
-                    <div class="showcase-card-image">
-                        <img src="{{URL::asset('assets/pre-event/speaker5.png')}}">
-                    </div>
-                    <div class="showcase-card-title">
-                        <h2>speaker2</h2>
-                    </div>
-                    <div class="showcase-card-description">
-                        <ul>
-                            <li>title1</li>
-                            <li>title2</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="showcase-card">
-                    <div class="showcase-card-placeholder">Coming Soon :)</div>
-                    <div class="showcase-card-image">
-                        <img src="{{URL::asset('assets/pre-event/speaker6.png')}}">
-                    </div>
-                    <div class="showcase-card-title">
-                        <h2>speaker2</h2>
-                    </div>
-                    <div class="showcase-card-description">
-                        <ul>
-                            <li>title1</li>
-                            <li>title2</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
 
         <section class="business-case-registration">
             <div class="registration-container">

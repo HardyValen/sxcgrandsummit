@@ -1,124 +1,116 @@
-$actimages: (
-    "coaching": "../assets/summit/Coaching.jpg",
-    "talkshow": "../assets/summit/Talkshow.jpg",
-    "chamber": "../assets/summit/Chamber.jpg",
-    "gala": "../assets/summit/Gala.jpg"
-);
-  
 .summit-activities {
+    @include fluidpaddingy(3rem, 5rem);
+    @include fluidpaddingx(8rem, 12rem);
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: map-get($theme-colors, "white" );
+    align-items: center;
+    background-color: map-get($theme-colors, "white");
+
+    h2 {
+        @include header2();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+        // color: map-get($theme-colors, "white");
+    }
+
+    h3 {
+        @include header3();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+    }
     
-    .activity-container {
-        width: 90%;
-        @include fluidpadding(2rem, 3rem);
+    p {
+        @include paragraph1();
+        @include myriadProRegular();
+        line-height: 1.3;
+        color: map-get($theme-colors, "white");      
+    }
+    
+    // p1 {
+    //     @include paragraph1();
+    //     @include myriadProRegular();
+    //     line-height: 1.3;
+    //     color: map-get($theme-colors, "white");
+    //     font-style: italic;
+    //     font-weight: 650;   
+    // }
+    
+    .activity-header {
+        color: map-get($theme-colors, "primary");
+        @include fluidpaddingbottom(4rem, 5rem);
+    }
+
+    .activity-block {
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        // background-color: map-get($theme-colors, "white-alt" );
-        // @include shadowSides();
-        
-        @media screen and (max-width: 960px) {
-            @include fluidpaddingx(1.6rem, 3.6rem);
-            width: 100%;
-        }
-        
-        h1 {
-            @include header2();
-            @include montserrat();
-            font-weight: 700;
-            color: map-get($theme-colors, "primary" );
-        }
-        
-        .activity-header {
-            @include fluidpaddingbottom(4rem, 5rem);
+        justify-content: center;
+        background-color: map-get($theme-colors, "primary");
+
+        border-radius: 3rem;
+        flex-direction: row;
+
+        &:nth-child(n%2) {
+            flex-direction: row-reverse;
         }
 
-        .activity-block {
-            @include fluidpaddingbottom(5rem, 6rem);
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: stretch;
+
+        &:not(:last-child):not(:first-child) {
+            @include fluidmarginy(1rem, 2rem);
+        }
+
+        .activity-image {
+            min-width: 40%;
+            max-width: 50%;
+            // @include fluidheight(15rem,20rem);
+            border-radius: 3rem;
+            // margin: 0 1rem 0 1rem;
+            height: 100%;
             
             @media screen and (max-width: 960px) {
-                flex-direction: column;
-            }
+                display: none;
+            }            
+        }
 
-            .activity-image {
-                // width: 100%;
-                min-width: 40%;
-                max-width: 50%;
-                @include fluidheight(15rem,20rem);
-                border-radius: 2rem;
-                margin: 0 1rem 0 1rem;
-                flex-grow: 2;
-                flex-shrink: 0;
-                
-                @media screen and (max-width: 960px) {
-                    display: none;
-                }
-            }
-            .img-coaching{
-                @include background(map-get($actimages,"coaching"));
-                @include backgroundPosition(70%, 60%);
-            }
-            .img-talkshow{
-                @include background(map-get($actimages,"talkshow"));
-                @include backgroundPosition(70%, 85%);
-            }
-            .img-chamber{
-                @include background(map-get($actimages,"chamber"));
-                @include backgroundPosition(50%, 55%);
-            }
-            .img-gala{
-                @include background(map-get($actimages,"gala"));
-                @include backgroundPosition(40%, 60%);
+        .activity-description {
+            @include fluidpaddingx(2.4rem, 2.8rem);
+            @include fluidpaddingy(2.4rem, 2.8rem);
+            min-width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            flex-grow: 2;
+            
+            .activity-title{
+                @include header3();
+                @include montserrat();
+                font-weight: 700;
+                color: map-get($theme-colors, "white");
+                position: relative;
             }
             
-            .activity-description {
-                @include fluidpaddingx(1.6rem, 2.4rem);
-                min-width: 40%;
-                display: flex;
-                flex-direction: column;
-                justify-content: left;
-                flex-grow: 1;
-                
-                .activity-title{
-                    @include header3();
-                    @include montserrat();
-                    font-weight: 700;
-                    color: map-get($theme-colors, "primary");
-                }
-                
-                .activity-title::before {
-                    @include fluidpadding(1.6rem, 1.6rem);
-                    @include fluidwidth(3.2rem, 4.2rem);
-                    @include fluidheight(3.2rem, 4.2rem);
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    background-color: map-get($theme-colors, "secondary");
-                    color: map-get($theme-colors, "primary");
-                    content: counter(section);
-                    counter-increment: section;
-                    margin-right: 1rem;
-                }
-                
-                p {
-                    @include paragraph1();
-                    @include myriadProRegular();
-                    color: map-get($theme-colors, "black");
-                    margin-top: 1.6rem;
-                    text-align: justify;
-                }
+            .activity-title::before {
+                @include fluidwidth(3.5rem, 4.5rem);
+                @include fluidheight(3.5rem, 4.5rem);
+                position: absolute;
+                @include fluidleft(0rem, 0rem);
+                @include fluidtop(-1rem, -1rem);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: map-get($theme-colors, "secondary");
+                color: map-get($theme-colors, "primary");
+                content: counter(section) ".";
+                counter-increment: section;
+            }
+            
+            p {
+                margin-top: 1.6rem;
             }
         }
     }

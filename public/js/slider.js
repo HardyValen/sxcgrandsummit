@@ -40,4 +40,4 @@ function changePreEvent(evt, pre, spk, dsc) {
     }
 }   
 
-document.getElementById("2").click();
+document.getElementById("3").click();

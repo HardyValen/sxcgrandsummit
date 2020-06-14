@@ -92,8 +92,8 @@
     <section class="pre-event-slider">
         <div class="slider-container" id="sliderc">
             <div id="1" class= "menu" onclick="changePreEvent(event, 'title1', 'speaker1', 'null')">Pre Event 1</div>
-            <div id="2" class= "menu active" onclick="changePreEvent(event, 'title2', 'speaker2', 'desc2')">Pre Event 2</div>
-            <div id="3" class= "menu" onclick="changePreEvent(event, 'title3', 'speaker3', 'desc3')">Pre Event 3</div>
+            <div id="2" class= "menu" onclick="changePreEvent(event, 'title2', 'speaker2', 'desc2')">Pre Event 2</div>
+            <div id="3" class= "menu active" onclick="changePreEvent(event, 'title3', 'speaker3', 'desc3')">Pre Event 3</div>
         </div>
     </section>
     
@@ -396,7 +396,7 @@
                 <h2>
                     Register<br>
                     <span class="color-secondary">
-                        Pre Event 2
+                        Pre Event 3
                     </span>
                 </h2>
             </div>
