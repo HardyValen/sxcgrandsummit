@@ -1,5 +1,9 @@
 @import "../../module/description-template";
 
 .summit-theme{
-    @include description-template-2();  
+    @include description-template-2();
+    @include fluidpaddingtop(0rem, 0rem);
+    p {
+        padding: 0;
+    }
 }

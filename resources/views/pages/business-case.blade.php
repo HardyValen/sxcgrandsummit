@@ -130,7 +130,7 @@
                 <div class="flow-card">
                     <h3>Before July 24th - Paper Submission</h3>
                     <p>
-                        Solve the case and submit your paper through grandsummitsxc@gmail.com.
+                        Solve the case and submit your paper through the uploader provided in this website.
                     </p>
                 </div>
                 <div class="flow-connector"></div>

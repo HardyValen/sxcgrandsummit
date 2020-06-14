@@ -9,7 +9,6 @@
     @include fluidpaddingbottom($stdPaddingMin, $extPaddingMax);
     @include backgroundDark1($url);
     @include backgroundPosition(50%, 50%);
-    // @include shadowHero();
     min-height: 50vw;
     
     @media screen and (max-width: 960px) {

@@ -1,4 +1,4 @@
-// @mixin description-template-2()
+// @mixin description-template-1()
 // for general purpose theme, topic
 // uses white color for background color
 
@@ -164,12 +164,9 @@
             @include fluidpaddingbottom(2rem, 2rem);
         }
 
-        blockquote {
-            text-align: center;
-        }
-
         p {
             text-align: center;
+            padding:0;
         }
     }
 }
