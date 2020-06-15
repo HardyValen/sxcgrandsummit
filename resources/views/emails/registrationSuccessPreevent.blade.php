@@ -68,7 +68,7 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tr style="box-sizing: border-box;">
                                             <th style="box-sizing: border-box;">
-                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">PRE EVENT 2<br>REGISTRATION CONFIRMATION</h2>
+                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">PRE EVENT 3<br>REGISTRATION CONFIRMATION</h2>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 0;font-size: 13px;box-sizing: border-box;"></p>
                                             </th>
                                         </tr>
@@ -77,17 +77,17 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tbody style="box-sizing: border-box;">
                                             <tr style="box-sizing: border-box;">
-                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Dear Pioneers of The Future, we already received your registration form for this Pre Event 2:</span></h2>
+                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Dear Pioneers of The Future, we already received your registration form for this Pre Event:</span></h2>
                                             </tr>
                                             <tr style="box-sizing: border-box;">
                                                 <h2 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
-                                                    <b>Mastering Pitching Skill to Sell Your Ideas</b>
+                                                    <b>"Problem Solving 101 in This Disruption Era"</b>
                                                 </h2>
                                                 <p style="box-sizing: border-box;">
-                                                    We are honored for you to join us in this prestigious pre-event. This event will be held in
+                                                    This event will be held in:
                                                 </p>
                                                 <h3 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
-                                                    <b>Saturday, 13th June 2020<br>13.00 - 15.30</b>
+                                                    <b>Saturday, 20<sup>th</sup> June 2020<br>13.00 - 15.30 WIB</b>
                                                 </h3>
                                                 <p style="box-sizing: border-box;">
                                                     We will send you further email regarding <b>the link</b> to join our pre-event on <b>Friday, 12th june 2020.</b>
