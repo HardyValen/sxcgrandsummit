@@ -67,9 +67,10 @@ $border-rad: 2rem;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         @include fluidmarginy(1rem, 2rem);
         * {
+            width: 32%;
             border-radius: $border-rad;
         }
         
@@ -201,25 +202,22 @@ $border-rad: 2rem;
                 }
                 
                 @media screen and (max-width: 960px) {
-                    @include fluidheight(17rem, 17rem);
-                    @include fluidpadding(1rem, 1rem);
+                    @include fluidheight(7rem, 7rem);
                     width: 100%;
-                    flex-direction: column;
                     
                     *{padding:0;}
                     
                     .sdg {
-                        @include fluidmarginbottom(1rem, 1rem);
+                        width: 40%;
                         object-fit: contain;
-                        @include fluidheight(15rem, 15rem);
                     }
 
                     .logo {
-                        width: 100%;
+                        width: 60%;
                         object-fit: contain;
                     }
                     
-                    p, span { display:none; }
+                    p { display:none; }
                 }
             }
             

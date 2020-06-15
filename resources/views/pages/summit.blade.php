@@ -194,19 +194,19 @@
                         <img class="sdg" src="{{URL::asset('assets/summit/sdg4.png')}}">
                         <p>Quality<br>Education</p>
                         <span style='font-size:50px; color:white'>&#8594;</span>
-                        <img class="logo" src="{{URL::asset('assets/summit/logochm4.png')}}">
+                        <img class="logo" src="{{URL::asset('assets/summit/logochm4.svg')}}">
                     </div>
                     <div class="activity-subchamber">
                         <img class="sdg" src="{{URL::asset('assets/summit/sdg8.png')}}">
                         <p>Decent Work and<br>Economic Growth</p>
                         <span style='font-size:50px; color:white'>&#8594;</span>
-                        <img class="logo" src="{{URL::asset('assets/summit/logochm8.png')}}">
+                        <img class="logo" src="{{URL::asset('assets/summit/logochm8.svg')}}">
                     </div>
                     <div class="activity-subchamber">
                         <img class="sdg" src="{{URL::asset('assets/summit/sdg13.png')}}">
                         <p>Climate<br>Action</p>
                         <span style='font-size:50px; color:white'>&#8594;</span>
-                        <img class="logo" src="{{URL::asset('assets/summit/logochm13.png')}}">
+                        <img class="logo" src="{{URL::asset('assets/summit/logochm13.svg')}}">
                     </div>
                 </div>
                 <img class="activity-image" src="{{URL::asset('assets/summit/act5.png')}}">
@@ -376,25 +376,25 @@
                 <h2>Contact Person:</h2>
                 <div class="contacts">
                     <div class="contacts-item">
-                        <img src="{{URL::asset('assets/summit/tele.png')}}">
+                        <img src="{{URL::asset('assets/summit/tele.svg')}}">
                         <h3>Zerlina<br>
                             <span style="font-weight: 800">081223800037</span>
                         </h3>
                     </div>
                     <div class="contacts-item">
-                        <img src="{{URL::asset('assets/summit/line.png')}}">
+                        <img src="{{URL::asset('assets/summit/line.svg')}}">
                         <h3>Line<br>
                             <span style="font-weight: 800">zeruline</span>
                         </h3>
                     </div>
                     <div class="contacts-item">
-                        <img src="{{URL::asset('assets/summit/tele.png')}}">
+                        <img src="{{URL::asset('assets/summit/tele.svg')}}">
                         <h3>Safira<br>
                             <span style="font-weight: 800">08777639167</span>
                         </h3>
                     </div>
                     <div class="contacts-item">
-                        <img src="{{URL::asset('assets/summit/line.png')}}">
+                        <img src="{{URL::asset('assets/summit/line.svg')}}">
                         <h3>Line<br>
                             <span style="font-weight: 800">safira2008</span>
                         </h3>

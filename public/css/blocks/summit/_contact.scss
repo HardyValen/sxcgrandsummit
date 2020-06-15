@@ -56,8 +56,8 @@
                 @include fluidpaddingx(1.5rem, 1.5rem);
                 @include fluidpaddingtop(1.5rem, 1.5rem);
                 
-                * {
-                    @include fluidpaddingx(1rem, 1rem);
+                h3 {
+                    @include fluidpaddingx(1.5rem, 1.5rem);
                 }
                 
                 img {
