@@ -8,7 +8,7 @@ use App\User;
 use App\Notifications\EmailPreevent3;
 use App\Notifications;
 
-class PreeventController extends Controller
+class Preevent3MemberController extends Controller
 {
     public function view(){
     	return view('pages.registration.preevent3-form');
