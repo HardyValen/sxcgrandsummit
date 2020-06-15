@@ -97,14 +97,14 @@
                                                     <ol>
                                                         <li style="margin-bottom: 10px">You are expected to enter the webinar room around 13.00 - 13.15 WIB. Please do not come late.</li>
                                                         <li style="margin-bottom: 10px">After opening the link, you are required to fill your name and email the same as you write before in the registration form before joining the room.</li>
-                                                        <li style="margin-bottom: 10px">The participants were only allowrd to ask questions in the Q&A session.</li>
-                                                        <li style="margin-bottom: 10px">The participants could asd questions via the chat room.</li>
+                                                        <li style="margin-bottom: 10px">The participants were only allowed to ask questions in the Q&A session.</li>
+                                                        <li style="margin-bottom: 10px">The participants could ask questions via the chat room.</li>
                                                         <li style="margin-bottom: 10px">You are expected to follow the whole agenda of the webinar until it ends.</li>
                                                         <li style="margin-bottom: 10px">At the end of the webinar, you are required to fill a feedback form that will be given at the end of the webinar. This is a requirement for you to get this webinar certificate.</li>
                                                     </ol>
                                                 </p>
                                                 <p style="box-sizing: border-box;">
-                                                    Our event also <b>collaborated with Aliansi Indonesia Kuat</b>, a movement to help <b>Indonesia fighting against COVID19</b>. If you want to contribute, you can donate without any minimum amount. <b>To donate</b>, please transfer through this following bank accounts or OVO:
+                                                    Our event also <b>collaborated with Aliansi Indonesia Kuat</b>, a movement to <b>help Indonesia fighting against COVID19</b>. If you want to contribute, you can donate without any minimum amount. <b>To donate</b>, please transfer through this following bank accounts or OVO:
                                                 </p>
                                                 <h3 style="color: #0452B3;box-sizing: border-box;margin: 30px 0px;">
                                                     <b>BCA 5221166435 Chyntia Angelina</b><br>
@@ -112,7 +112,7 @@
                                                     <b>OVO 081809309607  Faiza</b><br>
                                                 </h3>
                                                 <p style="box-sizing: border-box;">
-                                                    Add 2 at the end of your transferred amount. Example: Rp100.002
+                                                    <b>Add "2"</b> at the end of your transferred amount. Example: Rp100.002
                                                 </p>
                                                 <h3 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
                                                     <i>
@@ -122,6 +122,9 @@
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 30px 0 30px;font-size: 13px;box-sizing: border-box;"></p>
                                                 <p style="color: #636363;box-sizing: border-box;">
                                                     Should you have any inquiries, feel free to contact us at <a href="mailto:grandsummitsxc@gmail.com" style="color: #0452B3">grandsummitsxc@gmail.com</a> and keep in touch for our latest information in <a target="_blank" href="https://www.instagram.com/sxcgrandsummit/" style="color: #0452B3">Our Instagram</a>.
+                                                </p>
+                                                <p style="color: #636363;box-sizing: border-box;">
+                                                    Thank you for participating in this Pre-Event! See you on Saturday!
                                                 </p>
                                                 <p style="color: #636363;box-sizing: border-box;">
                                                     Regards,
