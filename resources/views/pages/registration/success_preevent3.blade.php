@@ -39,7 +39,7 @@
 						We also have sent you the email for the next step of registration to {{ $data->email }}.
 					</p>
 					<p>
-						If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact our instagram at @sxcgrandsummit
+						If you have not received the email, <b>please check your spam inbox</b>. If you still can't find your email in 1x24 hours, please contact our instagram at <a href="https://www.instagram.com/sxcgrandsummit/" > @sxcgrandsummit </a>
 					</p>
 				@endif
 			</div>
