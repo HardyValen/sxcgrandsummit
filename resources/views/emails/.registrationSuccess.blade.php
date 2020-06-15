@@ -109,7 +109,7 @@
                   
                   <p style=" font-size: 11px; color: #999; text-align: center; padding: 5px 0;"><span style="font-weight: 700">Bandung Institute of Technology</span><br>Jl. Ganesha No. 10, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat, 40132</p>
                   <h2 style="margin: 0;text-align: center;padding: 8px 0 18px 0;">
-                    <a target="_blank" style="text-decoration: none;" href= "https://www.instagram.com/studentsxceosbdg/">
+                    <a target="_blank" style="text-decoration: none;" href= "https://www.instagram.com/sxcgrandsummit/">
                       <img src="https://drive.google.com/uc?id=1StIKkyp0rXzWDP8hoYWjUxgHbSIQNd7D" />
                     </a>
                     <a target="_blank" style="text-decoration: none;" href= "#">

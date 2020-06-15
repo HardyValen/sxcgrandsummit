@@ -26,15 +26,14 @@ Route::get('/pre-event', 'PageRequestController@viewPreEvent');
 // Route::get('/pre-event/register', 'PreeventController@view');
 // Route::post('/pre-event/register', 'PreeventController@store');
 
-// Route::get('/pre-event3', 'PageRequestController@viewPreEvent3');
-// Route::get('/pre-event3/register', 'Preevent3MemberController@view');
-// Route::post('/pre-event3/register', 'Preevent3MemberController@store');
+Route::get('/pre-event3/register', 'Preevent3MemberController@view');
+Route::post('/pre-event3/register', 'Preevent3MemberController@store');
 
-// For debugging purpose only
+// FOR DEBUGGING PURPOSE ONLY
 // Route::get('/registration-cards', function(){return view("blocks.registration");});
 // Route::get('/schedule', function(){return view("blocks.schedule.businessCase");});
 // Route::get('/footer', function(){return view("blocks.footer");});
 // Route::get('/navbar', function(){return view("blocks.navbar");});
 // Route::get('/sidebar', function(){return view("blocks.sidebar");});
 // Route::get('/mail', function(){return view("emails.registrationSuccess");});
-Route::get('/test', function(){return view("emails.registrationSuccessPreevent");});
+Route::get('/test', function(){return view("emails.registrationSuccessPreevent3");});

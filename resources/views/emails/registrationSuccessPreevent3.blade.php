@@ -68,7 +68,7 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tr style="box-sizing: border-box;">
                                             <th style="box-sizing: border-box;">
-                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">PRE EVENT 2<br>REGISTRATION CONFIRMATION</h2>
+                                                <h3 style="font-size: 20px;font-weight: 700;text-align: center;margin: 30px 0px;box-sizing: border-box;">PRE EVENT 3<br>REGISTRATION CONFIRMATION</h2>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 0;font-size: 13px;box-sizing: border-box;"></p>
                                             </th>
                                         </tr>
@@ -77,23 +77,31 @@
                                     <table style="box-sizing: border-box;border-spacing: 0;border-collapse: collapse;width: 100%;max-width: 600px;">
                                         <tbody style="box-sizing: border-box;">
                                             <tr style="box-sizing: border-box;">
-                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Dear Pioneers of The Future, we already received your registration form for this Pre Event 2:</span></h2>
+                                                <h2 style="font-size: 16px;margin-top: 30px;box-sizing: border-box;"><span style="font-weight: 700;box-sizing: border-box;">Dear Pioneers of The Future, we already received your registration form for this Pre Event:</span></h2>
                                             </tr>
                                             <tr style="box-sizing: border-box;">
                                                 <h2 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
-                                                    <b>Mastering Pitching Skill to Sell Your Ideas</b>
+                                                    <b>"Problem Solving 101 in This Disruption Era"</b>
                                                 </h2>
                                                 <p style="box-sizing: border-box;">
-                                                    We are honored for you to join us in this prestigious pre-event. This event will be held in
+                                                    This event will be held in:
                                                 </p>
                                                 <h3 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
-                                                    <b>Saturday, 13th June 2020<br>13.00 - 15.30</b>
+                                                    <b>Saturday, 20<sup>th</sup> June 2020<br>13.00 - 15.30 WIB</b>
+                                                </h3>
+                                                <h3 style="box-sizing: border-box;margin: 30px 0px;">
+                                                    <b>Please join our pre-event using this link: <a href="https://bit.ly/preevent3">bit.ly/preevent3</a></b>
                                                 </h3>
                                                 <p style="box-sizing: border-box;">
-                                                    We will send you further email regarding <b>the link</b> to join our pre-event on <b>Friday, 12th june 2020.</b>
-                                                </p>
-                                                <p style="box-sizing: border-box;">
-                                                    As a participant for this pre-event, you will experience an immersive webinar that will improve how you convince the audience and present ear-catching content. A powerful pitch can lead you to billion worth of investment, profitable partnership, or even a great job position.
+                                                    As a participant for this pre-event, you need to obey several rules:
+                                                    <ol>
+                                                        <li style="margin-bottom: 10px">You are expected to enter the webinar room around 13.00 - 13.15 WIB. Please do not come late.</li>
+                                                        <li style="margin-bottom: 10px">After opening the link, you are required to fill your name and email the same as you write before in the registration form before joining the room.</li>
+                                                        <li style="margin-bottom: 10px">The participants were only allowrd to ask questions in the Q&A session.</li>
+                                                        <li style="margin-bottom: 10px">The participants could asd questions via the chat room.</li>
+                                                        <li style="margin-bottom: 10px">You are expected to follow the whole agenda of the webinar until it ends.</li>
+                                                        <li style="margin-bottom: 10px">At the end of the webinar, you are required to fill a feedback form that will be given at the end of the webinar. This is a requirement for you to get this webinar certificate.</li>
+                                                    </ol>
                                                 </p>
                                                 <p style="box-sizing: border-box;">
                                                     Our event also <b>collaborated with Aliansi Indonesia Kuat</b>, a movement to help <b>Indonesia fighting against COVID19</b>. If you want to contribute, you can donate without any minimum amount. <b>To donate</b>, please transfer through this following bank accounts or OVO:
@@ -108,7 +116,7 @@
                                                 </p>
                                                 <h3 style="color: #0452B3;box-sizing: border-box; text-align: center;margin: 30px 0px;">
                                                     <i>
-                                                        <b>Prepare yourself to be challenged<br>in order to master your pitching skill</b>
+                                                        <b>Prepare yourself to be challenged<br>in order to understand better about problem-solving</b>
                                                     </i>
                                                 </h3>
                                                 <p style="color: #777;padding: 0;border-bottom: 1px solid #E6E7EB;margin: 30px 0 30px;font-size: 13px;box-sizing: border-box;"></p>

@@ -153,7 +153,7 @@
                   
                  
                   <h2 style="margin: 0;text-align: center;padding: 8px 0 18px 0;box-sizing: border-box;">
-                    <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://www.instagram.com/studentsxceosbdg/">
+                    <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://www.instagram.com/sxcgrandsummit/">
                       <img src="https://lh3.googleusercontent.com/bmkzRCgxFh9GIavuIluT2WtHIJ533x_d4tRwD5Dc3JlI8oc6p2Jc36lss45DspPgfE7kj8pfpMpu_KrIwCZ0ivKEx_JkWMkyOOyH9aKcc1Bwxm_M5j0g2EI5rTxhtiFCfSSCE64_mA=s70-p-k" style="box-sizing: border-box;">
                     </a>
                     <a target="_blank" style="text-decoration: none;box-sizing: border-box;" href="https://lin.ee/38yYPIT">
