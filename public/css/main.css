@@ -1959,6 +1959,17 @@ body {
   margin-left: 1rem;
 }
 
+@media screen and (max-width: 960px) {
+  .post-container .post-card .post-link {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .post-container .post-card .post-link a {
+    min-width: 0;
+  }
+}
+
 .post-container h3 {
   font-family: 'Montserrat', sans-serif;
 }
