@@ -102,7 +102,7 @@
                     </p>
                 </div>
                 <div class="description-image">
-                    <img src="{{URL::asset('assets/business-case/description-image.png')}}">
+                    <img src="{{URL::asset('assets/business-case/description-image.jpg')}}">
                 </div>
             </div>
         </section>

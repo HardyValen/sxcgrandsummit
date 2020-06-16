@@ -66,7 +66,8 @@
         }
 
         .description-text{
-            @include fluidpaddingright(5rem, 6rem);
+            width: 60%;
+            @include fluidpaddingright(4rem, 5rem);
             display: flex;
             flex-direction: column;
 
@@ -86,12 +87,14 @@
         }
 
         .description-image{
+            width: 50%;
             @media screen and (min-width: 960px) {
                 @include fluidmarginleft(3rem, 3rem);
             }
 
             img {
-                @include fluidwidth(30rem, 40rem);
+                width: 100%;
+                // @include fluidwidth(30rem, 40rem);
             }
         }
     }
