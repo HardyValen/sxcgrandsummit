@@ -35,7 +35,7 @@
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary" href="#registration" onclick="scrollto('#registration')">Register</a>
+                    {{-- <a class="button-primary" href="#registration" onclick="scrollto('#registration')">Register</a> --}}
                     <a class="button-secondary-transparent" href="#description" onclick="scrollto('#description')">More</a>
                 </div>
             </div>
@@ -150,19 +150,22 @@
             <div class="regis">
                 <div class="business-case">
                     <h2>Business Case<br><span class="color-secondary">Competition</span></h2>
-                    <a class="button-secondary-transparent bccLink">Register</a>
+                    {{-- <a class="button-secondary-transparent bccLink">Register</a> --}}
+                    <a class="button-disabled">Registration Closed</a>
                 </div>
             </div>
             <div class="regis">
                 <div class="pre-event">
                     <h2>Pre <span class="color-secondary">Event</span></h2>
-                    <a class="button-secondary-transparent preLink">Register</a>
+                    {{-- <a class="button-secondary-transparent preLink">Register</a> --}}
+                    <a class="button-disabled">Registration Closed</a>
                 </div>
             </div>
             <div class="regis">
                 <div class="summit">
                     <h2>The <span class="color-secondary">Summit</span></h2>
-                    <a class="button-secondary-transparent summitLink">Register</a>
+                    {{-- <a class="button-secondary-transparent summitLink">Register</a> --}}
+                    <a class="button-disabled">Registration Closed</a>
                 </div>
             </div>
         </section>

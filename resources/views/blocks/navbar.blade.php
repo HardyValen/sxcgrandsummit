@@ -21,9 +21,10 @@
             <a href="/landing#schedule" id="navSchedule">SCHEDULE</a>
         </li>
     </ul>
-    <div class="navbar-registration">
+    <div class="empty"></div>
+    {{-- <div class="navbar-registration">
         <a href="/landing#registration" class="button-primary-transparent" id="navRegist">Registration</a>
-    </div>
+    </div> --}}
     <div class="navbar-mobile-nav">
         <a onclick="showsidebar()">
             <img src="{{URL::asset('assets/registration/MoreIcon-Outline.svg')}}" alt="MORE OPTIONS" id="sideButton">

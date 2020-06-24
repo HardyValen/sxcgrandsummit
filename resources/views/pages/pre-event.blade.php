@@ -31,7 +31,7 @@
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary preLink">Register</a>
+                    {{-- <a class="button-primary preLink">Register</a> --}}
                     {{-- <a class="button-secondary-transparent" href="#scroll"  onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
@@ -391,18 +391,19 @@
     </section>
 
     <section id="pre-event-registration" class="pre-event-registration">
-        <div class="registration-container">
+        <div class="registration-container closed">
             <div class="registration-title">
-                <h2>
+                <h1>Registration Closed</h1>
+                {{-- <h2>
                     Register<br>
                     <span class="color-secondary">
                         Pre Event 3
                     </span>
-                </h2>
+                </h2> --}}
             </div>
-            <a class="button-primary preLink">
+            {{-- <a class="button-primary preLink">
                 Register Now
-            </a>
+            </a> --}}
         </div>
     </section>
 

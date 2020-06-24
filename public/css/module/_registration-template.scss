@@ -10,6 +10,14 @@
         @include fluidpadding(0rem, 0rem);
     }
 
+    h1{
+        @include header1();
+        @include montserrat();
+        font-weight: 700;
+        line-height: 1.15;
+        color: map-get($theme-colors, "white-alt");
+    }
+
     h2{
         @include header2();
         @include montserrat();
@@ -18,6 +26,7 @@
         color: map-get($theme-colors, "white-alt");
     }
 
+    
     .registration-container{
         @include backgroundDark($url);
         @include backgroundPosition(50%,50%);
@@ -28,11 +37,11 @@
         justify-content: center;
         align-items: center;
         border-radius: remToVw(96rem, 1rem);
-
+        
         @media screen and (max-width: 960px) {
             border-radius: 0;
         }
-
+        
         .registration-title {
             display: flex;
             flex-direction: column;
@@ -43,5 +52,9 @@
                 line-height: 200%;
             }
         }
+    }
+
+    .closed {
+        filter: grayscale(100%);
     }
 }

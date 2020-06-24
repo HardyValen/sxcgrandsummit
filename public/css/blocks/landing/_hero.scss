@@ -4,6 +4,9 @@
     // z-index: -10;
     @include hero-template("../assets/landing/hero.jpg");
     @include fluidpaddingbottom(8rem, 9rem); // sementara, nunggu slider
+    @media screen and (max-width: 960px) {
+        justify-content: flex-end;
+    }
     .hero-top {
         // position: relative;
         .hero-icon {

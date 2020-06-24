@@ -22,11 +22,11 @@
             <p class='link-description'>SCHEDULE</p>
         </a>
     </div>
-    <div class="sidebar-banner-container">
+    {{-- <div class="sidebar-banner-container">
         <a href="/landing#registration" alt="REGISTRATION" id="sideRegist">
             <div class="sidebar-banner">
                 <h2>REGISTRATION</h2>
             </div>
         </a>
-    </div>
+    </div> --}}
 </aside>

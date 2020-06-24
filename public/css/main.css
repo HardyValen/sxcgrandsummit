@@ -1112,6 +1112,14 @@
 }
 
 .button-disabled:hover {
+  background-color: #333333;
+  color: white;
+  border-color: #333333;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button-disabled:active {
   background-color: #4F4F4F;
   color: white;
   border-color: #4F4F4F;
@@ -1119,18 +1127,10 @@
   transition: 0.1s;
 }
 
-.button-disabled:active {
-  background-color: #828282;
-  color: white;
-  border-color: #828282;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
 .button-disabled:focus {
-  background-color: #828282;
+  background-color: #4F4F4F;
   color: white;
-  border-color: #828282;
+  border-color: #4F4F4F;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -4995,6 +4995,14 @@ main {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .landing-hero {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .landing-hero .hero-top .hero-icon {
   position: relative;
   width: 60%;
@@ -6006,6 +6014,77 @@ main {
 
 @media screen and (min-width: 1440px) {
   .landing-registration .button-secondary-transparent {
+    margin-top: calc(2.08333vw);
+  }
+}
+
+.landing-registration .button-disabled {
+  border-width: 0.2rem;
+  text-align: center;
+}
+
+.landing-registration .button-disabled {
+  width: 28rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-registration .button-disabled {
+    width: calc(28rem + 2 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-registration .button-disabled {
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-registration .button-disabled {
+    width: calc(20.83333vw);
+  }
+}
+
+.landing-registration .button-disabled {
+  height: 5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-registration .button-disabled {
+    height: calc(5rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-registration .button-disabled {
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-registration .button-disabled {
+    height: calc(4.16667vw);
+  }
+}
+
+.landing-registration .button-disabled {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .landing-registration .button-disabled {
+    margin-top: calc(2rem + 1 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .landing-registration .button-disabled {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-registration .button-disabled {
     margin-top: calc(2.08333vw);
   }
 }
@@ -8721,6 +8800,35 @@ main {
   }
 }
 
+.business-case-registration h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #E8E8E8;
+}
+
+.business-case-registration h1 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .business-case-registration h1 {
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .business-case-registration h1 {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .business-case-registration h1 {
+    font-size: calc(3.19444vw);
+  }
+}
+
 .business-case-registration h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -8840,6 +8948,11 @@ main {
 
 .business-case-registration .registration-container .registration-title br {
   line-height: 200%;
+}
+
+.business-case-registration .closed {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .business-case-prize {
@@ -11188,6 +11301,35 @@ main {
   }
 }
 
+.pre-event-registration h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #E8E8E8;
+}
+
+.pre-event-registration h1 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .pre-event-registration h1 {
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pre-event-registration h1 {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pre-event-registration h1 {
+    font-size: calc(3.19444vw);
+  }
+}
+
 .pre-event-registration h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -11307,6 +11449,11 @@ main {
 
 .pre-event-registration .registration-container .registration-title br {
   line-height: 200%;
+}
+
+.pre-event-registration .closed {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .section-title {
@@ -15872,6 +16019,35 @@ main {
   }
 }
 
+.summit-registration h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #E8E8E8;
+}
+
+.summit-registration h1 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .summit-registration h1 {
+    font-size: calc(3rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .summit-registration h1 {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .summit-registration h1 {
+    font-size: calc(3.19444vw);
+  }
+}
+
 .summit-registration h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -15991,6 +16167,11 @@ main {
 
 .summit-registration .registration-container .registration-title br {
   line-height: 200%;
+}
+
+.summit-registration .closed {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .summit-contacts {

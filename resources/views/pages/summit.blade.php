@@ -32,7 +32,7 @@
             </div>
             <div class="hero-bottom">
                 <div class="hero-buttons">
-                    <a class="button-primary summitLink">Register</a>
+                    {{-- <a class="button-primary summitLink">Register</a> --}}
                     {{-- <a class="button-secondary-transparent" href="#scroll" onclick="scrollto('#scroll')">
                         <div class="button-with-icon">
                             <span>Scroll Down</span> 
@@ -356,9 +356,10 @@
         </section>
 
         <section class="summit-registration">
-            <div class="registration-container">
+            <div class="registration-container closed">
                 <div class="registration-title">
-                    <h2>
+                    <h1>Registration Closed</h1>
+                    {{-- <h2>
                         <span class="color-secondary">
                             Register
                         </span>
@@ -367,7 +368,7 @@
                 </div>
                 <a class="button-primary summitLink">
                     Register Now
-                </a>
+                </a> --}}
             </div>
         </section>
 
