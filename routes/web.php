@@ -26,8 +26,8 @@ Route::get('/pre-event', 'PageRequestController@viewPreEvent');
 // Route::get('/pre-event/register', 'PreeventController@view');
 // Route::post('/pre-event/register', 'PreeventController@store');
 
-Route::get('/pre-event3/register', 'Preevent3MemberController@view');
-Route::post('/pre-event3/register', 'Preevent3MemberController@store');
+// Route::get('/pre-event3/register', 'Preevent3MemberController@view');
+// Route::post('/pre-event3/register', 'Preevent3MemberController@store');
 
 // FOR DEBUGGING PURPOSE ONLY
 // Route::get('/registration-cards', function(){return view("blocks.registration");});
